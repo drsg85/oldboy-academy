@@ -1,0 +1,9 @@
+.page-header {
+    // positioning
+    position: fixed;
+
+    // visual
+    background-color: $dark;
+    visibility: hidden;
+    opacity: 0;
+}

@@ -394,4 +394,67 @@ template {
   display: none; }
 
 body {
-  background-color: red; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+.page-header {
+  position: fixed;
+  background-color: #102131;
+  visibility: hidden;
+  opacity: 0; }
+
+.hero {
+  position: relative;
+  padding: 25px;
+  padding-top: 60px;
+  background-color: #336699;
+  background-image: url("/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center; }
+  .hero::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    height: 13.4vw;
+    background-image: linear-gradient(15deg, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 13.4vw;
+    background-image: linear-gradient(-15deg, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+  .hero__title {
+    padding-bottom: 1em;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-size: 7vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase; }
+  .hero__icon {
+    width: 3rem;
+    margin: 0 auto; }
+    .hero__icon img {
+      width: 100%; }
+
+.about {
+  padding: 25px; }
+  .about__logo {
+    padding: 0 50px;
+    padding-bottom: 30px; }
+    .about__logo img {
+      width: 100%; }
+  .about__title {
+    padding-bottom: 1em;
+    font-family: "Lora", serif;
+    font-size: 1.25rem;
+    text-align: center; }
+  .about__text {
+    line-height: 1.5; }
