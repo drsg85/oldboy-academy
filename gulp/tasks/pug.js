@@ -9,7 +9,7 @@ gulp.task("pugRender", function() {
             return {
                 title: "Pug",
                 message: error.message
-            }
+            };
         }))
         .on("error", function(error) {
             console.log(error.toString());

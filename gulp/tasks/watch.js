@@ -26,6 +26,9 @@ gulp.task("watch", function() {
     });
 
     // js
+    watch("./src/js/**/*.js", function() {
+        gulp.start("jsChanged");
+    });
 
     // wordpress
 });
@@ -37,4 +40,8 @@ gulp.task("pugChanged", ["pugRender"], function() {
 gulp.task("cssInject", ["styles"], function() {
     gulp.src("./dist/styles.css")
         .pipe(browserSync.stream());
+});
+
+gulp.task("jsChanged", ["scripts"], function() {
+    browserSync.reload();
 });

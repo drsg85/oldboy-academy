@@ -13,6 +13,10 @@ gulp.task("styles", function() {
                 message: error.message
             };
         }))
+        .on("error", function(error) {
+            console.log(error.toString());
+            this.emit("end");
+        })
         .pipe(autoprefixer({
             browsers: ["last 2 versions"],
             cascade: false
