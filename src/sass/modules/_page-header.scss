@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 999;
 
     // box model
     height: 100vh;
@@ -13,8 +13,9 @@
 
     // visual
     background-color: $dark;
-    // visibility: hidden;
-    // opacity: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
     
     &__logo {
         // box model
@@ -27,5 +28,11 @@
             // box model
             width: 100%;
         }
+    }
+
+    &--shown {
+        // visual
+        visibility: visible;
+        opacity: 1;
     }
 }

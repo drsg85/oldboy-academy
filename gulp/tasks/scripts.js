@@ -22,7 +22,7 @@ const config = {
 };
 
 gulp.task("scripts", function() {
-    return gulp.src("./src/js/*.js")
+    return gulp.src("./src/js/**/*.js")
         .pipe(webpack(config))
         .on("error", notify.onError(function(error) {
             return {

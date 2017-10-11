@@ -3,8 +3,7 @@
     position: relative;
 
     // box model
-    padding: 25px;
-    padding-top: 60px;
+    padding: 60px 25px;
 
     // visual
     background-color: $blue;
@@ -12,37 +11,57 @@
     background-size: cover;
     background-position: center center;
 
-    &::before {
-        content: "";
-
-        // positioning
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        // box model
-        width: 50vw;
-        height: 13.4vw;
-
-        // visual
-        background-image: linear-gradient(15deg, $white 0, $white 50%, transparent 50%, transparent 100%);
-    }
-    
     &::after {
         content: "";
-        
+
         // positioning
         position: absolute;
-        bottom: 0;
-        right: 0;
-        
+        bottom: -6px;
+        left: 0;
+        z-index: 6;
+
         // box model
-        width: 50vw;
-        height: 13.4vw;
-        
+        height: 32px;
+        width: 100%;
+
         // visual
-        background-image: linear-gradient(-15deg, $white 0, $white 50%, transparent 50%, transparent 100%);
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: top center;
     }
+
+    // &::before {
+    //     content: "";
+
+    //     // positioning
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+
+    //     // box model
+    //     width: 50vw;
+    //     height: 13.4vw;
+
+    //     // visual
+    //     background-image: linear-gradient(15deg, $white 0, $white 50%, transparent 50%, transparent 100%);
+    // }
+    
+    // &::after {
+    //     content: "";
+        
+    //     // positioning
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 0;
+        
+    //     // box model
+    //     width: 50vw;
+    //     height: 13.4vw;
+        
+    //     // visual
+    //     background-image: linear-gradient(-15deg, $white 0, $white 50%, transparent 50%, transparent 100%);
+    // }
 
     &__title {
         // box model
@@ -57,7 +76,9 @@
         letter-spacing: 1px;
         line-height: 1.5;
         text-align: center;
-        text-transform: uppercase;
+        // text-transform: capitalize;
+        // text-transform: uppercase;
+        font-variant: small-caps;
     }
 
     &__icon {
