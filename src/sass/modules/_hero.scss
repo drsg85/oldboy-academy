@@ -11,26 +11,6 @@
     background-size: cover;
     background-position: center center;
 
-    &::after {
-        content: "";
-
-        // positioning
-        position: absolute;
-        bottom: -6px;
-        left: 0;
-        z-index: 6;
-
-        // box model
-        height: 32px;
-        width: 100%;
-
-        // visual
-        background-image: url("./img/deco-b.svg");
-        background-size: 80px;
-        background-repeat: repeat-x;
-        background-position: top center;
-    }
-
     // &::before {
     //     content: "";
 
@@ -65,7 +45,8 @@
 
     &__title {
         // box model
-        padding-bottom: 1em;
+        // padding-bottom: 1em;
+        margin-top: 0;
         
         // typography
         color: $white;
@@ -76,9 +57,12 @@
         letter-spacing: 1px;
         line-height: 1.5;
         text-align: center;
-        // text-transform: capitalize;
-        // text-transform: uppercase;
         font-variant: small-caps;
+    }
+
+    &__form {
+        // box model
+        margin-bottom: 40px;
     }
 
     &__icon {

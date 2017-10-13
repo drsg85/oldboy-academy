@@ -1,0 +1,87 @@
+.hero-form {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 30px 20px;
+
+    // visual
+    background-color: $white;
+    // background-color: rgba($white, 0.9);
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 8px;
+        top: 8px;
+
+        // box model
+        height: calc(100% - 16px);
+        width: calc(100% - 16px);
+
+        // visual
+        border: 1px solid $blue;
+        
+    }
+
+    &__title {
+        // box model
+        margin: 0;
+        padding-bottom: 5px;
+
+        // typography
+        color: $blue;
+        font-family: $titleFont;
+        font-size: 1.25rem;
+        line-height: 1.25;
+        text-align: center;
+    }
+    
+    &__subtitle {
+        // box model
+        margin-top: 0;
+        margin-bottom: 20px;
+
+        // typography
+        color: $blue;
+        font-family: $titleFont;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    &__form {
+
+    }
+
+    &__input {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 8px;
+
+        // typography
+        font-size: 0.875rem;
+    }
+
+    &__button {
+        // box model
+        width: 100%;
+        margin-top: 16px;
+        padding: 8px;
+
+        // typography
+        color: $white;
+        font-family: $mainFont;
+        text-transform: uppercase;
+        
+        // visual
+        background-color: $blue;
+        border: none;
+    }
+}

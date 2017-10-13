@@ -1,6 +1,29 @@
 .about {
+    // positioning
+    position: relative;
+
     // box model
     padding: 60px 25px;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 0;
+        top: -20px;
+        z-index: 6;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: top center;
+    }
 
     &__logo {
         // box model

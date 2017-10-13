@@ -10,9 +10,15 @@
 @import "base/global";
 
 // modules
+//      header
 @import "modules/page-header";
 @import "modules/logo";
 @import "modules/main-nav";
+
+//      hero
 @import "modules/menu-icon";
 @import "modules/hero";
+@import "modules/hero-form";
+
+//      about
 @import "modules/about";

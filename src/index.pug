@@ -27,6 +27,19 @@ html(lang="ru")
             .menu-icon: .menu-icon__middle
 
             h1.hero__title Добро пожаловать в&nbsp;Академию «Oldboy»
+            
+            .hero__form
+                .hero-form
+                    header.hero-form__header
+                        h2.hero-form__title Старт&nbsp;новой&nbsp;группы «Барбер&nbsp;с&nbsp;нуля»!
+                        p.hero-form__subtitle Уже 1 ноября, спешите!
+
+                    form.hero-form__form(action="")
+                        input.hero-form__input(type="text" name="name" placeholder="Имя")
+                        input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                        input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
+                        input.hero-form__button(type="submit" value="Записаться")
+
             .hero__icon
                 img(src="/img/masson.svg", alt="")
 
