@@ -52,6 +52,38 @@ html(lang="ru")
                 p.about__text Развитие культуры барберинга вернула мужчинам ощущения и эмоции, которые испытывали джентельмены на старинных черно-белых фотографиях. Традиции лучших цирюлен прошлого века возвращаются, а истинные барберы активно возрождают культуру брадобрейства в аскетичной атмосфере исключительно мужской парикмахерской.
                 p.about__text Академия барберинга — школа, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа. Хотите узнать, как из бородатого мужчины сделать джентльмена? Тогда записывайтесь на наши курсы.
 
+            .about__more
+                a.button(href="#") Подробнее об Академии
+
         .courses
+            header.courses__header
+                .courses__icon: img(src="/img/mortarboard-white.svg", alt="")
+                h2.courses__title Наши курсы
+
+            .courses__content
+                article.course
+                    header.course__header
+                        h3.course__title Барбер с «нуля»
+                        .course__image: img(src="/img/courses/course1.jpg", alt="Академия Олдбой курс по барберингу")
+                        .course__ribbons
+                            p.course__ribbon.course__ribbon--blue новый <br>курс
+                            p.course__ribbon.course__ribbon--red специальная <br>цена
+
+                    .course__content
+                        .course__info
+                            .course__info-icon: img(src="/img/icons/calendar.svg", alt="")
+                            .course__info-text Старт: 1 ноября <br>Будние дни
+                        .course__info
+                            .course__info-icon: img(src="/img/icons/time-small.svg", alt="")
+                            .course__info-text Длительность: <br>2 месяца
+                        .course__info
+                            .course__info-icon: img(src="/img/icons/level-noob.svg", alt="")
+                            .course__info-text Уровень навыков: <br>без опыта
+                        .course__info
+                            .course__info-icon: img(src="/img/icons/group.svg", alt="")
+                            .course__info-text.course__info-text--last Формат: <br>обучение в группе
+
+                    .course__more
+                        a.button.button--block(href="#") Подробнее о&nbsp;курсе
 
     script(src="menu.js")

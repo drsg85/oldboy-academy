@@ -5,6 +5,11 @@ body {
     // typography
     font-family: $mainFont;
     font-size: 16px;
+
+    @include atTabletsLandscape {
+        // box model
+        padding-left: 200px;
+    }
 }
 
 *,

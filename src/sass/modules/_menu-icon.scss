@@ -9,6 +9,11 @@
     // border: 1px solid red;
     height: 30px;
     width: 30px;
+
+    @include atTabletsLandscape {
+        // box model
+        display: none;
+    }
     
     &::before {
         content: "";

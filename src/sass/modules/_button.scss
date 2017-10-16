@@ -1,0 +1,21 @@
+.button {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 30px;
+
+    // typography
+    color: $white;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+
+    // visual
+    background-color: $gold;
+
+    &--block {
+        // box model
+        display: block;
+    }
+}

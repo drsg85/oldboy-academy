@@ -13,9 +13,19 @@
 
     // visual
     background-color: $dark;
+    background-color: #000000;
     visibility: hidden;
     opacity: 0;
     transition: all 0.3s ease-out;
+
+    @include atTabletsLandscape {
+        // box model
+        width: 200px;
+
+        // visual
+        visibility: visible;
+        opacity: 1;
+    }
     
     &__logo {
         // box model
@@ -23,6 +33,11 @@
         margin: 0 auto;
         padding: 20px;
         padding-bottom: 35px;
+        
+        @include atTabletsLandscape {
+            // box model
+            width: 100%;
+        }
         
         img {
             // box model

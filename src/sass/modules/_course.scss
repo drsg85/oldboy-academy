@@ -1,0 +1,251 @@
+.course {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 7px;
+
+    // visual
+    background-color: $white;
+    border: 5px solid $white;
+
+    &:before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        // box model
+        height: 100%;
+        width: 100%;
+
+        // visual
+        border: 2px solid $gold;
+        pointer-events: none;
+    }
+
+    &__header {
+        // positioning
+        position: relative;
+
+        // box model
+
+        // typography
+        font-size: 0;
+    }
+
+    &__title {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        right: -7px;
+        transform: translateY(50%);
+        // top: 20px;
+        // bottom: -50%;
+
+        // box model
+        width: 90%;
+        margin: 0;
+        padding: 15px 20px;
+
+        // typography
+        color: $white;
+        font-size: 1.25rem;
+        font-family: $titleFont;
+        font-variant: small-caps;
+
+        // visual
+        background-color: $gold;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            left: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to left top, $gold 0, $gold 50%, transparent 50%, transparent 100%);
+        }
+        
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to left bottom, $gold 0, $gold 50%, transparent 50%, transparent 100%);
+        }
+    }
+
+    &__image {
+        // box model
+        width: 100%;
+
+        img {
+            // box model
+            width: 100%;
+        }
+    }
+
+    &__ribbons {
+        // positioning
+        position: absolute;
+        bottom: 55px;
+        left: -7px;
+        // left: 0;
+        // display: none;
+
+        // typography
+        font-size: 0;
+    }
+
+    &__ribbon {
+        // positioning
+        position: relative;
+
+        // box model
+        width: 120px;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 10px;
+        padding-left: 14px;
+
+        // typography
+        color: $white;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.25;
+        // text-align: center;
+        text-transform: uppercase;
+        // font-family: $titleFont;
+        // font-variant: small-caps;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            right: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to right top, $white 0, $white 50%, transparent 50%, transparent 100%);
+        }
+        
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to right bottom, $white 0, $white 50%, transparent 50%, transparent 100%);
+        }
+
+        &--red {
+            // visual
+            background-color: $red;
+
+            &::before {
+                background-image: linear-gradient(to right top, $red 0, $red 50%, transparent 50%, transparent 100%);
+            }
+
+            &::after {
+                background-image: linear-gradient(to right bottom, $red 0, $red 50%, transparent 50%, transparent 100%);
+            }
+        }
+        
+        &--blue {
+            // visual
+            background-color: $blue;
+
+            &::before {
+                background-image: linear-gradient(to right top, $blue 0, $blue 50%, transparent 50%, transparent 100%);
+            }
+
+            &::after {
+                background-image: linear-gradient(to right bottom, $blue 0, $blue 50%, transparent 50%, transparent 100%);
+            }
+        }
+    }
+
+    &__content {
+        // box model
+        padding: 13px;
+        padding-top: 45px;
+    }
+
+    &__info {
+        // positioning
+        position: relative;
+
+        // box model
+        padding-left: 60px;
+    }
+
+    &__info-icon {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 15px;
+
+        // box model
+        height: 32px;
+        width: 32px;
+
+        img {
+            // box model
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__info-text {
+        // box model
+        margin: 0;
+        padding: 10px 0;
+
+        // typography
+
+        // visual
+        border-bottom: 1px solid $gold;
+
+        &--last {
+            // box model
+            padding-bottom: 0;
+
+            // visual
+            border-bottom: none;
+        }
+    }
+
+    &__more {
+        // box model
+        padding: 13px;
+    }
+}

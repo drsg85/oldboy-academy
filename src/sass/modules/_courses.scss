@@ -1,0 +1,70 @@
+.courses {
+    // positioning
+    position: relative;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 0px;
+        z-index: 6;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b-r.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: top center;
+    }
+
+    &__header {
+        // box model
+        margin-bottom: -150px;
+        padding: 65px 25px;
+        padding-bottom: 150px;
+
+        // visual
+        background-color: $gold;
+        background-image: url("/img/courses-bg.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &__title {
+        // box model
+        // padding-bottom: 1em;
+        margin-top: 0;
+        
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-size: 7vw;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-align: center;
+        font-variant: small-caps;
+    }
+
+    &__icon {
+        // box model
+        width: 3rem;
+        margin: 0 auto;
+
+        img {
+            // box model
+            width: 100%;
+        }
+    }
+
+    &__content {
+        // box model
+        padding: 25px;
+    }
+}
