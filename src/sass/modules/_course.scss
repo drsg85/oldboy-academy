@@ -105,8 +105,9 @@
     &__ribbons {
         // positioning
         position: absolute;
-        bottom: 55px;
-        left: -7px;
+        // bottom: 55px;
+        top: 10px;
+        left: 0;
         // left: 0;
         // display: none;
 
@@ -119,21 +120,25 @@
         position: relative;
 
         // box model
-        width: 120px;
+        width: 110px;
         margin: 0;
         margin-bottom: 5px;
-        padding: 10px;
-        padding-left: 14px;
+        padding: 6px;
+        padding-left: 10px;
 
         // typography
         color: $white;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         font-weight: 700;
         line-height: 1.25;
         // text-align: center;
         text-transform: uppercase;
         // font-family: $titleFont;
         // font-variant: small-caps;
+        
+        // visual
+        // border-bottom: 2px solid $white;
+        // border-top: 2px solid $white;
 
         &::before {
             content: "";
@@ -205,18 +210,19 @@
         position: relative;
 
         // box model
-        padding-left: 60px;
+        padding-left: 50px;
+        padding-right: 5px;
     }
 
     &__info-icon {
         // positioning
         position: absolute;
-        left: 0;
-        top: 15px;
+        left: 7px;
+        top: 10px;
 
         // box model
-        height: 32px;
-        width: 32px;
+        height: 30px;
+        width: 30px;
 
         img {
             // box model
@@ -228,9 +234,11 @@
     &__info-text {
         // box model
         margin: 0;
-        padding: 10px 0;
+        padding: 8px;
 
         // typography
+        font-size: 0.875rem;
+        // line-height: 1.25;
 
         // visual
         border-bottom: 1px solid $gold;
