@@ -656,6 +656,7 @@ body {
 .course {
   position: relative;
   padding: 7px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   border: 5px solid #ffffff; }
   .course:before {
@@ -783,6 +784,47 @@ body {
       border-bottom: none; }
   .course__more {
     padding: 13px; }
+
+.team {
+  position: relative; }
+  .team::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 6;
+    height: 32px;
+    width: 100%;
+    background-image: url("./img/deco-b-r.svg");
+    background-size: 80px;
+    background-repeat: repeat-x;
+    background-position: top center; }
+  .team__header {
+    margin-bottom: -150px;
+    padding: 65px 25px;
+    padding-bottom: 150px;
+    background-color: #d5a353;
+    background-image: url("/img/team-bg.jpg");
+    background-size: cover;
+    background-position: center center; }
+  .team__title {
+    margin-top: 0;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-size: 7vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
+    font-variant: small-caps; }
+  .team__icon {
+    width: 3rem;
+    margin: 0 auto; }
+    .team__icon img {
+      width: 100%; }
+  .team__content {
+    padding: 25px; }
 
 .button {
   display: inline-block;
