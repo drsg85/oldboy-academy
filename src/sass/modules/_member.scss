@@ -2,12 +2,14 @@
     // box model
     margin-bottom: 40px;
     padding: 7px;
+    padding-bottom: 15px;
 
     // typography
     font-size: 0;
 
     // visual
     background-color: $white;
+    // box-shadow: 0 0 15px rgba($dark, 0.5);
 
     &__photo {
         // positioning
@@ -52,6 +54,11 @@
             // box model
             width: 100%;
         }
+    }
+
+    &__content {
+        // box model
+        padding: 0 10px;
     }
 
     &__name {

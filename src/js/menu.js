@@ -30,6 +30,7 @@ class MobileMenu {
 
     toggleMenu() {
         this.pageHeader.toggleClass("page-header--shown");
+        this.menuIcon.toggleClass("menu-icon--close-x");
     }
 }
 

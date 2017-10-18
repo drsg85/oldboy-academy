@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    left: -100%;
     z-index: 999;
 
     // box model
@@ -14,8 +15,8 @@
     // visual
     background-color: $dark;
     background-color: #000000;
-    visibility: hidden;
-    opacity: 0;
+    // visibility: hidden;
+    // opacity: 0;
     transition: all 0.3s ease-out;
 
     @include atTabletsLandscape {
@@ -46,6 +47,9 @@
     }
 
     &--shown {
+        // positioning
+        left: 0;
+
         // visual
         visibility: visible;
         opacity: 1;
