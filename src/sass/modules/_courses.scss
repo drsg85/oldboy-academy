@@ -29,10 +29,11 @@
         padding-bottom: 150px;
 
         // visual
-        background-color: $gold;
+        // background-color: $gold;
+        background-color: $white;
         background-image: url("/img/courses-bg.jpg");
         background-size: cover;
-        background-position: center center;
+        background-position: bottom center;
     }
 
     &__title {

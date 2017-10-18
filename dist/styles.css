@@ -630,10 +630,10 @@ body {
     margin-bottom: -150px;
     padding: 65px 25px;
     padding-bottom: 150px;
-    background-color: #d5a353;
+    background-color: #ffffff;
     background-image: url("/img/courses-bg.jpg");
     background-size: cover;
-    background-position: center center; }
+    background-position: bottom center; }
   .courses__title {
     margin-top: 0;
     color: #ffffff;
@@ -655,6 +655,7 @@ body {
 
 .course {
   position: relative;
+  max-width: 320px;
   padding: 7px;
   margin-bottom: 20px;
   background-color: #ffffff;
@@ -803,10 +804,9 @@ body {
     margin-bottom: -150px;
     padding: 65px 25px;
     padding-bottom: 150px;
-    background-color: #d5a353;
     background-image: url("/img/team-bg.jpg");
     background-size: cover;
-    background-position: center center; }
+    background-position: bottom center; }
   .team__title {
     margin-top: 0;
     color: #ffffff;
@@ -826,11 +826,58 @@ body {
   .team__content {
     padding: 25px; }
 
+.member {
+  margin-bottom: 40px;
+  padding: 7px;
+  font-size: 0;
+  background-color: #ffffff; }
+  .member__photo {
+    position: relative;
+    margin-bottom: 20px; }
+    .member__photo::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 13%;
+      width: 50%;
+      background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to top right, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+    .member__photo::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 13%;
+      width: 50%;
+      background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to top left, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+    .member__photo img {
+      width: 100%; }
+  .member__name {
+    margin: 0;
+    color: #222222;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    text-align: center; }
+  .member__exp {
+    color: #336699;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center; }
+  .member__text {
+    padding: 20px 0;
+    color: #222222;
+    font-size: 1rem;
+    line-height: 1.5; }
+
 .button {
   display: inline-block;
   vertical-align: top;
   padding: 15px 30px;
   color: #ffffff;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.25;
   text-align: center;
@@ -838,3 +885,5 @@ body {
   background-color: #d5a353; }
   .button--block {
     display: block; }
+  .button--blue {
+    background-color: #336699; }

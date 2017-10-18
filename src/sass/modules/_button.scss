@@ -6,6 +6,7 @@
 
     // typography
     color: $white;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
     text-align: center;
@@ -17,5 +18,10 @@
     &--block {
         // box model
         display: block;
+    }
+
+    &--blue {
+        // visual
+        background-color: $blue;
     }
 }
