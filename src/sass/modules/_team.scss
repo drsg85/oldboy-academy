@@ -28,11 +28,15 @@
         padding: 65px 25px;
         padding-bottom: 150px;
 
+        // typography
+        font-size: 0;
+
         // visual
         // background-color: $gold;
         background-image: url("/img/team-bg.jpg");
         background-size: cover;
         background-position: bottom center;
+        background-repeat: no-repeat;
     }
 
     &__title {

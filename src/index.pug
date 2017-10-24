@@ -26,36 +26,42 @@ html(lang="ru")
         section.hero
             .menu-icon: .menu-icon__middle
 
-            h1.hero__title Добро пожаловать в&nbsp;Академию «Oldboy»
-            
-            .slider
-                .slider__slide
-                    .hero__form
-                        .hero-form
-                            header.hero-form__header
-                                h2.hero-form__title Старт&nbsp;новой&nbsp;группы «Барбер&nbsp;с&nbsp;нуля»!
-                                p.hero-form__subtitle Уже 1 ноября, спешите!
-
-                            form.hero-form__form(action="")
-                                input.hero-form__input(type="text" name="name" placeholder="Имя")
-                                input.hero-form__input(type="text" name="phone" placeholder="Телефон")
-                                input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
-                                input.hero-form__button(type="submit" value="Записаться")
-
-                .slider__slide
-                    .hero__form
-                        .hero-form
-                            header.hero-form__header
-                                h2.hero-form__title Стань моделью!
-                                p.hero-form__subtitle Запись на бесплатную стрижку
-
-                            form.hero-form__form(action="")
-                                input.hero-form__input(type="text" name="name" placeholder="Имя")
-                                input.hero-form__input(type="text" name="phone" placeholder="Телефон")
-                                input.hero-form__button(type="submit" value="Записаться")
+            h1.hero__title Добро пожаловать <br>в&nbsp;Академию «OldBoy»
 
             .hero__icon
                 img(src="/img/masson.svg", alt="")
+            
+            .slider
+                .slider__prev
+                .slider__next
+                .slider__navigation
+                    span.slider__dot.slider__dot--active
+                    span.slider__dot
+                    span.slider__dot
+
+                .slider__slide.slider__slide--current
+                    .hero-form
+                        header.hero-form__header
+                            h2.hero-form__title Старт&nbsp;новой&nbsp;группы «Барбер&nbsp;с&nbsp;нуля»!
+                            p.hero-form__subtitle Уже 1 ноября, спешите!
+
+                        form.hero-form__form(action="")
+                            input.hero-form__input(type="text" name="name" placeholder="Имя")
+                            input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                            input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
+                            input.hero-form__button(type="submit" value="Записаться")
+
+                .slider__slide
+                    .hero-form
+                        header.hero-form__header
+                            h2.hero-form__title Стань моделью!
+                            p.hero-form__subtitle Запись на бесплатную стрижку
+
+                        form.hero-form__form(action="")
+                            input.hero-form__input(type="text" name="name" placeholder="Имя")
+                            input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                            input.hero-form__button(type="submit" value="Записаться")
+
 
         section.about
             .about__logo
@@ -66,8 +72,8 @@ html(lang="ru")
                 p.about__text Развитие культуры барберинга вернула мужчинам ощущения и эмоции, которые испытывали джентельмены на старинных черно-белых фотографиях. Традиции лучших цирюлен прошлого века возвращаются, а истинные барберы активно возрождают культуру брадобрейства в аскетичной атмосфере исключительно мужской парикмахерской.
                 p.about__text Академия барберинга — школа, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа. Хотите узнать, как из бородатого мужчины сделать джентльмена? Тогда записывайтесь на наши курсы.
 
-            .about__more
-                a.button(href="#") Подробнее об Академии
+                .about__more
+                    a.button(href="#") Подробнее об Академии
 
         section.courses
             header.courses__header
@@ -163,7 +169,8 @@ html(lang="ru")
                     p.member__exp Опыт работы — 7 лет
                     p.member__text Ведущий мастер сети Олдбой. Сертифицированный технолог бренда American Crew.
                     
-                    a.button.button--blue.button--block(href="") Подробнее о преподавателе
+                    .member__more
+                        a.button.button--blue.button--block(href="") Подробнее о преподавателе
 
 
                 article.member
@@ -172,7 +179,8 @@ html(lang="ru")
                     p.member__exp Опыт работы - 7 лет
                     p.member__text Шеф-мастер Олдбой. Сертифицированный мастер ножниц и бритвы дважды краснознамённого, трижды прославленного барбершопа Олдбой.
 
-                    a.button.button--blue.button--block(href="") Подробнее о преподавателе
+                    .member__more
+                        a.button.button--blue.button--block(href="") Подробнее о преподавателе
 
                 article.member
                     .member__photo: img(src="/img/members/member3.jpg", alt="")
@@ -180,7 +188,8 @@ html(lang="ru")
                     p.member__exp Опыт работы - 5 лет
                     p.member__text Мастер Олдбой. Любимец публики. Гений, миллонер, плейбой и филантроп.
 
-                    a.button.button--blue.button--block(href="") Подробнее о преподавателе
+                    .member__more
+                        a.button.button--blue.button--block(href="") Подробнее о преподавателе
         
         section.testimonials
             header.testimonials__header

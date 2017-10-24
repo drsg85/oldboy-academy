@@ -1,15 +1,23 @@
 .member {
     // box model
-    margin-bottom: 40px;
+    margin: 0 auto;
+    margin-bottom: 60px;
     padding: 7px;
     padding-bottom: 15px;
+    max-width: 400px;
 
     // typography
     font-size: 0;
+    text-align: center;
 
     // visual
     background-color: $white;
     // box-shadow: 0 0 15px rgba($dark, 0.5);
+
+    @include atTabletsPortrait {
+        // box model
+        // margin-bottom: 60px;
+    }
 
     &__photo {
         // positioning
@@ -23,7 +31,7 @@
 
             // positioning
             position: absolute;
-            bottom: 0;
+            bottom: -1px;
             left: 0;
 
             // box model
@@ -39,7 +47,7 @@
 
             // positioning
             position: absolute;
-            bottom: 0;
+            bottom: -1px;
             right: 0;
 
             // box model
@@ -89,5 +97,10 @@
         color: $dark;
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    &__more {
+        // box model
+        display: inline-block;
     }
 }

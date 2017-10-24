@@ -5,6 +5,12 @@
     // box model
     padding: 60px 25px;
 
+    @include atTabletsPortrait {
+        // box model
+        padding: 60px;
+        // display: flex;
+    }
+
     &::before {
         content: "";
 
@@ -30,6 +36,17 @@
         padding: 0 50px;
         padding-bottom: 30px;
 
+        @include atTabletsPortrait {
+            // box model
+            width: 200px;
+            padding: 0;
+            flex-grow: 2;
+            float: left;
+            margin: 30px;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
         img {
             // box model
             width: 100%;
@@ -37,7 +54,10 @@
     }
 
     &__content {
-
+        @include atTabletsPortrait {
+            // box model
+            flex-grow: 1;
+        }
     }
 
     &__title {

@@ -3,11 +3,18 @@
     position: relative;
 
     // box model
+    height: 330px;
+    margin-bottom: 80px;
     padding: 30px 20px;
 
     // visual
     background-color: $white;
-    // background-color: rgba($white, 0.9);
+
+    @include atTabletsPortrait {
+        // box model
+        margin-bottom: 70px;
+        padding: 40px;
+    }
 
     &::before {
         content: "";
@@ -37,6 +44,12 @@
         font-size: 1.25rem;
         line-height: 1.25;
         text-align: center;
+        
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
     }
     
     &__subtitle {
@@ -49,10 +62,20 @@
         font-family: $titleFont;
         font-size: 0.85rem;
         text-align: center;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.25rem;
+        }
     }
 
     &__form {
+        // positioning
+        // position: absolute;
+        // bottom: 20px;
 
+        // typography
+        text-align: center;
     }
 
     &__input {

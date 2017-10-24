@@ -3,7 +3,110 @@
     position: relative;
 
     &__slide {
+        // box model
+        display: none;
+
+        // visual
+        visibility: hidden;
+        opacity: 0;
+
+        &--current {
+            // box model
+            display: block;
+
+            // visual
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__prev {
         // positioning
         position: absolute;
+        bottom: -55px;
+        left: 65px;
+
+        // box model
+        height: 30px;
+        width: 15px;
+        
+        // visual
+        background-image: url("./img/slider/prev.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.5;
+        
+        @include atTabletsPortrait {
+            // positioning
+            top: 50%;
+            left: -65px;
+            transform: translateY(-50%);
+            
+            // box model
+            height: 60px;
+            width: 30px;
+        }
+    }
+
+    &__next {
+        // positioning
+        position: absolute;
+        bottom: -55px;
+        right: 65px;
+
+        // box model
+        width: 15px;
+        height: 30px;
+        
+        // visual
+        background-image: url("./img/slider/next.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.5;
+        
+        @include atTabletsPortrait {
+            // positioning
+            top: 50%;
+            right: -65px;
+            transform: translateY(-50%);
+            
+            // box model
+            height: 60px;
+            width: 30px;
+        }
+    }
+
+    &__navigation {
+        // positioning
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        // box model
+        width: 160px;
+        height: 30px;
+
+        text-align: center;
+    }
+
+    &__dot {
+        // positioning
+        transform: rotate(45deg);
+
+        // box model
+        display: inline-block;
+        height: 8px;
+        width: 8px;
+        margin: 0 10px;
+
+        // visual
+        background-color: $white;
+        opacity: 0.5;
+
+        &--active {
+            // visual
+            opacity: 1;
+        }
     }
 }
