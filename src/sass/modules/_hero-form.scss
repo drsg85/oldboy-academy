@@ -72,16 +72,24 @@
     &__button {
         // box model
         width: 100%;
-        margin-top: 16px;
-        padding: 8px;
+        margin-top: 12px;
+        padding: 10px;
 
         // typography
         color: $white;
         font-family: $mainFont;
+        font-size: 0.875rem;
+        font-weight: 500;
         text-transform: uppercase;
         
         // visual
         background-color: $blue;
         border: none;
+
+        @include atTabletsPortrait {
+            // box model
+            width: auto;
+            padding: 12px 30px;
+        }
     }
 }

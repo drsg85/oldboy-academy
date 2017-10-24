@@ -6,7 +6,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
         link(rel="stylesheet", href="styles.css")
 
         title Oldboy Academy
@@ -23,27 +23,41 @@ html(lang="ru")
                 li: a(href="#") Моделям
                 li: a(href="#") Проверить <br>сертификат
 
-        .hero
+        section.hero
             .menu-icon: .menu-icon__middle
 
             h1.hero__title Добро пожаловать в&nbsp;Академию «Oldboy»
             
-            .hero__form
-                .hero-form
-                    header.hero-form__header
-                        h2.hero-form__title Старт&nbsp;новой&nbsp;группы «Барбер&nbsp;с&nbsp;нуля»!
-                        p.hero-form__subtitle Уже 1 ноября, спешите!
+            .slider
+                .slider__slide
+                    .hero__form
+                        .hero-form
+                            header.hero-form__header
+                                h2.hero-form__title Старт&nbsp;новой&nbsp;группы «Барбер&nbsp;с&nbsp;нуля»!
+                                p.hero-form__subtitle Уже 1 ноября, спешите!
 
-                    form.hero-form__form(action="")
-                        input.hero-form__input(type="text" name="name" placeholder="Имя")
-                        input.hero-form__input(type="text" name="phone" placeholder="Телефон")
-                        input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
-                        input.hero-form__button(type="submit" value="Записаться")
+                            form.hero-form__form(action="")
+                                input.hero-form__input(type="text" name="name" placeholder="Имя")
+                                input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                                input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
+                                input.hero-form__button(type="submit" value="Записаться")
+
+                .slider__slide
+                    .hero__form
+                        .hero-form
+                            header.hero-form__header
+                                h2.hero-form__title Стань моделью!
+                                p.hero-form__subtitle Запись на бесплатную стрижку
+
+                            form.hero-form__form(action="")
+                                input.hero-form__input(type="text" name="name" placeholder="Имя")
+                                input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                                input.hero-form__button(type="submit" value="Записаться")
 
             .hero__icon
                 img(src="/img/masson.svg", alt="")
 
-        .about
+        section.about
             .about__logo
                 img(src="/img/logo.svg", alt="Академия Олдбой цветно логотип")
 
@@ -55,7 +69,7 @@ html(lang="ru")
             .about__more
                 a.button(href="#") Подробнее об Академии
 
-        .courses
+        section.courses
             header.courses__header
                 .courses__icon: img(src="/img/mortarboard-white.svg", alt="")
                 h2.courses__title Наши курсы
@@ -136,7 +150,7 @@ html(lang="ru")
                     .course__more
                         a.button.button--block(href="#") Подробнее о&nbsp;курсе
 
-        .team
+        section.team
             header.team__header
                 .team__icon: img(src="/img/mortarboard-white.svg", alt="")
                 h2.team__title Команда Академии
@@ -167,5 +181,18 @@ html(lang="ru")
                     p.member__text Мастер Олдбой. Любимец публики. Гений, миллонер, плейбой и филантроп.
 
                     a.button.button--blue.button--block(href="") Подробнее о преподавателе
+        
+        section.testimonials
+            header.testimonials__header
+                h2.testimonials__title Отзывы
+
+            .testimonials__content
+                article.testimonial
+                    .testimonial__photo: img(src="/img/testimonials/photo-1.jpg", alt="")
+                    p.testimonial__text Достаточно долго искал достойную школу, для того чтобы ещё немного прокачаться. Наткнулся на Академию OldBoy совершенно случайно и решил попробовать, могу сказать, что это достойные мастера и преподаватели, с очень близким мне подходом к процессу стрижки.<br>Из плюсов могу выделить огромный багаж новых теоретических и практических навыков (текстуры, разделения, техники сведения на нет), отзывчивые преподаватели, ответственный подход во всем (начиная от выбора моделей и заканчивая организацией).
+
+                    h3.testimonial__name Александр Тимофеев
+                    p.testimonial__from Москва, барбершоп «Firma»
+                    a.testimonial__origin(href="#") Отзыв в Instagram
 
     script(src="menu.js")

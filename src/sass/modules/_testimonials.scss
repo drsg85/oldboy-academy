@@ -1,7 +1,12 @@
-.team {
+.testimonials {
     // positioning
     position: relative;
     
+    // visual
+    background-image: url("./img/testimonials-bg.jpg");
+    background-size: cover;
+    background-position: bottom center;
+
     &::before {
         content: "";
 
@@ -24,21 +29,11 @@
 
     &__header {
         // box model
-        margin-bottom: -150px;
         padding: 65px 25px;
-        padding-bottom: 150px;
-
-        // visual
-        // background-color: $gold;
-        background-image: url("/img/team-bg.jpg");
-        background-size: cover;
-        background-position: bottom center;
+        padding-bottom: 100px;
     }
 
     &__title {
-        // box model
-        margin-top: 0;
-        
         // typography
         color: $white;
         font-family: $titleFont;
@@ -47,23 +42,16 @@
         font-variant: small-caps;
         font-weight: 400;
         letter-spacing: 1px;
-        line-height: 1.5;
         text-align: center;
-    }
-
-    &__icon {
-        // box model
-        width: 3rem;
-        margin: 0 auto;
-
-        img {
-            // box model
-            width: 100%;
-        }
     }
 
     &__content {
         // box model
-        padding: 25px;
+
+        // typography
+        font-size: 0.875rem;
+
+        // visual
+        background-color: $white;
     }
 }
