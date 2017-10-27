@@ -15,11 +15,12 @@
     // visual
     background-color: $dark;
     background-color: #000000;
-    // visibility: hidden;
-    // opacity: 0;
     transition: all 0.3s ease-out;
 
     @include atTabletsLandscape {
+        // positioning
+        left: 0;
+        
         // box model
         width: 200px;
 

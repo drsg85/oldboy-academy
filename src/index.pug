@@ -31,18 +31,18 @@ html(lang="ru")
             .hero__icon
                 img(src="/img/masson.svg", alt="")
             
-            .slider
-                .slider__prev
-                .slider__next
-                .slider__navigation
-                    span.slider__dot.slider__dot--active
-                    span.slider__dot
-                    span.slider__dot
+            .slider#header-slider
+                //- .slider__prev
+                //- .slider__next
+                //- .slider__navigation
+                //-     span.slider__dot.slider__dot--active
+                //-     span.slider__dot
+                //-     span.slider__dot
 
-                .slider__slide.slider__slide--current
+                .slider__slide
                     .hero-form
                         header.hero-form__header
-                            h2.hero-form__title Старт&nbsp;новой&nbsp;группы «Барбер&nbsp;с&nbsp;нуля»!
+                            h2.hero-form__title Старт группы «Барбер&nbsp;с&nbsp;нуля»!
                             p.hero-form__subtitle Уже 1 ноября, спешите!
 
                         form.hero-form__form(action="")
@@ -205,3 +205,4 @@ html(lang="ru")
                     a.testimonial__origin(href="#") Отзыв в Instagram
 
     script(src="menu.js")
+    script(src="app.js")

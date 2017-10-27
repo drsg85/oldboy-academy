@@ -2,21 +2,31 @@
     // positioning
     position: relative;
 
+    // box model
+    margin-bottom: 80px;
+
     &__slide {
-        // box model
-        display: none;
+        // positioning
+        position: absolute;
 
         // visual
         visibility: hidden;
-        opacity: 0;
-
+        // opacity: 0;
+        perspective: 800px;
+        transition: all 0.3s ease-in-out;
+        transition-delay: 0s;
+        transform-style: preserve-3d;
+        transform: rotateY(90deg);
+        
         &--current {
             // box model
             display: block;
-
+            
             // visual
             visibility: visible;
             opacity: 1;
+            transform: rotateY(0deg);
+            transition-delay: 0.3s;
         }
     }
 
@@ -34,7 +44,9 @@
         background-image: url("./img/slider/prev.svg");
         background-repeat: no-repeat;
         background-position: center center;
+        cursor: pointer;
         opacity: 0.5;
+        transition: all 0.3s ease-out;
         
         @include atTabletsPortrait {
             // positioning
@@ -45,6 +57,25 @@
             // box model
             height: 60px;
             width: 30px;
+
+            &:hover {
+                // visual
+                opacity: 0.9;
+            }
+            
+            &:active {
+                // positioning
+                transform: translate(-5px, -50%);
+            }
+        }
+
+        @include atDesktop {
+            // positioning
+            left: -75px;
+
+            // box model
+            height: 80px;
+            width: 40px;
         }
     }
 
@@ -62,7 +93,9 @@
         background-image: url("./img/slider/next.svg");
         background-repeat: no-repeat;
         background-position: center center;
+        cursor: pointer;
         opacity: 0.5;
+        transition: all 0.3s ease-out;
         
         @include atTabletsPortrait {
             // positioning
@@ -73,6 +106,25 @@
             // box model
             height: 60px;
             width: 30px;
+            
+            &:hover {
+                // visual
+                opacity: 0.9;
+            }
+            
+            &:active {
+                // positioning
+                transform: translate(3px, -50%);
+            }
+        }
+
+        @include atDesktop {
+            // positioning
+            right: -75px;
+
+            // box model
+            height: 80px;
+            width: 40px;
         }
     }
 
@@ -88,6 +140,14 @@
         height: 30px;
 
         text-align: center;
+
+        @include atDesktop {
+            // positioning
+            bottom: -70px;
+
+            // box model
+            width: 200px;
+        }
     }
 
     &__dot {
@@ -102,11 +162,39 @@
 
         // visual
         background-color: $white;
+        cursor: pointer;
         opacity: 0.5;
+        transition: all 0.3s ease-out;
 
+        @include atDesktop {
+            // box model
+            height: 12px;
+            width: 12px;
+            margin: 0 13px;
+        }
+
+        &:hover {
+            // positioning
+            transform: rotate(135deg);
+            
+            // visual
+            opacity: 0.9;
+        }
+        
         &--active {
+            // positioning
+            transform: rotate(135deg);
+
             // visual
             opacity: 1;
+            
+            &:hover {
+                // positioning
+                transform: rotate(135deg);
+
+                // visual
+                opacity: 1;
+            }
         }
     }
 }

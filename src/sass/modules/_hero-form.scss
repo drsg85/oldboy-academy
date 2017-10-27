@@ -3,8 +3,11 @@
     position: relative;
 
     // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     height: 330px;
-    margin-bottom: 80px;
     padding: 30px 20px;
 
     // visual
@@ -12,8 +15,16 @@
 
     @include atTabletsPortrait {
         // box model
-        margin-bottom: 70px;
         padding: 40px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 60px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     &::before {
@@ -30,7 +41,18 @@
 
         // visual
         border: 1px solid $blue;
-        
+
+        @include atDesktop {
+            // visual
+            border: 2px solid $blue;
+        }
+    }
+
+    &__header {
+        @include atDesktop {
+            // box model
+            margin-bottom: 60px;
+        }
     }
 
     &__title {
@@ -50,6 +72,12 @@
             font-size: 1.5rem;
             white-space: nowrap;
         }
+        
+        @include atDesktop {
+            // typography
+            font-size: 2.5rem;
+            font-variant: small-caps;
+        }
     }
     
     &__subtitle {
@@ -67,15 +95,24 @@
             // typography
             font-size: 1.25rem;
         }
+
+        @include atDesktop {
+            // typography
+            font-size: 1.5rem;
+        }
     }
 
     &__form {
-        // positioning
-        // position: absolute;
-        // bottom: 20px;
-
         // typography
         text-align: center;
+
+        @include atDesktop {
+            // box model
+            display: flex;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: center;
+        }
     }
 
     &__input {
@@ -90,9 +127,25 @@
 
         // typography
         font-size: 0.875rem;
+
+        @include atDesktop {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            width: 24%;
+            margin: 0 10px;
+            margin-bottom: 0;
+
+            // typography
+            font-size: 1rem;
+        }
     }
 
     &__button {
+        // positioning
+        position: relative;
+        z-index: 2;
+
         // box model
         width: 100%;
         margin-top: 12px;
@@ -113,6 +166,17 @@
             // box model
             width: auto;
             padding: 12px 30px;
+        }
+
+        @include atDesktop {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 10px;
+            margin-top: 0;
+
+            // typography
+            font-size: 1rem;
         }
     }
 }

@@ -11,3 +11,15 @@
         @content;
     }
 }
+
+@mixin atDesktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin atDesktopLarge {
+    @media(min-width: 1400px) {
+        @content;
+    }
+}
