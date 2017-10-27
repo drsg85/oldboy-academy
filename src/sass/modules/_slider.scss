@@ -8,10 +8,13 @@
     &__slide {
         // positioning
         position: absolute;
+        left: 0;
+        right: 0;
 
         // visual
         visibility: hidden;
         // opacity: 0;
+        overflow: hidden;
         perspective: 800px;
         transition: all 0.3s ease-in-out;
         transition-delay: 0s;
