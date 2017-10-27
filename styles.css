@@ -1131,7 +1131,10 @@ body {
   margin-bottom: 80px; }
   .slider__slide {
     position: absolute;
+    left: 0;
+    right: 0;
     visibility: hidden;
+    overflow: hidden;
     -webkit-perspective: 800px;
     perspective: 800px;
     -webkit-transition: all 0.3s ease-in-out;
