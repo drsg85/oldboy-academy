@@ -1,4 +1,21 @@
 .main-nav {
+    // positioning
+    position: fixed;
+    left: -110%;
+    z-index: 9;
+
+    // box model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+
+    // visual
+    background-color: rgba($black, 0.95);
+    transition: all 0.3s ease-out;
+
     ul {
         // box model
         margin: 0;
@@ -50,5 +67,14 @@
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    &--shown {
+        // positioning
+        left: 0;
+
+        // visual
+        visibility: visible;
+        opacity: 1;
     }
 }

@@ -14,22 +14,25 @@ html(lang="ru")
     body
         header.page-header
             .page-header__logo
-                img(src="/img/logo-bw.svg", alt="Академия Олдбой монохромный логотип")
+                img(src="/img/logo.svg", alt="Академия Олдбой логотип")
 
             nav.main-nav: ul
                 li: a(href="#") Курсы
                 li: a(href="#") Команда
                 li: a(href="#") Отзывы
                 li: a(href="#") Моделям
-                li: a(href="#") Проверить <br>сертификат
+                li: a(href="#") Проверить<br>сертификат
+
+            .page-header__phone
+                a(href="tel:+79114567890") +7 911 456-78-90
 
         section.hero
             .menu-icon: .menu-icon__middle
 
-            h1.hero__title Добро пожаловать <br>в&nbsp;Академию «OldBoy»
+            h1.hero__title Добро <br>пожаловать <br>в&nbsp;Академию <br><strong>«OldBoy»</strong>
 
-            .hero__icon
-                img(src="/img/masson.svg", alt="")
+            //- .hero__icon
+            //-     img(src="/img/masson.svg", alt="")
             
             .slider#header-slider
                 //- .slider__prev
@@ -42,26 +45,29 @@ html(lang="ru")
                 .slider__slide
                     .hero-form
                         header.hero-form__header
-                            h2.hero-form__title Старт группы «Барбер&nbsp;с&nbsp;нуля»!
-                            p.hero-form__subtitle Уже 1 ноября, спешите!
+                            h2.hero-form__title Старт группы <strong>«Барбер&nbsp;с&nbsp;нуля»</strong>
+                            p.hero-form__subtitle Уже 1 ноября<br>спешите!
 
                         form.hero-form__form(action="")
                             input.hero-form__input(type="text" name="name" placeholder="Имя")
                             input.hero-form__input(type="text" name="phone" placeholder="Телефон")
                             input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
                             input.hero-form__button(type="submit" value="Записаться")
+                            
+                        .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
 
                 .slider__slide
                     .hero-form
                         header.hero-form__header
-                            h2.hero-form__title Стань моделью!
-                            p.hero-form__subtitle Запись на бесплатную стрижку
+                            h2.hero-form__title Стань<br>моделью!
+                            p.hero-form__subtitle Запись на<br>бесплатную стрижку
 
                         form.hero-form__form(action="")
                             input.hero-form__input(type="text" name="name" placeholder="Имя")
                             input.hero-form__input(type="text" name="phone" placeholder="Телефон")
                             input.hero-form__button(type="submit" value="Записаться")
 
+                        .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
 
         section.about
             .about__logo

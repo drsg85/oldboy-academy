@@ -2,7 +2,7 @@ const $ = require("jquery");
 
 class MobileMenu {
     constructor() {
-        this.pageHeader = $(".page-header");
+        this.mainNav = $(".main-nav");
         this.menuIcon = $(".menu-icon");
         this.menuLinks = $(".main-nav a");
 
@@ -29,7 +29,7 @@ class MobileMenu {
     }
 
     toggleMenu() {
-        this.pageHeader.toggleClass("page-header--shown");
+        this.mainNav.toggleClass("main-nav--shown");
         this.menuIcon.toggleClass("menu-icon--close-x");
     }
 }

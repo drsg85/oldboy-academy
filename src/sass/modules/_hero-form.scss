@@ -7,45 +7,29 @@
     flex-direction: column;
     justify-content: center;
 
-    height: 330px;
-    padding: 30px 20px;
+    padding: 25px;
 
     // visual
-    background-color: $white;
-
-    @include atTabletsPortrait {
-        // box model
-        padding: 40px;
-    }
-
-    @include atDesktop {
-        // box model
-        padding: 60px;
-        max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
+    background-color: rgba($black, 0.7);
+    border: 19px solid $white;
+    border-left: none;
 
     &::before {
         content: "";
 
         // positioning
         position: absolute;
-        left: 8px;
-        top: 8px;
+        top: -9px;
+        left: 0;
 
         // box model
-        height: calc(100% - 16px);
-        width: calc(100% - 16px);
+        height: calc(100% + 19px);
+        width: calc(100% + 10px);
 
         // visual
         border: 1px solid $blue;
-
-        @include atDesktop {
-            // visual
-            border: 2px solid $blue;
-        }
+        border: 1px solid $gold;
+        border-left: none;
     }
 
     &__header {
@@ -61,11 +45,13 @@
         padding-bottom: 5px;
 
         // typography
-        color: $blue;
+        color: $white;
         font-family: $titleFont;
-        font-size: 1.25rem;
+        font-size: 1.4rem;
+        font-variant: small-caps;
+        font-weight: 400;
         line-height: 1.25;
-        text-align: center;
+        text-align: right;
         
         @include atTabletsPortrait {
             // typography
@@ -76,7 +62,6 @@
         @include atDesktop {
             // typography
             font-size: 2.5rem;
-            font-variant: small-caps;
         }
     }
     
@@ -86,10 +71,14 @@
         margin-bottom: 20px;
 
         // typography
-        color: $blue;
-        font-family: $titleFont;
+        color: $white;
+        font-family: $mainFont;
         font-size: 0.85rem;
-        text-align: center;
+        font-weight: 100;
+        letter-spacing: 1px;
+        line-height: 1.65;
+        text-align: right;
+        text-transform: uppercase;
 
         @include atTabletsPortrait {
             // typography
@@ -122,11 +111,18 @@
 
         // box model
         width: 100%;
-        margin-bottom: 8px;
-        padding: 8px;
+        margin-bottom: 15px;
+        padding: 10px;
 
         // typography
         font-size: 0.875rem;
+        font-variant: small-caps;
+
+        // visual
+        border: none;
+        border: 1px solid $white;
+        border-radius: 5px;
+        background-color: transparent;
 
         @include atDesktop {
             // box model
@@ -148,8 +144,9 @@
 
         // box model
         width: 100%;
-        margin-top: 12px;
-        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        padding: 12px;
 
         // typography
         color: $white;
@@ -159,8 +156,9 @@
         text-transform: uppercase;
         
         // visual
-        background-color: $blue;
+        background-color: $gold;
         border: none;
+        border-radius: 5px;
 
         @include atTabletsPortrait {
             // box model
@@ -177,6 +175,20 @@
 
             // typography
             font-size: 1rem;
+        }
+    }
+
+    &__warning {
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-variant: small-caps;
+        text-align: right;
+
+        a {
+            // typography
+            color: $white;
+            font-weight: 700;
         }
     }
 }

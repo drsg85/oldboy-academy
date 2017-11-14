@@ -3,8 +3,13 @@
     position: relative;
 
     // box model
-    padding: 60px 25px;
+    // padding: 60px 25px;
+    padding-top: 25px;
+    padding-right: 25px;
     padding-bottom: 30px;
+
+    // typography
+    text-align: right;
 
     // visual
     background-color: $blue;
@@ -29,8 +34,9 @@
 
     &__title {
         // box model
+        display: inline-block;
         margin-top: 0;
-        margin-bottom:20px;
+        margin-bottom:25px;
         
         // typography
         color: $white;
@@ -40,8 +46,8 @@
         font-weight: 400;
         letter-spacing: 1px;
         line-height: 1.25;
-        text-align: center;
         font-variant: small-caps;
+        text-align: left;
 
         @include atTabletsPortrait {
             // box model

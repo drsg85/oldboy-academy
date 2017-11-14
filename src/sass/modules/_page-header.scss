@@ -1,20 +1,9 @@
 .page-header {
     // positioning
-    position: fixed;
-    top: 0;
-    left: 0;
-    left: -100%;
-    z-index: 999;
-
-    // box model
-    height: 100vh;
-    width: 400px;
-    max-width: 100%;
-    padding: 25px;
+    position: relative;
 
     // visual
-    background-color: $dark;
-    background-color: #000000;
+    background-color: $white;
     transition: all 0.3s ease-out;
 
     @include atTabletsLandscape {
@@ -30,8 +19,12 @@
     }
     
     &__logo {
+        // positioning
+        position: absolute;
+        z-index: 2;
+
         // box model
-        width: 180px;
+        width: 150px;
         margin: 0 auto;
         padding: 20px;
         padding-bottom: 35px;
@@ -47,12 +40,22 @@
         }
     }
 
-    &--shown {
-        // positioning
-        left: 0;
+    &__phone {
+        // box model
+        padding-right: 70px;
 
-        // visual
-        visibility: visible;
-        opacity: 1;
+        // typography
+        font-family: $titleFont;
+        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 80px;
+        text-align: right;
+
+        a {
+            // typography
+            color: $dark;
+            text-decoration: none;
+        }
     }
 }
