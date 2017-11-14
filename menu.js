@@ -80,7 +80,7 @@ var MobileMenu = function () {
     function MobileMenu() {
         _classCallCheck(this, MobileMenu);
 
-        this.pageHeader = $(".page-header");
+        this.mainNav = $(".main-nav");
         this.menuIcon = $(".menu-icon");
         this.menuLinks = $(".main-nav a");
 
@@ -111,7 +111,7 @@ var MobileMenu = function () {
     }, {
         key: "toggleMenu",
         value: function toggleMenu() {
-            this.pageHeader.toggleClass("page-header--shown");
+            this.mainNav.toggleClass("main-nav--shown");
             this.menuIcon.toggleClass("menu-icon--close-x");
         }
     }]);
