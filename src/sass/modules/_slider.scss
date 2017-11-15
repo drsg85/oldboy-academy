@@ -14,12 +14,9 @@
         // visual
         visibility: hidden;
         // opacity: 0;
-        perspective: 80px;
         transition: all 0.3s ease-in-out;
-        transition-delay: 0s;
-        transform-style: preserve-3d;
-        transform: rotateY(91deg);
-        
+        transform: translateX(-110%);
+
         &--current {
             // box model
             display: block;
@@ -27,7 +24,7 @@
             // visual
             visibility: visible;
             opacity: 1;
-            transform: rotateY(0deg);
+            transform: translateX(0);
             transition-delay: 0.3s;
         }
     }
