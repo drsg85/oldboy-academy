@@ -38,19 +38,17 @@
 
     &__title {
         // box model
-        // padding-bottom: 1em;
-        margin-top: 0;
+        margin: 0;
         
         // typography
         color: $white;
         font-family: $titleFont;
-        font-size: 1.5rem;
-        font-size: 7vw;
+        font-size: 2rem;
         font-weight: 400;
         letter-spacing: 1px;
-        line-height: 1.5;
-        text-align: center;
-        font-variant: small-caps;
+        line-height: 1.125;
+        text-align: right;
+        text-transform: uppercase;
     }
 
     &__icon {
