@@ -4,6 +4,7 @@
 
     // box model
     padding: 60px 25px;
+    padding-bottom: 0;
 
     @include atTabletsPortrait {
         // box model
@@ -54,6 +55,9 @@
     }
 
     &__content {
+        // box model
+        margin-bottom: 40px;
+
         @include atTabletsPortrait {
             // box model
             flex-grow: 1;
@@ -66,8 +70,8 @@
 
         // typography
         font-family: $titleFont;
-        font-size: 1.25rem;
-        text-align: center;
+        font-size: 1.5rem;
+        // text-align: center;
     }
 
     &__text {
