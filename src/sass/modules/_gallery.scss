@@ -1,0 +1,40 @@
+.gallery {
+    // box model
+    padding: 40px 0;
+
+    &__preview {
+
+    }
+
+    &__header {
+        // box model
+        padding: 0 25px;
+
+        // visual
+        background-image: url("./img/gallery-bg.jpg");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        // typography
+        font-family: $titleFont;
+        font-size: 2.25rem;
+        font-variant: small-caps;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+    &__subtitle {
+        // box model
+        margin-bottom: 160px;
+
+        // typography
+        line-height: 1.5;
+    }
+
+    &__more {
+
+    }
+}
