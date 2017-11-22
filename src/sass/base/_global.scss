@@ -6,6 +6,9 @@ body {
     font-family: $mainFont;
     font-size: 18px;
 
+    // visual
+    overflow-x: hidden;
+
     @include atTabletsLandscape {
         // box model
         padding-left: 200px;

@@ -3,10 +3,13 @@
     position: relative;
 
     // box model
+    width: 100%;
+    min-height: 660px;
+    // margin-bottom: 40px;
     padding: 80px 25px;
+    padding-bottom: 140px;
 
     // visual
-    overflow: hidden;
 
     &::before {
         content: "";
@@ -25,7 +28,7 @@
         background-image: url("./img/deco-b-r.svg");
         background-size: 80px;
         background-repeat: repeat-x;
-        background-position: top 40px;
+        background-position: 0px top;
     }
 
     &::after {
@@ -45,7 +48,7 @@
         background-image: url("./img/deco-b.svg");
         background-size: 80px;
         background-repeat: repeat-x;
-        background-position: bottom center;
+        background-position: -40px bottom;
     }
 
     &__header {
@@ -70,7 +73,22 @@
     &__icon {
         // positioning
         position: absolute;
-        z-index: 2;
+        left: -100px;
+        top: -150px;
+        // z-index: 1;
+
+        // box model
+        height: 260px;
+        width: 260px;
+
+        // visual
+        opacity: 0.35;
+
+        img {
+            // box model
+            height: 100%;
+            width: 100%;
+        }
     }
     
     &__body {
@@ -93,7 +111,9 @@
     
     &__more {
         // positioning
-        position: relative;
+        position: absolute;
+        bottom: 80px;
+        left: 25px;
         z-index: 2;
 
         a {
@@ -103,12 +123,35 @@
 
             // typography
             color: $dark;
+            font-weight: 700;
             text-decoration: none;
             text-transform: uppercase;
 
             // visual
             background-color: $white;
             border-radius: 5px;
+        }
+    }
+
+    &__deco {
+        // positioning
+        position: absolute;
+        bottom: 100px;
+        right: 0;
+        transform: translateX(50%);
+        z-index: 2;
+
+        // box model
+        height: 260px;
+        width: 260px;
+
+        // visual
+        opacity: 0.35;
+
+        img {
+            // box model
+            height: 100%;
+            width: 100%;
         }
     }
     
@@ -122,10 +165,12 @@
         // box model
         width: 100%;
         height: 800px;
+        max-height: 100%;
 
         // visual
         background-size: cover;
         background-position: center center;
+        overflow: hidden;
         // opacity: 0.1;
         
         &--balance {
