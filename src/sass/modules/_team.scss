@@ -41,18 +41,17 @@
 
     &__title {
         // box model
-        margin-top: 0;
+        margin: 0;
         
         // typography
         color: $white;
         font-family: $titleFont;
-        font-size: 1.5rem;
-        font-size: 7vw;
-        font-variant: small-caps;
+        font-size: 2rem;
         font-weight: 400;
         letter-spacing: 1px;
-        line-height: 1.5;
-        text-align: center;
+        line-height: 1.125;
+        text-align: right;
+        text-transform: uppercase;
     }
 
     &__icon {
