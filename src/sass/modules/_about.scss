@@ -8,7 +8,6 @@
     @include atTabletsPortrait {
         // box model
         padding: 60px;
-        // display: flex;
     }
 
     &::before {
@@ -38,13 +37,10 @@
 
         @include atTabletsPortrait {
             // box model
-            width: 200px;
+            width: 300px;
             padding: 0;
-            flex-grow: 2;
-            float: left;
-            margin: 30px;
-            margin-left: 0;
-            margin-bottom: 20px;
+            margin: 0 auto;
+            margin-bottom: 40px;
         }
 
         img {
@@ -72,7 +68,13 @@
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1.5;
-        // text-align: center;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
     }
 
     &__text {
