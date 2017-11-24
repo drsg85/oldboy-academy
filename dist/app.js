@@ -76,9 +76,15 @@ var _Slider = __webpack_require__(3);
 
 var _Slider2 = _interopRequireDefault(_Slider);
 
+var _SideMenu = __webpack_require__(4);
+
+var _SideMenu2 = _interopRequireDefault(_SideMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var headerSlider = new _Slider2.default("header-slider", true);
+
+var sideMenu = new _SideMenu2.default();
 
 /***/ }),
 /* 3 */
@@ -207,6 +213,58 @@ var Slider = function () {
 }();
 
 exports.default = Slider;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var SideMenu = function () {
+    function SideMenu() {
+        _classCallCheck(this, SideMenu);
+
+        this.aboutSection = document.querySelector(".about");
+        this.menuIcon = document.querySelector(".menu-icon");
+        this.mainMenu = document.querySelector(".main-nav");
+
+        this.events();
+    }
+
+    _createClass(SideMenu, [{
+        key: "events",
+        value: function events() {
+            var self = this;
+            window.addEventListener("scroll", function () {
+                console.log(document.documentElement.scrollTop);
+                if (document.documentElement.scrollTop > self.aboutSection.offsetTop - 100 && window.innerWidth >= 700) {
+                    self.menuIcon.style.display = "none";
+                    self.mainMenu.classList.add("main-nav--side-menu");
+                } else {
+                    self.menuIcon.style.display = "";
+                    self.mainMenu.classList.remove("main-nav--side-menu");
+                }
+            });
+            // alert(this.aboutSection.offsetTop);
+        }
+    }, {
+        key: "showSideMenu",
+        value: function showSideMenu() {}
+    }]);
+
+    return SideMenu;
+}();
+
+exports.default = SideMenu;
 
 /***/ })
 /******/ ]);
