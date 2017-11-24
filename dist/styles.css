@@ -520,6 +520,8 @@ body {
     left: 0;
     width: 160px;
     background-color: #000000;
+    -webkit-box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
     visibility: visible;
     opacity: 1; }
     .main-nav--side-menu a {
@@ -944,12 +946,20 @@ body {
     padding-top: 40px;
     text-align: center; }
 
+@media (min-width: 700px) {
+  .selling-features {
+    padding-left: 60px; } }
+
 .feature {
   position: relative;
   width: 100%;
   min-height: 660px;
   padding: 80px 25px;
   padding-bottom: 140px; }
+  @media (min-width: 700px) {
+    .feature {
+      padding: 100px;
+      padding-bottom: 200px; } }
   .feature::before {
     content: "";
     position: absolute;
@@ -985,6 +995,11 @@ body {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.5; }
+    @media (min-width: 700px) {
+      .feature__title {
+        max-width: 400px;
+        margin-bottom: 80px;
+        font-size: 2.5rem; } }
   .feature__icon {
     position: absolute;
     left: -100px;
@@ -992,6 +1007,10 @@ body {
     height: 260px;
     width: 260px;
     opacity: 0.35; }
+    @media (min-width: 700px) {
+      .feature__icon {
+        left: -140px;
+        top: -170px; } }
     .feature__icon img {
       height: 100%;
       width: 100%; }
@@ -1003,11 +1022,20 @@ body {
     margin-bottom: 30px;
     color: #ffffff;
     line-height: 1.5; }
+    @media (min-width: 700px) {
+      .feature__item {
+        max-width: 300px;
+        margin-bottom: 60px;
+        font-size: 1.5rem; } }
   .feature__more {
     position: absolute;
     bottom: 80px;
     left: 25px;
     z-index: 2; }
+    @media (min-width: 700px) {
+      .feature__more {
+        left: 100px;
+        bottom: 120px; } }
     .feature__more a {
       display: inline-block;
       padding: 12px 40px;
@@ -1041,6 +1069,9 @@ body {
     background-size: cover;
     background-position: center center;
     overflow: hidden; }
+    @media (min-width: 700px) {
+      .feature__background {
+        height: 100%; } }
     .feature__background--balance {
       background-image: url("/img/balance.jpg"); }
     .feature__background--comfort {

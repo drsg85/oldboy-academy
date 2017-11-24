@@ -1,3 +1,6 @@
 .selling-features {
-    
+    @include atTabletsPortrait {
+        // box model
+        padding-left: 60px;
+    }
 }

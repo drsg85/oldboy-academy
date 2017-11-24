@@ -5,11 +5,14 @@
     // box model
     width: 100%;
     min-height: 660px;
-    // margin-bottom: 40px;
     padding: 80px 25px;
     padding-bottom: 140px;
 
-    // visual
+    @include atTabletsPortrait {
+        // box model
+        padding: 100px;
+        padding-bottom: 200px;
+    }
 
     &::before {
         content: "";
@@ -68,6 +71,15 @@
         font-size: 2rem;
         font-weight: 400;
         line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // box model
+            max-width: 400px;
+            margin-bottom: 80px;
+
+            // typography
+            font-size: 2.5rem;
+        }
     }
     
     &__icon {
@@ -83,6 +95,12 @@
 
         // visual
         opacity: 0.35;
+
+        @include atTabletsPortrait {
+            // positioning
+            left: -140px;
+            top: -170px;
+        }
 
         img {
             // box model
@@ -107,6 +125,15 @@
         // typography
         color: $white;
         line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // box model
+            max-width: 300px;
+            margin-bottom: 60px;
+
+            // typography
+            font-size: 1.5rem;
+        }
     }
     
     &__more {
@@ -115,6 +142,12 @@
         bottom: 80px;
         left: 25px;
         z-index: 2;
+
+        @include atTabletsPortrait {
+            // positioning
+            left: 100px;
+            bottom: 120px;
+        }
 
         a {
             // box model
@@ -172,6 +205,11 @@
         background-position: center center;
         overflow: hidden;
         // opacity: 0.1;
+
+        @include atTabletsPortrait {
+            // box model
+            height: 100%;
+        }
         
         &--balance {
             // visual
