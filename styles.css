@@ -441,6 +441,9 @@ body {
     font-weight: 700;
     line-height: 80px;
     text-align: right; }
+    @media (min-width: 700px) {
+      .page-header__phone {
+        font-size: 1.25rem; } }
     .page-header__phone a {
       color: #222222;
       text-decoration: none; }
@@ -448,7 +451,7 @@ body {
 .main-nav {
   position: fixed;
   left: -110%;
-  z-index: 9;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,7 +575,8 @@ body {
   background-position: center center; }
   @media (min-width: 700px) {
     .hero {
-      padding: 60px 100px; } }
+      padding: 60px 100px;
+      padding-left: 280px; } }
   @media (min-width: 900px) {
     .hero {
       padding: 60px 100px; } }
@@ -594,8 +598,8 @@ body {
     text-align: left; }
     @media (min-width: 700px) {
       .hero__title {
-        margin-bottom: 30px;
-        font-size: 2.75rem;
+        margin-bottom: 100px;
+        font-size: 2rem;
         line-height: 1.25; } }
     @media (min-width: 1200px) {
       .hero__title {
@@ -748,6 +752,67 @@ body {
     .hero-form__warning a {
       color: #ffffff;
       font-weight: 700; }
+
+@media (min-width: 700px) {
+  .hero-aside {
+    position: absolute;
+    left: 0;
+    top: -80px;
+    z-index: 11;
+    width: 280px;
+    height: 100vh;
+    background-color: #000000; } }
+
+.hero-aside__logo {
+  display: none; }
+  @media (min-width: 700px) {
+    .hero-aside__logo {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 0;
+      width: 130px; }
+      .hero-aside__logo img {
+        width: 100%; } }
+
+@media (min-width: 700px) {
+  .hero-aside__wrapper {
+    position: relative;
+    margin-left: 25px;
+    padding: 25px;
+    border: 19px solid #4d4d4d;
+    border-right: none; }
+    .hero-aside__wrapper::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: -9px;
+      height: calc(100% + 19px);
+      width: calc(100% + 10px);
+      border: 1px solid #ffffff;
+      border-right: none;
+      pointer-events: none; } }
+
+.hero-aside__footnote {
+  display: none; }
+  @media (min-width: 700px) {
+    .hero-aside__footnote {
+      display: block; } }
+
+.hero-aside__title {
+  margin-bottom: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase; }
+
+.hero-aside__description {
+  margin-top: 0;
+  color: #ffffff;
+  font-variant: small-caps;
+  text-align: left; }
 
 .about {
   position: relative;
