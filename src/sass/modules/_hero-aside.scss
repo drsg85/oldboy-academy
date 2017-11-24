@@ -1,0 +1,102 @@
+.hero-aside {
+    @include atTabletsPortrait {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: -80px;
+        z-index: 11;
+
+        // box model
+        width: 280px;
+        height: 100vh;
+
+        // visual
+        background-color: $black;
+    }
+
+    &__logo {
+        // box model
+        display: none;
+
+        @include atTabletsPortrait {
+            // box model
+            display: block;
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 130px;
+    
+            img {
+                // box model
+                width: 100%;
+            }
+        }
+        
+    }
+
+    &__wrapper {
+        @include atTabletsPortrait {
+            // positioning
+            position: relative;
+
+            // box model
+            margin-left: 25px;
+            padding: 25px;
+
+            // visual
+            border: 19px solid #4d4d4d;
+            border-right: none;
+
+            &::before {
+                content: "";
+
+                // positioning
+                position: absolute;
+                top: -9px;
+                left: -9px;
+        
+                // box model
+                height: calc(100% + 19px);
+                width: calc(100% + 10px);
+        
+                // visual
+                border: 1px solid $white;
+                border-right: none;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__footnote {
+        // box model
+        display: none;
+
+        @include atTabletsPortrait {
+            // box model
+            display: block;
+        }
+    }
+
+    &__title {
+        // box model
+        margin-bottom: 0;
+        margin-bottom: 20px;
+
+        // typography
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        // box model
+        margin-top: 0;
+
+        // typography
+        color: $white;
+        font-variant: small-caps;
+        text-align: left;
+    }
+}

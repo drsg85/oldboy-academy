@@ -52,6 +52,11 @@
         line-height: 80px;
         text-align: right;
 
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.25rem;
+        }
+
         a {
             // typography
             color: $dark;
