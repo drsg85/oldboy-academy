@@ -9,9 +9,9 @@ body {
     // visual
     overflow-x: hidden;
 
-    @include atTabletsLandscape {
+    @include atTabletsPortrait {
         // box model
-        padding-left: 200px;
+        padding-left: 160px;
     }
 }
 

@@ -13,32 +13,86 @@
     background-color: rgba($black, 0.7);
     border: 19px solid $white;
     border-left: none;
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 0;
 
+        // visual
+        border: none;
+        background-color: transparent;
+    }
+    
     &::before {
         content: "";
-
+        
         // positioning
         position: absolute;
         top: -9px;
         left: 0;
-
+        
         // box model
         height: calc(100% + 19px);
         width: calc(100% + 10px);
-
+        
         // visual
-        border: 1px solid $blue;
         border: 1px solid $gold;
         border-left: none;
+        
+        @include atTabletsPortrait {
+            // box model
+            display: none;
+        }
     }
-
+    
     &__header {
+        // typography
+        font-size: 0;
+        // border: 1px solid red;
+
+        @include atTabletsPortrait {
+            // box model
+            // width: calc(100% + 40px);
+        }
+
         @include atDesktop {
             // box model
             margin-bottom: 60px;
         }
     }
+    
+    &__wrapper {
+        @include atTabletsPortrait {
+            // positioning
+            position: relative;
 
+            // box model
+            padding: 40px 25px;
+
+            // visual
+            background-color: rgba($black, 0.7);
+            border: 19px solid $white;
+            border-left: none;
+
+            &::before {
+                content: "";
+                
+                // positioning
+                position: absolute;
+                top: -9px;
+                left: 0;
+                
+                // box model
+                height: calc(100% + 19px);
+                width: calc(100% + 10px);
+                
+                // visual
+                border: 1px solid $gold;
+                border-left: none;
+            }
+        }
+    }
+    
     &__title {
         // box model
         margin: 0;
@@ -54,9 +108,17 @@
         text-align: right;
         
         @include atTabletsPortrait {
+            // box model
+            display: inline-block;
+            vertical-align: bottom;
+            width: 50%;
+            padding-left: 25px;
+            margin-bottom: 20px;
+
             // typography
             font-size: 1.5rem;
-            white-space: nowrap;
+            text-align: left;
+            // white-space: nowrap;
         }
         
         @include atDesktop {
@@ -69,6 +131,7 @@
         // box model
         margin-top: 0;
         margin-bottom: 20px;
+        padding-bottom: 5px;
 
         // typography
         color: $white;
@@ -81,8 +144,14 @@
         text-transform: uppercase;
 
         @include atTabletsPortrait {
+            // box model
+            display: inline-block;
+            vertical-align: bottom;
+            width: 50%;
+            margin-bottom: 20px;
+
             // typography
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
 
         @include atDesktop {
@@ -94,6 +163,11 @@
     &__form {
         // typography
         text-align: center;
+
+        @include atTabletsPortrait {
+            // typography
+            text-align: right;
+        }
 
         @include atDesktop {
             // box model
@@ -123,6 +197,15 @@
         border: 1px solid $white;
         border-radius: 5px;
         background-color: transparent;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-bottom: 25px;
+            padding: 12px 25px;
+
+            // typography
+            font-size: 1.25rem;
+        }
 
         @include atDesktop {
             // box model
@@ -163,7 +246,12 @@
         @include atTabletsPortrait {
             // box model
             width: auto;
-            padding: 12px 30px;
+            display: inline-block;
+            padding: 12px 50px;
+
+            // typography
+            font-size: 1.25rem;
+            font-weight: 400;
         }
 
         @include atDesktop {
@@ -184,6 +272,11 @@
         font-size: 0.875rem;
         font-variant: small-caps;
         text-align: right;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1rem;
+        }
 
         a {
             // typography
