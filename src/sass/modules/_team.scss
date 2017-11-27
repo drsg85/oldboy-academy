@@ -67,7 +67,35 @@
     }
 
     &__content {
+        //
+    }
+
+    &__about {
         // box model
-        // padding: 25px;
+        padding: 25px;
+    }
+
+    &__about-sub {
+        // box model
+        margin-bottom: 20px;
+        padding: 0;
+
+        // typography
+        font-family: $mainFont;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        // box model
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
+
+        // typography
+        color: $dark;
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }
