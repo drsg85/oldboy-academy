@@ -1,6 +1,9 @@
 .testimonials {
     // positioning
     position: relative;
+
+    // box model
+    padding: 25px;
     
     // visual
     background-image: url("./img/testimonials-bg.jpg");
@@ -13,7 +16,7 @@
         // positioning
         position: absolute;
         left: 0;
-        top: 0;
+        top: -1px;
         z-index: 6;
 
         // box model
@@ -27,31 +30,65 @@
         background-position: top center;
     }
 
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 2;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px bottom;
+    }
+
     &__header {
         // box model
-        padding: 65px 25px;
+        padding: 45px 0;
         padding-bottom: 100px;
+
+        // typography
+        font-size: 0;
     }
 
     &__title {
+        // box model
+        margin: 0;
+        
         // typography
         color: $white;
         font-family: $titleFont;
-        font-size: 1.5rem;
-        font-size: 7vw;
-        font-variant: small-caps;
+        font-size: 2rem;
         font-weight: 400;
         letter-spacing: 1px;
-        text-align: center;
+        line-height: 1.125;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        // box model
+        padding-left: 40%;
+
+        // typography
+        color: $white;
+        font-size: 1.25rem;
+        font-variant: small-caps;
+        text-align: right;
     }
 
     &__content {
-        // box model
-
         // typography
-        font-size: 0.875rem;
+        // font-size: 0.875rem;
 
         // visual
-        background-color: $white;
     }
 }

@@ -7,23 +7,73 @@
     text-align: center;
 
     &__photo {
+        // positioning
+        position: relative;
+
         // box model
         display: inline-block;
         vertical-align: top;
         width: 150px;
-        margin-bottom: 20px;
-        padding: 7px;
+        height: 150px;
+        margin-bottom: -75px;
 
         // typography
         font-size: 0;
+        
+        img {
+            // positioning
+            position: relative;
+            z-index: 1;
+            
+            // box model
+            height: 100%;
+            width: 100%;
+            
+            // visual
+            background-color: $white;
+            border: 6px solid $white;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    &__body {
+        // positioning
+        position: relative;
+
+        // box model
+        padding-top: 90px;
 
         // visual
         background-color: $white;
+        border-radius: 6px;
 
-        img {
-            // box model
-            width: 100%;
+        &::after {
+            content: "„";
         }
+    }
+    
+    &__name {
+        // box model
+        margin: 0;
+        padding-bottom: 10px;
+
+        // typography
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    &__from {
+        // box model
+        margin: 0;
+        padding-bottom: 10px;
+
+        // typography
+        color: $blue;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
 
     &__text {
@@ -33,27 +83,9 @@
         padding-bottom: 30px;
 
         // typography
+        font-size: 0.875rem;
         font-style: italic;
         line-height: 1.5;
-    }
-
-    &__name {
-        // box model
-        margin: 0;
-        padding-bottom: 10px;
-
-        // typography
-        font-family: $titleFont;
-        font-size: 1.5rem;
-    }
-
-    &__from {
-        // box model
-        margin: 0;
-        padding-bottom: 10px;
-
-        // typography
-        font-size: 0.875rem;
     }
 
     &__origin {
