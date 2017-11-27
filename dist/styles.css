@@ -1087,20 +1087,39 @@ body {
 
 .gallery {
   padding: 40px 0; }
+  .gallery__preview {
+    position: relative;
+    height: 220px;
+    background-color: #c31f38;
+    background-image: url("./img/gallery-preview.jpg");
+    background-size: cover; }
+    .gallery__preview::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      z-index: 2;
+      height: 32px;
+      width: 100%;
+      background-image: url("./img/deco-b.svg");
+      background-size: 80px;
+      background-repeat: repeat-x;
+      background-position: -40px bottom; }
   .gallery__header {
     padding: 0 25px;
     background-image: url("./img/gallery-bg.jpg");
-    background-position: center center;
+    background-position: top center;
     background-size: contain;
     background-repeat: no-repeat; }
   .gallery__title {
     font-family: "Lora", serif;
     font-size: 2.25rem;
+    font-size: 1.75rem;
     font-variant: small-caps;
     font-weight: 400;
     line-height: 1.25; }
   .gallery__subtitle {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
     line-height: 1.5; }
 
 .courses {

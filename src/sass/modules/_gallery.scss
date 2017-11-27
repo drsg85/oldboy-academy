@@ -3,7 +3,36 @@
     padding: 40px 0;
 
     &__preview {
+        // positioning
+        position: relative;
 
+        // box model
+        height: 220px;
+
+        // visual
+        background-color: $red;
+        background-image: url("./img/gallery-preview.jpg");
+        background-size: cover;
+
+        &::after {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            z-index: 2;
+    
+            // box model
+            height: 32px;
+            width: 100%;
+    
+            // visual
+            background-image: url("./img/deco-b.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: -40px bottom;
+        }
     }
 
     &__header {
@@ -12,7 +41,7 @@
 
         // visual
         background-image: url("./img/gallery-bg.jpg");
-        background-position: center center;
+        background-position: top center;
         background-size: contain;
         background-repeat: no-repeat;
     }
@@ -21,6 +50,7 @@
         // typography
         font-family: $titleFont;
         font-size: 2.25rem;
+        font-size: 1.75rem;
         font-variant: small-caps;
         font-weight: 400;
         line-height: 1.25;
@@ -28,7 +58,7 @@
 
     &__subtitle {
         // box model
-        margin-bottom: 160px;
+        margin-bottom: 80px;
 
         // typography
         line-height: 1.5;
