@@ -1,75 +1,51 @@
 .member {
     // box model
-    margin: 0 auto;
-    margin-bottom: 60px;
-    padding: 7px;
-    padding-bottom: 15px;
-    max-width: 400px;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 100px;
 
     // typography
     font-size: 0;
-    text-align: center;
 
-    // visual
-    background-color: $white;
-    // box-shadow: 0 0 15px rgba($dark, 0.5);
-
-    @include atTabletsPortrait {
-        // box model
-        // margin-bottom: 60px;
+    &--first {
+        .member__name {
+            // typography
+            color: $white;
+        }
     }
 
-    &__photo {
+    &__header {
         // positioning
         position: relative;
 
         // box model
-        margin-bottom: 20px;
+        height: 170px;
 
-        &::before {
-            content: "";
+        // visual
+        border: 1px solid $gold;
+        border-left: none;
+        // border-top: none;
+    }
 
-            // positioning
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-
-            // box model
-            height: 13%;
-            width: 50%;
-
-            // visual
-            background-image: linear-gradient(to top right, $white 0, $white 50%, transparent 50%, transparent 100%);
-        }
-
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: -1px;
-            right: 0;
-
-            // box model
-            height: 13%;
-            width: 50%;
-
-            // visual
-            background-image: linear-gradient(to top left, $white 0, $white 50%, transparent 50%, transparent 100%);
-        }
+    &__photo {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: 0;
 
         img {
             // box model
+            height: 100%;
             width: 100%;
         }
     }
 
-    &__content {
-        // box model
-        padding: 0 10px;
-    }
-
     &__name {
+        // positioning
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
         // box model
         margin: 0;
 
@@ -77,21 +53,58 @@
         color: $dark;
         font-family: $titleFont;
         font-size: 1.5rem;
-        text-align: center;
+        text-align: right;
+        text-transform: uppercase;
     }
 
-    &__exp {
+    &__content {
+        // positioning
+        position: relative;
+        top: -40px;
+
+        // box model
+        margin: 0 10px;
+        padding: 30px;
+
+        // visual
+        background-color: $white;
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 10px;
+            top: 10px;
+
+            // box model
+            height: calc(100% - 20px);
+            width: calc(100% - 20px);
+
+            // visual
+            border: 1px solid $gold;
+            pointer-events: none;
+        }
+    }
+
+    &__about {
+        // box model
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+
         // typography
-        color: $blue;
         font-family: $mainFont;
         font-size: 1rem;
         font-weight: 700;
-        text-align: center;
+        text-transform: uppercase;
     }
 
     &__text {
         // box model
-        padding: 20px 0;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1rem;
 
         // typography
         color: $dark;
@@ -101,6 +114,10 @@
 
     &__more {
         // box model
-        display: inline-block;
+        margin-top: -20px;
+        padding-right: 30px;
+
+        // typography
+        text-align: right;
     }
 }

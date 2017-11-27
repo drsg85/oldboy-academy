@@ -1313,7 +1313,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: -1px;
     z-index: 6;
     height: 32px;
     width: 100%;
@@ -1332,6 +1332,7 @@ body {
     background-repeat: no-repeat; }
   .team__title {
     margin: 0;
+    margin-bottom: 80px;
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 2rem;
@@ -1345,62 +1346,70 @@ body {
     margin: 0 auto; }
     .team__icon img {
       width: 100%; }
-  .team__content {
-    padding: 25px; }
 
 .member {
-  margin: 0 auto;
-  margin-bottom: 60px;
-  padding: 7px;
-  padding-bottom: 15px;
-  max-width: 400px;
-  font-size: 0;
-  text-align: center;
-  background-color: #ffffff; }
-  .member__photo {
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  font-size: 0; }
+  .member--first .member__name {
+    color: #ffffff; }
+  .member__header {
     position: relative;
-    margin-bottom: 20px; }
-    .member__photo::before {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      height: 13%;
-      width: 50%;
-      background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
-      background-image: linear-gradient(to top right, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
-    .member__photo::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      right: 0;
-      height: 13%;
-      width: 50%;
-      background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
-      background-image: linear-gradient(to top left, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+    height: 170px;
+    border: 1px solid #d5a353;
+    border-left: none; }
+  .member__photo {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
     .member__photo img {
+      height: 100%;
       width: 100%; }
-  .member__content {
-    padding: 0 10px; }
   .member__name {
+    position: absolute;
+    right: 20px;
+    top: 20px;
     margin: 0;
     color: #222222;
     font-family: "Lora", serif;
     font-size: 1.5rem;
-    text-align: center; }
-  .member__exp {
-    color: #336699;
+    text-align: right;
+    text-transform: uppercase; }
+  .member__content {
+    position: relative;
+    top: -40px;
+    margin: 0 10px;
+    padding: 30px;
+    background-color: #ffffff; }
+    .member__content::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      height: calc(100% - 20px);
+      width: calc(100% - 20px);
+      border: 1px solid #d5a353;
+      pointer-events: none; }
+  .member__about {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    text-align: center; }
+    text-transform: uppercase; }
   .member__text {
-    padding: 20px 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
     color: #222222;
     font-size: 1rem;
     line-height: 1.5; }
   .member__more {
-    display: inline-block; }
+    margin-top: -20px;
+    padding-right: 30px;
+    text-align: right; }
 
 .testimonials {
   position: relative;

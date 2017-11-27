@@ -8,7 +8,7 @@
         // positioning
         position: absolute;
         left: 0;
-        top: 0;
+        top: -1px;
         z-index: 6;
 
         // box model
@@ -42,6 +42,7 @@
     &__title {
         // box model
         margin: 0;
+        margin-bottom: 80px;
         
         // typography
         color: $white;
@@ -67,6 +68,6 @@
 
     &__content {
         // box model
-        padding: 25px;
+        // padding: 25px;
     }
 }
