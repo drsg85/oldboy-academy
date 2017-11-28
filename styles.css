@@ -460,6 +460,7 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  background-color: #000000;
   overflow-x: hidden; }
   @media (min-width: 700px) {
     body {
@@ -957,7 +958,8 @@ body {
 
 .about {
   position: relative;
-  padding: 60px 25px; }
+  padding: 60px 25px;
+  background-color: #ffffff; }
   @media (min-width: 700px) {
     .about {
       padding: 60px; } }
@@ -1008,9 +1010,11 @@ body {
     padding-top: 40px;
     text-align: center; }
 
-@media (min-width: 700px) {
-  .selling-features {
-    padding-left: 60px; } }
+.selling-features {
+  background-color: #ffffff; }
+  @media (min-width: 700px) {
+    .selling-features {
+      padding-left: 60px; } }
 
 .feature {
   position: relative;
@@ -1135,10 +1139,13 @@ body {
       .feature__background {
         height: 100%; } }
     .feature__background--balance {
+      background-color: #336699;
       background-image: url("/img/balance.jpg"); }
     .feature__background--comfort {
+      background-color: #9d6911;
       background-image: url("/img/comfort.jpg"); }
     .feature__background--connections {
+      background-color: #c31f38;
       background-image: url("/img/connections.jpg"); }
   .feature--active .feature__title {
     color: #ffffff; }
@@ -1148,7 +1155,8 @@ body {
     opacity: 1; }
 
 .gallery {
-  padding: 40px 0; }
+  padding: 40px 0;
+  background-color: #ffffff; }
   .gallery__preview {
     position: relative;
     height: 220px;
@@ -1185,7 +1193,8 @@ body {
     line-height: 1.5; }
 
 .courses {
-  position: relative; }
+  position: relative;
+  background-color: #ffffff; }
   .courses::before {
     content: "";
     position: absolute;
@@ -1202,7 +1211,7 @@ body {
     margin-bottom: -150px;
     padding: 65px 25px;
     padding-bottom: 150px;
-    background-color: #ffffff;
+    background-color: #d5a353;
     background-image: url("/img/courses-bg.jpg");
     background-size: cover;
     background-position: bottom center;
@@ -1370,7 +1379,8 @@ body {
     padding: 13px; }
 
 .team {
-  position: relative; }
+  position: relative;
+  background-color: #ffffff; }
   .team::before {
     content: "";
     position: absolute;
@@ -1388,6 +1398,7 @@ body {
     padding: 65px 25px;
     padding-bottom: 170px;
     font-size: 0;
+    background-color: #336699;
     background-image: url("/img/team-bg.jpg");
     background-size: cover;
     background-position: bottom center;
@@ -1492,6 +1503,7 @@ body {
 .testimonials {
   position: relative;
   padding: 25px;
+  background-color: #435263;
   background-image: url("./img/testimonials-bg.jpg");
   background-size: cover;
   background-position: bottom center; }
