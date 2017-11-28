@@ -1,0 +1,55 @@
+.contact {
+    // box model
+    margin-bottom: 30px;
+
+    // typography
+    text-align: center;
+
+    &__icon {
+        // positioning
+        transform: translateX(-0.5rem);
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        
+        // typography
+        color: #333333;
+        color: $darkGold;
+        font-size: 0.875rem;
+    }
+
+    &__name {
+        // positioning
+        transform: translateX(-0.5rem);
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        
+        // typography
+        color: #3b3b3b;
+        font-family: $titleFont;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    &__value {
+        // box model
+        margin-top: 7px;
+
+        // typography
+        // font-weight: 500;
+        font-size: 0.875rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        a {
+            // typography
+            color: $dark;
+            color: $gold;
+            color: $darkGold;
+            text-decoration: none;
+        }
+    }
+}

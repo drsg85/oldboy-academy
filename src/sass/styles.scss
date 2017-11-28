@@ -2,6 +2,7 @@
 @import "base/wordpress";
 
 // fonts
+@import "fonts/icons";
 
 // base
 @import "normalize.css";
@@ -42,6 +43,14 @@
 //      testimonials
 @import "modules/testimonials";
 @import "modules/testimonial";
+
+//      contacts
+@import "modules/contacts";
+@import "modules/contacts-box";
+@import "modules/contact";
+
+//      footer
+@import "modules/page-footer";
 
 //      elements
 @import "modules/button";

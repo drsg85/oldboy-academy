@@ -1,0 +1,38 @@
+.page-footer {
+    // box model
+    padding: 80px 25px;
+    padding-bottom: 40px;
+
+    // visual
+    background-color: $dark;
+    background-image: url("./img/footer-bg.jpg");
+    background-position: center center;
+
+    &__social {
+        // box model
+        margin-bottom: 20px;
+        
+        // typography
+        text-align: center;
+        
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 5px;
+
+            // typography
+            color: $gold;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+
+    &__copy {
+        // typography
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

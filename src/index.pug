@@ -275,6 +275,38 @@ html(lang="ru")
                         p.testimonial__from Москва, барбершоп «Firma»
                         p.testimonial__text Достаточно долго искал достойную школу, для того чтобы ещё немного прокачаться. Наткнулся на Академию OldBoy совершенно случайно и решил попробовать, могу сказать, что это достойные мастера и преподаватели, с очень близким мне подходом к процессу стрижки.
                         //- <br>Из плюсов могу выделить огромный багаж новых теоретических и практических навыков (текстуры, разделения, техники сведения на нет), отзывчивые преподаватели, ответственный подход во всем (начиная от выбора моделей и заканчивая организацией).
-                        
+        
+        section.contacts
+            //- 
+            article.contacts-box
+                header.contacts-box__header
+                    h2.contacts-box__title Контакты
+                    p.contacts-box__text По всем интересующим вас вопросам просим вас связаться с нашим менеджером.
+
+                .contacts-box__body
+                    .contact
+                        .contact__icon.icon-phone
+                        .contact__name Телефон
+                        .contact__value
+                            a(href="tel:+79114567890") +7 911 456-78-90
+
+                    .contact
+                        .contact__icon.icon-mail-alt
+                        .contact__name e-mail
+                        .contact__value
+                            a(href="mailto: academy@oldboy.com") academy@oldboy.com
+
+                footer.contacts-box__footer
+                    .contacts-box__logo
+                        //- img(src="/img/logo.svg", alt="Академия Олдбой логотип")
+                        img(src="/img/logo-bw.svg", alt="Академия Олдбой логотип")
+
+        footer.page-footer
+            .page-footer__social
+                a(href="").icon-vkontakte
+                a(href="").icon-instagram
+            .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.
+
+
     script(src="menu.js")
     script(src="app.js")
