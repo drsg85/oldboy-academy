@@ -2,6 +2,9 @@
     // positioning
     position: relative;
 
+    // visual
+    background-color: $white;
+
     &::before {
         content: "";
 
@@ -29,7 +32,7 @@
         padding-bottom: 150px;
 
         // visual
-        background-color: $white;
+        background-color: $gold;
         background-image: url("/img/courses-bg.jpg");
         background-size: cover;
         background-position: bottom center;

@@ -213,16 +213,19 @@
         
         &--balance {
             // visual
+            background-color: $blue;
             background-image: url("/img/balance.jpg");
         }
         
         &--comfort {
             // visual
+            background-color: $darkGold;
             background-image: url("/img/comfort.jpg");
         }
         
         &--connections {
             // visual
+            background-color: $red;
             background-image: url("/img/connections.jpg");
         }
     }

@@ -1,4 +1,7 @@
 .selling-features {
+    // visual
+    background-color: $white;
+    
     @include atTabletsPortrait {
         // box model
         padding-left: 60px;

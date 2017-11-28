@@ -5,6 +5,9 @@
     // box model
     padding: 60px 25px;
 
+    // visual
+    background-color: $white;
+
     @include atTabletsPortrait {
         // box model
         padding: 60px;

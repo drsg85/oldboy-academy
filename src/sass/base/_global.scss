@@ -7,6 +7,7 @@ body {
     font-size: 18px;
 
     // visual
+    background-color: $black;
     overflow-x: hidden;
 
     @include atTabletsPortrait {

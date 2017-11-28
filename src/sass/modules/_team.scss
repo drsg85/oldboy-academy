@@ -1,6 +1,9 @@
 .team {
     // positioning
     position: relative;
+
+    // visual
+    background-color: $white;
     
     &::before {
         content: "";
@@ -32,7 +35,7 @@
         font-size: 0;
 
         // visual
-        // background-color: $gold;
+        background-color: $blue;
         background-image: url("/img/team-bg.jpg");
         background-size: cover;
         background-position: bottom center;
