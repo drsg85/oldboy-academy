@@ -1497,7 +1497,7 @@ body {
     line-height: 1.5; }
   .member__more {
     margin-top: -20px;
-    padding-right: 30px;
+    padding-right: 20px;
     text-align: right; }
 
 .testimonials {
@@ -1548,7 +1548,7 @@ body {
   .testimonials__subtitle {
     padding-left: 40%;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-variant: small-caps;
     text-align: right; }
 
