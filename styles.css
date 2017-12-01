@@ -540,7 +540,8 @@ body {
     height: 160px;
     width: 100px;
     padding: 30px 0;
-    margin: 20px 0; }
+    margin: 20px 0;
+    margin-bottom: 0; }
     .main-nav__logo img {
       height: 100%;
       width: 100%; }
@@ -551,20 +552,20 @@ body {
   .main-nav li {
     position: relative; }
     .main-nav li::after {
-      content: "";
       position: absolute;
-      bottom: 0;
+      bottom: -2px;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      height: 1px;
-      width: 50px;
-      background-color: #cccccc; }
+      -webkit-transform: translateX(-50%) translateX(-2px) rotate(45deg);
+      transform: translateX(-50%) translateX(-2px) rotate(45deg);
+      height: 5px;
+      width: 5px;
+      background-color: #cccccc;
+      background-color: #ffffff; }
     .main-nav li:last-of-type::after {
       display: none; }
   .main-nav a {
     display: block;
-    padding: 12px;
+    padding: 15px;
     color: #ffffff;
     font-family: "Lora", serif;
     letter-spacing: 2px;
@@ -586,6 +587,47 @@ body {
     opacity: 1; }
     .main-nav--side-menu a {
       font-size: 0.9rem; }
+    .main-nav--side-menu .masson {
+      display: block; }
+
+.masson {
+  position: absolute;
+  bottom: 30px;
+  display: none;
+  width: 100%;
+  text-align: center; }
+  .masson__logo {
+    margin: 0 auto;
+    width: 60px; }
+    .masson__logo img {
+      width: 100%; }
+  .masson__social {
+    text-align: center; }
+    .masson__social a {
+      display: inline-block;
+      vertical-align: top;
+      padding: 12px; }
+  .masson__tag {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center; }
+    .masson__tag::before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      bottom: -2px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 1px;
+      width: 105px;
+      background-color: #ffffff; }
+    .masson__tag em {
+      color: #336699; }
 
 .menu-icon {
   position: fixed;
