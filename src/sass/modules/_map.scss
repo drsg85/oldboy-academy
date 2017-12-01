@@ -1,0 +1,14 @@
+.map {
+    // positioning
+    position: relative;
+
+    // box model
+    height: 600px;
+    width: 100%;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    background-color: $red;
+}

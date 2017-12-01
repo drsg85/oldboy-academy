@@ -285,7 +285,7 @@ html(lang="ru")
                         //- <br>Из плюсов могу выделить огромный багаж новых теоретических и практических навыков (текстуры, разделения, техники сведения на нет), отзывчивые преподаватели, ответственный подход во всем (начиная от выбора моделей и заканчивая организацией).
         
         section.contacts
-            //- 
+            .map#map
             article.contacts-box
                 header.contacts-box__header
                     h2.contacts-box__title Контакты
@@ -318,3 +318,5 @@ html(lang="ru")
 
     script(src="menu.js")
     script(src="app.js")
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&callback=initMap")
+    script(src="map.js")

@@ -1,7 +1,7 @@
 .contacts-box {
     // positioning
-    position: relative;
-    top: 80px;
+    position: absolute;
+    bottom: -80px;
 
     // box model
     margin: 30px;
@@ -24,6 +24,7 @@
         color: $gold;
         color: $darkGold;
         font-family: $titleFont;
+        font-size: 1.5rem;
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
@@ -55,7 +56,7 @@
         // box model
         display: inline-block;
         vertical-align: top;
-        width: 40%;
+        width: 100px;
 
         // visual
         opacity: 0.85;
