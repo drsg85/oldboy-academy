@@ -1,0 +1,74 @@
+.masson {
+    // positioning
+    position: absolute;
+    bottom: 30px;
+
+    // box model
+    display: none;
+    width: 100%;
+
+    // typography
+    text-align: center;
+
+    &__logo {
+        // box model
+        margin: 0 auto;
+        width: 60px;
+
+        img {
+            // box model
+            width: 100%;
+        }
+    }
+
+    &__social {
+        // typography
+        text-align: center;
+
+        a {
+            // box model
+            display: inline-block;
+            vertical-align: top;
+            padding: 12px;
+        }
+    }
+
+    &__tag {
+        // positioning
+        position: relative;
+
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        // padding-top: 10px;
+
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-align: center;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: -8px;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            // box model
+            height: 1px;
+            width: 105px;
+
+            // visual
+            background-color: $white;
+        }
+
+        em {
+            // typography
+            color: $blue;
+        }
+    }
+}
