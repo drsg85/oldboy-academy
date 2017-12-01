@@ -455,11 +455,13 @@ template {
 [hidden] {
   display: none; }
 
+html {
+  font-size: 16px; }
+
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
   background-color: #000000;
   overflow-x: hidden; }
   @media (min-width: 700px) {
@@ -478,12 +480,6 @@ body {
   background-color: #ffffff;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
-  @media (min-width: 900px) {
-    .page-header {
-      left: 0;
-      width: 200px;
-      visibility: visible;
-      opacity: 1; } }
   .page-header__logo {
     position: absolute;
     z-index: 2;
@@ -506,6 +502,7 @@ body {
     text-align: right; }
     @media (min-width: 700px) {
       .page-header__phone {
+        padding-right: 94px;
         font-size: 1.25rem; } }
     .page-header__phone a {
       color: #222222;
@@ -599,8 +596,12 @@ body {
   width: 39px;
   background-color: rgba(255, 255, 255, 0.85);
   background-color: #ffffff;
-  border-radius: 50%; }
-  @media (min-width: 900px) {
+  border-radius: 50%;
+  cursor: pointer; }
+  @media (min-width: 700px) {
+    .menu-icon {
+      right: 30px; } }
+  @media (min-width: 1200px) {
     .menu-icon {
       display: none; } }
   .menu-icon::before {
@@ -613,6 +614,7 @@ body {
     height: 3px;
     width: 25px;
     background-color: #9d6911;
+    background-color: #d5a353;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
   .menu-icon__middle {
@@ -622,6 +624,7 @@ body {
     height: 3px;
     width: 25px;
     background-color: #9d6911;
+    background-color: #d5a353;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
   .menu-icon::after {
@@ -634,6 +637,7 @@ body {
     height: 3px;
     width: 25px;
     background-color: #9d6911;
+    background-color: #d5a353;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
   .menu-icon--close-x::before {
@@ -662,7 +666,8 @@ body {
   background-color: #336699;
   background-image: url("/img/hero-bg.jpg");
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  background-attachment: fixed; }
   @media (min-width: 700px) {
     .hero {
       padding: 60px 100px;
