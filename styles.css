@@ -1125,7 +1125,7 @@ body {
       .feature__title {
         max-width: 400px;
         margin-bottom: 80px;
-        font-size: 2.5rem; } }
+        font-size: 2rem; } }
   .feature__icon {
     position: absolute;
     left: -100px;
@@ -1152,7 +1152,7 @@ body {
       .feature__item {
         max-width: 300px;
         margin-bottom: 60px;
-        font-size: 1.5rem; } }
+        font-size: 1.25rem; } }
   .feature__more {
     position: absolute;
     bottom: 80px;
@@ -1255,14 +1255,14 @@ body {
     line-height: 1.25; }
     @media (min-width: 700px) {
       .gallery__title {
-        font-size: 2.5rem; } }
+        font-size: 2.25rem; } }
   .gallery__subtitle {
     margin-bottom: 80px;
     line-height: 1.5; }
     @media (min-width: 700px) {
       .gallery__subtitle {
         margin-bottom: 120px;
-        font-size: 1.5rem; } }
+        font-size: 1.25rem; } }
 
 .courses {
   position: relative;
@@ -1351,7 +1351,7 @@ body {
     margin: 0;
     padding: 15px 20px;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-family: "Lora", serif;
     font-variant: small-caps;
     background-color: #d5a353; }
