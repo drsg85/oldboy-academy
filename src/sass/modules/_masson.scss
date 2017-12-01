@@ -4,11 +4,14 @@
     bottom: 30px;
 
     // box model
-    display: none;
     width: 100%;
 
     // typography
     text-align: center;
+
+    // visual
+    opacity: 0;
+    transition: all 0.3s ease-out;
 
     &__logo {
         // box model

@@ -588,14 +588,16 @@ body {
     .main-nav--side-menu a {
       font-size: 0.9rem; }
     .main-nav--side-menu .masson {
-      display: block; }
+      opacity: 1; }
 
 .masson {
   position: absolute;
   bottom: 30px;
-  display: none;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .masson__logo {
     margin: 0 auto;
     width: 60px; }
@@ -713,10 +715,7 @@ body {
   @media (min-width: 700px) {
     .hero {
       padding: 60px 100px;
-      padding-left: 120px; } }
-  @media (min-width: 900px) {
-    .hero {
-      padding: 60px 100px; } }
+      padding-left: 0; } }
   @media (min-width: 1200px) {
     .hero {
       padding: 100px 120px; } }
@@ -727,7 +726,6 @@ body {
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 1.5rem;
-    font-size: 7vw;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.25;
@@ -792,6 +790,9 @@ body {
         display: none; } }
   .hero-form__header {
     font-size: 0; }
+    @media (min-width: 700px) {
+      .hero-form__header {
+        padding-left: 125px; } }
     @media (min-width: 1200px) {
       .hero-form__header {
         margin-bottom: 60px; } }
@@ -799,6 +800,7 @@ body {
     .hero-form__wrapper {
       position: relative;
       padding: 40px 25px;
+      padding-left: 145px;
       background-color: rgba(0, 0, 0, 0.7);
       border: 19px solid #ffffff;
       border-left: none; }
@@ -944,13 +946,22 @@ body {
     position: absolute;
     left: -160px;
     top: -80px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 11;
     width: 280px;
     height: 100vh;
     height: calc(100% + 80px);
     background-color: #000000;
     -webkit-box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5); } }
+    box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    .hero-aside--hidden {
+      left: -160px; }
+      .hero-aside--hidden .hero-aside__wrapper {
+        opacity: 0; } }
 
 .hero-aside__logo {
   display: none; }
@@ -969,7 +980,9 @@ body {
     margin-left: 25px;
     padding: 25px;
     border: 19px solid #4d4d4d;
-    border-right: none; }
+    border-right: none;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
     .hero-aside__wrapper::before {
       content: "";
       position: absolute;

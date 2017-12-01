@@ -48,11 +48,10 @@
     &__header {
         // typography
         font-size: 0;
-        // border: 1px solid red;
 
         @include atTabletsPortrait {
             // box model
-            // width: calc(100% + 40px);
+            padding-left: 125px;
         }
 
         @include atDesktop {
@@ -68,6 +67,7 @@
 
             // box model
             padding: 40px 25px;
+            padding-left: 145px;
 
             // visual
             background-color: rgba($black, 0.7);

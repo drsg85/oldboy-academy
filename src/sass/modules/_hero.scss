@@ -20,12 +20,7 @@
     @include atTabletsPortrait {
         // box model
         padding: 60px 100px;
-        padding-left: 120px;
-    }
-
-    @include atTabletsLandscape {
-        // box model
-        padding: 60px 100px;
+        padding-left: 0;
     }
 
     @include atDesktop {
@@ -43,7 +38,6 @@
         color: $white;
         font-family: $titleFont;
         font-size: 1.5rem;
-        font-size: 7vw;
         font-weight: 400;
         letter-spacing: 1px;
         line-height: 1.25;
@@ -57,10 +51,6 @@
             // typography
             font-size: 2rem;
             line-height: 1.25;
-        }
-
-        @include atTabletsLandscape {
-
         }
 
         @include atDesktop {
