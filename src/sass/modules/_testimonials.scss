@@ -63,6 +63,7 @@
     &__title {
         // box model
         margin: 0;
+        margin-bottom: 20px;
         
         // typography
         color: $white;
@@ -73,10 +74,21 @@
         line-height: 1.125;
         text-align: right;
         text-transform: uppercase;
+
+        @include atTabletsPortrait {
+            // box model
+            margin: 35px;
+            margin-bottom: 20px;
+
+            // typography
+            font-size: 2.5rem;
+            line-height: 1.25;
+        }
     }
 
     &__subtitle {
         // box model
+        margin: 0;
         padding-left: 40%;
 
         // typography
@@ -84,6 +96,14 @@
         font-size: 1rem;
         font-variant: small-caps;
         text-align: right;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-right: 35px;
+
+            // typography
+            font-size: 1.25rem;
+        }
     }
 
     &__content {

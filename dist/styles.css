@@ -1163,6 +1163,9 @@ body {
     background-color: #c31f38;
     background-image: url("./img/gallery-preview.jpg");
     background-size: cover; }
+    @media (min-width: 700px) {
+      .gallery__preview {
+        height: 470px; } }
     .gallery__preview::after {
       content: "";
       position: absolute;
@@ -1178,19 +1181,28 @@ body {
   .gallery__header {
     padding: 0 25px;
     background-image: url("./img/gallery-bg.jpg");
-    background-position: top center;
+    background-position: top right;
     background-size: contain;
     background-repeat: no-repeat; }
+    @media (min-width: 700px) {
+      .gallery__header {
+        padding: 0 60px; } }
   .gallery__title {
     font-family: "Lora", serif;
-    font-size: 2.25rem;
     font-size: 1.75rem;
     font-variant: small-caps;
     font-weight: 400;
     line-height: 1.25; }
+    @media (min-width: 700px) {
+      .gallery__title {
+        font-size: 2.5rem; } }
   .gallery__subtitle {
     margin-bottom: 80px;
     line-height: 1.5; }
+    @media (min-width: 700px) {
+      .gallery__subtitle {
+        margin-bottom: 120px;
+        font-size: 1.5rem; } }
 
 .courses {
   position: relative;
@@ -1226,6 +1238,11 @@ body {
     line-height: 1.125;
     text-align: right;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .courses__title {
+        margin: 35px;
+        font-size: 2.5rem;
+        line-height: 1.25; } }
   .courses__icon {
     width: 3rem;
     margin: 0 auto; }
@@ -1414,6 +1431,11 @@ body {
     line-height: 1.125;
     text-align: right;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .team__title {
+        margin: 35px;
+        font-size: 2.5rem;
+        line-height: 1.25; } }
   .team__icon {
     width: 3rem;
     margin: 0 auto; }
@@ -1537,6 +1559,7 @@ body {
     font-size: 0; }
   .testimonials__title {
     margin: 0;
+    margin-bottom: 20px;
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 2rem;
@@ -1545,12 +1568,23 @@ body {
     line-height: 1.125;
     text-align: right;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .testimonials__title {
+        margin: 35px;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        line-height: 1.25; } }
   .testimonials__subtitle {
+    margin: 0;
     padding-left: 40%;
     color: #ffffff;
     font-size: 1rem;
     font-variant: small-caps;
     text-align: right; }
+    @media (min-width: 700px) {
+      .testimonials__subtitle {
+        margin-right: 35px;
+        font-size: 1.25rem; } }
 
 .testimonial {
   position: relative;
@@ -1823,6 +1857,9 @@ body {
     height: 30px;
     font-size: 0;
     text-align: center; }
+    @media (min-width: 700px) {
+      .slider__navigation {
+        bottom: -90px; } }
     @media (min-width: 1200px) {
       .slider__navigation {
         bottom: -70px;
@@ -1839,11 +1876,16 @@ body {
     opacity: 0.5;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
-    @media (min-width: 1200px) {
+    @media (min-width: 700px) {
       .slider__dot {
         height: 12px;
         width: 12px;
         margin: 0 13px; } }
+    @media (min-width: 1200px) {
+      .slider__dot {
+        height: 14px;
+        width: 14px;
+        margin: 0 14px; } }
     .slider__dot:hover {
       -webkit-transform: rotate(135deg);
       transform: rotate(135deg);
