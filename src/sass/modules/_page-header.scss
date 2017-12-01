@@ -5,18 +5,6 @@
     // visual
     background-color: $white;
     transition: all 0.3s ease-out;
-
-    @include atTabletsLandscape {
-        // positioning
-        left: 0;
-        
-        // box model
-        width: 200px;
-
-        // visual
-        visibility: visible;
-        opacity: 1;
-    }
     
     &__logo {
         // positioning
@@ -53,6 +41,9 @@
         text-align: right;
 
         @include atTabletsPortrait {
+            // box model
+            padding-right: 94px;
+
             // typography
             font-size: 1.25rem;
         }

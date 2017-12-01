@@ -1,10 +1,14 @@
+html {
+    // typography
+    font-size: 16px;
+}
+
 body {
     // box model
     box-sizing: border-box;
 
     // typography
     font-family: $mainFont;
-    font-size: 18px;
 
     // visual
     background-color: $black;
