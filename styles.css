@@ -1282,6 +1282,9 @@ body {
     @media (min-width: 700px) {
       .gallery__preview {
         height: 470px; } }
+    @media (min-width: 900px) {
+      .gallery__preview {
+        height: 260px; } }
     .gallery__preview::after {
       content: "";
       position: absolute;
@@ -1319,6 +1322,9 @@ body {
       .gallery__subtitle {
         margin-bottom: 120px;
         font-size: 1.25rem; } }
+    @media (min-width: 900px) {
+      .gallery__subtitle {
+        margin-bottom: 60px; } }
 
 .courses {
   position: relative;
