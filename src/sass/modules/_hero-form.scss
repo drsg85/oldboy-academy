@@ -64,13 +64,12 @@
             // box model
             padding-left: 0;
             width: 230px;
-            // width: calc(100% - 400px);
-            // border: 1px solid red;
         }
 
         @include atDesktop {
             // box model
             margin-bottom: 60px;
+            width: 300px;
         }
     }
     
@@ -111,6 +110,18 @@
             width: 460px;
             width: calc(100% - 180px);
         }
+        
+        @include atDesktop {
+            // box model
+            padding: 40px;
+            padding-left: 145px;
+            width: calc(100% - 250px);
+        }
+
+        @include atDesktopLarge {
+            // box model
+            padding-left: 250px;
+        }
     }
     
     &__title {
@@ -149,8 +160,8 @@
 
             // typography
             font-size: 1.75rem;
-            text-align: right;
             text-align: left;
+            text-align: right;
         }
         
         @include atDesktop {
@@ -195,6 +206,7 @@
 
             // typography
             text-align: left;
+            text-align: right;
         }
 
         // @include atDesktop {
@@ -211,14 +223,6 @@
             // typography
             text-align: right;
         }
-
-        // @include atDesktop {
-        //     // box model
-        //     display: flex;
-        //     justify-content: space-around;
-        //     justify-content: space-between;
-        //     justify-content: center;
-        // }
     }
 
     &__input {
@@ -227,6 +231,7 @@
         z-index: 2;
 
         // box model
+        display: block;
         width: 100%;
         margin-bottom: 15px;
         padding: 10px;
@@ -261,14 +266,18 @@
 
         @include atDesktop {
             // box model
-            display: inline-block;
-            vertical-align: top;
-            width: 24%;
-            margin: 0 10px;
-            margin-bottom: 0;
+            margin-bottom: 20px;
 
             // typography
             font-size: 1rem;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            padding: 12px 25px;
+
+            // typography
+            font-size: 1.25rem;
         }
     }
 
@@ -294,11 +303,12 @@
         background-color: $gold;
         border: none;
         border-radius: 5px;
-
+        
         @include atTabletsPortrait {
             // box model
             width: auto;
             display: inline-block;
+            vertical-align: top;
             padding: 12px 50px;
 
             // typography
@@ -316,13 +326,18 @@
 
         @include atDesktop {
             // box model
-            display: inline-block;
-            vertical-align: top;
-            margin: 0 10px;
-            margin-top: 0;
+            margin-top: 20px;
 
             // typography
             font-size: 1rem;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            margin-top: 40px;
+
+            // typography
+            font-size: 1.25rem;
         }
     }
 

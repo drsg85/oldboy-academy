@@ -32,7 +32,7 @@
             // box model
             display: inline-block;
             vertical-align: top;
-            padding: 12px;
+            padding: 10px;
 
             // typography
             color: $white;
@@ -85,5 +85,20 @@
 
         // visual
         opacity: 1;
+
+        @include atTabletsLandscape {
+            .masson__logo {
+                // box model
+                width: 80px;
+
+                // visual
+                opacity: 0.75;
+            }
+
+            .masson__social a {
+                // typography
+                font-size: 1.125rem;
+            }
+        }
     }
 }

@@ -119,9 +119,14 @@
             }
         }
 
+        @include atTabletsLandscape {
+            // positioning
+            right: 125px;
+        }
+
         @include atDesktop {
             // positioning
-            right: -75px;
+            right: 190px;
 
             // box model
             height: 80px;
@@ -144,11 +149,16 @@
         font-size: 0;
         text-align: center;
 
-        // @include atTabletsPortrait {
-        //     // positioning
-        //     bottom: -90px;
-        //     left: calc(50% + 100px);
-        // }
+        @include atTabletsPortrait {
+            // positioning
+            bottom: -85px;
+            left: calc(50% + 100px);
+        }
+
+        @include atTabletsLandscape {
+            // positioning
+            bottom: -70px;
+        }
 
         @include atDesktop {
             // positioning

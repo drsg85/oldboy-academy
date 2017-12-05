@@ -26,11 +26,13 @@
     @include atTabletsLandscape {
         // box model
         padding-top: 100px;
+        padding-bottom: 30px;
     }
 
     @include atDesktop {
         // box model
         padding: 100px 120px;
+        padding-bottom: 40px;
     }
 
     &__title {
@@ -61,6 +63,14 @@
         @include atTabletsLandscape {
             // box model
             margin-bottom: 30px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            margin-bottom: 60px;
+
+            // typography
+            font-size: 2.75rem;
         }
     }
 
@@ -103,9 +113,6 @@
         // box model
         display: none;
         width: 200px;
-
-        // visual
-        opacity: 0.75;
 
         @include atTabletsLandscape {
             // box model
