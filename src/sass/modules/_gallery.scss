@@ -22,6 +22,11 @@
             height: 470px;
         }
 
+        @include atTabletsLandscape {
+            // box model
+            height: 260px;
+        }
+
         &::after {
             content: "";
     
@@ -86,6 +91,11 @@
 
             // typography
             font-size: 1.25rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: 60px;
         }
     }
 
