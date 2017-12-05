@@ -33,6 +33,10 @@
             display: inline-block;
             vertical-align: top;
             padding: 12px;
+
+            // typography
+            color: $white;
+            text-decoration: none;
         }
     }
 
@@ -73,5 +77,13 @@
             // typography
             color: $blue;
         }
+    }
+
+    &--hero {
+        // box model
+        width: 160px;
+
+        // visual
+        opacity: 1;
     }
 }

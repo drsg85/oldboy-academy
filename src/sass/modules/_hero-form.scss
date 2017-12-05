@@ -54,6 +54,20 @@
             padding-left: 125px;
         }
 
+        @include atTabletsLandscape {
+            // positioning
+            position: absolute;
+            right: -60px;
+            top: 0;
+            z-index: 9;
+
+            // box model
+            padding-left: 0;
+            width: 230px;
+            // width: calc(100% - 400px);
+            // border: 1px solid red;
+        }
+
         @include atDesktop {
             // box model
             margin-bottom: 60px;
@@ -91,6 +105,12 @@
                 border-left: none;
             }
         }
+
+        @include atTabletsLandscape {
+            // box model
+            width: 460px;
+            width: calc(100% - 180px);
+        }
     }
     
     &__title {
@@ -118,7 +138,19 @@
             // typography
             font-size: 1.5rem;
             text-align: left;
-            // white-space: nowrap;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            display: block;
+            margin: 0;
+            margin-bottom: 20px;
+            width: auto;
+
+            // typography
+            font-size: 1.75rem;
+            text-align: right;
+            text-align: left;
         }
         
         @include atDesktop {
@@ -154,10 +186,21 @@
             font-size: 1rem;
         }
 
-        @include atDesktop {
+        @include atTabletsLandscape {
+            // box model
+            display: block;
+            margin: 0;
+            padding-left: 25px;
+            width: auto;
+
             // typography
-            font-size: 1.5rem;
+            text-align: left;
         }
+
+        // @include atDesktop {
+        //     // typography
+        //     font-size: 1.5rem;
+        // }
     }
 
     &__form {
@@ -169,13 +212,13 @@
             text-align: right;
         }
 
-        @include atDesktop {
-            // box model
-            display: flex;
-            justify-content: space-around;
-            justify-content: space-between;
-            justify-content: center;
-        }
+        // @include atDesktop {
+        //     // box model
+        //     display: flex;
+        //     justify-content: space-around;
+        //     justify-content: space-between;
+        //     justify-content: center;
+        // }
     }
 
     &__input {
@@ -189,6 +232,7 @@
         padding: 10px;
 
         // typography
+        color: $white;
         font-size: 0.875rem;
         font-variant: small-caps;
 
@@ -205,6 +249,14 @@
 
             // typography
             font-size: 1.25rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            padding: 10px 20px;
+
+            // typography
+            font-size: 1rem;
         }
 
         @include atDesktop {
@@ -252,6 +304,14 @@
             // typography
             font-size: 1.25rem;
             font-weight: 400;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-top: 10px;
+
+            // typography
+            font-size: 1rem;
         }
 
         @include atDesktop {

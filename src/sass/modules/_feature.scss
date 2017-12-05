@@ -80,6 +80,11 @@
             // typography
             font-size: 2rem;
         }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: 60px;
+        }
     }
     
     &__icon {
@@ -133,6 +138,14 @@
 
             // typography
             font-size: 1.25rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: 40px;
+            
+            // typography
+            font-size: 1.125rem;
         }
     }
     

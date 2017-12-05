@@ -608,7 +608,9 @@ body {
     .masson__social a {
       display: inline-block;
       vertical-align: top;
-      padding: 12px; }
+      padding: 12px;
+      color: #ffffff;
+      text-decoration: none; }
   .masson__tag {
     position: relative;
     display: inline-block;
@@ -630,6 +632,9 @@ body {
       background-color: #ffffff; }
     .masson__tag em {
       color: #336699; }
+  .masson--hero {
+    width: 160px;
+    opacity: 1; }
 
 .menu-icon {
   position: fixed;
@@ -716,6 +721,9 @@ body {
     .hero {
       padding: 60px 100px;
       padding-left: 0; } }
+  @media (min-width: 900px) {
+    .hero {
+      padding-top: 100px; } }
   @media (min-width: 1200px) {
     .hero {
       padding: 100px 120px; } }
@@ -736,9 +744,9 @@ body {
         margin-bottom: 100px;
         font-size: 2rem;
         line-height: 1.25; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 900px) {
       .hero__title {
-        font-size: 3.5rem; } }
+        margin-bottom: 30px; } }
   .hero__form {
     margin-bottom: 40px; }
   .hero__icon {
@@ -754,6 +762,17 @@ body {
         margin-bottom: 60px; } }
     .hero__icon img {
       width: 100%; }
+  .hero__social {
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    z-index: 9;
+    display: none;
+    width: 200px;
+    opacity: 0.75; }
+    @media (min-width: 900px) {
+      .hero__social {
+        display: block; } }
 
 .hero-form {
   position: relative;
@@ -793,6 +812,14 @@ body {
     @media (min-width: 700px) {
       .hero-form__header {
         padding-left: 125px; } }
+    @media (min-width: 900px) {
+      .hero-form__header {
+        position: absolute;
+        right: -60px;
+        top: 0;
+        z-index: 9;
+        padding-left: 0;
+        width: 230px; } }
     @media (min-width: 1200px) {
       .hero-form__header {
         margin-bottom: 60px; } }
@@ -813,6 +840,10 @@ body {
         width: calc(100% + 10px);
         border: 1px solid #d5a353;
         border-left: none; } }
+  @media (min-width: 900px) {
+    .hero-form__wrapper {
+      width: 460px;
+      width: calc(100% - 180px); } }
   .hero-form__title {
     margin: 0;
     padding-bottom: 5px;
@@ -831,6 +862,15 @@ body {
         padding-left: 25px;
         margin-bottom: 20px;
         font-size: 1.5rem;
+        text-align: left; } }
+    @media (min-width: 900px) {
+      .hero-form__title {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+        width: auto;
+        font-size: 1.75rem;
+        text-align: right;
         text-align: left; } }
     @media (min-width: 1200px) {
       .hero-form__title {
@@ -854,33 +894,25 @@ body {
         width: 50%;
         margin-bottom: 20px;
         font-size: 1rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 900px) {
       .hero-form__subtitle {
-        font-size: 1.5rem; } }
+        display: block;
+        margin: 0;
+        padding-left: 25px;
+        width: auto;
+        text-align: left; } }
   .hero-form__form {
     text-align: center; }
     @media (min-width: 700px) {
       .hero-form__form {
         text-align: right; } }
-    @media (min-width: 1200px) {
-      .hero-form__form {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; } }
   .hero-form__input {
     position: relative;
     z-index: 2;
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
+    color: #ffffff;
     font-size: 0.875rem;
     font-variant: small-caps;
     border: none;
@@ -892,6 +924,10 @@ body {
         margin-bottom: 25px;
         padding: 12px 25px;
         font-size: 1.25rem; } }
+    @media (min-width: 900px) {
+      .hero-form__input {
+        padding: 10px 20px;
+        font-size: 1rem; } }
     @media (min-width: 1200px) {
       .hero-form__input {
         display: inline-block;
@@ -922,6 +958,10 @@ body {
         padding: 12px 50px;
         font-size: 1.25rem;
         font-weight: 400; } }
+    @media (min-width: 900px) {
+      .hero-form__button {
+        margin-top: 10px;
+        font-size: 1rem; } }
     @media (min-width: 1200px) {
       .hero-form__button {
         display: inline-block;
@@ -973,6 +1013,9 @@ body {
       width: 130px; }
       .hero-aside__logo img {
         width: 100%; } }
+  @media (min-width: 900px) {
+    .hero-aside__logo {
+      width: 100px; } }
 
 @media (min-width: 700px) {
   .hero-aside__wrapper {
@@ -993,6 +1036,12 @@ body {
       border: 1px solid #ffffff;
       border-right: none;
       pointer-events: none; } }
+
+@media (min-width: 900px) {
+  .hero-aside__wrapper {
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 20px; } }
 
 .hero-aside__footnote {
   display: none; }
@@ -1126,6 +1175,9 @@ body {
         max-width: 400px;
         margin-bottom: 80px;
         font-size: 2rem; } }
+    @media (min-width: 900px) {
+      .feature__title {
+        margin-bottom: 60px; } }
   .feature__icon {
     position: absolute;
     left: -100px;
@@ -1153,6 +1205,10 @@ body {
         max-width: 300px;
         margin-bottom: 60px;
         font-size: 1.25rem; } }
+    @media (min-width: 900px) {
+      .feature__item {
+        margin-bottom: 40px;
+        font-size: 1.125rem; } }
   .feature__more {
     position: absolute;
     bottom: 80px;
@@ -1927,9 +1983,6 @@ body {
     height: 30px;
     font-size: 0;
     text-align: center; }
-    @media (min-width: 700px) {
-      .slider__navigation {
-        bottom: -90px; } }
     @media (min-width: 1200px) {
       .slider__navigation {
         bottom: -70px;
