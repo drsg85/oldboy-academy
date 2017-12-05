@@ -608,7 +608,7 @@ body {
     .masson__social a {
       display: inline-block;
       vertical-align: top;
-      padding: 12px;
+      padding: 10px;
       color: #ffffff;
       text-decoration: none; }
   .masson__tag {
@@ -635,6 +635,12 @@ body {
   .masson--hero {
     width: 160px;
     opacity: 1; }
+    @media (min-width: 900px) {
+      .masson--hero .masson__logo {
+        width: 80px;
+        opacity: 0.75; }
+      .masson--hero .masson__social a {
+        font-size: 1.125rem; } }
 
 .menu-icon {
   position: fixed;
@@ -723,10 +729,12 @@ body {
       padding-left: 0; } }
   @media (min-width: 900px) {
     .hero {
-      padding-top: 100px; } }
+      padding-top: 100px;
+      padding-bottom: 30px; } }
   @media (min-width: 1200px) {
     .hero {
-      padding: 100px 120px; } }
+      padding: 100px 120px;
+      padding-bottom: 40px; } }
   .hero__title {
     display: inline-block;
     margin-top: 0;
@@ -747,6 +755,10 @@ body {
     @media (min-width: 900px) {
       .hero__title {
         margin-bottom: 30px; } }
+    @media (min-width: 1400px) {
+      .hero__title {
+        margin-bottom: 60px;
+        font-size: 2.75rem; } }
   .hero__form {
     margin-bottom: 40px; }
   .hero__icon {
@@ -768,8 +780,7 @@ body {
     right: -20px;
     z-index: 9;
     display: none;
-    width: 200px;
-    opacity: 0.75; }
+    width: 200px; }
     @media (min-width: 900px) {
       .hero__social {
         display: block; } }
@@ -822,7 +833,8 @@ body {
         width: 230px; } }
     @media (min-width: 1200px) {
       .hero-form__header {
-        margin-bottom: 60px; } }
+        margin-bottom: 60px;
+        width: 300px; } }
   @media (min-width: 700px) {
     .hero-form__wrapper {
       position: relative;
@@ -844,6 +856,14 @@ body {
     .hero-form__wrapper {
       width: 460px;
       width: calc(100% - 180px); } }
+  @media (min-width: 1200px) {
+    .hero-form__wrapper {
+      padding: 40px;
+      padding-left: 145px;
+      width: calc(100% - 250px); } }
+  @media (min-width: 1400px) {
+    .hero-form__wrapper {
+      padding-left: 250px; } }
   .hero-form__title {
     margin: 0;
     padding-bottom: 5px;
@@ -870,8 +890,8 @@ body {
         margin-bottom: 20px;
         width: auto;
         font-size: 1.75rem;
-        text-align: right;
-        text-align: left; } }
+        text-align: left;
+        text-align: right; } }
     @media (min-width: 1200px) {
       .hero-form__title {
         font-size: 2.5rem; } }
@@ -900,7 +920,8 @@ body {
         margin: 0;
         padding-left: 25px;
         width: auto;
-        text-align: left; } }
+        text-align: left;
+        text-align: right; } }
   .hero-form__form {
     text-align: center; }
     @media (min-width: 700px) {
@@ -909,6 +930,7 @@ body {
   .hero-form__input {
     position: relative;
     z-index: 2;
+    display: block;
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
@@ -930,12 +952,12 @@ body {
         font-size: 1rem; } }
     @media (min-width: 1200px) {
       .hero-form__input {
-        display: inline-block;
-        vertical-align: top;
-        width: 24%;
-        margin: 0 10px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
         font-size: 1rem; } }
+    @media (min-width: 1400px) {
+      .hero-form__input {
+        padding: 12px 25px;
+        font-size: 1.25rem; } }
   .hero-form__button {
     position: relative;
     z-index: 2;
@@ -955,6 +977,7 @@ body {
       .hero-form__button {
         width: auto;
         display: inline-block;
+        vertical-align: top;
         padding: 12px 50px;
         font-size: 1.25rem;
         font-weight: 400; } }
@@ -964,11 +987,12 @@ body {
         font-size: 1rem; } }
     @media (min-width: 1200px) {
       .hero-form__button {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 10px;
-        margin-top: 0;
+        margin-top: 20px;
         font-size: 1rem; } }
+    @media (min-width: 1400px) {
+      .hero-form__button {
+        margin-top: 40px;
+        font-size: 1.25rem; } }
   .hero-form__warning {
     color: #ffffff;
     font-size: 0.875rem;
@@ -999,9 +1023,24 @@ body {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
     .hero-aside--hidden {
-      left: -160px; }
+      left: -160px; } }
+    @media (min-width: 700px) and (min-width: 1200px) {
+      .hero-aside--hidden {
+        left: -280px; } }
+
+@media (min-width: 700px) {
       .hero-aside--hidden .hero-aside__wrapper {
         opacity: 0; } }
+
+@media (min-width: 1200px) {
+  .hero-aside {
+    width: 30%;
+    width: 360px; } }
+
+@media (min-width: 1400px) {
+  .hero-aside {
+    width: 30%;
+    width: 430px; } }
 
 .hero-aside__logo {
   display: none; }
@@ -1015,7 +1054,18 @@ body {
         width: 100%; } }
   @media (min-width: 900px) {
     .hero-aside__logo {
-      width: 100px; } }
+      width: 100px;
+      margin: 0 auto; } }
+  @media (min-width: 1200px) {
+    .hero-aside__logo {
+      position: absolute;
+      left: 40px;
+      top: 0; } }
+  @media (min-width: 1400px) {
+    .hero-aside__logo {
+      top: 20px;
+      width: calc(30vw - 320px);
+      width: 120px; } }
 
 @media (min-width: 700px) {
   .hero-aside__wrapper {
@@ -1042,6 +1092,17 @@ body {
     padding: 30px;
     padding-left: 40px;
     padding-right: 20px; } }
+
+@media (min-width: 1200px) {
+  .hero-aside__wrapper {
+    position: absolute;
+    right: 0;
+    top: 140px;
+    width: 250px; } }
+
+@media (min-width: 1400px) {
+  .hero-aside__wrapper {
+    top: 120px; } }
 
 .hero-aside__footnote {
   display: none; }
@@ -1974,9 +2035,12 @@ body {
         .slider__next:active {
           -webkit-transform: translate(3px, -50%);
           transform: translate(3px, -50%); } }
+    @media (min-width: 900px) {
+      .slider__next {
+        right: 125px; } }
     @media (min-width: 1200px) {
       .slider__next {
-        right: -75px;
+        right: 190px;
         height: 80px;
         width: 40px; } }
   .slider__navigation {
@@ -1989,6 +2053,13 @@ body {
     height: 30px;
     font-size: 0;
     text-align: center; }
+    @media (min-width: 700px) {
+      .slider__navigation {
+        bottom: -85px;
+        left: calc(50% + 100px); } }
+    @media (min-width: 900px) {
+      .slider__navigation {
+        bottom: -70px; } }
     @media (min-width: 1200px) {
       .slider__navigation {
         bottom: -70px;
