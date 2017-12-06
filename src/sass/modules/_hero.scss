@@ -31,6 +31,7 @@
 
     @include atDesktop {
         // box model
+        height: calc(100vh - 100px);
         padding: 100px 120px;
         padding-bottom: 40px;
     }

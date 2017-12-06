@@ -10,6 +10,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
+    height: 100%;
     width: 100%;
     max-width: 414px;
 
@@ -28,8 +29,8 @@
     @include atDesktop {
         // positioning
         position: absolute;
-        left: auto;
-        right: 220px;
+        left: 220px;
+        // right: 220px;
         top: 0;
 
         // box model
@@ -41,6 +42,11 @@
         // visual
         background-color: $white;
         background-color: transparent;
+    }
+
+    @include atDesktopLarge {
+        // positioning
+        left: 300px;
     }
 
     &__logo {
@@ -137,6 +143,14 @@
             font-size: 0.875rem;
             line-height: 53px;
         }
+
+        @include atDesktopLarge {
+            // box model
+            padding: 15px 25px;
+
+            // typography
+            font-size: 1rem;
+        }
     }
 
     &__social {
@@ -160,7 +174,7 @@
         top: 0;
 
         // box model
-        height: 100vh;
+        height: 120vh;
         height: 100%;
         width: 160px;
 

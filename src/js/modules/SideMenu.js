@@ -15,7 +15,7 @@ class SideMenu {
     events() {
         let self = this;
         window.addEventListener("scroll", () => {
-            if ((document.documentElement.scrollTop > self.aboutSection.offsetTop - 400) && (window.innerWidth >= 700)) {
+            if ((document.documentElement.scrollTop > self.aboutSection.offsetTop - 200) && (window.innerWidth >= 700)) {
                 self.menuIcon.style.display = "none";
                 self.mainMenu.classList.add("main-nav--side-menu");
             } else {
@@ -24,7 +24,7 @@ class SideMenu {
             }
             
             // aside
-            if ((document.documentElement.scrollTop > self.aboutSection.offsetTop - 400) && (window.innerWidth >= 700)) {
+            if ((document.documentElement.scrollTop > self.aboutSection.offsetTop - 200) && (window.innerWidth >= 700)) {
                 self.heroAside.classList.add("hero-aside--hidden");
             } else {
                 self.heroAside.classList.remove("hero-aside--hidden");
