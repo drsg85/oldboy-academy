@@ -1980,6 +1980,10 @@ body {
   padding: 30px;
   background-color: #ffffff;
   border-radius: 6px; }
+  @media (min-width: 900px) {
+    .contacts-box {
+      right: 0;
+      width: 300px; } }
   .contacts-box__header {
     margin-bottom: 30px; }
   .contacts-box__title {
