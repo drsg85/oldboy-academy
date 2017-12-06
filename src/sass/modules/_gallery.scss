@@ -1,4 +1,7 @@
 .gallery {
+    // positioning
+    position: relative;
+
     // box model
     padding: 40px 0;
 
@@ -25,6 +28,12 @@
         @include atTabletsLandscape {
             // box model
             height: 260px;
+        }
+
+        @include atDesktop {
+            // box model
+            height: 470px;
+            margin-right: 500px;
         }
 
         &::after {
@@ -61,6 +70,17 @@
         @include atTabletsPortrait {
             // box model
             padding: 0 60px;
+        }
+
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            top: 60px;
+            right: 0;
+
+            // box model
+            // float: right;
+            width: 500px;
         }
     }
 
