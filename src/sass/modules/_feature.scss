@@ -14,6 +14,27 @@
         padding-bottom: 200px;
     }
 
+    @include atDesktop {
+        // box model
+        height: 100vh;
+        padding: 100px 60px;
+
+        // visual
+        transition: all 0.3s ease-out;
+        -webkit-filter: grayscale(70%);
+        -moz-filter:    grayscale(70%);
+        -ms-filter:     grayscale(70%);
+        -o-filter:      grayscale(70%);
+        filter: gray;
+        filter:      grayscale(70%);
+        
+        &:hover {
+            // visual
+            filter: none;
+            filter:      grayscale(0%);
+        }
+    }
+
     &::before {
         content: "";
 
@@ -64,7 +85,7 @@
         // box model
         margin: 0;
         margin-bottom: 40px;
-
+        
         // typography
         color: white;
         font-family: $titleFont;
@@ -76,14 +97,27 @@
             // box model
             max-width: 400px;
             margin-bottom: 80px;
-
+            
             // typography
             font-size: 2rem;
         }
-
+        
         @include atTabletsLandscape {
             // box model
             margin-bottom: 60px;
+        }
+        
+        @include atDesktop {
+            // box model
+            min-height: 100px;
+
+            // typography
+            font-size: 1.5rem;
+        }
+
+        @include atDesktopLarge {
+            // typography
+            font-size: 2rem;
         }
     }
     
@@ -105,6 +139,15 @@
             // positioning
             left: -140px;
             top: -170px;
+        }
+
+        @include atDesktop {
+            // positioning
+            left: -100px;
+
+            // box model
+            height: 180px;
+            width: 180px;
         }
 
         img {
@@ -160,6 +203,11 @@
             // positioning
             left: 100px;
             bottom: 120px;
+        }
+
+        @include atDesktop {
+            // positioning
+            left: 60px;
         }
 
         a {

@@ -6,4 +6,10 @@
         // box model
         padding-left: 60px;
     }
+
+    @include atDesktop {
+        // box model
+        display: flex;
+        padding-left: 0;
+    }
 }
