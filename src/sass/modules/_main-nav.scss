@@ -174,7 +174,7 @@
         top: 0;
 
         // box model
-        height: 120vh;
+        height: 100vh;
         height: 100%;
         width: 160px;
 
@@ -187,9 +187,13 @@
         li {
             // box model
             display: block;
+            padding: 0;
         }
 
         a {
+            // box model
+            padding: 12px 0;
+
             // typography
             color: $white;
             font-size: 0.9rem;

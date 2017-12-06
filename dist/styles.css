@@ -621,7 +621,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    height: 120vh;
+    height: 100vh;
     height: 100%;
     width: 160px;
     background-color: #000000;
@@ -630,8 +630,10 @@ body {
     visibility: visible;
     opacity: 1; }
     .main-nav--side-menu li {
-      display: block; }
+      display: block;
+      padding: 0; }
     .main-nav--side-menu a {
+      padding: 12px 0;
       color: #ffffff;
       font-size: 0.9rem;
       text-align: center;
@@ -1251,6 +1253,7 @@ body {
         text-align: left; } }
 
 .selling-features {
+  position: relative;
   background-color: #ffffff; }
   @media (min-width: 700px) {
     .selling-features {
@@ -1260,7 +1263,19 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding-left: 0; } }
+      padding-left: 0; }
+      .selling-features::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 2;
+        height: 32px;
+        width: 100%;
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px bottom; } }
 
 .feature {
   position: relative;
@@ -1277,18 +1292,7 @@ body {
       height: 100vh;
       padding: 100px 60px;
       -webkit-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
-      -webkit-filter: grayscale(70%);
-      -moz-filter: grayscale(70%);
-      -ms-filter: grayscale(70%);
-      -o-filter: grayscale(70%);
-      filter: gray;
-      filter: grayscale(70%); }
-      .feature:hover {
-        -webkit-filter: none;
-        filter: none;
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%); } }
+      transition: all 0.3s ease-out; } }
   .feature::before {
     content: "";
     position: absolute;
@@ -1313,6 +1317,9 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: -40px bottom; }
+    @media (min-width: 1200px) {
+      .feature::after {
+        display: none; } }
   .feature__header {
     position: relative;
     z-index: 3; }

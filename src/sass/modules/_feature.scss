@@ -21,17 +21,17 @@
 
         // visual
         transition: all 0.3s ease-out;
-        -webkit-filter: grayscale(70%);
-        -moz-filter:    grayscale(70%);
-        -ms-filter:     grayscale(70%);
-        -o-filter:      grayscale(70%);
-        filter: gray;
-        filter:      grayscale(70%);
+        // -webkit-filter: grayscale(70%);
+        // -moz-filter:    grayscale(70%);
+        // -ms-filter:     grayscale(70%);
+        // -o-filter:      grayscale(70%);
+        // filter: gray;
+        // filter:      grayscale(70%);
         
         &:hover {
             // visual
-            filter: none;
-            filter:      grayscale(0%);
+            // filter: none;
+            // filter:      grayscale(0%);
         }
     }
 
@@ -73,6 +73,11 @@
         background-size: 80px;
         background-repeat: repeat-x;
         background-position: -40px bottom;
+
+        @include atDesktop {
+            // box model
+            display: none;
+        }
     }
 
     &__header {

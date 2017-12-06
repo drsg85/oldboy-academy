@@ -1,4 +1,7 @@
 .selling-features {
+    // positioning
+    position: relative;
+
     // visual
     background-color: $white;
     
@@ -11,5 +14,25 @@
         // box model
         display: flex;
         padding-left: 0;
+
+        &::after {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            z-index: 2;
+    
+            // box model
+            height: 32px;
+            width: 100%;
+    
+            // visual
+            background-image: url("./img/deco-b.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: -40px bottom;
+        }
     }
 }
