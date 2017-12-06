@@ -1203,6 +1203,10 @@ body {
         padding: 0;
         margin: 0 auto;
         margin-bottom: 40px; } }
+    @media (min-width: 1200px) {
+      .about__logo {
+        float: left;
+        padding-top: 40px; } }
     .about__logo img {
       width: 100%; }
   .about__content {
@@ -1212,6 +1216,9 @@ body {
         -webkit-box-flex: 1;
         -ms-flex-positive: 1;
         flex-grow: 1; } }
+    @media (min-width: 1200px) {
+      .about__content {
+        padding-left: 360px; } }
   .about__title {
     padding-bottom: 1em;
     font-family: "Lora", serif;
@@ -1223,11 +1230,17 @@ body {
         font-size: 2rem;
         font-weight: 400;
         line-height: 1.5; } }
+    @media (min-width: 1200px) {
+      .about__title {
+        max-width: 800px; } }
   .about__text {
     line-height: 1.5; }
   .about__more {
     padding-top: 40px;
     text-align: center; }
+    @media (min-width: 1200px) {
+      .about__more {
+        text-align: left; } }
 
 .selling-features {
   background-color: #ffffff; }

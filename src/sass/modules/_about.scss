@@ -46,6 +46,12 @@
             margin-bottom: 40px;
         }
 
+        @include atDesktop {
+            // box model
+            float: left;
+            padding-top: 40px;
+        }
+
         img {
             // box model
             width: 100%;
@@ -59,6 +65,11 @@
         @include atTabletsPortrait {
             // box model
             flex-grow: 1;
+        }
+
+        @include atDesktop {
+            // box model
+            padding-left: 360px;
         }
     }
 
@@ -78,6 +89,11 @@
             font-weight: 400;
             line-height: 1.5;
         }
+
+        @include atDesktop {
+            // box model
+            max-width: 800px;
+        }
     }
 
     &__text {
@@ -91,5 +107,10 @@
 
         // typography
         text-align: center;
+
+        @include atDesktop {
+            // typography
+            text-align: left;
+        }
     }
 }
