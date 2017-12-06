@@ -529,6 +529,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100vh;
+  height: 100%;
   width: 100%;
   max-width: 414px;
   font-size: 0;
@@ -543,8 +544,7 @@ body {
   @media (min-width: 1200px) {
     .main-nav {
       position: absolute;
-      left: auto;
-      right: 220px;
+      left: 220px;
       top: 0;
       display: block;
       height: auto;
@@ -552,6 +552,9 @@ body {
       max-width: none;
       background-color: #ffffff;
       background-color: transparent; } }
+  @media (min-width: 1400px) {
+    .main-nav {
+      left: 300px; } }
   .main-nav__logo {
     height: 160px;
     width: 100px;
@@ -604,6 +607,10 @@ body {
         color: #222222;
         font-size: 0.875rem;
         line-height: 53px; } }
+    @media (min-width: 1400px) {
+      .main-nav a {
+        padding: 15px 25px;
+        font-size: 1rem; } }
   .main-nav__social {
     display: none; }
   .main-nav--shown {
@@ -614,7 +621,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vh;
+    height: 120vh;
     height: 100%;
     width: 160px;
     background-color: #000000;
@@ -782,6 +789,7 @@ body {
       padding-bottom: 30px; } }
   @media (min-width: 1200px) {
     .hero {
+      height: calc(100vh - 100px);
       padding: 100px 120px;
       padding-bottom: 40px; } }
   .hero__title {
