@@ -11,6 +11,14 @@
     background-color: $white;
     border-radius: 6px;
 
+    @include atTabletsLandscape {
+        // positioning
+        right: 0;
+
+        // box model
+        width: 300px;
+    }
+
     &__header {
         // box model
         margin-bottom: 30px;
