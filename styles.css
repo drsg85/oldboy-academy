@@ -1432,6 +1432,7 @@ body {
     opacity: 1; }
 
 .gallery {
+  position: relative;
   padding: 40px 0;
   background-color: #ffffff; }
   .gallery__preview {
@@ -1446,6 +1447,10 @@ body {
     @media (min-width: 900px) {
       .gallery__preview {
         height: 260px; } }
+    @media (min-width: 1200px) {
+      .gallery__preview {
+        height: 470px;
+        margin-right: 500px; } }
     .gallery__preview::after {
       content: "";
       position: absolute;
@@ -1467,6 +1472,12 @@ body {
     @media (min-width: 700px) {
       .gallery__header {
         padding: 0 60px; } }
+    @media (min-width: 1200px) {
+      .gallery__header {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 500px; } }
   .gallery__title {
     font-family: "Lora", serif;
     font-size: 1.75rem;
