@@ -48,6 +48,11 @@
             font-size: 1.25rem;
         }
 
+        @include atDesktop {
+            // box model
+            padding-right: 54px;
+        }
+
         a {
             // typography
             color: $dark;

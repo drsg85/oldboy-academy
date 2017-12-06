@@ -13,6 +13,9 @@
     width: 100%;
     max-width: 414px;
 
+    // typography
+    font-size: 0;
+
     // visual
     background-color: rgba($black, 0.95);
     transition: all 0.3s ease-out;
@@ -22,6 +25,24 @@
         justify-content: flex-start;
     }
 
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        left: auto;
+        right: 220px;
+        top: 0;
+
+        // box model
+        display: block;
+        height: auto;
+        width: auto;
+        max-width: none;
+
+        // visual
+        background-color: $white;
+        background-color: transparent;
+    }
+
     &__logo {
         // box model
         height: 160px;
@@ -29,6 +50,12 @@
         padding: 30px 0;
         margin: 20px 0;
         margin-bottom: 0;
+
+        @include atDesktop {
+            // box model
+            display: none;
+            width: 100%;
+        }
 
         img {
             // box model
@@ -50,6 +77,12 @@
         // positioning
         position: relative;
 
+        @include atDesktop {
+            // box model
+            display: inline-block;
+            vertical-align: middle;
+        }
+
         &::after {
             // content: "";
 
@@ -66,7 +99,7 @@
             // visual
             background-color: #cccccc;
             background-color: $white;
-            // background-color: $gold;
+
         }
 
         &:last-of-type {
@@ -88,11 +121,27 @@
         font-family: $titleFont;
         // font-family: $mainFont;
         // font-weight: 700;
+        font-size: 1rem;
         letter-spacing: 2px;
         line-height: 1.5;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+
+        @include atDesktop {
+            // box model
+            height: 100%;
+
+            // typography
+            color: $dark;
+            font-size: 0.875rem;
+            line-height: 53px;
+        }
+    }
+
+    &__social {
+        // box model
+        display: none;
     }
 
     &--shown {
@@ -106,9 +155,13 @@
 
     &--side-menu {
         // positioning
+        position: fixed;
         left: 0;
+        top: 0;
 
         // box model
+        height: 100vh;
+        height: 100%;
         width: 160px;
 
         // visual
@@ -117,9 +170,32 @@
         visibility: visible;
         opacity: 1;
 
+        li {
+            // box model
+            display: block;
+        }
+
         a {
             // typography
+            color: $white;
             font-size: 0.9rem;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .main-nav__logo {
+            // box model
+            display: block;
+        }
+
+        .main-nav__social {
+            // positioning
+            position: absolute;
+            bottom: 0;
+
+            // box model
+            display: block;
+            width: 100%;
         }
 
         .masson {
