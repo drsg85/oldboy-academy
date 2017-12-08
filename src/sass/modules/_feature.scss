@@ -21,18 +21,11 @@
 
         // visual
         transition: all 0.3s ease-out;
-        // -webkit-filter: grayscale(70%);
-        // -moz-filter:    grayscale(70%);
-        // -ms-filter:     grayscale(70%);
-        // -o-filter:      grayscale(70%);
-        // filter: gray;
-        // filter:      grayscale(70%);
-        
-        &:hover {
-            // visual
-            // filter: none;
-            // filter:      grayscale(0%);
-        }
+    }
+
+    @include atDesktopLarge {
+        // box model
+        max-height: 840px;
     }
 
     &::before {
