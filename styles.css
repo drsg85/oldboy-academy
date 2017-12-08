@@ -1305,6 +1305,9 @@ body {
       padding: 100px 60px;
       -webkit-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; } }
+  @media (min-width: 1400px) {
+    .feature {
+      max-height: 840px; } }
   .feature::before {
     content: "";
     position: absolute;
