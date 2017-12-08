@@ -6,6 +6,7 @@ html {
 body {
     // box model
     box-sizing: border-box;
+    max-width: 1920px;
 
     // typography
     font-family: $mainFont;
