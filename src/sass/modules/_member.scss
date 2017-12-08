@@ -7,10 +7,20 @@
     // typography
     font-size: 0;
 
+    @include atTabletsLandscape {
+        // box model
+        margin-bottom: 170px;
+    }
+
     &--first {
         .member__name {
             // typography
             color: $white;
+
+            @include atTabletsLandscape {
+                // typography
+                color: $dark;
+            }
         }
     }
 
@@ -38,6 +48,11 @@
 
         // visual
         overflow: hidden;
+
+        @include atTabletsLandscape {
+            // box model
+            height: 400px;
+        }
 
         img {
             // box model
@@ -73,6 +88,12 @@
 
         // visual
         background-color: $white;
+
+        @include atTabletsLandscape {
+            // box model
+            margin-left: 60px;
+            margin-right: 40px;
+        }
 
         &::after {
             content: "";

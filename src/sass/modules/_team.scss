@@ -40,6 +40,11 @@
         background-size: cover;
         background-position: bottom center;
         background-repeat: no-repeat;
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: -70px;
+        }
     }
 
     &__title {
@@ -84,7 +89,7 @@
     }
 
     &__content {
-        //
+
     }
 
     &__about {
