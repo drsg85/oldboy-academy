@@ -36,6 +36,11 @@
         padding-bottom: 40px;
     }
 
+    @include atDesktopLarge {
+        // box model
+        max-height: 800px;
+    }
+
     &__title {
         // box model
         display: inline-block;

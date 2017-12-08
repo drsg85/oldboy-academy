@@ -132,6 +132,12 @@
             height: 80px;
             width: 40px;
         }
+
+        @include atDesktopLarge {
+            // positioning
+            left: 740px;
+            right: auto;
+        }
     }
 
     &__navigation {
@@ -166,6 +172,11 @@
 
             // box model
             width: 200px;
+        }
+
+        @include atDesktopLarge {
+            // positioning
+            left: 425px;
         }
     }
 
