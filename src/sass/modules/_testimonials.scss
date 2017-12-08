@@ -84,6 +84,11 @@
             font-size: 2.5rem;
             line-height: 1.25;
         }
+
+        @include atDesktopLarge {
+            // typography
+            font-size: 4rem;
+        }
     }
 
     &__subtitle {
@@ -103,6 +108,19 @@
 
             // typography
             font-size: 1.25rem;
+        }
+
+        @include atDesktop {
+            // box model
+            padding-left: 60%;
+
+            // typography
+            font-size: 1.5rem;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            padding-left: 70%;
         }
     }
 
