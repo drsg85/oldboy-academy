@@ -1747,6 +1747,9 @@ body {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat; }
+    @media (min-width: 900px) {
+      .team__header {
+        margin-bottom: -70px; } }
   .team__title {
     margin: 0;
     margin-bottom: 80px;
@@ -1793,8 +1796,14 @@ body {
   margin-right: 20px;
   margin-bottom: 100px;
   font-size: 0; }
+  @media (min-width: 900px) {
+    .member {
+      margin-bottom: 170px; } }
   .member--first .member__name {
     color: #ffffff; }
+    @media (min-width: 900px) {
+      .member--first .member__name {
+        color: #222222; } }
   .member__header {
     position: relative;
     height: 170px;
@@ -1806,6 +1815,9 @@ body {
     left: 0;
     height: 300px;
     overflow: hidden; }
+    @media (min-width: 900px) {
+      .member__photo {
+        height: 400px; } }
     .member__photo img {
       height: 100%; }
   .member__name {
@@ -1824,6 +1836,10 @@ body {
     margin: 0 10px;
     padding: 30px;
     background-color: #ffffff; }
+    @media (min-width: 900px) {
+      .member__content {
+        margin-left: 60px;
+        margin-right: 40px; } }
     .member__content::after {
       content: "";
       position: absolute;
@@ -2055,8 +2071,8 @@ body {
     color: #9d6911;
     font-size: 0.875rem; }
   .contact__name {
-    -webkit-transform: translateX(-0.5rem);
-    transform: translateX(-0.5rem);
+    -webkit-transform: translateX(-0.25rem);
+    transform: translateX(-0.25rem);
     display: inline-block;
     vertical-align: top;
     color: #3b3b3b;
