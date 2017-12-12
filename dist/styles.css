@@ -1608,6 +1608,9 @@ body {
         margin: 35px;
         font-size: 2.5rem;
         line-height: 1.25; } }
+    @media (min-width: 1200px) {
+      .courses__title {
+        font-size: 3rem; } }
     @media (min-width: 1400px) {
       .courses__title {
         font-size: 4rem; } }
@@ -1791,6 +1794,9 @@ body {
     @media (min-width: 900px) {
       .team__header {
         margin-bottom: -70px; } }
+    @media (min-width: 1200px) {
+      .team__header {
+        margin-bottom: -200px; } }
   .team__title {
     margin: 0;
     margin-bottom: 80px;
@@ -1808,6 +1814,10 @@ body {
         margin-bottom: 70px;
         font-size: 2.5rem;
         line-height: 1.25; } }
+    @media (min-width: 1200px) {
+      .team__title {
+        margin: 35px;
+        font-size: 3rem; } }
     @media (min-width: 1400px) {
       .team__title {
         font-size: 4rem; } }
@@ -1826,6 +1836,10 @@ body {
     @media (min-width: 900px) {
       .team__about {
         margin-top: -190px; } }
+    @media (min-width: 1200px) {
+      .team__about {
+        margin-top: -150px;
+        width: 700px; } }
   .team__about-sub {
     margin-bottom: 20px;
     padding: 0;
@@ -1844,6 +1858,7 @@ body {
     padding-top: 20px; }
 
 .member {
+  position: relative;
   margin: 0;
   margin-right: 10px;
   margin-bottom: 100px;
@@ -1851,6 +1866,11 @@ body {
   @media (min-width: 900px) {
     .member {
       margin-bottom: 170px; } }
+  @media (min-width: 1200px) {
+    .member {
+      margin-bottom: 200px;
+      margin-right: 100px;
+      margin-top: 100px; } }
   .member--first .member__name {
     color: #ffffff; }
     @media (min-width: 900px) {
@@ -1861,6 +1881,9 @@ body {
     height: 170px;
     border: 1px solid #d5a353;
     border-left: none; }
+    @media (min-width: 1200px) {
+      .member__header {
+        height: 500px; } }
   .member__photo {
     position: absolute;
     bottom: 0;
@@ -1870,6 +1893,9 @@ body {
     @media (min-width: 900px) {
       .member__photo {
         height: 400px; } }
+    @media (min-width: 1200px) {
+      .member__photo {
+        height: 700px; } }
     .member__photo img {
       height: 100%; }
   .member__name {
@@ -1882,6 +1908,14 @@ body {
     font-size: 1.5rem;
     text-align: right;
     text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .member__name {
+        bottom: 40px;
+        right: 40px;
+        top: auto;
+        width: 365px;
+        font-size: 3rem;
+        text-align: left; } }
   .member__content {
     position: relative;
     top: -40px;
@@ -1894,6 +1928,11 @@ body {
       .member__content {
         margin-left: 50px;
         margin-right: 30px; } }
+    @media (min-width: 1200px) {
+      .member__content {
+        position: absolute;
+        right: 0px;
+        width: 400px; } }
     .member__content::after {
       content: "";
       position: absolute;
@@ -1975,6 +2014,9 @@ body {
         margin-bottom: 20px;
         font-size: 2.5rem;
         line-height: 1.25; } }
+    @media (min-width: 1200px) {
+      .testimonials__title {
+        font-size: 3rem; } }
     @media (min-width: 1400px) {
       .testimonials__title {
         font-size: 4rem; } }

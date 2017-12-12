@@ -45,6 +45,12 @@
             // box model
             margin-bottom: -70px;
         }
+
+        @include atDesktop {
+            // box model
+            // margin-bottom: -100px;
+            margin-bottom: -200px;
+        }
     }
 
     &__title {
@@ -72,6 +78,14 @@
             line-height: 1.25;
         }
 
+        @include atDesktop {
+            // box model
+            margin: 35px;
+
+            // typography
+            font-size: 3rem;
+        }
+
         @include atDesktopLarge {
             // typography
             font-size: 4rem;
@@ -90,7 +104,11 @@
     }
 
     &__content {
-
+        @include atDesktop {
+            // box model
+            // width: 700px;
+            // border: 1px solid red;
+        }
     }
 
     &__about {
@@ -107,6 +125,12 @@
         @include atTabletsLandscape {
             // box model
             margin-top: -190px;
+        }
+
+        @include atDesktop {
+            // box model
+            margin-top: -150px;
+            width: 700px;
         }
     }
 
