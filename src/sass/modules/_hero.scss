@@ -34,6 +34,7 @@
         height: calc(100vh - 100px);
         padding: 100px 120px;
         padding-bottom: 40px;
+        max-height: 700px;
     }
 
     @include atDesktopLarge {

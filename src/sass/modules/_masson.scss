@@ -37,6 +37,15 @@
             // typography
             color: $white;
             text-decoration: none;
+
+            // visual
+            transition: all 0.2s ease-out;
+
+            &:hover {
+                // typography
+                color: $gold;
+                color: $blue;
+            }
         }
     }
 

@@ -38,6 +38,7 @@
         // visual
         border: 1px solid $gold;
         border-left: none;
+        pointer-events: none;
         
         @include atTabletsPortrait {
             // box model
@@ -258,6 +259,13 @@
         border: 1px solid $white;
         border-radius: 5px;
         background-color: transparent;
+        transition: all 0.3s ease-out;
+
+        &:focus {
+            // visual
+            border: 1px solid $gold;
+            outline: none;
+        }
 
         @include atTabletsPortrait {
             // box model
@@ -315,6 +323,18 @@
         background-color: $gold;
         border: none;
         border-radius: 5px;
+
+        &:hover {
+            // typography
+            color: $gold;
+            color: $white;
+
+            // visual
+            background-color: $white;
+            background-color: $blue;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
         
         @include atTabletsPortrait {
             // box model

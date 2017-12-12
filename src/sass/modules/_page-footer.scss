@@ -23,8 +23,18 @@
 
             // typography
             color: $gold;
+            color: $white;
             font-size: 1.5rem;
             text-decoration: none;
+
+            // visual
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                // typography
+                color: $white;
+                color: $blue;
+            }
         }
     }
 

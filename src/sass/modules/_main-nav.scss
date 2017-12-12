@@ -134,6 +134,14 @@
         text-decoration: none;
         text-transform: uppercase;
 
+        // visual
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            // typography
+            color: $gold;
+        }
+
         @include atDesktop {
             // box model
             height: 100%;

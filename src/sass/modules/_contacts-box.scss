@@ -11,12 +11,16 @@
     background-color: $white;
     border-radius: 6px;
 
-    @include atTabletsLandscape {
+    @include atTabletsPortrait {
         // positioning
         right: 0;
 
         // box model
         width: 300px;
+    }
+
+    @include atTabletsLandscape {
+
     }
 
     &__header {

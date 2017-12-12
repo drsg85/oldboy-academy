@@ -40,7 +40,7 @@
 
         @include atTabletsPortrait {
             // box model
-            width: 300px;
+            width: 240px;
             padding: 0;
             margin: 0 auto;
             margin-bottom: 40px;
@@ -50,6 +50,7 @@
             // box model
             float: left;
             padding-top: 40px;
+            width: 300px;
         }
 
         img {
@@ -87,7 +88,7 @@
             // typography
             font-size: 2rem;
             font-weight: 400;
-            line-height: 1.5;
+            line-height: 1.35;
         }
 
         @include atDesktop {

@@ -50,6 +50,11 @@
             color: $gold;
             color: $darkGold;
             text-decoration: none;
+
+            &:hover {
+                // typography
+                text-decoration: underline;
+            }
         }
     }
 }

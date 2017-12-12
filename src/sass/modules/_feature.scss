@@ -18,6 +18,7 @@
         // box model
         height: 100vh;
         padding: 100px 60px;
+        max-height: 900px;
 
         // visual
         transition: all 0.3s ease-out;
@@ -222,6 +223,38 @@
             // visual
             background-color: $white;
             border-radius: 5px;
+            transition: all 0.3s ease-out;
+
+        }
+        
+        &--balance {
+            a:hover {
+                // typography
+                color: $white;
+    
+                // visual
+                background-color: $blue;
+            }
+        }
+        
+        &--comfort {
+            a:hover {
+                // typography
+                color: $white;
+        
+                // visual
+                background-color: $gold;
+            }
+        }
+        
+        &--connections {
+            a:hover {
+                // typography
+                color: $white;
+        
+                // visual
+                background-color: $red;
+            }
         }
     }
 

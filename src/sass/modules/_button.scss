@@ -17,6 +17,12 @@
     // visual
     background-color: $gold;
     border-radius: 5px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        // visual
+        background-color: $blue;
+    }
 
     &--block {
         // box model
