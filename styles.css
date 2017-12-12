@@ -2195,7 +2195,8 @@ body {
   padding-bottom: 40px;
   background-color: #222222;
   background-image: url("./img/footer-bg.jpg");
-  background-position: center center; }
+  background-position: center center;
+  background-size: cover; }
   .page-footer__social {
     margin-bottom: 20px;
     text-align: center; }
@@ -2203,8 +2204,9 @@ body {
       display: inline-block;
       vertical-align: top;
       margin: 0 5px;
-      color: #d5a353;
       color: #ffffff;
+      color: #336699;
+      color: #d5a353;
       font-size: 1.5rem;
       text-decoration: none;
       -webkit-transition: all 0.3s ease-out;
@@ -2212,9 +2214,31 @@ body {
       .page-footer__social a:hover {
         color: #ffffff;
         color: #336699; }
+  .page-footer__menu {
+    display: none; }
+    @media (min-width: 900px) {
+      .page-footer__menu {
+        display: block; } }
+    .page-footer__menu ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none; }
+    .page-footer__menu li {
+      display: inline;
+      padding: 0 10px;
+      vertical-align: top; }
+    .page-footer__menu a {
+      color: #ffffff;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-decoration: none; }
+      .page-footer__menu a:hover {
+        text-decoration: underline; }
   .page-footer__copy {
+    margin-top: 20px;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.5;
     text-align: center; }
 
