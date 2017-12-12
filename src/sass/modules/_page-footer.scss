@@ -7,6 +7,7 @@
     background-color: $dark;
     background-image: url("./img/footer-bg.jpg");
     background-position: center center;
+    background-size: cover;
 
     &__social {
         // box model
@@ -22,8 +23,9 @@
             margin: 0 5px;
 
             // typography
-            color: $gold;
             color: $white;
+            color: $blue;
+            color: $gold;
             font-size: 1.5rem;
             text-decoration: none;
 
@@ -38,10 +40,55 @@
         }
     }
 
+    &__menu {
+        // box model
+        display: none;
+
+        @include atTabletsLandscape {
+            // box model
+            display: block;
+        }
+
+        ul {
+            // box model
+            margin: 0;
+            padding: 0;
+
+            // typography
+            text-align: center;
+
+            // visual
+            list-style: none;
+        }
+
+        li {
+            // box model
+            display: inline;
+            padding: 0 10px;
+            vertical-align: top;
+        }
+
+        a {
+            // typography
+            color: $white;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-decoration: none;
+
+            &:hover {
+                // typography
+                text-decoration: underline;
+            }
+        }
+    }
+
     &__copy {
+        // box model
+        margin-top: 20px;
+
         // typography
         color: $white;
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 1.5;
         text-align: center;
     }
