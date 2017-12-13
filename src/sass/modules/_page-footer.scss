@@ -9,6 +9,30 @@
     background-position: center center;
     background-size: cover;
 
+    @include atDesktop {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+    &__wrapper {
+        @include atDesktop {
+            // box model
+            margin-right: 155px;
+            margin-top: -520px;
+            padding-bottom: 20px;
+            padding-top: 500px;
+    
+            // visual
+            border: 2px solid $gold;
+            border-left: none;
+        }
+    }
+
     &__social {
         // box model
         margin-bottom: 20px;
