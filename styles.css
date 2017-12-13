@@ -808,7 +808,8 @@ body {
       height: calc(100vh - 100px);
       padding: 100px 120px;
       padding-bottom: 40px;
-      max-height: 700px; } }
+      max-height: 700px;
+      min-height: 650px; } }
   @media (min-width: 1400px) {
     .hero {
       max-height: 800px; } }
@@ -2119,6 +2120,7 @@ body {
 .contacts-box {
   position: absolute;
   bottom: -80px;
+  z-index: 3;
   margin: 30px;
   padding: 30px;
   background-color: #ffffff;
@@ -2197,6 +2199,20 @@ body {
   background-image: url("./img/footer-bg.jpg");
   background-position: center center;
   background-size: cover; }
+  @media (min-width: 1200px) {
+    .page-footer {
+      position: relative;
+      z-index: 2;
+      padding-left: 0;
+      padding-top: 60px; } }
+  @media (min-width: 1200px) {
+    .page-footer__wrapper {
+      margin-right: 155px;
+      margin-top: -520px;
+      padding-bottom: 20px;
+      padding-top: 500px;
+      border: 2px solid #d5a353;
+      border-left: none; } }
   .page-footer__social {
     margin-bottom: 20px;
     text-align: center; }
