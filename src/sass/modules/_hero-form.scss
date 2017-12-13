@@ -108,6 +108,7 @@
                 // visual
                 border: 1px solid $gold;
                 border-left: none;
+                pointer-events: none;
             }
         }
 
@@ -221,11 +222,6 @@
             text-align: left;
             text-align: right;
         }
-
-        // @include atDesktop {
-        //     // typography
-        //     font-size: 1.5rem;
-        // }
     }
 
     &__form {
@@ -389,6 +385,10 @@
             // typography
             color: $white;
             font-weight: 700;
+
+            &:hover {
+                color: $gold;
+            }
         }
     }
 }

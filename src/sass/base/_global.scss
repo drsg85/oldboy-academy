@@ -19,6 +19,7 @@ body {
         // box model
         padding-left: 160px;
     }
+
 }
 
 *,
@@ -26,7 +27,16 @@ body {
 *::after {
     // box model
     box-sizing: inherit;
-
+    
     // typography
     font-family: inherit;
+}
+
+*::selection {
+    // typography
+    color: $white;
+
+    // visual
+    background-color: $blue;
+    background-color: $gold;
 }
