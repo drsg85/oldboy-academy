@@ -1870,8 +1870,11 @@ body {
   @media (min-width: 1200px) {
     .member {
       margin-bottom: 200px;
-      margin-top: 100px;
-      width: 1000px; } }
+      margin-right: 60px;
+      margin-top: 100px; } }
+  @media (min-width: 1400px) {
+    .member {
+      width: 900px; } }
   .member--first .member__name {
     color: #ffffff; }
     @media (min-width: 900px) {
