@@ -476,6 +476,16 @@ body {
   box-sizing: inherit;
   font-family: inherit; }
 
+*::-moz-selection {
+  color: #ffffff;
+  background-color: #336699;
+  background-color: #d5a353; }
+
+*::selection {
+  color: #ffffff;
+  background-color: #336699;
+  background-color: #d5a353; }
+
 .page-header {
   position: relative;
   background-color: #ffffff;
@@ -933,7 +943,8 @@ body {
         height: calc(100% + 19px);
         width: calc(100% + 10px);
         border: 1px solid #d5a353;
-        border-left: none; } }
+        border-left: none;
+        pointer-events: none; } }
   @media (min-width: 900px) {
     .hero-form__wrapper {
       width: 460px;
@@ -1104,6 +1115,8 @@ body {
     .hero-form__warning a {
       color: #ffffff;
       font-weight: 700; }
+      .hero-form__warning a:hover {
+        color: #d5a353; }
 
 @media (min-width: 700px) {
   .hero-aside {
