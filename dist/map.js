@@ -1,5 +1,35 @@
 ;
 function initMap() {
+    var coords = {lat: 55.7724663, lng: 37.676919};
+    
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 17,
+        center: coords,
+        disableDefaultUI: true
+    });
+    
+    // console.log(map);
+    // https://stackoverflow.com/questions/10656743/how-to-offset-the-center-point-in-google-maps-api-v3
+    // https://stackoverflow.com/questions/31232318/google-maps-function-fromlatlngtocontainerpixellatlng-not-working
+    // console.log(map.getProjection().fromLatLngToPoint(coords));
+    
+    var icon = {
+        path: "M27.4,3.9C24.6,1.4,20.6,0,16.3,0S8,1.4,5.2,3.9C1.8,7,0,11.6,0,17.3c0,12.4,14.3,26.9,14.9,27.6 c0.4,0.4,0.9,0.6,1.4,0.6c0.5,0,1-0.2,1.4-0.6c0.6-0.6,14.9-15.1,14.9-27.6C32.6,11.6,30.8,7,27.4,3.9z M16.3,26.9 C10.6,26.9,6,22.3,6,16.5S10.6,6.1,16.3,6.1s10.2,4.6,10.2,10.4C26.5,22.2,21.9,26.9,16.3,26.9z",
+        fillColor: "#ffffff",
+        fillOpacity: 1,
+        anchor: new google.maps.Point(24, 40),
+        strokeWeight: 0,
+        scale: 1
+    };
+
+    var marker = new google.maps.Marker({
+        map: map,
+        position: coords,
+        draggable: false,
+        animation: google.maps.Animation.BOUNCE,
+        icon: icon
+    });
+
     var styledMapType = new google.maps.StyledMapType(
         [
             {
@@ -148,12 +178,6 @@ function initMap() {
             }
         ]
     );
-    var coords = {lat: 55.7724663, lng: 37.676919};
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 17,
-        center: coords,
-        disableDefaultUI: true
-    });
 
     // setting map style
     map.mapTypes.set("styled_map", styledMapType);
@@ -161,4 +185,25 @@ function initMap() {
 
     // custom animated marker sample
     // https://codepen.io/dylanvann/pen/yNWdxJ
+
+    google.maps.event.addListenerOnce(map, "projection_changed", function() {
+        // console.log(map.getProjection());
+
+        var scale = Math.pow(2, map.getZoom());
+
+        var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
+        var pixelOffset = new google.maps.Point((80 / scale) || 0, (100 / scale) || 0);
+
+        var worldCoordinateNewCenter = new google.maps.Point(
+            worldCoordinateCenter.x + pixelOffset.x,
+            worldCoordinateCenter.y - pixelOffset.y
+        );
+
+        var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+
+        map.setCenter(newCenter);
+
+        console.log(worldCoordinateCenter);
+        console.log(pixelOffset);
+    });
 }
