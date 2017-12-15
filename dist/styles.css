@@ -801,7 +801,7 @@ body {
   padding-bottom: 30px;
   text-align: right;
   background-color: #336699;
-  background-image: url("/img/hero-bg.jpg");
+  background-image: url("./img/hero-bg.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
@@ -1502,13 +1502,13 @@ body {
         height: 100%; } }
     .feature__background--balance {
       background-color: #336699;
-      background-image: url("/img/balance.jpg"); }
+      background-image: url("./img/balance.jpg"); }
     .feature__background--comfort {
       background-color: #9d6911;
-      background-image: url("/img/comfort.jpg"); }
+      background-image: url("./img/comfort.jpg"); }
     .feature__background--connections {
       background-color: #c31f38;
-      background-image: url("/img/connections.jpg"); }
+      background-image: url("./img/connections.jpg"); }
   .feature--active .feature__title {
     color: #ffffff; }
   .feature--active .feature__item {
@@ -1603,7 +1603,7 @@ body {
     padding: 65px 25px;
     padding-bottom: 150px;
     background-color: #d5a353;
-    background-image: url("/img/courses-bg.jpg");
+    background-image: url("./img/courses-bg.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat; }
@@ -1801,7 +1801,7 @@ body {
     padding-bottom: 170px;
     font-size: 0;
     background-color: #336699;
-    background-image: url("/img/team-bg.jpg");
+    background-image: url("./img/team-bg.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat; }
