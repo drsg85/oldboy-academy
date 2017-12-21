@@ -1556,6 +1556,7 @@ body {
 .gallery {
   position: relative;
   padding: 40px 0;
+  font-size: 0;
   background-color: #ffffff; }
   .gallery__preview {
     position: relative;
@@ -1571,8 +1572,10 @@ body {
         height: 260px; } }
     @media (min-width: 1200px) {
       .gallery__preview {
+        display: inline-block;
+        vertical-align: top;
         height: 470px;
-        margin-right: 500px; } }
+        width: calc(100% - 500px); } }
     .gallery__preview::after {
       content: "";
       position: absolute;
@@ -1596,10 +1599,10 @@ body {
         padding: 0 60px; } }
     @media (min-width: 1200px) {
       .gallery__header {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 500px; } }
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 30px;
+        width: 499px; } }
   .gallery__title {
     font-family: "Lora", serif;
     font-size: 1.75rem;
