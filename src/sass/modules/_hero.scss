@@ -43,11 +43,56 @@
         max-height: 800px;
     }
 
+    &--inner {
+        // visual
+        background-image: url("./img/hero-inner.jpg");
+        background-size: cover;
+        background-attachment: unset;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 60px 40px;
+            padding-bottom: 80px;
+        }
+
+        @include atDesktop {
+            // box model
+            height: auto;
+            min-height: auto;
+            max-height: auto;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            max-height: auto;
+        }
+    
+        &::after {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            z-index: 2;
+    
+            // box model
+            height: 32px;
+            width: 100%;
+    
+            // visual
+            background-image: url("./img/deco-b.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: -40px bottom;
+        }
+    }
+
     &__title {
         // box model
-        display: inline-block;
-        margin-top: 0;
-        margin-bottom:25px;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-top: 60px;
         
         // typography
         color: $white;
@@ -57,11 +102,11 @@
         letter-spacing: 1px;
         line-height: 1.25;
         font-variant: small-caps;
-        text-align: left;
+        text-align: right;
 
         @include atTabletsPortrait {
             // box model
-            margin-bottom: 100px;
+            margin: 0;
 
             // typography
             font-size: 2rem;
@@ -69,14 +114,16 @@
         }
 
         @include atTabletsLandscape {
-            // box model
-            margin-bottom: 30px;
+            // typography
+            font-size: 2.25rem;
+        }
+
+        @include atDesktop {
+            // typography
+            font-size: 2.5rem;
         }
 
         @include atDesktopLarge {
-            // box model
-            margin-bottom: 60px;
-
             // typography
             font-size: 2.75rem;
         }

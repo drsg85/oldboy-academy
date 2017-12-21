@@ -9,7 +9,7 @@
     &__logo {
         // positioning
         position: absolute;
-        z-index: 2;
+        z-index: 3;
 
         // box model
         width: 150px;
@@ -20,6 +20,12 @@
         @include atTabletsPortrait {
             // box model
             display: none;
+        }
+
+        &--inner {
+            // box model
+            width: 140px;
+            margin-top: 120px;
         }
         
         img {

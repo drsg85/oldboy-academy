@@ -176,57 +176,59 @@
     }
 
     &--side-menu {
-        // positioning
-        position: fixed;
-        left: 0;
-        top: 0;
-
-        // box model
-        height: 100vh;
-        height: 100%;
-        width: 160px;
-
-        // visual
-        background-color: $black;
-        box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
-        visibility: visible;
-        opacity: 1;
-
-        li {
-            // box model
-            display: block;
-            padding: 0;
-        }
-
-        a {
-            // box model
-            padding: 12px 0;
-
-            // typography
-            color: $white;
-            font-size: 0.9rem;
-            text-align: center;
-            line-height: 30px;
-        }
-
-        .main-nav__logo {
-            // box model
-            display: block;
-        }
-
-        .main-nav__social {
+        @include atTabletsPortrait {
             // positioning
-            position: absolute;
-            bottom: 0;
-
+            position: fixed;
+            left: 0;
+            top: 0;
+    
             // box model
-            display: block;
-            width: 100%;
-        }
-
-        .masson {
+            height: 100vh;
+            height: 100%;
+            width: 160px;
+    
             // visual
+            background-color: $black;
+            box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
+            visibility: visible;
             opacity: 1;
+    
+            li {
+                // box model
+                display: block;
+                padding: 0;
+            }
+    
+            a {
+                // box model
+                padding: 12px 0;
+    
+                // typography
+                color: $white;
+                font-size: 0.9rem;
+                text-align: center;
+                line-height: 30px;
+            }
+    
+            .main-nav__logo {
+                // box model
+                display: block;
+            }
+    
+            .main-nav__social {
+                // positioning
+                position: absolute;
+                bottom: 0;
+    
+                // box model
+                display: block;
+                width: 100%;
+            }
+    
+            .masson {
+                // visual
+                opacity: 1;
+            }
         }
     }
 }

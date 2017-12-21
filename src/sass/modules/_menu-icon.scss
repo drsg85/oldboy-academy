@@ -43,6 +43,13 @@
         background-color: $gold;
         transition: all 0.3s ease-out;
     }
+
+    &--inner {
+        @include atTabletsPortrait {
+            // box model
+            display: none;
+        }
+    }
     
     &__middle {
         // positioning
