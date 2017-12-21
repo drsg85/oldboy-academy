@@ -2162,6 +2162,8 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: top -40px; }
+  .contacts--inner::before {
+    display: none; }
 
 .map {
   position: relative;

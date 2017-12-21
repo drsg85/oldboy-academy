@@ -30,4 +30,11 @@
         background-repeat: repeat-x;
         background-position: top -40px;
     }
+
+    &--inner {
+        &::before {
+            // box model
+            display: none;
+        }
+    }
 }
