@@ -5,6 +5,9 @@
     // box model
     padding: 40px 0;
 
+    // typography
+    font-size: 0;
+
     // visual
     background-color: $white;
 
@@ -32,8 +35,10 @@
 
         @include atDesktop {
             // box model
+            display: inline-block;
+            vertical-align: top;
             height: 470px;
-            margin-right: 500px;
+            width: calc(100% - 500px);
         }
 
         &::after {
@@ -73,14 +78,11 @@
         }
 
         @include atDesktop {
-            // positioning
-            position: absolute;
-            top: 60px;
-            right: 0;
-
             // box model
-            // float: right;
-            width: 500px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+            width: 499px;
         }
     }
 
