@@ -145,6 +145,46 @@
         }
     }
 
+    &__title {
+        // box model
+        margin-top: 10px;
+        margin-bottom: 40px;
+        
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-variant: small-caps;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        text-align: right;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-bottom: 120px;
+
+            // typography
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: 60px;
+        }
+
+        @include atDesktop {
+            // typography
+            font-size: 2.5rem;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            margin-bottom: 70px;
+        }
+    }
+
     &__footnote {
         // box model
         display: none;
@@ -155,7 +195,7 @@
         }
     }
 
-    &__title {
+    &__subtitle {
         // box model
         margin-bottom: 0;
         margin-bottom: 20px;

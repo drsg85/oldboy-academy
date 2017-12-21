@@ -1254,13 +1254,39 @@ body {
   .hero-aside__wrapper {
     top: 120px; } }
 
+.hero-aside__title {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  text-align: right; }
+  @media (min-width: 700px) {
+    .hero-aside__title {
+      margin-bottom: 120px;
+      font-size: 2rem;
+      text-align: left; } }
+  @media (min-width: 900px) {
+    .hero-aside__title {
+      margin-bottom: 60px; } }
+  @media (min-width: 1200px) {
+    .hero-aside__title {
+      font-size: 2.5rem; } }
+  @media (min-width: 1400px) {
+    .hero-aside__title {
+      margin-bottom: 70px; } }
+
 .hero-aside__footnote {
   display: none; }
   @media (min-width: 700px) {
     .hero-aside__footnote {
       display: block; } }
 
-.hero-aside__title {
+.hero-aside__subtitle {
   margin-bottom: 0;
   margin-bottom: 20px;
   color: #ffffff;
