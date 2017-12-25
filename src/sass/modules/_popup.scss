@@ -8,11 +8,24 @@
     z-index: 999;
 
     // box model
+    // display: none;
     height: 100%;
     width: 100%;
 
     // visual
     background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+
+    &--show {
+        // box model
+        display: block;
+
+        // visual
+        opacity: 1;
+        visibility: visible;
+    }
     
     &__window {
         // positioning
