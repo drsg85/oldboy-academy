@@ -1,0 +1,125 @@
+.horiz-banner {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 35px;
+
+    // typography
+    color: $white;
+
+    // visual
+    background-image: url("./img/banner-bg-s.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 35px 60px;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        padding: 60px;
+    }
+
+    @include atDesktop {
+        // visual
+        background-image: url("./img/banner-bg-l.jpg");
+        background-position: left bottom;
+    }
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 9px;
+        top: 9px;
+
+        // box model
+        height: calc(100% - 18px);
+        width: calc(100% - 18px);
+
+        // visual
+        border: 1px solid $gold;
+        pointer-events: none;
+    }
+
+    &__header {
+        // box model
+        margin-bottom: 40px;
+
+        @include atDesktop {
+            // box model
+            margin-bottom: 0;
+        }
+    }
+
+    &__suptitle {
+        // box model
+        margin-top: 0;
+        margin-bottom: 15px;
+
+        // typography
+        color: $gold;
+        font-weight: 700;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+        }
+    }
+
+    &__title {
+        // typography
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.25;
+        text-transform: uppercase;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 2rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: 10px;
+            margin-top: 0;
+
+            // typography
+            font-size: 2.25rem;
+        }
+    }
+
+    &__subtitle {
+        // typography
+        line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-top: 0;
+        }
+
+        @include atDesktop {
+            // box model
+            margin-bottom: 0;
+        }
+    }
+
+    &__more {
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+        }
+    }
+}
