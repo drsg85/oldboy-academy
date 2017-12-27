@@ -658,7 +658,7 @@ body {
       .main-nav--side-menu a {
         padding: 12px 0;
         color: #ffffff;
-        font-size: 0.9rem;
+        font-size: 0.875rem;
         text-align: center;
         line-height: 30px; }
       .main-nav--side-menu .main-nav__logo {
@@ -2213,6 +2213,22 @@ body {
     .contacts-box {
       right: 0;
       width: 300px; } }
+  .contacts-box--inner {
+    position: relative;
+    bottom: auto;
+    margin: 0;
+    margin-bottom: 30px; }
+    @media (min-width: 700px) {
+      .contacts-box--inner {
+        position: absolute;
+        right: 40px;
+        bottom: 140px; } }
+    @media (min-width: 900px) {
+      .contacts-box--inner {
+        bottom: 180px; } }
+    @media (min-width: 1200px) {
+      .contacts-box--inner {
+        bottom: 10px; } }
   .contacts-box__header {
     margin-bottom: 30px; }
   .contacts-box__title {
@@ -2220,7 +2236,7 @@ body {
     color: #d5a353;
     color: #9d6911;
     font-family: "Lora", serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase; }
@@ -2258,7 +2274,6 @@ body {
     display: inline-block;
     vertical-align: top;
     color: #3b3b3b;
-    font-family: "Lora", serif;
     font-size: 0.875rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -2277,18 +2292,33 @@ body {
         text-decoration: underline; }
 
 .page-footer {
+  position: relative;
   padding: 80px 25px;
   padding-bottom: 40px;
   background-color: #222222;
-  background-image: url("./img/footer-bg.jpg");
+  background-image: url("./img/footer-bg-s.jpg");
   background-position: center center;
   background-size: cover; }
+  @media (min-width: 700px) {
+    .page-footer {
+      background-image: url("./img/footer-bg-l.jpg"); } }
   @media (min-width: 1200px) {
     .page-footer {
       position: relative;
       z-index: 2;
       padding-left: 0;
       padding-top: 60px; } }
+  .page-footer--inner {
+    padding: 25px;
+    padding-bottom: 40px; }
+    @media (min-width: 700px) {
+      .page-footer--inner {
+        padding-top: 80px; } }
+    .page-footer--inner .page-footer__wrapper {
+      border: none; }
+      @media (min-width: 1200px) {
+        .page-footer--inner .page-footer__wrapper {
+          margin-right: 330px; } }
   @media (min-width: 1200px) {
     .page-footer__wrapper {
       margin-right: 155px;
@@ -2633,3 +2663,73 @@ body {
       .popup__controls a:hover {
         color: #d5a353;
         background-color: #ffffff; }
+
+.horiz-banner {
+  position: relative;
+  padding: 35px;
+  color: #ffffff;
+  background-image: url("./img/banner-bg-s.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+  @media (min-width: 700px) {
+    .horiz-banner {
+      padding: 35px 60px; } }
+  @media (min-width: 900px) {
+    .horiz-banner {
+      padding: 60px; } }
+  @media (min-width: 1200px) {
+    .horiz-banner {
+      background-image: url("./img/banner-bg-l.jpg");
+      background-position: left bottom; } }
+  .horiz-banner::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    height: calc(100% - 18px);
+    width: calc(100% - 18px);
+    border: 1px solid #d5a353;
+    pointer-events: none; }
+  .horiz-banner__header {
+    margin-bottom: 40px; }
+    @media (min-width: 1200px) {
+      .horiz-banner__header {
+        margin-bottom: 0; } }
+  .horiz-banner__suptitle {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #d5a353;
+    font-weight: 700; }
+    @media (min-width: 700px) {
+      .horiz-banner__suptitle {
+        font-size: 1.125rem; } }
+  .horiz-banner__title {
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.25;
+    text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .horiz-banner__title {
+        font-size: 2rem; } }
+    @media (min-width: 900px) {
+      .horiz-banner__title {
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-size: 2.25rem; } }
+  .horiz-banner__subtitle {
+    line-height: 1.5; }
+    @media (min-width: 700px) {
+      .horiz-banner__subtitle {
+        font-size: 1.125rem; } }
+    @media (min-width: 900px) {
+      .horiz-banner__subtitle {
+        margin-top: 0; } }
+    @media (min-width: 1200px) {
+      .horiz-banner__subtitle {
+        margin-bottom: 0; } }
+  @media (min-width: 1200px) {
+    .horiz-banner__more {
+      position: absolute;
+      bottom: 60px;
+      right: 60px; } }
