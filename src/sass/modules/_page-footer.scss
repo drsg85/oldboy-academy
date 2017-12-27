@@ -1,13 +1,21 @@
 .page-footer {
+    // positioning
+    position: relative;
+
     // box model
     padding: 80px 25px;
     padding-bottom: 40px;
 
     // visual
     background-color: $dark;
-    background-image: url("./img/footer-bg.jpg");
+    background-image: url("./img/footer-bg-s.jpg");
     background-position: center center;
     background-size: cover;
+
+    @include atTabletsPortrait {
+        // visual
+        background-image: url("./img/footer-bg-l.jpg");
+    }
 
     @include atDesktop {
         // positioning
@@ -17,6 +25,26 @@
         // box model
         padding-left: 0;
         padding-top: 60px;
+    }
+
+    &--inner {
+        // box model
+        padding: 25px;
+        padding-bottom: 40px;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-top: 80px;
+        }
+
+        .page-footer__wrapper {
+            border: none;
+
+            @include atDesktop {
+                // box model
+                margin-right: 330px;
+            }
+        }
     }
 
     &__wrapper {

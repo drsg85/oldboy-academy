@@ -24,6 +24,33 @@
 
     }
 
+    &--inner {
+        // positioning
+        position: relative;
+        bottom: auto;
+
+        // box model
+        margin: 0;
+        margin-bottom: 30px;
+
+        @include atTabletsPortrait {
+            // positioning
+            position: absolute;
+            right: 40px;
+            bottom: 140px;
+        }
+
+        @include atTabletsLandscape {
+            // positioning
+            bottom: 180px;
+        }
+
+        @include atDesktop {
+            // positioning
+            bottom: 10px;
+        }
+    }
+
     &__header {
         // box model
         margin-bottom: 30px;
@@ -37,7 +64,8 @@
         color: $gold;
         color: $darkGold;
         font-family: $titleFont;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        // font-size: 2rem;
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
@@ -56,8 +84,6 @@
     }
 
     &__footer {
-        // box model
-
         // typography
         text-align: center;
     }
