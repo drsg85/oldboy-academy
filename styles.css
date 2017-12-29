@@ -521,6 +521,12 @@ body {
     @media (min-width: 1200px) {
       .page-header__phone {
         padding-right: 54px; } }
+    @media (min-width: 700px) {
+      .page-header__phone--inner {
+        margin-right: -35px; } }
+    @media (min-width: 1200px) {
+      .page-header__phone--inner {
+        margin-right: 0; } }
     .page-header__phone a {
       color: #222222;
       text-decoration: none;
@@ -831,6 +837,7 @@ body {
     .hero {
       max-height: 800px; } }
   .hero--inner {
+    padding-left: 150px;
     background-image: url("./img/hero-inner.jpg");
     background-size: cover;
     background-attachment: unset; }
@@ -859,22 +866,22 @@ body {
       background-repeat: repeat-x;
       background-position: -40px bottom; }
   .hero__title {
-    margin: 0;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    margin: 30px 0;
+    margin-top: 15px;
     color: #ffffff;
     font-family: "Lora", serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.25;
     font-variant: small-caps;
-    text-align: right; }
+    text-align: left; }
     @media (min-width: 700px) {
       .hero__title {
-        margin: 0;
-        font-size: 2rem;
-        line-height: 1.25; } }
+        margin-right: 20px;
+        font-size: 2.25rem;
+        line-height: 1.25;
+        text-align: right; } }
     @media (min-width: 900px) {
       .hero__title {
         font-size: 2.25rem; } }
@@ -1304,11 +1311,31 @@ body {
 
 .about {
   position: relative;
-  padding: 60px 25px;
+  padding: 35px 25px;
+  padding-bottom: 5px;
   background-color: #ffffff; }
   @media (min-width: 700px) {
     .about {
       padding: 60px; } }
+  .about--yellow {
+    background-color: #f9f1e6;
+    overflow: hidden; }
+    .about--yellow::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      z-index: 2;
+      height: 32px;
+      width: 100%;
+      background-image: url("./img/deco-b.svg");
+      background-size: 80px;
+      background-repeat: repeat-x;
+      background-position: -40px bottom; }
+    @media (min-width: 1200px) {
+      .about--yellow .about__content {
+        padding-left: 0;
+        padding-right: 360px; } }
   .about::before {
     content: "";
     position: absolute;
@@ -1348,10 +1375,9 @@ body {
       .about__content {
         padding-left: 360px; } }
   .about__title {
-    padding-bottom: 1em;
     font-family: "Lora", serif;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.5; }
     @media (min-width: 700px) {
       .about__title {
@@ -1362,20 +1388,39 @@ body {
       .about__title {
         max-width: 800px; } }
   .about__text {
-    line-height: 1.5; }
+    line-height: 1.75; }
   .about__more {
     padding-top: 40px;
     text-align: center; }
     @media (min-width: 1200px) {
       .about__more {
         text-align: left; } }
+  .about__deco {
+    position: absolute;
+    bottom: -50px;
+    right: -150px;
+    z-index: 1;
+    height: 400px;
+    width: 400px;
+    background-image: url("./img/masson-yellow.png");
+    background-size: cover; }
+
+.about-promos {
+  padding: 10px 25px;
+  padding-bottom: 40px;
+  background-color: #ffffff; }
+  @media (min-width: 700px) {
+    .about-promos {
+      padding: 30px 60px; } }
 
 .selling-features {
   position: relative;
+  padding-top: 40px;
   background-color: #ffffff; }
   @media (min-width: 700px) {
     .selling-features {
-      padding-left: 60px; } }
+      padding-left: 60px;
+      padding-top: 0; } }
   @media (min-width: 1200px) {
     .selling-features {
       display: -webkit-box;
@@ -2733,3 +2778,28 @@ body {
       position: absolute;
       bottom: 60px;
       right: 60px; } }
+
+.text-promo {
+  margin-bottom: 40px; }
+  .text-promo__title {
+    margin-bottom: 10px;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5; }
+  .text-promo__text {
+    margin-top: 0;
+    line-height: 1.75; }
+
+.selling-feature {
+  text-align: center;
+  margin: 60px auto;
+  background-image: url("./img/laurel.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .selling-feature__title {
+    font-size: 1.5rem;
+    font-weight: 400; }
+  .selling-feature__text {
+    line-height: 1.75; }
