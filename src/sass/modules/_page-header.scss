@@ -59,6 +59,18 @@
             padding-right: 54px;
         }
 
+        &--inner {
+            @include atTabletsPortrait {
+                // box model
+                margin-right: -35px;
+            }
+
+            @include atDesktop {
+                // box model
+                margin-right: 0;
+            }
+        }
+
         a {
             // typography
             color: $dark;

@@ -44,6 +44,9 @@
     }
 
     &--inner {
+        // box model
+        padding-left: 150px;
+
         // visual
         background-image: url("./img/hero-inner.jpg");
         background-size: cover;
@@ -90,29 +93,29 @@
 
     &__title {
         // box model
-        margin: 0;
-        margin-bottom: 30px;
-        margin-top: 60px;
+        margin: 30px 0;
+        margin-top: 15px;
         
         // typography
         color: $white;
         font-family: $titleFont;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 400;
         letter-spacing: 1px;
         line-height: 1.25;
         font-variant: small-caps;
-        text-align: right;
+        text-align: left;
 
         @include atTabletsPortrait {
             // box model
-            margin: 0;
+            margin-right: 20px;
 
             // typography
-            font-size: 2rem;
+            font-size: 2.25rem;
             line-height: 1.25;
+            text-align: right;
         }
-
+ 
         @include atTabletsLandscape {
             // typography
             font-size: 2.25rem;
