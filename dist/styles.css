@@ -2247,33 +2247,28 @@ body {
   background-color: #c31f38; }
 
 .contacts-box {
-  position: absolute;
-  bottom: -80px;
-  z-index: 3;
-  margin: 30px;
   padding: 30px;
-  background-color: #ffffff;
-  border-radius: 6px; }
+  background-color: #ffffff; }
   @media (min-width: 700px) {
     .contacts-box {
-      right: 0;
-      width: 300px; } }
+      margin: 0 auto; } }
+  @media (min-width: 1200px) {
+    .contacts-box {
+      position: absolute;
+      bottom: -80px;
+      right: 30px;
+      z-index: 3;
+      width: 300px;
+      border-radius: 6px; } }
   .contacts-box--inner {
     position: relative;
     bottom: auto;
-    margin: 0;
-    margin-bottom: 30px; }
-    @media (min-width: 700px) {
+    margin: 0; }
+    @media (min-width: 1200px) {
       .contacts-box--inner {
         position: absolute;
         right: 40px;
-        bottom: 140px; } }
-    @media (min-width: 900px) {
-      .contacts-box--inner {
-        bottom: 180px; } }
-    @media (min-width: 1200px) {
-      .contacts-box--inner {
-        bottom: 10px; } }
+        bottom: -190px; } }
   .contacts-box__header {
     margin-bottom: 30px; }
   .contacts-box__title {
@@ -2286,9 +2281,12 @@ body {
     text-align: center;
     text-transform: uppercase; }
   .contacts-box__text {
+    max-width: 400px;
+    margin: 0 auto;
     color: #222222;
     font-size: 0.875rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: center; }
   .contacts-box__body {
     margin-bottom: 2rem; }
   .contacts-box__footer {
@@ -2338,8 +2336,7 @@ body {
 
 .page-footer {
   position: relative;
-  padding: 80px 25px;
-  padding-bottom: 40px;
+  padding: 40px 25px;
   background-color: #222222;
   background-image: url("./img/footer-bg-s.jpg");
   background-position: center center;
@@ -2353,17 +2350,11 @@ body {
       z-index: 2;
       padding-left: 0;
       padding-top: 60px; } }
-  .page-footer--inner {
-    padding: 25px;
-    padding-bottom: 40px; }
-    @media (min-width: 700px) {
-      .page-footer--inner {
-        padding-top: 80px; } }
-    .page-footer--inner .page-footer__wrapper {
-      border: none; }
-      @media (min-width: 1200px) {
-        .page-footer--inner .page-footer__wrapper {
-          margin-right: 330px; } }
+  .page-footer--inner .page-footer__wrapper {
+    border: none; }
+    @media (min-width: 1200px) {
+      .page-footer--inner .page-footer__wrapper {
+        margin-right: 330px; } }
   @media (min-width: 1200px) {
     .page-footer__wrapper {
       margin-right: 155px;

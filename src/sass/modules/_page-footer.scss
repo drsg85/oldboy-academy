@@ -3,8 +3,7 @@
     position: relative;
 
     // box model
-    padding: 80px 25px;
-    padding-bottom: 40px;
+    padding: 40px 25px;
 
     // visual
     background-color: $dark;
@@ -28,15 +27,6 @@
     }
 
     &--inner {
-        // box model
-        padding: 25px;
-        padding-bottom: 40px;
-
-        @include atTabletsPortrait {
-            // box model
-            padding-top: 80px;
-        }
-
         .page-footer__wrapper {
             border: none;
 
