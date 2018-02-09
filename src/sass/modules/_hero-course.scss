@@ -1,17 +1,36 @@
 .hero-course {
+    // positioning
+    position: relative;
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        left: 7px;
+        top: 7px;
+
+        // box model
+        height: calc(100% - 14px);
+        width: calc(100% - 14px);
+        border: 1px solid $gold;
+
+        // visual
+        user-select: none;
+        pointer-events: none;
+    }
+
     &__main {
         // box model
+        padding: 15px;
 
         // visual
         background-color: $white;
     }
 
     &__header {
-
-    }
-
-    &__title {
-
+        // positioning
+        position: relative;
     }
 
     &__image {
@@ -23,26 +42,105 @@
     }
 
     &__ribbons {
+        // positioning
+        position: absolute;
+        // top: 10px;
+        bottom: 10px;
+        left: 0;
 
+        // typography
+        font-size: 0;
     }
 
     &__ribbon {
-        &--blue {
+        // positioning
+        position: relative;
 
+        // box model
+        width: 110px;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 6px;
+        padding-left: 10px;
+
+        // typography
+        color: $white;
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 1.25;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            right: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to right top, $white 0, $white 50%, transparent 50%, transparent 100%);
+        }
+        
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 0;
+            right: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to right bottom, $white 0, $white 50%, transparent 50%, transparent 100%);
         }
 
         &--red {
+            // visual
+            background-color: $red;
 
+            &::before {
+                background-image: linear-gradient(to right top, $red 0, $red 50%, transparent 50%, transparent 100%);
+            }
+
+            &::after {
+                background-image: linear-gradient(to right bottom, $red 0, $red 50%, transparent 50%, transparent 100%);
+            }
+        }
+        
+        &--blue {
+            // visual
+            background-color: $blue;
+
+            &::before {
+                background-image: linear-gradient(to right top, $blue 0, $blue 50%, transparent 50%, transparent 100%);
+            }
+
+            &::after {
+                background-image: linear-gradient(to right bottom, $blue 0, $blue 50%, transparent 50%, transparent 100%);
+            }
         }
     }
 
     &__short-info {
-
+        // box model
+        padding: 5px 0;
     }
 
     &__info-block {
         // positioning
         position: relative;
+
+        // box model
+        padding-left: 50px;
+        padding-right: 5px;
     }
 
     &__info-icon {
@@ -63,10 +161,55 @@
     }
 
     &__info-text {
-        &--last {
+        // box model
+        margin: 0;
+        padding: 8px;
 
+        // typography
+        font-size: 0.875rem;
+        line-height: 1.25;
+        text-align: left;
+
+        // visual
+        border-bottom: 1px solid $gold;
+
+        &--last {
+            // box model
+            padding-bottom: 0;
+
+            // visual
+            border-bottom: none;
         }
     }
 
+    &__price {
+        // box model
+        padding-top: 40px;
 
+        // typography
+        text-align: center;
+    }
+
+    &__price-title {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        font-weight: 400;
+    }
+
+    &__price-value {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        font-weight: 700;
+        font-size: 4rem;
+    }
+
+    &__detailed {
+
+    }
 }

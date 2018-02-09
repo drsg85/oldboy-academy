@@ -90,9 +90,16 @@
         }
     }
 
+    &--course {
+        // box model
+        padding-right: 0;
+        padding-bottom: 55px;
+    }
+
     &__header {
         // box model
         padding-left: 150px;
+        padding-right: 25px;
     }
 
     &__title {
@@ -137,14 +144,14 @@
 
         &--smaller {
             // typography
-            font-size: 1.25rem;
+            font-size: 1.125rem;
         }
     }
 
     &__content {
         // box model
         padding: 0 25px;
-        
+
     }
 
     &__form {

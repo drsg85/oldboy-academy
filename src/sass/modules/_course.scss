@@ -101,18 +101,16 @@
 
         img {
             // box model
-            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 
     &__ribbons {
         // positioning
         position: absolute;
-        // bottom: 55px;
         top: 10px;
         left: 0;
-        // left: 0;
-        // display: none;
 
         // typography
         font-size: 0;
@@ -234,7 +232,7 @@
 
         // typography
         font-size: 0.875rem;
-        // line-height: 1.25;
+        line-height: 1.25;
 
         // visual
         border-bottom: 1px solid $gold;
