@@ -836,36 +836,34 @@ body {
   @media (min-width: 1400px) {
     .hero {
       max-height: 800px; } }
-  .hero--inner {
-    padding-left: 150px; }
-    @media (min-width: 700px) {
-      .hero--inner {
-        padding: 60px 40px;
-        padding-bottom: 80px;
-        background-image: url("./img/hero-inner.jpg");
-        background-size: cover;
-        background-attachment: unset; } }
-    @media (min-width: 1200px) {
-      .hero--inner {
-        height: auto;
-        min-height: auto;
-        max-height: auto; } }
-    @media (min-width: 1400px) {
-      .hero--inner {
-        max-height: auto; } }
-    .hero--inner::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      z-index: 2;
-      height: 32px;
-      width: 100%;
-      background-image: url("./img/deco-b.svg");
-      background-size: 80px;
-      background-repeat: repeat-x;
-      background-position: -40px bottom; }
-  .hero--course {
+  @media (min-width: 700px) {
+    .hero--inner {
+      padding: 60px 40px;
+      padding-bottom: 80px;
+      background-image: url("./img/hero-inner.jpg");
+      background-size: cover;
+      background-attachment: unset; } }
+  @media (min-width: 1200px) {
+    .hero--inner {
+      height: auto;
+      min-height: auto;
+      max-height: auto; } }
+  @media (min-width: 1400px) {
+    .hero--inner {
+      max-height: auto; } }
+  .hero--inner::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 2;
+    height: 32px;
+    width: 100%;
+    background-image: url("./img/deco-b.svg");
+    background-size: 80px;
+    background-repeat: repeat-x;
+    background-position: -40px bottom; }
+  .hero__header {
     padding-left: 150px; }
   .hero__title {
     margin: 30px 0;
