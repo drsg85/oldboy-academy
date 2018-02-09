@@ -893,6 +893,8 @@ body {
         font-size: 2.75rem; } }
     .hero__title--smaller {
       font-size: 1.25rem; }
+  .hero__content {
+    padding: 0 25px; }
   .hero__form {
     margin-bottom: 40px; }
   .hero__icon {
@@ -1310,6 +1312,26 @@ body {
   color: #ffffff;
   font-variant: small-caps;
   text-align: left; }
+
+.hero-course__main {
+  background-color: #ffffff; }
+
+.hero-course__image img {
+  max-height: 100%;
+  max-width: 100%; }
+
+.hero-course__info-block {
+  position: relative; }
+
+.hero-course__info-icon {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  height: 30px;
+  width: 30px; }
+  .hero-course__info-icon img {
+    max-height: 100%;
+    max-width: 100%; }
 
 .about {
   position: relative;
