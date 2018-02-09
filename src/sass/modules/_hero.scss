@@ -46,9 +46,6 @@
     }
 
     &--inner {
-        // box model
-        padding-left: 150px;
-
         @include atTabletsPortrait {
             // box model
             padding: 60px 40px;
@@ -93,7 +90,7 @@
         }
     }
 
-    &--course {
+    &__header {
         // box model
         padding-left: 150px;
     }

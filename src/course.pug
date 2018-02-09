@@ -41,7 +41,36 @@ html(lang="ru")
             .menu-icon.menu-icon--inner: .menu-icon__middle
 
         section.hero.hero--course
-            h1.hero__title Традиционное бритьё опасной бритвой и моделирование бороды
+            header.hero__header.hero__header--course
+                h1.hero__title.hero__title--smaller Традиционное бритьё опасной бритвой и моделирование бороды
+
+            .hero__content
+                article.course
+                    header.course__header
+                        h3.course__title Барбер с «нуля»
+                        .course__image: img(src="./img/courses/course1.jpg", alt="Академия Олдбой курс по барберингу")
+                        .course__ribbons
+                            p.course__ribbon.course__ribbon--blue новый <br>курс
+                            p.course__ribbon.course__ribbon--red специальная <br>цена
+
+                    .course__content
+                        .course__info
+                            .course__info-icon: img(src="./img/icons/calendar.svg", alt="")
+                            .course__info-text Старт: 1 ноября <br>Будние дни
+                        .course__info
+                            .course__info-icon: img(src="./img/icons/time-biggest.svg", alt="")
+                            .course__info-text Длительность: <br>2 месяца
+                        .course__info
+                            .course__info-icon: img(src="./img/icons/level-noob.svg", alt="")
+                            .course__info-text Уровень навыков: <br>без опыта
+                        .course__info
+                            .course__info-icon: img(src="./img/icons/group.svg", alt="")
+                            .course__info-text.course__info-text--last Формат: <br>обучение в группе
+                            
+                    .course__more
+                        a.button.button--block(href="#") Подробнее о&nbsp;курсе
+
+            aside.hero__aside
 
         section.about
             .about__logo
