@@ -45,30 +45,34 @@ html(lang="ru")
                 h1.hero__title.hero__title--smaller Традиционное бритьё опасной бритвой и моделирование бороды
 
             .hero__content
-                article.course
-                    header.course__header
-                        h3.course__title Барбер с «нуля»
-                        .course__image: img(src="./img/courses/course1.jpg", alt="Академия Олдбой курс по барберингу")
-                        .course__ribbons
-                            p.course__ribbon.course__ribbon--blue новый <br>курс
-                            p.course__ribbon.course__ribbon--red специальная <br>цена
+                article.hero-course
+                    .hero-course__main
+                        header.hero-course__header
+                            h3.hero-course__title Барбер с «нуля»
+                            .hero-course__image: img(src="./img/courses/course1.jpg", alt="Академия Олдбой курс по барберингу")
+                            .hero-course__ribbons
+                                p.hero-course__ribbon.hero-course__ribbon--blue новый <br>курс
+                                p.hero-course__ribbon.hero-course__ribbon--red специальная <br>цена
 
-                    .course__content
-                        .course__info
-                            .course__info-icon: img(src="./img/icons/calendar.svg", alt="")
-                            .course__info-text Старт: 1 ноября <br>Будние дни
-                        .course__info
-                            .course__info-icon: img(src="./img/icons/time-biggest.svg", alt="")
-                            .course__info-text Длительность: <br>2 месяца
-                        .course__info
-                            .course__info-icon: img(src="./img/icons/level-noob.svg", alt="")
-                            .course__info-text Уровень навыков: <br>без опыта
-                        .course__info
-                            .course__info-icon: img(src="./img/icons/group.svg", alt="")
-                            .course__info-text.course__info-text--last Формат: <br>обучение в группе
-                            
-                    .course__more
-                        a.button.button--block(href="#") Подробнее о&nbsp;курсе
+                        .hero-course__short-info
+                            .hero-course__info-block
+                                .hero-course__info-icon: img(src="./img/icons/calendar.svg", alt="")
+                                .hero-course__info-text Старт: 1 ноября <br>Будние дни
+                            .hero-course__info-block
+                                .hero-course__info-icon: img(src="./img/icons/time-biggest.svg", alt="")
+                                .hero-course__info-text Длительность: <br>2 месяца
+                            .hero-course__info-block
+                                .hero-course__info-icon: img(src="./img/icons/level-noob.svg", alt="")
+                                .hero-course__info-text Уровень навыков: <br>без опыта
+                            .hero-course__info-block
+                                .hero-course__info-icon: img(src="./img/icons/group.svg", alt="")
+                                .hero-course__info-text.hero-course__info-text--last Формат: <br>обучение в группе
+                                
+                            .hero-course__price
+                                p.hero-course__price-title Стоимость обучения:
+                                p.hero-course__prive-value 32&nbsp;000&nbsp;₽
+
+                    .hero-course__detailed
 
             aside.hero__aside
 

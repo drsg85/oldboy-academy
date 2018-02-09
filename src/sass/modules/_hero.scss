@@ -141,6 +141,12 @@
         }
     }
 
+    &__content {
+        // box model
+        padding: 0 25px;
+        
+    }
+
     &__form {
         // box model
         margin-bottom: 40px;
