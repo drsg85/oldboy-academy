@@ -813,15 +813,15 @@ body {
   padding-right: 25px;
   padding-bottom: 30px;
   text-align: right;
-  background-color: #336699;
-  background-image: url("./img/hero-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed; }
+  background-color: #336699; }
   @media (min-width: 700px) {
     .hero {
       padding: 60px 100px;
-      padding-left: 0; } }
+      padding-left: 0;
+      background-image: url("./img/hero-bg.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed; } }
   @media (min-width: 900px) {
     .hero {
       padding-top: 100px;
@@ -837,14 +837,14 @@ body {
     .hero {
       max-height: 800px; } }
   .hero--inner {
-    padding-left: 150px;
-    background-image: url("./img/hero-inner.jpg");
-    background-size: cover;
-    background-attachment: unset; }
+    padding-left: 150px; }
     @media (min-width: 700px) {
       .hero--inner {
         padding: 60px 40px;
-        padding-bottom: 80px; } }
+        padding-bottom: 80px;
+        background-image: url("./img/hero-inner.jpg");
+        background-size: cover;
+        background-attachment: unset; } }
     @media (min-width: 1200px) {
       .hero--inner {
         height: auto;
@@ -865,6 +865,8 @@ body {
       background-size: 80px;
       background-repeat: repeat-x;
       background-position: -40px bottom; }
+  .hero--course {
+    padding-left: 150px; }
   .hero__title {
     margin: 30px 0;
     margin-top: 15px;
@@ -891,6 +893,8 @@ body {
     @media (min-width: 1400px) {
       .hero__title {
         font-size: 2.75rem; } }
+    .hero__title--smaller {
+      font-size: 1.25rem; }
   .hero__form {
     margin-bottom: 40px; }
   .hero__icon {

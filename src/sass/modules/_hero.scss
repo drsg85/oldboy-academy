@@ -12,15 +12,17 @@
 
     // visual
     background-color: $blue;
-    background-image: url("./img/hero-bg.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-
+    
     @include atTabletsPortrait {
         // box model
         padding: 60px 100px;
         padding-left: 0;
+        
+        // visual
+        background-image: url("./img/hero-bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
     }
 
     @include atTabletsLandscape {
@@ -47,15 +49,15 @@
         // box model
         padding-left: 150px;
 
-        // visual
-        background-image: url("./img/hero-inner.jpg");
-        background-size: cover;
-        background-attachment: unset;
-
         @include atTabletsPortrait {
             // box model
             padding: 60px 40px;
             padding-bottom: 80px;
+
+            // visual
+            background-image: url("./img/hero-inner.jpg");
+            background-size: cover;
+            background-attachment: unset;
         }
 
         @include atDesktop {
@@ -89,6 +91,11 @@
             background-repeat: repeat-x;
             background-position: -40px bottom;
         }
+    }
+
+    &--course {
+        // box model
+        padding-left: 150px;
     }
 
     &__title {
@@ -129,6 +136,11 @@
         @include atDesktopLarge {
             // typography
             font-size: 2.75rem;
+        }
+
+        &--smaller {
+            // typography
+            font-size: 1.25rem;
         }
     }
 
