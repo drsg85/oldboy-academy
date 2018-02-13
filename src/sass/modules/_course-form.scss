@@ -1,0 +1,184 @@
+.course-form {
+    &__form {
+        // positioning
+        position: relative;
+
+        // box model
+        margin: 0 25px;
+        padding: 25px;
+
+        // visual
+        background-color: rgba($black, 0.7);
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: -7px;
+            top: -7px;
+
+            // box model
+            height: calc(100% + 16px);
+            width: calc(100% + 16px);
+            border: 1px solid $gold;
+        }
+    }
+
+    &__input {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-variant: small-caps;
+
+        // visual
+        border: none;
+        border: 1px solid $white;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: all 0.3s ease-out;
+
+        &:focus {
+            // visual
+            border: 1px solid $gold;
+            outline: none;
+        }
+
+        @include atTabletsPortrait {
+            // box model
+            margin-bottom: 25px;
+            padding: 12px 25px;
+
+            // typography
+            font-size: 1.25rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            padding: 10px 20px;
+
+            // typography
+            font-size: 1rem;
+        }
+
+        @include atDesktop {
+            // box model
+            margin-bottom: 20px;
+
+            // typography
+            font-size: 1rem;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            padding: 12px 25px;
+
+            // typography
+            font-size: 1.25rem;
+        }
+    }
+
+    &__button {
+        // positioning
+        position: relative;
+        z-index: 2;
+
+        // box model
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+
+        // typography
+        color: $white;
+        font-family: $mainFont;
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        
+        // visual
+        background-color: $gold;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+            // typography
+            color: $gold;
+            color: $white;
+
+            // visual
+            background-color: $white;
+            background-color: $blue;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+        
+        @include atTabletsPortrait {
+            // box model
+            width: auto;
+            display: inline-block;
+            vertical-align: top;
+            padding: 12px 50px;
+
+            // typography
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-top: 10px;
+
+            // typography
+            font-size: 1rem;
+        }
+
+        @include atDesktop {
+            // box model
+            margin-top: 20px;
+
+            // typography
+            font-size: 1rem;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            margin-top: 40px;
+
+            // typography
+            font-size: 1.25rem;
+        }
+    }
+
+    &__warning {
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-variant: small-caps;
+        text-align: right;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1rem;
+        }
+
+        a {
+            // typography
+            color: $white;
+            font-weight: 700;
+
+            &:hover {
+                color: $gold;
+            }
+        }
+    }
+}

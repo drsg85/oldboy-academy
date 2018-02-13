@@ -7,9 +7,6 @@
     padding-right: 25px;
     padding-bottom: 30px;
 
-    // typography
-    text-align: right;
-
     // visual
     background-color: $blue;
     
@@ -167,7 +164,11 @@
     &__content {
         // box model
         padding: 0 25px;
+    }
 
+    &__aside {
+        // box model
+        padding: 15px 0;
     }
 
     &__form {

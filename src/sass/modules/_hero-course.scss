@@ -4,6 +4,7 @@
         position: relative;
 
         // box model
+        margin: 0 -7px;
         padding: 15px;
 
         // visual
@@ -221,7 +222,7 @@
     &__detailed {
         // box model
         padding-top: 20px;
-        
+
         // typography
         color: $white;
         text-align: left;
