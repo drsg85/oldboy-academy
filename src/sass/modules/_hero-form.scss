@@ -135,7 +135,8 @@
     &__title {
         // box model
         margin: 0;
-        padding-bottom: 5px;
+        margin-right: -0.125em;
+        padding-bottom: 0.25em;
 
         // typography
         color: $white;
@@ -148,22 +149,16 @@
         
         @include atTabletsPortrait {
             // box model
-            display: inline-block;
-            vertical-align: bottom;
-            width: 50%;
             padding-left: 25px;
-            margin-bottom: 20px;
 
             // typography
             font-size: 1.5rem;
-            text-align: left;
         }
 
         @include atTabletsLandscape {
             // box model
             display: block;
             margin: 0;
-            margin-bottom: 20px;
             width: auto;
 
             // typography
@@ -194,7 +189,7 @@
         color: $white;
         font-family: $mainFont;
         font-size: 0.85rem;
-        font-weight: 100;
+        font-weight: 400;
         letter-spacing: 1px;
         line-height: 1.65;
         text-align: right;
@@ -202,9 +197,6 @@
 
         @include atTabletsPortrait {
             // box model
-            display: inline-block;
-            vertical-align: bottom;
-            width: 50%;
             margin-bottom: 20px;
 
             // typography
@@ -219,8 +211,12 @@
             width: auto;
 
             // typography
-            text-align: left;
             text-align: right;
+        }
+        
+        @include atDesktopLarge {
+            // typography
+            font-size: 1.125rem;
         }
     }
 

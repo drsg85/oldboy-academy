@@ -4,6 +4,17 @@
 
     // box model
     margin-bottom: 80px;
+    margin-left: -25px;
+
+    @include atTabletsPortrait {
+        // box model
+        margin-left: -100px;
+    }
+
+    @include atDesktop {
+        // box model
+        margin-left: 0;
+    }
 
     &__slide {
         // positioning
