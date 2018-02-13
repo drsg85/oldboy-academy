@@ -1,31 +1,31 @@
 .hero-course {
-    // positioning
-    position: relative;
-
-    &::before {
-        content: "";
-
-        // positioning
-        position: absolute;
-        left: 7px;
-        top: 7px;
-
-        // box model
-        height: calc(100% - 14px);
-        width: calc(100% - 14px);
-        border: 1px solid $gold;
-
-        // visual
-        user-select: none;
-        pointer-events: none;
-    }
-
     &__main {
+        // positioning
+        position: relative;
+
         // box model
         padding: 15px;
 
         // visual
         background-color: $white;
+
+        &::before {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            left: 7px;
+            top: 7px;
+    
+            // box model
+            height: calc(100% - 14px);
+            width: calc(100% - 14px);
+            border: 1px solid $gold;
+    
+            // visual
+            user-select: none;
+            pointer-events: none;
+        }
     }
 
     &__header {
@@ -34,6 +34,9 @@
     }
 
     &__image {
+        // typography
+        font-size: 0;
+
         img {
             // box model
             max-height: 100%;
@@ -131,7 +134,12 @@
 
     &__short-info {
         // box model
-        padding: 5px 0;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        // typography
+        font-size: 0;
     }
 
     &__info-block {
@@ -140,14 +148,14 @@
 
         // box model
         padding-left: 50px;
-        padding-right: 5px;
+        padding-right: 15px;
     }
 
     &__info-icon {
         // positioning
         position: absolute;
         left: 7px;
-        top: 10px;
+        top: 15px;
 
         // box model
         height: 30px;
@@ -166,8 +174,8 @@
         padding: 8px;
 
         // typography
-        font-size: 0.875rem;
-        line-height: 1.25;
+        font-size: 0.9rem;
+        line-height: 1.5;
         text-align: left;
 
         // visual
@@ -184,7 +192,7 @@
 
     &__price {
         // box model
-        padding-top: 40px;
+        padding-top: 30px;
 
         // typography
         text-align: center;
@@ -196,6 +204,7 @@
         padding: 0;
 
         // typography
+        font-size: 1rem;
         font-weight: 400;
     }
 
@@ -206,10 +215,42 @@
 
         // typography
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     &__detailed {
+        // typography
+        color: $white;
+        text-align: left;
 
+        ol {
+            // box model
+            margin: 0;
+            padding: 0;
+
+            // list
+            list-style-position: inside;
+        }
+
+        li {
+            // box model
+            margin-bottom: 1em;
+
+            // typography
+            line-height: 1.5;
+        }
+
+        p {
+            // typography
+            line-height: 1.5;
+        }
+    }
+
+    &__heading {
+        // typography
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
     }
 }

@@ -148,6 +148,22 @@
         }
     }
 
+    &__format {
+        // box model
+        margin: 0;
+        margin-top: -20px;
+        padding: 0;
+        padding-bottom: 20px;
+
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-size: 1.5rem;
+        font-variant: small-caps;
+        font-weight: 700;
+        text-align: left;
+    }
+
     &__content {
         // box model
         padding: 0 25px;
