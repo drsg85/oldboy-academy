@@ -14,58 +14,82 @@
         padding: 60px;
     }
 
-    &--yellow {
-        // visual
-        background-color: $yellow;
-        overflow: hidden;
-
-        &::after {
-            content: "";
-    
-            // positioning
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            z-index: 2;
-    
-            // box model
-            height: 32px;
-            width: 100%;
-    
-            // visual
-            background-image: url("./img/deco-b.svg");
-            background-size: 80px;
-            background-repeat: repeat-x;
-            background-position: -40px bottom;
-        }
-
-        .about__content {
-            @include atDesktop {
-                // box model
-                padding-left: 0;
-                padding-right: 360px;
-            }
-        }
+    @include atDesktopLarge {
+        // box model
+        padding: 20px 120px;
     }
 
     &::before {
         content: "";
-
+        
         // positioning
         position: absolute;
         left: 0;
         top: -20px;
         z-index: 6;
-
+        
         // box model
         height: 32px;
         width: 100%;
-
+        
         // visual
         background-image: url("./img/deco-b.svg");
         background-size: 80px;
         background-repeat: repeat-x;
         background-position: top center;
+    }
+    
+    &--yellow {
+        // positioning
+        z-index: 2;
+
+        // box model
+        padding: 60px 25px;
+
+        // visual
+        background-color: $yellow;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 85px 60px;
+        }
+    
+        @include atDesktopLarge {
+            // box model
+            padding: 80px 120px;
+        }
+
+        &::before {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 6;
+    
+            // box model
+            height: 32px;
+            width: 100%;
+            // border: 1px solid red;
+    
+            // visual
+            background-image: url("./img/deco-b-r.svg");
+            background-size: 80px;
+            background-repeat: repeat-x;
+            background-position: -40px top;
+        }
+    }
+
+    &__row {
+        &::after {
+            content: "";
+            
+            // box model
+            display: table;
+            width: 100%;
+            clear: both;
+        }
     }
 
     &__logo {
@@ -84,8 +108,11 @@
         @include atDesktop {
             // box model
             float: left;
-            padding-top: 40px;
-            width: 300px;
+            padding-right: 60px;
+            padding-top: 50px;
+            width: 45%;
+            // width: 300px;
+            // margin: 0 auto;
         }
 
         img {
@@ -98,14 +125,67 @@
         // box model
         margin-bottom: 40px;
 
-        @include atTabletsPortrait {
-            // box model
-            flex-grow: 1;
+        &--left {
+            @include atDesktop {
+                // box model
+                float: left;
+                width: 50%;
+                padding-right: 60px;
+            }
         }
 
-        @include atDesktop {
+        &--right {
+            @include atDesktop {
+                // box model
+                float: right;
+                width: 50%;
+                padding-left: 60px;
+            }
+        }
+
+        h3 {
             // box model
-            padding-left: 360px;
+            margin: 30px 0;
+            margin-top: 40px;
+        }
+        
+        p {
+            // box model
+            padding-bottom: 1em;
+            
+            // typography
+            line-height: 1.75;
+            
+            @include atDesktop {
+                // typography
+                font-size: 1.125rem;
+            }
+        }
+
+        ul {
+            // box model
+            margin: 0;
+            padding: 0;
+
+            // list
+            list-style: none;
+        }
+        
+        li {
+            // box model
+            padding-bottom: 0.5em;
+            
+            // typography
+            line-height: 1.75;
+
+            @include atDesktop {
+                // typography
+                font-size: 1.125rem;
+            }
+        }
+
+        li::before {
+            content: "— ";
         }
     }
 
@@ -126,12 +206,20 @@
         @include atDesktop {
             // box model
             max-width: 800px;
+
+            // typography
+            font-size: 2.5rem;
         }
     }
 
     &__text {
         // typography
         line-height: 1.75;
+
+        @include atDesktop {
+            // typography
+            font-size: 1.125rem;
+        }
     }
 
     &__more {

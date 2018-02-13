@@ -9,6 +9,7 @@
 
     // visual
     background-color: $blue;
+    overflow: hidden;
     
     @include atTabletsPortrait {
         // box model
@@ -91,6 +92,11 @@
         // box model
         padding-right: 0;
         padding-bottom: 55px;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 60px 35px;
+        }
     }
 
     &__header {
@@ -169,6 +175,11 @@
     &__aside {
         // box model
         padding: 15px 0;
+
+        @include atDesktop {
+            // box model
+            float: right;
+        }
     }
 
     &__form {

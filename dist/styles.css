@@ -812,7 +812,8 @@ body {
   padding-top: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
-  background-color: #336699; }
+  background-color: #336699;
+  overflow: hidden; }
   @media (min-width: 700px) {
     .hero {
       padding: 60px 100px;
@@ -865,6 +866,9 @@ body {
   .hero--course {
     padding-right: 0;
     padding-bottom: 55px; }
+    @media (min-width: 700px) {
+      .hero--course {
+        padding: 60px 35px; } }
   .hero__header {
     margin: 0;
     margin-bottom: 30px;
@@ -911,6 +915,9 @@ body {
     padding: 0 25px; }
   .hero__aside {
     padding: 15px 0; }
+    @media (min-width: 1200px) {
+      .hero__aside {
+        float: right; } }
   .hero__form {
     margin-bottom: 40px; }
   .hero__icon {
@@ -1337,25 +1344,9 @@ body {
   @media (min-width: 700px) {
     .about {
       padding: 60px; } }
-  .about--yellow {
-    background-color: #f9f1e6;
-    overflow: hidden; }
-    .about--yellow::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      z-index: 2;
-      height: 32px;
-      width: 100%;
-      background-image: url("./img/deco-b.svg");
-      background-size: 80px;
-      background-repeat: repeat-x;
-      background-position: -40px bottom; }
-    @media (min-width: 1200px) {
-      .about--yellow .about__content {
-        padding-left: 0;
-        padding-right: 360px; } }
+  @media (min-width: 1400px) {
+    .about {
+      padding: 20px 120px; } }
   .about::before {
     content: "";
     position: absolute;
@@ -1368,6 +1359,33 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: top center; }
+  .about--yellow {
+    z-index: 2;
+    padding: 60px 25px;
+    background-color: #f9f1e6; }
+    @media (min-width: 700px) {
+      .about--yellow {
+        padding: 85px 60px; } }
+    @media (min-width: 1400px) {
+      .about--yellow {
+        padding: 80px 120px; } }
+    .about--yellow::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 6;
+      height: 32px;
+      width: 100%;
+      background-image: url("./img/deco-b-r.svg");
+      background-size: 80px;
+      background-repeat: repeat-x;
+      background-position: -40px top; }
+  .about__row::after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both; }
   .about__logo {
     padding: 0 50px;
     padding-bottom: 30px; }
@@ -1380,20 +1398,44 @@ body {
     @media (min-width: 1200px) {
       .about__logo {
         float: left;
-        padding-top: 40px;
-        width: 300px; } }
+        padding-right: 60px;
+        padding-top: 50px;
+        width: 45%; } }
     .about__logo img {
       width: 100%; }
   .about__content {
     margin-bottom: 40px; }
-    @media (min-width: 700px) {
-      .about__content {
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1; } }
     @media (min-width: 1200px) {
-      .about__content {
-        padding-left: 360px; } }
+      .about__content--left {
+        float: left;
+        width: 50%;
+        padding-right: 60px; } }
+    @media (min-width: 1200px) {
+      .about__content--right {
+        float: right;
+        width: 50%;
+        padding-left: 60px; } }
+    .about__content h3 {
+      margin: 30px 0;
+      margin-top: 40px; }
+    .about__content p {
+      padding-bottom: 1em;
+      line-height: 1.75; }
+      @media (min-width: 1200px) {
+        .about__content p {
+          font-size: 1.125rem; } }
+    .about__content ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .about__content li {
+      padding-bottom: 0.5em;
+      line-height: 1.75; }
+      @media (min-width: 1200px) {
+        .about__content li {
+          font-size: 1.125rem; } }
+    .about__content li::before {
+      content: "— "; }
   .about__title {
     font-family: "Lora", serif;
     font-size: 1.5rem;
@@ -1406,9 +1448,13 @@ body {
         line-height: 1.35; } }
     @media (min-width: 1200px) {
       .about__title {
-        max-width: 800px; } }
+        max-width: 800px;
+        font-size: 2.5rem; } }
   .about__text {
     line-height: 1.75; }
+    @media (min-width: 1200px) {
+      .about__text {
+        font-size: 1.125rem; } }
   .about__more {
     padding-top: 40px;
     text-align: center; }
