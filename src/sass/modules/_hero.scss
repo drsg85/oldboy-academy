@@ -98,15 +98,16 @@
 
     &__header {
         // box model
+        margin: 0;
+        margin-bottom: 30px;
         padding-left: 150px;
         padding-right: 25px;
     }
 
     &__title {
         // box model
-        margin: 30px 0;
-        margin-top: 15px;
-        
+        margin: 0;
+
         // typography
         color: $white;
         font-family: $titleFont;
@@ -151,9 +152,8 @@
     &__format {
         // box model
         margin: 0;
-        margin-top: -20px;
         padding: 0;
-        padding-bottom: 20px;
+        padding-bottom: 0.5em;
 
         // typography
         color: $white;

@@ -219,6 +219,9 @@
     }
 
     &__detailed {
+        // box model
+        padding-top: 20px;
+        
         // typography
         color: $white;
         text-align: left;

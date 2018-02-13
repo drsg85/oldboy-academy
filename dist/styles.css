@@ -867,11 +867,12 @@ body {
     padding-right: 0;
     padding-bottom: 55px; }
   .hero__header {
+    margin: 0;
+    margin-bottom: 30px;
     padding-left: 150px;
     padding-right: 25px; }
   .hero__title {
-    margin: 30px 0;
-    margin-top: 15px;
+    margin: 0;
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 1.75rem;
@@ -899,9 +900,8 @@ body {
       font-size: 1.125rem; }
   .hero__format {
     margin: 0;
-    margin-top: -20px;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0.5em;
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 1.5rem;
@@ -1457,6 +1457,7 @@ body {
   font-size: 3rem; }
 
 .hero-course__detailed {
+  padding-top: 20px;
   color: #ffffff;
   text-align: left; }
   .hero-course__detailed ol {
