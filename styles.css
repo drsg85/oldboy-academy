@@ -897,6 +897,17 @@ body {
         font-size: 2.75rem; } }
     .hero__title--smaller {
       font-size: 1.125rem; }
+  .hero__format {
+    margin: 0;
+    margin-top: -20px;
+    padding: 0;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    font-weight: 700;
+    text-align: left; }
   .hero__content {
     padding: 0 25px; }
   .hero__form {
@@ -1317,9 +1328,11 @@ body {
   font-variant: small-caps;
   text-align: left; }
 
-.hero-course {
-  position: relative; }
-  .hero-course::before {
+.hero-course__main {
+  position: relative;
+  padding: 15px;
+  background-color: #ffffff; }
+  .hero-course__main::before {
     content: "";
     position: absolute;
     left: 7px;
@@ -1332,102 +1345,135 @@ body {
     -ms-user-select: none;
     user-select: none;
     pointer-events: none; }
-  .hero-course__main {
-    padding: 15px;
-    background-color: #ffffff; }
-  .hero-course__header {
-    position: relative; }
+
+.hero-course__header {
+  position: relative; }
+
+.hero-course__image {
+  font-size: 0; }
   .hero-course__image img {
     max-height: 100%;
     max-width: 100%; }
-  .hero-course__ribbons {
+
+.hero-course__ribbons {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 0; }
+
+.hero-course__ribbon {
+  position: relative;
+  width: 110px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 6px;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase; }
+  .hero-course__ribbon::before {
+    content: "";
     position: absolute;
-    bottom: 10px;
-    left: 0;
-    font-size: 0; }
-  .hero-course__ribbon {
-    position: relative;
-    width: 110px;
-    margin: 0;
-    margin-bottom: 5px;
-    padding: 6px;
-    padding-left: 10px;
-    color: #ffffff;
-    font-size: 0.7rem;
-    font-weight: 700;
-    line-height: 1.25;
-    text-transform: uppercase; }
-    .hero-course__ribbon::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: -10px;
-      height: 50%;
-      width: 10px;
-      background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
-      background-image: linear-gradient(to right top, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
-    .hero-course__ribbon::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: -10px;
-      height: 50%;
-      width: 10px;
-      background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
-      background-image: linear-gradient(to right bottom, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
-    .hero-course__ribbon--red {
-      background-color: #c31f38; }
-      .hero-course__ribbon--red::before {
-        background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #c31f38), color-stop(50%, #c31f38), color-stop(50%, transparent), to(transparent));
-        background-image: linear-gradient(to right top, #c31f38 0, #c31f38 50%, transparent 50%, transparent 100%); }
-      .hero-course__ribbon--red::after {
-        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #c31f38), color-stop(50%, #c31f38), color-stop(50%, transparent), to(transparent));
-        background-image: linear-gradient(to right bottom, #c31f38 0, #c31f38 50%, transparent 50%, transparent 100%); }
-    .hero-course__ribbon--blue {
-      background-color: #336699; }
-      .hero-course__ribbon--blue::before {
-        background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #336699), color-stop(50%, #336699), color-stop(50%, transparent), to(transparent));
-        background-image: linear-gradient(to right top, #336699 0, #336699 50%, transparent 50%, transparent 100%); }
-      .hero-course__ribbon--blue::after {
-        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #336699), color-stop(50%, #336699), color-stop(50%, transparent), to(transparent));
-        background-image: linear-gradient(to right bottom, #336699 0, #336699 50%, transparent 50%, transparent 100%); }
-  .hero-course__short-info {
-    padding: 5px 0; }
-  .hero-course__info-block {
-    position: relative;
-    padding-left: 50px;
-    padding-right: 5px; }
-  .hero-course__info-icon {
+    top: 0;
+    right: -10px;
+    height: 50%;
+    width: 10px;
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
+    background-image: linear-gradient(to right top, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+  .hero-course__ribbon::after {
+    content: "";
     position: absolute;
-    left: 7px;
-    top: 10px;
-    height: 30px;
-    width: 30px; }
-    .hero-course__info-icon img {
-      max-height: 100%;
-      max-width: 100%; }
-  .hero-course__info-text {
-    margin: 0;
-    padding: 8px;
-    font-size: 0.875rem;
-    line-height: 1.25;
-    text-align: left;
-    border-bottom: 1px solid #d5a353; }
-    .hero-course__info-text--last {
-      padding-bottom: 0;
-      border-bottom: none; }
-  .hero-course__price {
-    padding-top: 40px;
-    text-align: center; }
-  .hero-course__price-title {
+    bottom: 0;
+    right: -10px;
+    height: 50%;
+    width: 10px;
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #ffffff), color-stop(50%, #ffffff), color-stop(50%, transparent), to(transparent));
+    background-image: linear-gradient(to right bottom, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%); }
+  .hero-course__ribbon--red {
+    background-color: #c31f38; }
+    .hero-course__ribbon--red::before {
+      background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #c31f38), color-stop(50%, #c31f38), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to right top, #c31f38 0, #c31f38 50%, transparent 50%, transparent 100%); }
+    .hero-course__ribbon--red::after {
+      background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #c31f38), color-stop(50%, #c31f38), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to right bottom, #c31f38 0, #c31f38 50%, transparent 50%, transparent 100%); }
+  .hero-course__ribbon--blue {
+    background-color: #336699; }
+    .hero-course__ribbon--blue::before {
+      background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #336699), color-stop(50%, #336699), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to right top, #336699 0, #336699 50%, transparent 50%, transparent 100%); }
+    .hero-course__ribbon--blue::after {
+      background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #336699), color-stop(50%, #336699), color-stop(50%, transparent), to(transparent));
+      background-image: linear-gradient(to right bottom, #336699 0, #336699 50%, transparent 50%, transparent 100%); }
+
+.hero-course__short-info {
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 0; }
+
+.hero-course__info-block {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 15px; }
+
+.hero-course__info-icon {
+  position: absolute;
+  left: 7px;
+  top: 15px;
+  height: 30px;
+  width: 30px; }
+  .hero-course__info-icon img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.hero-course__info-text {
+  margin: 0;
+  padding: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  border-bottom: 1px solid #d5a353; }
+  .hero-course__info-text--last {
+    padding-bottom: 0;
+    border-bottom: none; }
+
+.hero-course__price {
+  padding-top: 30px;
+  text-align: center; }
+
+.hero-course__price-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400; }
+
+.hero-course__price-value {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 3rem; }
+
+.hero-course__detailed {
+  color: #ffffff;
+  text-align: left; }
+  .hero-course__detailed ol {
     margin: 0;
     padding: 0;
-    font-weight: 400; }
-  .hero-course__price-value {
-    margin: 0;
-    padding: 0;
-    font-weight: 700;
-    font-size: 4rem; }
+    list-style-position: inside; }
+  .hero-course__detailed li {
+    margin-bottom: 1em;
+    line-height: 1.5; }
+  .hero-course__detailed p {
+    line-height: 1.5; }
+
+.hero-course__heading {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5; }
 
 .about {
   position: relative;
