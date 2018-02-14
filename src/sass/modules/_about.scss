@@ -97,6 +97,9 @@
         padding: 0 50px;
         padding-bottom: 30px;
 
+        // typography
+        text-align: center;
+
         @include atTabletsPortrait {
             // box model
             width: 240px;
@@ -110,16 +113,12 @@
             float: left;
             padding-top: 50px;
             width: 45%;
-
-            // typography
-            text-align: center;
         }
 
         img {
             // box model
             display: inline-block;
-            margin: 0 auto;
-            // width: 100%;
+            width: 100%;
             max-width: 450px;
         }
     }

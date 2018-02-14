@@ -1416,7 +1416,8 @@ body {
     clear: both; }
   .about__logo {
     padding: 0 50px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    text-align: center; }
     @media (min-width: 700px) {
       .about__logo {
         width: 240px;
@@ -1427,11 +1428,10 @@ body {
       .about__logo {
         float: left;
         padding-top: 50px;
-        width: 45%;
-        text-align: center; } }
+        width: 45%; } }
     .about__logo img {
       display: inline-block;
-      margin: 0 auto;
+      width: 100%;
       max-width: 450px; }
   .about__content {
     margin-bottom: 40px; }
