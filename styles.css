@@ -865,6 +865,14 @@ body {
     @media (min-width: 700px) {
       .hero--course {
         padding: 60px; } }
+    @media (min-width: 1200px) {
+      .hero--course {
+        height: auto;
+        min-height: auto;
+        max-height: 2000px; } }
+    @media (min-width: 1400px) {
+      .hero--course {
+        max-height: 2000px; } }
   .hero__header {
     margin: 0;
     margin-bottom: 30px;
@@ -934,6 +942,11 @@ body {
         font-size: 2.75rem; } }
   .hero__content {
     padding: 0; }
+    .hero__content::after {
+      content: "";
+      display: table;
+      width: 100%;
+      clear: both; }
   .hero__aside {
     padding: 15px 0; }
     @media (min-width: 1200px) {
@@ -1413,22 +1426,30 @@ body {
     @media (min-width: 1200px) {
       .about__logo {
         float: left;
-        padding-right: 60px;
         padding-top: 50px;
-        width: 45%; } }
+        width: 45%;
+        text-align: center; } }
     .about__logo img {
-      width: 100%; }
+      display: inline-block;
+      margin: 0 auto;
+      max-width: 450px; }
   .about__content {
     margin-bottom: 40px; }
     @media (min-width: 1200px) {
       .about__content--left {
         float: left;
         width: 50%;
+        padding-right: 30px; } }
+    @media (min-width: 1400px) {
+      .about__content--left {
         padding-right: 60px; } }
     @media (min-width: 1200px) {
       .about__content--right {
         float: right;
         width: 50%;
+        padding-left: 30px; } }
+    @media (min-width: 1400px) {
+      .about__content--right {
         padding-left: 60px; } }
     .about__content h3 {
       margin: 30px 0;
@@ -1974,6 +1995,15 @@ body {
   .course__more {
     padding: 13px; }
 
+@media (min-width: 900px) {
+  .hero-course {
+    padding-top: 20px; }
+    .hero-course::after {
+      content: "";
+      display: table;
+      width: 100%;
+      clear: both; } }
+
 .hero-course__main {
   position: relative;
   margin: 0 -7px;
@@ -2119,6 +2149,8 @@ body {
     line-height: 1.5; }
 
 .hero-course__heading {
+  margin: 0;
+  padding: 20px 0;
   font-family: "Lora", serif;
   font-size: 1.5rem;
   font-weight: 400;
