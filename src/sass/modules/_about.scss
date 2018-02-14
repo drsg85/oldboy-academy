@@ -280,4 +280,28 @@
         background-image: url("./img/masson-yellow.png");
         background-size: cover;
     }
+
+    &__deco-logo {
+        // positioning
+        position: absolute;
+        right: 60px;
+        top: -80px;
+        z-index: 6;
+
+        // box model
+        display: none;
+        height: 200px;
+        width: 200px;
+
+        // visual
+        background-image: url("./img/logo.svg");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include atDesktop {
+            // box model
+            display: block;
+        }
+    }
 }
