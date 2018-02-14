@@ -234,6 +234,24 @@
         }
     }
 
+    &__image {
+        // box model
+        margin: 20px 0;
+        padding: 25px 0;
+        border-left: 1px solid $gold;
+
+        // typography
+        font-size: 0;
+
+        // visual
+        box-shadow: 40px 0 20px -40px #000;
+
+        img {
+            // box model
+            max-width: 100%;
+        }
+    }
+
     &__more {
         // box model
         padding-top: 40px;
