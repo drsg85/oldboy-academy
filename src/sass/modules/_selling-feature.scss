@@ -1,9 +1,12 @@
 .selling-feature {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    margin: 30px;
+    max-width: 300px;
+
     // typography
     text-align: center;
-
-    // box model
-    margin: 60px auto;
     
     // visual
     background-image: url("./img/laurel.png");
@@ -11,14 +14,31 @@
     background-repeat: no-repeat;
     background-position: center center;
 
+    @include atDesktop {
+        // box model
+        // width: 220px;
+        margin: 20px;
+    }
+
     &__title {
         // typography
         font-size: 1.5rem;
-        font-weight: 400;
+        font-weight: 700;
+
+        @include atDesktop {
+            // typography
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
     }
 
     &__text {
         // typography
         line-height: 1.75;
+
+        @include atDesktop {
+            // typography
+            font-size: 0.875rem;
+        }
     }
 }

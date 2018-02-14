@@ -166,7 +166,7 @@
             margin-top: 40px;
         }
         
-        p {
+        & > p {
             // box model
             padding-bottom: 1em;
             
@@ -273,7 +273,7 @@
     &__deco {
         // positioning
         position: absolute;
-        bottom: -50px;
+        top: 150px;
         right: -150px;
         z-index: 1;
 
@@ -290,13 +290,13 @@
         // positioning
         position: absolute;
         right: 60px;
-        top: -80px;
+        top: -60px;
         z-index: 6;
 
         // box model
         display: none;
-        height: 200px;
-        width: 200px;
+        height: 160px;
+        width: 160px;
 
         // visual
         background-image: url("./img/logo.svg");
@@ -308,5 +308,12 @@
             // box model
             display: block;
         }
+    }
+
+    &__features {
+        // box model
+
+        // typography
+        text-align: center;
     }
 }

@@ -1458,11 +1458,11 @@ body {
     .about__content h3 {
       margin: 30px 0;
       margin-top: 40px; }
-    .about__content p {
+    .about__content > p {
       padding-bottom: 1em;
       line-height: 1.75; }
       @media (min-width: 1200px) {
-        .about__content p {
+        .about__content > p {
           font-size: 1.125rem; } }
     .about__content ul {
       margin: 0;
@@ -1512,7 +1512,7 @@ body {
         text-align: left; } }
   .about__deco {
     position: absolute;
-    bottom: -50px;
+    top: 150px;
     right: -150px;
     z-index: 1;
     height: 400px;
@@ -1522,11 +1522,11 @@ body {
   .about__deco-logo {
     position: absolute;
     right: 60px;
-    top: -80px;
+    top: -60px;
     z-index: 6;
     display: none;
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     background-image: url("./img/logo.svg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -1534,6 +1534,8 @@ body {
     @media (min-width: 1200px) {
       .about__deco-logo {
         display: block; } }
+  .about__features {
+    text-align: center; }
 
 .selling-features {
   position: relative;
@@ -3222,14 +3224,27 @@ body {
     line-height: 1.75; }
 
 .selling-feature {
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px;
+  max-width: 300px;
   text-align: center;
-  margin: 60px auto;
   background-image: url("./img/laurel.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center; }
+  @media (min-width: 1200px) {
+    .selling-feature {
+      margin: 20px; } }
   .selling-feature__title {
     font-size: 1.5rem;
-    font-weight: 400; }
+    font-weight: 700; }
+    @media (min-width: 1200px) {
+      .selling-feature__title {
+        font-size: 1.25rem;
+        font-weight: 700; } }
   .selling-feature__text {
     line-height: 1.75; }
+    @media (min-width: 1200px) {
+      .selling-feature__text {
+        font-size: 0.875rem; } }
