@@ -1437,6 +1437,9 @@ body {
   .about__content {
     margin-bottom: 40px; }
     @media (min-width: 1200px) {
+      .about__content {
+        margin-bottom: 0; } }
+    @media (min-width: 1200px) {
       .about__content--left {
         float: left;
         width: 50%;
@@ -1531,14 +1534,6 @@ body {
     @media (min-width: 1200px) {
       .about__deco-logo {
         display: block; } }
-
-.about-promos {
-  padding: 10px 25px;
-  padding-bottom: 40px;
-  background-color: #ffffff; }
-  @media (min-width: 700px) {
-    .about-promos {
-      padding: 30px 60px; } }
 
 .selling-features {
   position: relative;
@@ -3223,6 +3218,7 @@ body {
     line-height: 1.5; }
   .text-promo__text {
     margin-top: 0;
+    font-size: 1rem;
     line-height: 1.75; }
 
 .selling-feature {
