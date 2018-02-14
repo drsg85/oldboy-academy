@@ -108,16 +108,19 @@
         @include atDesktop {
             // box model
             float: left;
-            padding-right: 60px;
             padding-top: 50px;
             width: 45%;
-            // width: 300px;
-            // margin: 0 auto;
+
+            // typography
+            text-align: center;
         }
 
         img {
             // box model
-            width: 100%;
+            display: inline-block;
+            margin: 0 auto;
+            // width: 100%;
+            max-width: 450px;
         }
     }
 
@@ -130,6 +133,11 @@
                 // box model
                 float: left;
                 width: 50%;
+                padding-right: 30px;
+            }
+
+            @include atDesktopLarge {
+                // box model
                 padding-right: 60px;
             }
         }
@@ -139,6 +147,11 @@
                 // box model
                 float: right;
                 width: 50%;
+                padding-left: 30px;
+            }
+
+            @include atDesktopLarge {
+                // box model
                 padding-left: 60px;
             }
         }

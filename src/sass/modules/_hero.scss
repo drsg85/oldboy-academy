@@ -93,6 +93,18 @@
             // box model
             padding: 60px;
         }
+
+        @include atDesktop {
+            // box model
+            height: auto;
+            min-height: auto;
+            max-height: 2000px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            max-height: 2000px;
+        }
     }
 
     &__header {
@@ -205,6 +217,15 @@
     &__content {
         // box model
         padding: 0;
+        
+        &::after {
+            content: "";
+
+            // box model
+            display: table;
+            width: 100%;
+            clear: both;
+        }
     }
 
     &__aside {

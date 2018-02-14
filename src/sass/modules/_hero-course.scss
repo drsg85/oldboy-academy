@@ -1,4 +1,18 @@
 .hero-course {
+    @include atTabletsLandscape {
+        // box model
+        padding-top: 20px;
+        
+        &::after {
+            content: "";
+
+            // box model
+            display: table;
+            width: 100%;
+            clear: both;
+        }
+    }
+
     &__main {
         // positioning
         position: relative;
@@ -252,6 +266,10 @@
     }
 
     &__heading {
+        // box model
+        margin: 0;
+        padding: 20px 0;
+
         // typography
         font-family: $titleFont;
         font-size: 1.5rem;
