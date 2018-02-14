@@ -1,15 +1,44 @@
 .hero-course {
+    // positioning
+    position: relative;
+
     @include atTabletsLandscape {
         // box model
         padding-top: 20px;
-        
-        &::after {
-            content: "";
+    }
 
+    @include atDesktop {
+        // box model
+        padding: 0;
+    }
+
+    &::after {
+        content: "";
+
+        // box model
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+    
+    &::before {
+        @include atDesktop {
+            content: "";
+    
+            // positioning
+            position: absolute;
+            left: 7px;
+            top: 7px;
+            z-index: 2;
+    
             // box model
-            display: table;
-            width: 100%;
-            clear: both;
+            height: calc(100% - 14px);
+            width: calc(100% - 14px);
+            border: 1px solid $gold;
+    
+            // visual
+            user-select: none;
+            pointer-events: none;
         }
     }
 
@@ -23,6 +52,13 @@
 
         // visual
         background-color: $white;
+
+        @include atDesktop {
+            // box model
+            float: left;
+            margin: 0;
+            width: 50%;
+        }
 
         &::before {
             content: "";
@@ -40,6 +76,11 @@
             // visual
             user-select: none;
             pointer-events: none;
+
+            @include atDesktop {
+                // box model
+                display: none;
+            }
         }
     }
 
@@ -49,14 +90,32 @@
     }
 
     &__image {
+        // box model
+        height: 220px;
+        
+                    // visual
+                    overflow: hidden;
+
         // typography
         font-size: 0;
 
+        @include atTabletsLandscape {
+            // box model
+            height: 280px;
+        }
+
+        @include atDesktop {
+            // box model
+            width: calc(200% + 30px);
+        }
+        
         img {
             // box model
-            max-height: 100%;
+            // max-height: 100%;
             min-width: 100%;
             max-width: 100%;
+            object-fit: contain;
+            object-position: 50% 50%;
         }
     }
 
@@ -64,7 +123,8 @@
         // positioning
         position: absolute;
         // top: 10px;
-        bottom: 10px;
+        // bottom: 10px;
+        top: 10px;
         left: 0;
 
         // typography
@@ -78,7 +138,7 @@
         // box model
         width: 110px;
         margin: 0;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         padding: 6px;
         padding-left: 10px;
 
@@ -88,6 +148,15 @@
         font-weight: 700;
         line-height: 1.25;
         text-transform: uppercase;
+
+        @include atTabletsLandscape {
+            // box model
+            width: 130px;
+
+            // typography
+            font-size: 0.85rem;
+
+        }
 
         &::before {
             content: "";
@@ -151,7 +220,7 @@
     &__short-info {
         // box model
         padding: 0;
-        padding-top: 20px;
+        // padding-top: 20px;
         padding-bottom: 10px;
 
         // typography
@@ -241,6 +310,14 @@
         // typography
         color: $white;
         text-align: left;
+
+        @include atDesktop {
+            // box model
+            float: right;
+            width: 50%;
+            padding: 0 30px;
+            padding-top: 300px;
+        }
 
         ol {
             // box model

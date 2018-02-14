@@ -17,15 +17,14 @@
         background-image: url("./img/hero-bg.jpg");
         background-size: cover;
         background-position: center center;
-        background-attachment: fixed;
     }
-
+    
     @include atTabletsLandscape {
         // box model
         padding-top: 100px;
         padding-bottom: 30px;
     }
-
+    
     @include atDesktop {
         // box model
         height: calc(100vh - 100px);
@@ -33,6 +32,9 @@
         padding-bottom: 40px;
         max-height: 700px;
         min-height: 650px;
+        
+        // visual
+        background-attachment: fixed;
     }
 
     @include atDesktopLarge {
@@ -231,10 +233,11 @@
     &__aside {
         // box model
         padding: 15px 0;
+        margin-top: 40px;
 
         @include atDesktop {
             // box model
-            float: right;
+            float: left;
         }
     }
 
