@@ -127,6 +127,11 @@
         // box model
         margin-bottom: 40px;
 
+        @include atDesktop {
+            // box model
+            margin-bottom: 0;
+        }
+
         &--left {
             @include atDesktop {
                 // box model
