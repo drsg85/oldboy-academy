@@ -90,6 +90,7 @@
     &--course {
         // box model
         padding-bottom: 55px;
+        padding-top: 160px;
 
         @include atTabletsPortrait {
             // box model

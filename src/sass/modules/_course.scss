@@ -33,8 +33,6 @@
         // positioning
         position: relative;
 
-        // box model
-
         // typography
         font-size: 0;
     }
@@ -44,7 +42,7 @@
         position: absolute;
         bottom: 0;
         right: -7px;
-        transform: translateY(50%);
+        // transform: translateY(50%);
         // top: 20px;
         // bottom: -50%;
 
@@ -55,9 +53,13 @@
 
         // typography
         color: $white;
-        font-size: 1.35rem;
-        font-family: $titleFont;
-        font-variant: small-caps;
+        font-size: 0.85rem;
+        font-family: $mainFont;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        // font-variant: small-caps;
 
         // visual
         background-color: $gold;

@@ -864,7 +864,8 @@ body {
     background-repeat: repeat-x;
     background-position: -40px bottom; }
   .hero--course {
-    padding-bottom: 55px; }
+    padding-bottom: 55px;
+    padding-top: 160px; }
     @media (min-width: 700px) {
       .hero--course {
         padding: 60px; } }
@@ -1910,15 +1911,16 @@ body {
     position: absolute;
     bottom: 0;
     right: -7px;
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
     width: 90%;
     margin: 0;
     padding: 15px 20px;
     color: #ffffff;
-    font-size: 1.35rem;
-    font-family: "Lora", serif;
-    font-variant: small-caps;
+    font-size: 0.85rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-transform: uppercase;
     background-color: #d5a353; }
     .course__title::before {
       content: "";
