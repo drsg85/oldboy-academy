@@ -95,6 +95,9 @@
         @include atTabletsPortrait {
             // box model
             padding: 60px;
+
+            // visual
+            background-image: url("./img/course-bg.jpg");
         }
 
         @include atDesktop {
