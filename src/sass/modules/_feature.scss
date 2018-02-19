@@ -133,6 +133,7 @@
 
         // visual
         opacity: 0.35;
+        pointer-events: none;
 
         @include atTabletsPortrait {
             // positioning

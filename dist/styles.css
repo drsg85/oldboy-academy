@@ -645,6 +645,9 @@ body {
     left: 0;
     visibility: visible;
     opacity: 1; }
+    @media (min-width: 1200px) {
+      .main-nav--shown {
+        left: 220px; } }
   @media (min-width: 700px) {
     .main-nav--side-menu {
       position: fixed;
@@ -1535,6 +1538,7 @@ body {
       .about__deco-logo {
         display: block; } }
   .about__features {
+    font-size: 0;
     text-align: center; }
 
 .selling-features {
@@ -1643,7 +1647,8 @@ body {
     top: -150px;
     height: 260px;
     width: 260px;
-    opacity: 0.35; }
+    opacity: 0.35;
+    pointer-events: none; }
     @media (min-width: 700px) {
       .feature__icon {
         left: -140px;
