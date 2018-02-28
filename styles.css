@@ -1389,8 +1389,7 @@ body {
   position: relative;
   padding: 35px 25px;
   padding-bottom: 5px;
-  background-color: #ffffff;
-  overflow: hidden; }
+  background-color: #ffffff; }
   @media (min-width: 700px) {
     .about {
       padding: 60px; } }
@@ -1535,6 +1534,7 @@ body {
     position: absolute;
     top: 150px;
     right: -150px;
+    right: 60px;
     z-index: 1;
     height: 400px;
     width: 400px;
