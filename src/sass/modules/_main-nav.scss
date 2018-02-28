@@ -175,6 +175,11 @@
             // positioning
             left: 220px;
         }
+
+        @include atDesktopLarge {
+            // positioning
+            left: 300px;
+        }
     }
 
     &--side-menu {

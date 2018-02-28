@@ -87,6 +87,71 @@
     &__header {
         // positioning
         position: relative;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-bottom: 32px;
+        }
+    }
+
+    &__title {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        right: -7px;
+        // transform: translateY(50%);
+        // top: 20px;
+        // bottom: -50%;
+
+        // box model
+        width: 90%;
+        margin: 0;
+        padding: 15px 20px;
+
+        // typography
+        color: $white;
+        font-size: 0.75rem;
+        font-family: $mainFont;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+        text-transform: uppercase;
+        // font-variant: small-caps;
+
+        // visual
+        background-color: $gold;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 0;
+            left: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to left top, $gold 0, $gold 50%, transparent 50%, transparent 100%);
+        }
+        
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+
+            // box model
+            height: 50%;
+            width: 10px;
+            
+            // visual
+            background-image: linear-gradient(to left bottom, $gold 0, $gold 50%, transparent 50%, transparent 100%);
+        }
     }
 
     &__image {

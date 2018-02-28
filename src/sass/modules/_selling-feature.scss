@@ -2,7 +2,7 @@
     // box model
     display: inline-block;
     vertical-align: top;
-    margin: 30px;
+    margin: 20px 0;
     max-width: 300px;
 
     // typography
@@ -10,9 +10,15 @@
     
     // visual
     background-image: url("./img/laurel.png");
-    background-size: contain;
+    // background-size: contain;
+    background-size: 200px;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @include atTabletsPortrait {
+        // box model
+        margin: 30px;
+    }
 
     @include atDesktop {
         // box model
@@ -23,7 +29,8 @@
     &__title {
         // typography
         font-size: 1.5rem;
-        font-weight: 700;
+        font-weight: 400;
+        line-height: 1.5;
 
         @include atDesktop {
             // typography
@@ -34,6 +41,7 @@
 
     &__text {
         // typography
+        font-size: 1rem;
         line-height: 1.75;
 
         @include atDesktop {
