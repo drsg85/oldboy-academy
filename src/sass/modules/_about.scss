@@ -215,16 +215,17 @@
         font-size: 1.5rem;
         font-weight: 400;
         line-height: 1.5;
-
+        
         @include atTabletsPortrait {
             // typography
             font-size: 2rem;
             font-weight: 400;
             line-height: 1.35;
         }
-
+        
         @include atDesktop {
             // box model
+            margin-top: 0;
             max-width: 800px;
 
             // typography
@@ -287,7 +288,8 @@
 
         // visual
         background-image: url("./img/masson-yellow.png");
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     &__deco-logo {
