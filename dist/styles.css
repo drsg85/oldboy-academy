@@ -962,6 +962,9 @@ body {
         font-size: 2.75rem; } }
   .hero__content {
     padding: 0; }
+    @media (min-width: 1200px) {
+      .hero__content {
+        width: 50%; } }
     .hero__content::after {
       content: "";
       display: table;
@@ -2069,31 +2072,11 @@ body {
     display: table;
     width: 100%;
     clear: both; }
-  @media (min-width: 1200px) {
-    .hero-course::before {
-      content: "";
-      position: absolute;
-      left: 7px;
-      top: 7px;
-      z-index: 2;
-      height: calc(100% - 14px);
-      width: calc(100% - 14px);
-      border: 1px solid #d5a353;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      pointer-events: none; } }
   .hero-course__main {
     position: relative;
     margin: 0 -7px;
     padding: 15px;
     background-color: #ffffff; }
-    @media (min-width: 1200px) {
-      .hero-course__main {
-        float: left;
-        margin: 0;
-        width: 50%; } }
     .hero-course__main::before {
       content: "";
       position: absolute;
@@ -2107,9 +2090,6 @@ body {
       -ms-user-select: none;
       user-select: none;
       pointer-events: none; }
-      @media (min-width: 1200px) {
-        .hero-course__main::before {
-          display: none; } }
   .hero-course__header {
     position: relative;
     padding-bottom: 20px; }
@@ -2167,9 +2147,6 @@ body {
     @media (min-width: 900px) {
       .hero-course__image {
         height: 320px; } }
-    @media (min-width: 1200px) {
-      .hero-course__image {
-        width: calc(200% + 30px); } }
     .hero-course__image img {
       min-width: 100%;
       max-width: 100%;
@@ -2244,6 +2221,10 @@ body {
       vertical-align: top;
       width: 50%;
       padding: 0 20px; } }
+  @media (min-width: 1200px) {
+    .hero-course__info-column {
+      display: block;
+      width: auto; } }
   .hero-course__info-block {
     position: relative;
     padding-left: 50px;
@@ -2252,6 +2233,9 @@ body {
       .hero-course__info-block {
         margin-bottom: 10px;
         margin-top: 10px; } }
+    @media (min-width: 1200px) {
+      .hero-course__info-block {
+        margin: 0; } }
   .hero-course__info-icon {
     position: absolute;
     left: 7px;

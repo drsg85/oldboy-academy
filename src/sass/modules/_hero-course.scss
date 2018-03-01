@@ -20,27 +20,6 @@
         width: 100%;
         clear: both;
     }
-    
-    &::before {
-        @include atDesktop {
-            content: "";
-    
-            // positioning
-            position: absolute;
-            left: 7px;
-            top: 7px;
-            z-index: 2;
-    
-            // box model
-            height: calc(100% - 14px);
-            width: calc(100% - 14px);
-            border: 1px solid $gold;
-    
-            // visual
-            user-select: none;
-            pointer-events: none;
-        }
-    }
 
     &__main {
         // positioning
@@ -52,18 +31,6 @@
 
         // visual
         background-color: $white;
-
-        @include atTabletsLandscape {
-            // box model
-            // padding: 30px;
-        }
-
-        @include atDesktop {
-            // box model
-            float: left;
-            margin: 0;
-            width: 50%;
-        }
 
         &::before {
             content: "";
@@ -81,11 +48,6 @@
             // visual
             user-select: none;
             pointer-events: none;
-
-            @include atDesktop {
-                // box model
-                display: none;
-            }
         }
     }
 
@@ -193,11 +155,6 @@
             height: 320px;
         }
 
-        @include atDesktop {
-            // box model
-            width: calc(200% + 30px);
-        }
-        
         img {
             // box model
             // max-height: 100%;
@@ -325,6 +282,13 @@
             width: 50%;
             padding: 0 20px;
         }
+
+        @include atDesktop {
+            // box model
+            display: block;
+            width: auto;
+            // padding: 0;
+        }
     }
 
     &__info-block {
@@ -339,6 +303,11 @@
             // box model
             margin-bottom: 10px;
             margin-top: 10px;
+        }
+
+        @include atDesktop {
+            // box model
+            margin: 0;
         }
     }
 

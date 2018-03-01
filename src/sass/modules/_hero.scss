@@ -243,6 +243,11 @@
     &__content {
         // box model
         padding: 0;
+
+        @include atDesktop {
+            // box model
+            width: 50%;
+        }
         
         &::after {
             content: "";
