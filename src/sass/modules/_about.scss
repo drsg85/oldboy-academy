@@ -16,7 +16,7 @@
 
     @include atDesktopLarge {
         // box model
-        padding: 20px 120px;
+        padding: 60px 120px;
     }
     
     &--yellow {
@@ -80,7 +80,7 @@
             background-image: url("./img/deco-b.svg");
             background-size: 80px;
             background-repeat: repeat-x;
-            background-position: -40px bottom;
+            background-position: 0px bottom;
         }
     }
 
@@ -277,14 +277,15 @@
     &__deco {
         // positioning
         position: absolute;
-        top: 150px;
-        right: -150px;
-        right: 60px;
+        top: 50%;
+        left: -100px;
+        transform: translateY(-50%);
         z-index: 1;
 
         // box model
         height: 400px;
         width: 400px;
+        max-height: 65%;
 
         // visual
         background-image: url("./img/masson-yellow.png");

@@ -1401,7 +1401,7 @@ body {
       padding: 60px; } }
   @media (min-width: 1400px) {
     .about {
-      padding: 20px 120px; } }
+      padding: 60px 120px; } }
   .about--yellow {
     z-index: 2;
     padding: 60px 25px;
@@ -1435,7 +1435,7 @@ body {
     background-image: url("./img/deco-b.svg");
     background-size: 80px;
     background-repeat: repeat-x;
-    background-position: -40px bottom; }
+    background-position: 0px bottom; }
   .about__row::after {
     content: "";
     display: table;
@@ -1539,12 +1539,14 @@ body {
         text-align: left; } }
   .about__deco {
     position: absolute;
-    top: 150px;
-    right: -150px;
-    right: 60px;
+    top: 50%;
+    left: -100px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
     z-index: 1;
     height: 400px;
     width: 400px;
+    max-height: 65%;
     background-image: url("./img/masson-yellow.png");
     background-size: contain;
     background-repeat: no-repeat; }
