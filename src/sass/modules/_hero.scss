@@ -92,6 +92,11 @@
         padding-bottom: 55px;
         padding-top: 160px;
 
+        // visual
+        background-image: url("./img/course-bg.jpg");
+        background-position: center center;
+        background-size: cover;
+
         @include atTabletsPortrait {
             // box model
             padding: 60px;

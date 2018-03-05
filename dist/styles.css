@@ -868,7 +868,10 @@ body {
     background-position: -40px bottom; }
   .hero--course {
     padding-bottom: 55px;
-    padding-top: 160px; }
+    padding-top: 160px;
+    background-image: url("./img/course-bg.jpg");
+    background-position: center center;
+    background-size: cover; }
     @media (min-width: 700px) {
       .hero--course {
         padding: 60px;
