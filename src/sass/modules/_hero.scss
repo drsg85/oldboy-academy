@@ -100,6 +100,7 @@
         @include atTabletsPortrait {
             // box model
             padding: 60px;
+            padding-bottom: 80px;
 
             // visual
             background-image: url("./img/course-bg.jpg");
@@ -252,6 +253,12 @@
         @include atDesktop {
             // box model
             width: 50%;
+            float: left;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            width: 60%;
         }
         
         &::after {
@@ -271,7 +278,14 @@
 
         @include atDesktop {
             // box model
-            float: left;
+            width: calc(50% - 60px);
+            float: right;
+            margin-top: 0;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            width: calc(40% - 60px);
         }
     }
 
