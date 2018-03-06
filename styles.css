@@ -674,6 +674,8 @@ body {
         font-family: "Open Sans", sans-serif;
         text-align: center;
         line-height: 30px; }
+        .main-nav--side-menu .main-nav__link:hover {
+          color: #d5a353; }
       .main-nav--side-menu .main-nav__logo {
         display: block; }
       .main-nav--side-menu .main-nav__social {
