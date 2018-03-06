@@ -254,9 +254,10 @@
 
         // visual
         box-shadow: 40px 0 20px -40px #000;
-
+        
         img {
             // box model
+            width: 100%;
             max-width: 100%;
         }
     }
