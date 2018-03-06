@@ -31,6 +31,30 @@
         background-position: top -40px;
     }
 
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 569px;
+        left: 0;
+        z-index: 6;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px bottom;
+
+        @include atTablestLandscape {
+            // box model
+            display: none;
+        }
+    }
     &--inner {
         &::before {
             // box model
