@@ -42,6 +42,26 @@
         max-height: 800px;
     }
 
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 2;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+    }
+
     &--inner {
         @include atTabletsPortrait {
             // box model
@@ -64,26 +84,6 @@
         @include atDesktopLarge {
             // box model
             max-height: auto;
-        }
-    
-        &::after {
-            content: "";
-    
-            // positioning
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            z-index: 2;
-    
-            // box model
-            height: 32px;
-            width: 100%;
-    
-            // visual
-            background-image: url("./img/deco-b.svg");
-            background-size: 80px;
-            background-repeat: repeat-x;
-            background-position: -40px bottom;
         }
     }
 
@@ -120,26 +120,6 @@
             padding-right: 120px;
             padding-top: 80px;
             padding-bottom: 100px;
-        }
-
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            z-index: 2;
-
-            // box model
-            height: 32px;
-            width: 100%;
-
-            // visual
-            background-image: url("./img/deco-b.svg");
-            background-size: 80px;
-            background-repeat: repeat-x;
-            background-position: center bottom;
         }
     }
 
