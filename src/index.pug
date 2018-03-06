@@ -20,11 +20,11 @@ html(lang="ru")
                 .main-nav__logo
                     img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип монохром")
                 ul
-                    li: a(href="#") Курсы
-                    li: a(href="#") Команда
-                    li: a(href="#") Отзывы
-                    li: a(href="#") Моделям
-                    li: a(href="#") Сертификаты
+                    li: a(href="#about") Об Академии
+                    li: a(href="#features") Преимущества
+                    li: a(href="#courses") Наши Курсы
+                    li: a(href="#team") Команда
+                    li: a(href="#contacts") Контакты
 
                 .main-nav__social
                     .masson
@@ -84,7 +84,7 @@ html(lang="ru")
                                 input.hero-form__button(type="submit" value="Записаться")
                             .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
 
-        section.about
+        section.about#about
             .about__row
                 .about__logo
                     img(src="./img/logo.svg", alt="Академия Олдбой цветно логотип")
@@ -97,7 +97,7 @@ html(lang="ru")
                     .about__more
                         a.button(href="#") Подробнее об Академии
 
-        section.selling-features
+        section.selling-features#features
             article.feature.feature--active
                 header.feature__header
                     h3.feature__title Оптимальный баланс практики и&nbsp;теории
@@ -146,10 +146,10 @@ html(lang="ru")
             .gallery__preview
             header.gallery__header
                 h2.gallery__title Добро<br>пожаловать<br>в&nbsp;семью OldBoy
-                p.gallery__subtitle Галерея работ наших<br>мастеров и учеников
-                .gallery__more: a(href="").button Галерея Академии
+                //- p.gallery__subtitle Галерея работ наших<br>мастеров и учеников
+                //- .gallery__more: a(href="").button Галерея Академии
 
-        section.courses
+        section.courses#courses
             header.courses__header
                 h2.courses__title Наши<br>курсы
 
@@ -229,7 +229,7 @@ html(lang="ru")
                     .course__more
                         a.button.button--block(href="#") Подробнее о&nbsp;курсе
 
-        section.team
+        section.team#team
             header.team__header
                 h2.team__title Команда<br>Академии
 
@@ -293,7 +293,7 @@ html(lang="ru")
                         p.testimonial__text Достаточно долго искал достойную школу, для того чтобы ещё немного прокачаться. Наткнулся на Академию OldBoy совершенно случайно и решил попробовать, могу сказать, что это достойные мастера и преподаватели, с очень близким мне подходом к процессу стрижки.
                         //- <br>Из плюсов могу выделить огромный багаж новых теоретических и практических навыков (текстуры, разделения, техники сведения на нет), отзывчивые преподаватели, ответственный подход во всем (начиная от выбора моделей и заканчивая организацией).
         
-        section.contacts
+        section.contacts#contacts
             .map#map
             article.contacts-box
                 header.contacts-box__header
@@ -336,12 +336,12 @@ html(lang="ru")
                     a(href="").icon-instagram
                 nav.page-footer__menu
                     ul
-                        li: a(href="#") Курсы
-                        li: a(href="#") Команда
-                        li: a(href="#") Отзывы
-                        li: a(href="#") Моделям
-                        li: a(href="#") Сертификаты
-                .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.
+                        li: a(href="#about") Об Академии
+                        li: a(href="#features") Преимущества
+                        li: a(href="#courses") Наши Курсы
+                        li: a(href="#team") Команда
+                        li: a(href="#contacts") Контакты
+                .page-footer__copy &copy;Академия Олдбой. 2018<br>Все права сохранены.
 
 
     script(src="menu.js")
