@@ -19,12 +19,12 @@ html(lang="ru")
             nav.main-nav
                 .main-nav__logo
                     img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип монохром")
-                ul
-                    li: a(href="#about") Об Академии
-                    li: a(href="#features") Преимущества
-                    li: a(href="#courses") Наши Курсы
-                    li: a(href="#team") Команда
-                    li: a(href="#contacts") Контакты
+                ul.main-nav__list
+                    li.main-nav__item: a.main-nav__link(href="#about") Об Академии
+                    li.main-nav__item: a.main-nav__link(href="#features") Преимущества
+                    li.main-nav__item: a.main-nav__link(href="#courses") Наши Курсы
+                    li.main-nav__item: a.main-nav__link(href="#team") Команда
+                    li.main-nav__item: a.main-nav__link(href="#contacts") Контакты
 
                 .main-nav__social
                     .masson
@@ -34,7 +34,7 @@ html(lang="ru")
                             a(href="#").icon-vkontakte
                             a(href="#").icon-instagram
                         
-                        a.masson__tag(href="#") <em>#</em>OldboyAcademy
+                        a.masson__tag(href="#") # <em>OldboyAcademy</em>
 
             .page-header__phone
                 a(href="tel:+79114567890") +7 911 456-78-90
@@ -56,8 +56,8 @@ html(lang="ru")
                     .masson__logo
                         img(src="./img/masson.png", alt="")
                     .masson__social
-                        a(href="#").icon-vkontakte
-                        a(href="#").icon-instagram
+                        a(href="").icon-vkontakte
+                        a(href="").icon-instagram
 
             .slider#header-slider
                 .slider__slide
@@ -333,8 +333,8 @@ html(lang="ru")
         footer.page-footer
             .page-footer__wrapper
                 .page-footer__social
-                    a(href="#").icon-vkontakte
-                    a(href="#").icon-instagram
+                    a(href="").icon-vkontakte
+                    a(href="").icon-instagram
                 nav.page-footer__menu
                     ul
                         li: a(href="#about") Об Академии
