@@ -50,6 +50,18 @@ function initMap() {
                 ]
             },
             {
+                "featureType": "administrative",
+                "elementType": "labels.text",
+                "stylers": [
+                    {
+                        "color": "#e9e9e9"
+                    },
+                    {
+                        "weight": "0.8"
+                    }
+                ]
+            },
+            {
                 "featureType": "landscape.man_made",
                 "elementType": "geometry",
                 "stylers": [
