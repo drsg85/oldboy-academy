@@ -70,7 +70,7 @@
         }
     }
 
-    ul {
+    &__list {
         // box model
         margin: 0;
         padding: 0;
@@ -79,7 +79,7 @@
         list-style: none;
     }
 
-    li {
+    &__item {
         // positioning
         position: relative;
 
@@ -116,7 +116,7 @@
         }
     }
 
-    a {
+    &__link {
         // box model
         display: block;
         padding: 15px;
@@ -200,13 +200,13 @@
             visibility: visible;
             opacity: 1;
     
-            li {
+            .main-nav__item {
                 // box model
                 display: block;
                 padding: 0;
             }
     
-            a {
+            .main-nav__link {
                 // box model
                 padding: 10px 0;
     

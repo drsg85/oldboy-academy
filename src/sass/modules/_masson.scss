@@ -56,35 +56,38 @@
         // box model
         display: inline-block;
         vertical-align: top;
-        // padding-top: 10px;
 
         // typography
-        color: $white;
+        color: $gold;
         font-size: 0.875rem;
         font-weight: 700;
         text-align: center;
+        text-decoration: none;
 
-        &::before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: -8px;
-            bottom: -2px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            // box model
-            height: 1px;
-            width: 105px;
-
-            // visual
-            background-color: $white;
-        }
+        // visual
+        transition: 0.3s ease-in-out;
 
         em {
+            // box model
+            padding-right: 5px;
+
+            // typography
+            color: $white;
+            font-style: normal;
+            text-decoration: underline;
+            
+            // visual
+            transition: all 0.3s ease-out;
+        }
+
+        &:hover {
             // typography
             color: $blue;
+
+            em {
+                // typography
+                color: $blue;
+            }
         }
     }
 
