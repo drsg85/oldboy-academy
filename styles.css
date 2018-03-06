@@ -2759,6 +2759,21 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: top -40px; }
+  .contacts::after {
+    content: "";
+    position: absolute;
+    top: 569px;
+    left: 0;
+    z-index: 6;
+    height: 32px;
+    width: 100%;
+    background-image: url("./img/deco-b.svg");
+    background-size: 80px;
+    background-repeat: repeat-x;
+    background-position: -40px bottom; }
+    @media (min-width: 1200px) {
+      .contacts::after {
+        display: none; } }
   .contacts--inner::before {
     display: none; }
 
