@@ -1813,6 +1813,9 @@ body {
 .gallery {
   position: relative;
   padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 0;
   background-color: #ffffff; }
   .gallery__preview {
@@ -1843,7 +1846,14 @@ body {
       width: calc(100% - 6px);
       border: 1px solid #d5a353; }
   .gallery__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     padding: 0 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-image: url("./img/gallery-bg.jpg");
     background-position: top right;
     background-size: contain;
@@ -1853,9 +1863,6 @@ body {
         padding: 0 60px; } }
     @media (min-width: 1200px) {
       .gallery__header {
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 30px;
         width: 499px; } }
   .gallery__title {
     margin: 20px 0;
