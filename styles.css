@@ -670,7 +670,6 @@ body {
       .main-nav--side-menu a {
         padding: 10px 0;
         color: #ffffff;
-        font-size: 0.75rem;
         font-size: 0.8rem;
         font-family: "Open Sans", sans-serif;
         text-align: center;
@@ -2802,7 +2801,7 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: -40px bottom; }
-    @media (min-width: 1200px) {
+    @media (min-width: 900px) {
       .contacts::after {
         display: none; } }
   .contacts--inner::before {
