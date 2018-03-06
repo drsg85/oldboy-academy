@@ -50,7 +50,7 @@
         background-repeat: repeat-x;
         background-position: -40px bottom;
 
-        @include atTablestLandscape {
+        @include atTabletsLandscape {
             // box model
             display: none;
         }
