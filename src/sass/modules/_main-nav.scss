@@ -216,6 +216,11 @@
                 font-family: $mainFont;
                 text-align: center;
                 line-height: 30px;
+
+                &:hover {
+                    // typography
+                    color: $gold;
+                }
             }
     
             .main-nav__logo {
