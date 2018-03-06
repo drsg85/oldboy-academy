@@ -57,7 +57,7 @@ function initMap() {
                         "color": "#e9e9e9"
                     },
                     {
-                        "weight": "0.4"
+                        "weight": "0.8"
                     }
                 ]
             },
