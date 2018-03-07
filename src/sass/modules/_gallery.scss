@@ -4,6 +4,7 @@
 
     // box model
     padding: 40px 0;
+    display: flex;
 
     // typography
     font-size: 0;
@@ -60,7 +61,10 @@
 
     &__header {
         // box model
+        display: flex;
+        width: 100%;
         padding: 0 25px;
+        align-items: center;
 
         // visual
         background-image: url("./img/gallery-bg.jpg");
@@ -75,9 +79,6 @@
 
         @include atDesktop {
             // box model
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 30px;
             width: 499px;
         }
     }
