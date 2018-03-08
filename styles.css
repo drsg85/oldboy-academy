@@ -1812,8 +1812,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 0;
   background-color: #ffffff; }
+  @media (min-width: 1200px) {
+    .gallery {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   .gallery__preview {
     position: relative;
     height: 220px;
@@ -1841,15 +1854,36 @@ body {
       height: calc(100% - 16px);
       width: calc(100% - 6px);
       border: 1px solid #d5a353; }
+  .gallery__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .gallery__img {
+    width: 100%;
+    height: 300px; }
+    @media (min-width: 700px) {
+      .gallery__img {
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      .gallery__img {
+        width: 25%; } }
+    .gallery__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
   .gallery__header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 100%;
     padding: 0 25px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     background-image: url("./img/gallery-bg.jpg");
     background-position: top right;
     background-size: contain;
@@ -1860,6 +1894,12 @@ body {
     @media (min-width: 1200px) {
       .gallery__header {
         width: 499px; } }
+    .gallery__header-slogan {
+      padding: 0 25px;
+      font-size: 1rem; }
+      @media (min-width: 700px) {
+        .gallery__header-slogan {
+          padding: 0 60px; } }
   .gallery__title {
     margin: 20px 0;
     padding: 30px 0;
@@ -1871,10 +1911,18 @@ body {
     @media (min-width: 700px) {
       .gallery__title {
         font-size: 2.25rem; } }
+    .gallery__title-slogan {
+      font-size: 2.875rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
   .gallery__subtitle {
     margin-bottom: 50px;
-    font-size: 1rem;
-    line-height: 1.5; }
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: "Lora", serif; }
     @media (min-width: 700px) {
       .gallery__subtitle {
         margin-bottom: 120px;
@@ -1882,6 +1930,19 @@ body {
     @media (min-width: 900px) {
       .gallery__subtitle {
         margin-bottom: 60px; } }
+    .gallery__subtitle-slogan {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #d5a353;
+      font-weight: 700; }
+      @media (min-width: 700px) {
+        .gallery__subtitle-slogan {
+          font-size: 1.125rem; } }
+  .gallery__text {
+    font-size: 1.325rem;
+    line-height: 1.25;
+    color: #222222;
+    font-weight: 400; }
 
 .courses {
   position: relative;
