@@ -158,89 +158,85 @@
         <h2 class="courses__title">Наши<br>курсы</h2>
       </header>
       <div class="courses__content">
+      <?php
+        $args = array(
+          'category_name' => 'courses'
+        );
+
+        query_posts($args);
+
+        if(have_posts()) {
+          while(have_posts()) {
+            the_post();
+
+            // vars
+            $course_img = get_field('course_img');
+            $course_name = get_field('course_name');
+            $course_date = get_field('course_date_start');
+            $course_duration = get_field('course_duration');
+            $course_skills_level = get_field('course_skills_level');
+            $course_format = get_field('course_format_coaching');
+            $course_ribbon = get_field('course_ribbon');
+
+            $date = new DateTime($course_date);
+
+      ?>
         <article class="course">
           <header class="course__header">
-            <h3 class="course__title">Барбер с «нуля»</h3>
-            <div class="course__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course1.jpg" alt="Академия Олдбой курс по барберингу"/></div>
+            <h3 class="course__title">«<?php echo $course_name; ?>»</h3>
+            <div class="course__image"><img src="<?php echo $course_img; ?>" alt="Академия Олдбой курс по барберингу"/></div>
             <div class="course__ribbons">
-              <p class="course__ribbon course__ribbon--blue">новый <br>курс</p>
+            <?php
+              switch($course_ribbon) {
+                case 'new':
+              ?>
+                <p class="course__ribbon course__ribbon--blue">новый <br>курс</p>
+              <?php
+                break;
+              ?>
+
+              <?php
+                case 'special_price':
+              ?>
               <p class="course__ribbon course__ribbon--red">специальная <br>цена</p>
+              <?php
+                break;
+            ?>
+              <?php
+              case 'all':
+              ?>
+                <p class="course__ribbon course__ribbon--blue">новый <br>курс</p>
+                <p class="course__ribbon course__ribbon--red">специальная <br>цена</p>
+              <?php
+                break;
+              }
+              ?>
             </div>
           </header>
           <div class="course__content">
             <div class="course__info">
               <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt=""/></div>
-              <div class="course__info-text">Старт: 1 ноября <br>Будние дни</div>
+              <div class="course__info-text">Старт:<?php echo date_i18n(('j M'), strtotime($course_date)); ?><br>Будние дни</div>
             </div>
             <div class="course__info">
               <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/time-biggest.svg" alt=""/></div>
-              <div class="course__info-text">Длительность: <br>2 месяца</div>
+              <div class="course__info-text">Длительность: <br><?php echo $course_duration; ?></div>
             </div>
             <div class="course__info">
               <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/level-noob.svg" alt=""/></div>
-              <div class="course__info-text">Уровень навыков: <br>без опыта</div>
+              <div class="course__info-text">Уровень навыков: <br><?php echo $course_skills_level; ?></div>
             </div>
             <div class="course__info">
               <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/group.svg" alt=""/></div>
-              <div class="course__info-text course__info-text--last">Формат: <br>обучение в группе</div>
+              <div class="course__info-text course__info-text--last">Формат: <br><?php echo $course_format; ?></div>
             </div>
           </div>
-          <div class="course__more"><a class="button button--block" href="#">Подробнее о&nbsp;курсе</a></div>
+          <div class="course__more"><a class="button button--block" href="<?php the_permalink(); ?>">Подробнее о&nbsp;курсе</a></div>
         </article>
-        <article class="course">
-          <header class="course__header">
-            <h3 class="course__title">Барбер «универсал»</h3>
-            <div class="course__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course2.jpg" alt="Академия Олдбой курс по барберингу"/></div>
-            <div class="course__ribbons"></div>
-          </header>
-          <div class="course__content">
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt=""/></div>
-              <div class="course__info-text">Старт: 1 ноября <br>Будние дни</div>
-            </div>
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/time-average.svg" alt=""/></div>
-              <div class="course__info-text">Длительность: <br>1 месяц</div>
-            </div>
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/level-beginner.svg" alt=""/></div>
-              <div class="course__info-text">Уровень навыков: <br>минимум 6 месяцев</div>
-            </div>
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/group.svg" alt=""/></div>
-              <div class="course__info-text course__info-text--last">Формат: <br>обучение в группе</div>
-            </div>
-          </div>
-          <div class="course__more"><a class="button button--block" href="#">Подробнее о&nbsp;курсе</a></div>
-        </article>
-        <article class="course">
-          <header class="course__header">
-            <h3 class="course__title">Шеф-барбер</h3>
-            <div class="course__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course3.jpg" alt="Академия Олдбой курс по барберингу"/></div>
-            <div class="course__ribbons">
-              <p class="course__ribbon course__ribbon--red">специальная <br>цена</p>
-            </div>
-          </header>
-          <div class="course__content">
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt=""/></div>
-              <div class="course__info-text">Старт: 1 ноября <br>Будние дни</div>
-            </div>
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/time-small.svg" alt=""/></div>
-              <div class="course__info-text">Длительность: <br>2 недели</div>
-            </div>
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/level-medium.svg" alt=""/></div>
-              <div class="course__info-text">Уровень навыков: <br>опытный барбер</div>
-            </div>
-            <div class="course__info">
-              <div class="course__info-icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/single.svg" alt=""/></div>
-              <div class="course__info-text course__info-text--last">Формат: <br>индивидуальное</div>
-            </div>
-          </div>
-          <div class="course__more"><a class="button button--block" href="#">Подробнее о&nbsp;курсе</a></div>
-        </article>
+        <?php
+          }
+        }
+        ?>
       </div>
     </section>
     <section class="team" id="team">
