@@ -244,42 +244,36 @@
         <h2 class="team__title">Команда<br>Академии</h2>
       </header>
       <div class="team__content">
+      <?php
+        $args = array(
+          'category_name' => 'team'
+        );
+        query_posts($args);
+
+        if(have_posts()) {
+          while(have_posts()) {
+            the_post();
+            
+            // vars
+            $member_img = get_field('member_img');
+            $member_name = get_field('member_name');
+            $member_description = get_field('member_description');
+
+      ?>
         <article class="member member--first">
           <header class="member__header">
-            <div class="member__photo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/members/barber1.png" alt=""/></div>
-            <h3 class="member__name">Юрий<br>Артюх</h3>
+            <div class="member__photo"><img src="<?php echo $member_img; ?>" alt=""/></div>
+            <h3 class="member__name"><?php echo $member_name; ?></h3>
           </header>
           <div class="member__content">
             <p class="member__about">О мастере:</p>
-            <p class="member__text">Ведущий мастер сети Олдбой. Сертифицированный технолог бренда American Crew.</p>
-            <p class="member__text">Стрижет с 16 лет, последние три года мы даже не припомним, что бы у него были выходные. Обучаля у именитыхбарберов и готов делиться заниями.</p>
-            <p class="member__text">Большой любитель английской школы, сложных разделений и текстуры</p>
+            <p class="member__text"><?php echo $member_description; ?></p>
           </div>
         </article>
-        <article class="member">
-          <header class="member__header">
-            <div class="member__photo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/members/barber2.png" alt=""/></div>
-            <h3 class="member__name">Виктор<br>Пилгрим</h3>
-          </header>
-          <div class="member__content">
-            <p class="member__about">О мастере:</p>
-            <p class="member__text">Ведущий мастер сети Олдбой. Сертифицированный технолог бренда American Crew.</p>
-            <p class="member__text">Стрижет с 16 лет, последние три года мы даже не припомним, что бы у него были выходные. Обучаля у именитыхбарберов и готов делиться заниями.</p>
-            <p class="member__text">Большой любитель английской школы, сложных разделений и текстуры</p>
-          </div>
-        </article>
-        <article class="member">
-          <header class="member__header">
-            <div class="member__photo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/members/barber3.png" alt=""/></div>
-            <h3 class="member__name">Просто<br>Олег</h3>
-          </header>
-          <div class="member__content">
-            <p class="member__about">О мастере:</p>
-            <p class="member__text">Ведущий мастер сети Олдбой. Сертифицированный технолог бренда American Crew.</p>
-            <p class="member__text">Стрижет с 16 лет, последние три года мы даже не припомним, что бы у него были выходные. Обучаля у именитыхбарберов и готов делиться заниями.</p>
-            <p class="member__text">Большой любитель английской школы, сложных разделений и текстуры</p>
-          </div>
-        </article>
+        <?php
+          }
+        }
+        ?>
       </div>
       <div class="team__navigation"></div>
       <div class="team__about">
