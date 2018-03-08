@@ -179,7 +179,6 @@
             $course_ribbon = get_field('course_ribbon');
 
             $date = new DateTime($course_date);
-
       ?>
         <article class="course">
           <header class="course__header">
