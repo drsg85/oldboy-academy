@@ -1894,11 +1894,11 @@ body {
     @media (min-width: 1200px) {
       .gallery__header {
         width: 499px; } }
-    .gallery__header-slogan {
+    .gallery__header--slogan {
       padding: 0 25px;
       font-size: 1rem; }
       @media (min-width: 700px) {
-        .gallery__header-slogan {
+        .gallery__header--slogan {
           padding: 0 60px; } }
   .gallery__title {
     margin: 20px 0;
@@ -1911,7 +1911,7 @@ body {
     @media (min-width: 700px) {
       .gallery__title {
         font-size: 2.25rem; } }
-    .gallery__title-slogan {
+    .gallery__title--slogan {
       font-size: 2.875rem;
       font-family: "Open Sans", sans-serif;
       font-weight: 300;
@@ -1930,13 +1930,13 @@ body {
     @media (min-width: 900px) {
       .gallery__subtitle {
         margin-bottom: 60px; } }
-    .gallery__subtitle-slogan {
+    .gallery__subtitle--slogan {
       margin-top: 0;
       margin-bottom: 15px;
       color: #d5a353;
       font-weight: 700; }
       @media (min-width: 700px) {
-        .gallery__subtitle-slogan {
+        .gallery__subtitle--slogan {
           font-size: 1.125rem; } }
   .gallery__text {
     font-size: 1.325rem;
