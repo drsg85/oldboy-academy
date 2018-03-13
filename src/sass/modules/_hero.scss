@@ -9,14 +9,14 @@
     background-color: $blue;
     overflow: hidden;
     
+    // visual
+    background-image: url("./img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    
     @include atTabletsPortrait {
         // box model
         padding: 60px 100px;
-
-        // visual
-        background-image: url("./img/hero-bg.jpg");
-        background-size: cover;
-        background-position: center center;
     }
     
     @include atTabletsLandscape {
