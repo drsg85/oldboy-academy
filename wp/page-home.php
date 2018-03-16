@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css" />
     <title>Oldboy Academy</title>
+
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -67,7 +69,7 @@
         </nav>
 
         <div class="page-header__phone">
-            <a href="tel:+79114567890">+7 911 456-78-90</a>
+            <a href="tel:+79114567890">+7 911 456-78-92</a>
         </div>
         <div class="menu-icon">
             <div class="menu-icon__middle"></div>
@@ -121,7 +123,7 @@
                         $counter++;
                         // vars
                         $course_name = get_field('course_name');
-                        $course_date = new DateTime(get_field('course_date'));
+                        $course_date = get_field('course_date');
             ?>
 
             <div class="slider__slide">
@@ -132,7 +134,7 @@
                         </h2>
                         <p class="hero-form__subtitle">
                             Старт группы<br>
-                            <?php echo '$course_date;' ?>
+                            <?php echo date_i18n('j F Y', (int)$course_date); ?>
                         </p>
                     </header>
                     <div class="hero-form__wrapper">
@@ -321,7 +323,7 @@
                         // vars
                         $course_img             = get_field('course_img');
                         $course_name            = get_field('course_name');
-                        $course_date            = new DateTime(get_field('course_date'));
+                        $course_date            = get_field('course_date');
                         $course_duration        = get_field('course_duration');
                         $course_skills_level    = get_field('course_skills');
                         $course_format          = get_field('course_format');
@@ -365,7 +367,7 @@
                                 <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt="" />
                             </div>
                             <div class="course__info-text">
-                                Старт: <?php echo date_i18n(('j F Y')); ?><br>
+                                Старт: <?php echo date_i18n('j F Y'); ?><br>
                             </div>
                         </div>
                         <div class="course__info">
@@ -541,6 +543,8 @@
                 <br>Все права сохранены.</div>
         </div>
     </footer>
+
+    <?php wp_footer(); ?>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/menu.js?v='<?php echo rand(); ?>"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/app.js?v='<?php echo rand(); ?>"></script>
