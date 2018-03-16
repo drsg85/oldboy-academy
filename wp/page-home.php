@@ -1,20 +1,24 @@
 <?php 
-/*
-    Template Name: Home Page
-*/
+    /*
+        Template Name: Home Page
+    */
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css" />
-    <title>Oldboy Academy</title>
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
+
+    <title>Академия барберинга Oldboy</title>
 
     <?php wp_head(); ?>
 </head>
@@ -61,8 +65,8 @@
                         <a class="icon-vkontakte" href="#"></a>
                         <a class="icon-instagram" href="#"></a>
                     </div>
-                    <a class="masson__tag" href="#">#
-                        <em>OldboyAcademy</em>
+                    <a class="masson__tag" href="#">
+                        #<em>OldboyAcademy</em>
                     </a>
                 </div>
             </div>
@@ -133,8 +137,7 @@
                             <strong><?php echo $course_name; ?></strong>
                         </h2>
                         <p class="hero-form__subtitle">
-                            Старт группы<br>
-                            <?php echo date_i18n('j F Y', (int)$course_date); ?>
+                            Старт группы <?php echo $course_date; ?>
                         </p>
                     </header>
                     <div class="hero-form__wrapper">
@@ -142,12 +145,9 @@
                             <input class="hero-form__input" type="text" name="name" placeholder="Имя" />
                             <input class="hero-form__input" type="text" name="phone" placeholder="Телефон" />
                             <input class="hero-form__input" type="email" name="email" placeholder="Электронная почта" />
-                            <input class="hero-form__button" type="submit" value="Записаться" />
+                            <input class="hero-form__button" type="submit" value="Подать заявку" />
                         </form>
-                        <div class="hero-form__warning">Заполняя данную форму
-                            <br> вы&nbsp;принимаете условия
-                            <br>
-                            <a href="#">политики конфиденциальности</a>
+                        <div class="hero-form__warning">Заполняя данную форму<br>вы&nbsp;принимаете условия<br><a href="#">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                         <div class="hero-form__warning">Заполняя данную форму
                             <br> вы&nbsp;принимаете условия
                             <br>
-                            <a href="http://">политики конфиденциальности</a>
+                            <a href="#">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -367,7 +367,7 @@
                                 <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt="" />
                             </div>
                             <div class="course__info-text">
-                                Старт: <?php echo date_i18n('j F Y'); ?><br>
+                                Старт:<br><?php echo $course_date; ?><br>
                             </div>
                         </div>
                         <div class="course__info">
@@ -407,7 +407,7 @@
     </section>
 
     <!-- Team -->
-    <section class="team" id="team">
+    <!-- <section class="team" id="team">
         <header class="team__header">
             <h2 class="team__title">Команда
                 <br>Академии</h2>
@@ -460,7 +460,7 @@
                 <a class="button" href="#">Подробнее о команде</a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contacts -->
     <section class="contacts" id="contacts">
