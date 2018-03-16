@@ -21,13 +21,16 @@
     <!-- Header -->
     <header class="page-header">
         <div class="page-header__logo">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой логотип" />
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой логотип"/>
+            </a>
         </div>
 
         <nav class="main-nav">
             <div class="main-nav__logo">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"
-                />
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
+                </a>
             </div>
             <ul class="main-nav__list">
                 <li class="main-nav__item">
@@ -39,9 +42,9 @@
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="#courses">Наши Курсы</a>
                 </li>
-                <li class="main-nav__item">
+                <!-- <li class="main-nav__item">
                     <a class="main-nav__link" href="#team">Команда</a>
-                </li>
+                </li> -->
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="#contacts">Контакты</a>
                 </li>
@@ -75,8 +78,9 @@
     <section class="hero">
         <aside class="hero-aside">
             <div class="hero-aside__logo">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"
-                />
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
+                </a>
             </div>
             <div class="hero-aside__wrapper">
                 <h1 class="hero-aside__title">Добро
@@ -103,13 +107,33 @@
             </div>
         </div>
         <div class="slider" id="header-slider">
+            <?php
+                $args = array(
+                    'category_name' => 'courses'
+                );
+
+                query_posts($args);
+                $counter = 0;
+
+                if (have_posts()) {
+                    while (have_posts() && ($counter < 3)) {
+                        the_post();
+                        $counter++;
+                        // vars
+                        $course_name = get_field('course_name');
+                        $course_date = new DateTime(get_field('course_date'));
+            ?>
+
             <div class="slider__slide">
                 <div class="hero-form">
                     <header class="hero-form__header">
-                        <h2 class="hero-form__title">Старт группы
-                            <strong>«Барбер&nbsp;с&nbsp;нуля»</strong>
+                        <h2 class="hero-form__title">
+                            <strong><?php echo $course_name; ?></strong>
                         </h2>
-                        <p class="hero-form__subtitle">Уже 1 ноября спешите!</p>
+                        <p class="hero-form__subtitle">
+                            Старт группы<br>
+                            <?php echo '$course_date;' ?>
+                        </p>
                     </header>
                     <div class="hero-form__wrapper">
                         <form class="hero-form__form" action="">
@@ -126,13 +150,17 @@
                     </div>
                 </div>
             </div>
+
+            <?php
+                    }
+                }
+            ?>
+
             <div class="slider__slide">
                 <div class="hero-form">
                     <header class="hero-form__header">
-                        <h2 class="hero-form__title">Стань
-                            <br>моделью!</h2>
-                        <p class="hero-form__subtitle">Запись на
-                            <br>бесплатную стрижку</p>
+                        <h2 class="hero-form__title">Стань моделью!</h2>
+                        <p class="hero-form__subtitle">Запись на бесплатную стрижку</p>
                     </header>
                     <div class="hero-form__wrapper">
                         <form class="hero-form__form" action="">
@@ -286,8 +314,8 @@
 
                 query_posts($args);
 
-                if(have_posts()) {
-                    while(have_posts()) {
+                if (have_posts()) {
+                    while (have_posts()) {
                         the_post();
 
                         // vars
@@ -501,9 +529,9 @@
                     <li>
                         <a href="#courses">Наши Курсы</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#team">Команда</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#contacts">Контакты</a>
                     </li>
