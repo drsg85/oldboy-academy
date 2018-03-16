@@ -107,8 +107,8 @@
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
                 </div>
                 <div class="masson__social">
-                    <a class="icon-vkontakte" href=""></a>
-                    <a class="icon-instagram" href=""></a>
+                    <a class="icon-vkontakte" href="#"></a>
+                    <a class="icon-instagram" href="#"></a>
                 </div>
             </div>
         </div>
@@ -189,16 +189,16 @@
             </div>
             <div class="about__content about__content--right">
                 <h2 class="about__title">
-                    <?php echo get_theme_mod('Заголовок', 'OldBoy Academy'); ?>
+                    Академия барберинга OldBoy — место, где рождаются настоящие мужские парикмахеры
                 </h2>
                 <p class="about__text">
-                    <?php echo get_theme_mod('Текст для секции верхняя часть', 'OldBoyAcademy'); ?>
+                    Развитие культуры барберинга вернуло мужчинам ощущения и эмоции, которые испытывали джентельмены на старинных черно-белых фотографиях. Традиции лучших цирюлен прошлого века возвращаются, а истинные барберы активно возрождают культуру брадобрейства в аскетичной атмосфере исключительно мужской парикмахерской.
                 </p>
                 <p class="about__text">
-                    <?php echo get_theme_mod('Текст для секции нижняя часть', 'OldBoyAcademy'); ?>
+                    Академия барберинга — школа, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа. Хотите узнать, как из бородатого мужчины сделать джентльмена? Тогда записывайтесь на наши курсы.
                 </p>
                 <div class="about__more">
-                    <a class="button" href="#">Подробнее об Академии</a>
+                    <!-- <a class="button" href="#">Подробнее об Академии</a> -->
                 </div>
             </div>
         </div>
@@ -209,7 +209,7 @@
         <article class="feature feature--active">
             <header class="feature__header">
                 <h3 class="feature__title">
-                    <?php echo get_theme_mod('title_of_balance', 'OldBoyAcademy'); ?>
+                    Оптимальный баланс практики и теории
                 </h3>
                 <div class="feature__icon">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/target.svg" alt="" />
@@ -217,17 +217,16 @@
             </header>
             <div class="feature__body">
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_1', 'OldboyAcademy'); ?>
+                    Опытные преподаватели с многолетним стажем
                 </p>
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_2', 'OldboyAcademy'); ?>
                 </p>
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_3', 'OldboyAcademy'); ?>
+                    Психология общения и работа с клиентом
                 </p>
             </div>
             <div class="feature__more feature__more--balance">
-                <a href="#">Подробнее</a>
+                <!-- <a href="#">Подробнее</a> -->
             </div>
             <div class="feature__background feature__background--balance">
                 <div class="feature__deco">
@@ -235,10 +234,11 @@
                 </div>
             </div>
         </article>
+
         <article class="feature">
             <header class="feature__header">
                 <h3 class="feature__title">
-                    <?php echo get_theme_mod('title_of_conditions', 'OldBoyAcademy'); ?>
+                    Комфортные условия обучения
                 </h3>
                 <div class="feature__icon">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/university.svg" alt="" />
@@ -246,14 +246,14 @@
             </header>
             <div class="feature__body">
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_4', 'OldBoyAcademy'); ?>
+                    Современное оборудование и оснащенный зал
                 </p>
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_5', 'OldBoyAcademy'); ?>
+                    Удобное расположение хостела для проживания
                 </p>
             </div>
             <div class="feature__more feature__more--comfort">
-                <a href="#">Подробнее</a>
+                <!-- <a href="#">Подробнее</a> -->
             </div>
             <div class="feature__background feature__background--comfort">
                 <div class="feature__deco">
@@ -261,10 +261,11 @@
                 </div>
             </div>
         </article>
+
         <article class="feature">
             <header class="feature__header">
                 <h3 class="feature__title">
-                    <?php echo get_theme_mod('title_of_network', 'OldBoyAcademy'); ?>
+                    Создание рабочих и творческих связей
                 </h3>
                 <div class="feature__icon">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/razor.svg" alt="" />
@@ -272,17 +273,18 @@
             </header>
             <div class="feature__body">
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_6','OldBoyAcademy'); ?>
+                    Помощь в трудоустройстве, рекомендации и поддержка
                 </p>
                 <p class="feature__item">
                     <?php echo get_theme_mod('feature_text_7','OldBoyAcademy'); ?>
+                    Создание команды профессионалов и их продвижение на барберинг арене
                 </p>
                 <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_8','OldBoyAcademy'); ?>
+                    Особые условия и выгодные предложения партнёров
                 </p>
             </div>
             <div class="feature__more feature__more--connections">
-                <a href="#">Подробнее</a>
+                <!-- <a href="#">Подробнее</a> -->
             </div>
             <div class="feature__background feature__background--connections">
                 <div class="feature__deco">
