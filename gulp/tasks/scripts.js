@@ -4,6 +4,7 @@ const notify = require("gulp-notify");
 
 const config = {
     entry: {
+        main: "./src/js/main.js",
         menu: "./src/js/menu.js",
         app: "./src/js/app.js"
     },

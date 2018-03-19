@@ -13,7 +13,7 @@ class Slider {
 
         // connecting slides
         let maxHeight = 0;
-        console.log(this.slider.children);
+        // console.log(this.slider.children);
         this.slides = [];
         for (let i = 0; i < this.slider.children.length; i++) {
             this.slides.push(this.slider.children[i]);
@@ -21,7 +21,7 @@ class Slider {
                 maxHeight = this.slider.children[i].offsetHeight;
             }
         }
-        console.log(this.slides);
+        // console.log(this.slides);
         if (!this.slides.length) {
             throw new Error("There is no slides in slider: " + sliderID);
         }

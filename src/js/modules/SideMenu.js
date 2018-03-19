@@ -19,24 +19,19 @@ class SideMenu {
             if ((window.pageYOffset > self.aboutSection.offsetTop - 200) && (window.innerWidth >= 700)) {
                 self.menuIcon.style.display = "none";
                 self.mainMenu.classList.add("main-nav--side-menu");
+                self.heroAside.classList.add("hero-aside--hidden");
             } else {
                 self.menuIcon.style.display = "";
                 self.mainMenu.classList.remove("main-nav--side-menu");
+                self.heroAside.classList.remove("hero-aside--hidden");
             }
             
             // aside
             // if ((document.documentElement.scrollTop > self.aboutSection.offsetTop - 200) && (window.innerWidth >= 700)) {
-            if ((window.pageYOffset > self.aboutSection.offsetTop - 200) && (window.innerWidth >= 700)) {
-                self.heroAside.classList.add("hero-aside--hidden");
-            } else {
-                self.heroAside.classList.remove("hero-aside--hidden");
-            }
+            // if ((window.pageYOffset > self.aboutSection.offsetTop - 200) && (window.innerWidth >= 700)) {
+            // } else {
+            // }
         });
-        // alert(this.aboutSection.offsetTop);
-    }
-
-    showSideMenu() {
-
     }
 }
 

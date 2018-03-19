@@ -101,6 +101,7 @@
                 </div>
             </div>
         </aside>
+
         <div class="hero__social">
             <div class="masson masson--hero">
                 <div class="masson__logo">
@@ -112,6 +113,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="slider" id="header-slider">
             <?php
                 $args = array(
