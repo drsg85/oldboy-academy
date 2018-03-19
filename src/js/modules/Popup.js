@@ -9,11 +9,11 @@ class Popup {
     }
 
     events() {
-        this.closeButton.addEventListener("click", (event) => {
+        this.closeButton.addEventListener("click", () => {
             this.close();
         });
 
-        this.okButton.addEventListener("click", (event) => {
+        this.okButton.addEventListener("click", () => {
             this.close();
         });
     }

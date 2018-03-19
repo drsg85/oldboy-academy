@@ -265,10 +265,71 @@ var _SideMenu = __webpack_require__(1);
 
 var _SideMenu2 = _interopRequireDefault(_SideMenu);
 
+var _MobileMenu = __webpack_require__(3);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var headerSlider = new _Slider2.default("header-slider", true);
-var sideMenu = new _SideMenu2.default();
+new _MobileMenu2.default();
+new _Slider2.default("header-slider", true);
+new _SideMenu2.default();
+// const mobileMenu = new MobileMenu();
+// const headerSlider = new Slider("header-slider", true);
+// const sideMenu = new SideMenu();
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+    function MobileMenu() {
+        _classCallCheck(this, MobileMenu);
+
+        this.mainNav = document.querySelector(".main-nav");
+        this.menuIcon = document.querySelector(".menu-icon");
+
+        this.events();
+    }
+
+    _createClass(MobileMenu, [{
+        key: "events",
+        value: function events() {
+            var _this = this;
+
+            this.menuIcon.addEventListener("click", function () {
+                _this.toggleMenu();
+            });
+
+            this.mainNav.addEventListener("click", function (event) {
+                if (event.target.className == "main-nav__link") {
+                    _this.toggleMenu();
+                }
+            });
+        }
+    }, {
+        key: "toggleMenu",
+        value: function toggleMenu() {
+            this.mainNav.classList.toggle("main-nav--shown");
+            this.menuIcon.classList.toggle("menu-icon--close-x");
+        }
+    }]);
+
+    return MobileMenu;
+}();
+
+exports.default = MobileMenu;
 
 /***/ })
 /******/ ]);

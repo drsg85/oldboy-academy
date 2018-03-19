@@ -4,9 +4,6 @@ import FormSender from "./modules/FormSender.js";
 import Popup from "./modules/Popup.js";
 
 const headerSlider = new Slider("header-slider", true);
-
 const sideMenu = new SideMenu();
-
 const formSender = new FormSender();
-
 const popup = new Popup();

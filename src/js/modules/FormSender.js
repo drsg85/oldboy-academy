@@ -11,7 +11,7 @@ class FormSender {
             event.preventDefault();
             
             self.popup.classList.add("popup--show");
-        })
+        });
     }
 }
 
