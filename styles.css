@@ -3210,8 +3210,8 @@ body {
         width: 14px;
         margin: 0 14px; } }
     .slider__dot:hover {
-      -webkit-transform: rotate(135deg);
-      transform: rotate(135deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
       opacity: 0.9; }
     .slider__dot--active {
       -webkit-transform: rotate(135deg);
