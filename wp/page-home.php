@@ -550,8 +550,7 @@
 
     <?php wp_footer(); ?>
 
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/menu.js?v='<?php echo rand(); ?>"></script>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/app.js?v='<?php echo rand(); ?>"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js?v='<?php echo rand(); ?>"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/map.js?v='<?php echo rand(); ?>"></script>
 </body>
