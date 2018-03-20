@@ -60,11 +60,41 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Slider = __webpack_require__(1);
+
+var _Slider2 = _interopRequireDefault(_Slider);
+
+var _SideMenu = __webpack_require__(2);
+
+var _SideMenu2 = _interopRequireDefault(_SideMenu);
+
+var _FormSender = __webpack_require__(3);
+
+var _FormSender2 = _interopRequireDefault(_FormSender);
+
+var _Popup = __webpack_require__(4);
+
+var _Popup2 = _interopRequireDefault(_Popup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var headerSlider = new _Slider2.default("header-slider", true);
+var sideMenu = new _SideMenu2.default();
+var formSender = new _FormSender2.default();
+var popup = new _Popup2.default();
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -192,7 +222,7 @@ var Slider = function () {
 exports.default = Slider;
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -251,39 +281,7 @@ var SideMenu = function () {
 exports.default = SideMenu;
 
 /***/ }),
-/* 2 */,
-/* 3 */,
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Slider = __webpack_require__(0);
-
-var _Slider2 = _interopRequireDefault(_Slider);
-
-var _SideMenu = __webpack_require__(1);
-
-var _SideMenu2 = _interopRequireDefault(_SideMenu);
-
-var _FormSender = __webpack_require__(5);
-
-var _FormSender2 = _interopRequireDefault(_FormSender);
-
-var _Popup = __webpack_require__(6);
-
-var _Popup2 = _interopRequireDefault(_Popup);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var headerSlider = new _Slider2.default("header-slider", true);
-var sideMenu = new _SideMenu2.default();
-var formSender = new _FormSender2.default();
-var popup = new _Popup2.default();
-
-/***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -323,7 +321,7 @@ var FormSender = function () {
 exports.default = FormSender;
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
