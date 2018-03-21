@@ -1414,7 +1414,7 @@ body {
     .about {
       padding: 60px 120px; } }
   .about--yellow {
-    z-index: 2;
+    z-index: 3;
     padding: 60px 25px;
     background-color: #f9f1e6; }
     @media (min-width: 700px) {
@@ -1528,6 +1528,21 @@ body {
         margin-top: 0;
         max-width: 800px;
         font-size: 2.5rem; } }
+  .about__subtitle {
+    font-family: "Lora", serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5; }
+    @media (min-width: 700px) {
+      .about__subtitle {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.35; } }
+    @media (min-width: 1200px) {
+      .about__subtitle {
+        margin-top: 0;
+        max-width: 800px;
+        font-size: 1.5  rem; } }
   .about__text {
     line-height: 1.75; }
     @media (min-width: 1200px) {
