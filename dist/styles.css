@@ -1414,7 +1414,7 @@ body {
     .about {
       padding: 60px 120px; } }
   .about--yellow {
-    z-index: 2;
+    z-index: 3;
     padding: 60px 25px;
     background-color: #f9f1e6; }
     @media (min-width: 700px) {
