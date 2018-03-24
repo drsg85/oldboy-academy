@@ -1,29 +1,18 @@
 <footer class="page-footer page-footer--inner">
     <div class="page-footer__wrapper">
-        <div class="page-footer__social">
+        <!-- <div class="page-footer__social">
             <a class="icon-vkontakte" href=""></a>
             <a class="icon-instagram" href=""></a>
-        </div>
+        </div> -->
         <nav class="page-footer__menu">
             <ul>
-                <li>
-                    <a href="#">Курсы</a>
-                </li>
-                <li>
-                    <a href="#">Команда</a>
-                </li>
-                <li>
-                    <a href="#">Отзывы</a>
-                </li>
-                <li>
-                    <a href="#">Моделям</a>
-                </li>
-                <li>
-                    <a href="#">Сертификаты</a>
-                </li>
+                <li><a href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a></li>
+                <li><a href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a></li>
+                <li><a href="<?php echo esc_url(home_url('/#courses')); ?>">Наши курсы</a></li>
+                <li><a href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a></li>
             </ul>
         </nav>
-        <div class="page-footer__copy">&copy;Академия Олдбой. 2017
+        <div class="page-footer__copy">&copy;Академия Олдбой. 2018
             <br>Все права сохранены.</div>
     </div>
 </footer>

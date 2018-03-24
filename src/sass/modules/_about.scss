@@ -207,6 +207,7 @@
         li::before {
             content: "— ";
         }
+
     }
 
     &__title {
@@ -265,6 +266,11 @@
             // typography
             font-size: 1.125rem;
         }
+    }
+
+    &__link {
+            // typography
+            color: $gold;
     }
 
     &__image {

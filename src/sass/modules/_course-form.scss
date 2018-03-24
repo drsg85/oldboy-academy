@@ -167,6 +167,10 @@
     }
 
     &__warning {
+        // positioning
+        position: relative;
+        z-index: 1;
+
         // typography
         color: $white;
         font-size: 0.875rem;
