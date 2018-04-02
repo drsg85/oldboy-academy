@@ -13,14 +13,15 @@
 
     <meta name="description" content="Академия барберинга OldBoy — Политика конфиденциальности">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo("stylesheet_directory"); ?>/img/favicon.png">
+
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css"/>
 
     <title>Политика конфиденциальности</title>
-
 </head>
-
 <body>
 
     <!-- Header -->
@@ -30,32 +31,33 @@
         </div>
         <nav class="main-nav main-nav--side-menu">
             <div class="main-nav__logo">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром" />
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
+            </a>
             </div>
             <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="#about">Об Академии</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#courses">Наши Курсы</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#team">Команда</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#courses')); ?>">Наши Курсы</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a></li>
             </ul>
             <div class="main-nav__social">
                 <div class="masson">
                     <div class="masson__logo">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
                     </div>
-                    <div class="masson__social">
+                    <!-- <div class="masson__social">
                         <a class="icon-vkontakte" href="#"></a>
                         <a class="icon-instagram" href="#"></a>
-                    </div>
-                    <a class="masson__tag" href="#">#
+                    </div> -->
+                    <!-- <a class="masson__tag" href="#">#
                         <em>OldboyAcademy</em>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </nav>
         <div class="page-header__phone page-header__phone--inner">
-            <a href="tel:+79114567890">+7 911 456-78-90</a>
+            <a href="tel:+79261000266">+7 926 100-02-66</a>
         </div>
         <div class="menu-icon menu-icon--inner">
             <div class="menu-icon__middle"></div>
@@ -87,6 +89,7 @@
                 <p>Формы, установленные на сайте, могут передавать данные как напрямую на сайт, так и на сайты сторонних организаций
                     (скрипты сервисов сторонних организаций).</p>
             </div>
+
             <div class="about__content about__content--right">
                 <p>Также данные могут собираться через технологию cookies (куки) как непосредственно сайтом, так и скриптами
                     сервисов сторонних организаций. Эти данные собираются автоматически, отправку этих данных можно запретить,
@@ -102,6 +105,7 @@
                 <p>Эти данные носят неперсонифицированный характер и направлены на улучшение обслуживания клиентов, улучшения
                     удобства использования сайта, анализа посещаемости.</p>
             </div>
+
         </div>
     </section>
 
@@ -109,6 +113,7 @@
     <section class="about about--yellow about--white-border-before about--white-border-after">
         <div class="about__deco-logo"></div>
         <div class="about__row">
+        
             <div class="about__content about__content--left">
                 <h2 class="about__title">Предоставление данных третьим лицам</h2>
                 <p>Мы не раскрываем личную информацию пользователей компаниям, организациям и частным лицам, не связанным с
@@ -121,6 +126,7 @@
                 <p>Информация может быть раскрыта в целях воспрепятствования мошенничеству или иным противоправным действиям;
                     по требованию законодательства и в иных случаях, предусмотренных законом.</p>
             </div>
+
             <div class="about__content about__content--right">
                 <h3 class="about__subtitle">Для оказания услуг, выполнения обязательств</h3>
                 <p>Пользователь соглашается с тем, что персональная информация может быть передана третьим лицам в целях оказания
@@ -133,12 +139,14 @@
                 <p>Сбор, хранение и защита полученной от сторонней организации информации осуществляется в соответствии с настоящей
                     политикой конфиденциальности.</p>
             </div>
+
         </div>
     </section>
 
     <!-- About -->
     <section class="about">
         <div class="about__row">
+
             <div class="about__content about__content--left">
                 <h2 class="about__title">Как мы защищаем вашу информацию</h2>
                 <p>Мы принимаем соответствующие меры безопасности по сбору, хранению и обработке собранных данных для защиты
@@ -151,6 +159,7 @@
                     лиц, которые могут содержать упоминание о нашем сайте и с которых могут делаться ссылки на сайт, а также
                     ссылки с этого сайта на другие сайты сети Интернет. Мы не несем ответственности за действия других веб-сайтов.</p>
             </div>
+
             <div class="about__content about__content--right">
                 <h2 class="about__title">Ваше согласие с этими условиями</h2>
                 <p>Используя этот сайт, вы выражаете свое согласие с этой политикой конфиденциальности. Если вы не согласны
@@ -163,6 +172,7 @@
                     на себя ответственности за периодическое ознакомление с политикой конфиденциальности и изменениями в
                     ней.</p>
             </div>
+
         </div>
     </section>
 
@@ -173,7 +183,7 @@
                 <h2 class="about__title">Как с нами связаться</h2>
                 <p>Если у вас есть какие-либо вопросы о политике конфиденциальности, использованию сайта или иным вопросам,
                     связанным с сайтом, свяжитесь с нами:
-                    <a href="mailto: academy@oldboy.com">academy@oldboy.com</a>
+                    <a class="about__link" href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a>
                 </p>
                 <div class="text-promo__more">
                     <a class="button" href="#">Контакты</a>
@@ -216,18 +226,18 @@
     <!-- Footer -->
     <footer class="page-footer page-footer--inner">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social"><a class="icon-vkontakte" href=""></a><a class="icon-instagram" href=""></a></div>
+        <!-- <div class="page-footer__social"><a class="icon-vkontakte" href=""></a><a class="icon-instagram" href=""></a></div> -->
         <nav class="page-footer__menu">
           <ul>
-            <li><a href="#">Курсы</a></li>
-            <li><a href="#">Команда</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Моделям</a></li>
-            <li><a href="#">Сертификаты</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#courses')); ?>">Наши Курсы</a></li>
+            <li><a href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a></li>
           </ul>
         </nav>
-        <div class="page-footer__copy">&copy;Академия Олдбой. 2017<br>Все права сохранены.</div>
+        <div class="page-footer__copy">&copy;Академия Олдбой. 2018<br>Все права сохранены.</div>
       </div>
     </footer>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js?v='<?php echo rand(); ?>"></script>
 </body>
 </html>

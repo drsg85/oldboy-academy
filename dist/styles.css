@@ -1548,6 +1548,8 @@ body {
     @media (min-width: 1200px) {
       .about__text {
         font-size: 1.125rem; } }
+  .about__link {
+    color: #d5a353; }
   .about__image {
     margin: 20px 0;
     padding: 25px 0;
@@ -2051,7 +2053,7 @@ body {
     margin: 0;
     padding: 15px 20px;
     color: #ffffff;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -2512,6 +2514,8 @@ body {
       font-size: 1.25rem; } }
 
 .course-form__warning {
+  position: relative;
+  z-index: 1;
   color: #ffffff;
   font-size: 0.875rem;
   font-variant: small-caps;
@@ -3438,6 +3442,9 @@ body {
     margin-top: 0;
     font-size: 1rem;
     line-height: 1.75; }
+  .text-promo__more {
+    position: relative;
+    z-index: 3; }
 
 .selling-feature {
   display: inline-block;

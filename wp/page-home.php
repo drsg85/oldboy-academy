@@ -14,6 +14,18 @@
 
     <meta name="description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
 
+    <!-- OG -->
+    <meta property="og:title" content="<?php the_title(); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course1.jpg">
+    <meta propepty="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+    <meta propepty="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="OldBoyAcademy">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo("stylesheet_directory"); ?>/img/favicon.png">
+
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
@@ -61,19 +73,19 @@
                     <div class="masson__logo">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
                     </div>
-                    <div class="masson__social">
+                    <!-- <div class="masson__social">
                         <a class="icon-vkontakte" href="#"></a>
                         <a class="icon-instagram" href="#"></a>
-                    </div>
-                    <a class="masson__tag" href="#">
+                    </div> -->
+                    <!-- <a class="masson__tag" href="#">
                         #<em>OldboyAcademy</em>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </nav>
 
         <div class="page-header__phone">
-            <a href="tel:+79114567890">+7 911 456-78-92</a>
+            <a href="tel:+79261000266">+7 926 100-02-66</a>
         </div>
         <div class="menu-icon">
             <div class="menu-icon__middle"></div>
@@ -107,10 +119,10 @@
                 <div class="masson__logo">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
                 </div>
-                <div class="masson__social">
+                <!-- <div class="masson__social">
                     <a class="icon-vkontakte" href="#"></a>
                     <a class="icon-instagram" href="#"></a>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -143,13 +155,13 @@
                         </p>
                     </header>
                     <div class="hero-form__wrapper">
-                        <form class="hero-form__form" action="">
-                            <input class="hero-form__input" type="text" name="name" placeholder="Имя" />
-                            <input class="hero-form__input" type="text" name="phone" placeholder="Телефон" />
-                            <input class="hero-form__input" type="email" name="email" placeholder="Электронная почта" />
+                        <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                            <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
+                            <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
+                            <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
                             <input class="hero-form__button" type="submit" value="Подать заявку" />
                         </form>
-                        <div class="hero-form__warning">Заполняя данную форму<br>вы&nbsp;принимаете условия<br><a href="#">политики конфиденциальности</a>
+                        <div class="hero-form__warning">Заполняя данную форму<br>вы&nbsp;принимаете условия<br><a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -167,15 +179,15 @@
                         <p class="hero-form__subtitle">Запись на бесплатную стрижку</p>
                     </header>
                     <div class="hero-form__wrapper">
-                        <form class="hero-form__form" action="">
-                            <input class="hero-form__input" type="text" name="name" placeholder="Имя" />
-                            <input class="hero-form__input" type="text" name="phone" placeholder="Телефон" />
+                        <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                            <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required/>
+                            <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
                             <input class="hero-form__button" type="submit" value="Записаться" />
                         </form>
                         <div class="hero-form__warning">Заполняя данную форму
                             <br> вы&nbsp;принимаете условия
                             <br>
-                            <a href="#">политики конфиденциальности</a>
+                            <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -479,14 +491,14 @@
                     <div class="contact__icon icon-phone"></div>
                     <div class="contact__name">Телефон</div>
                     <div class="contact__value">
-                        <a href="tel:+79114567890">+7 911 456-78-90</a>
+                        <a href="tel:+79261000266">+7 926 100-02-66</a>
                     </div>
                 </div>
                 <div class="contact">
                     <div class="contact__icon icon-mail-alt"></div>
                     <div class="contact__name">e-mail</div>
                     <div class="contact__value">
-                        <a href="mailto: academy@oldboy.com">academy@oldboy.com</a>
+                        <a href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a>
                     </div>
                 </div>
             </div>
@@ -520,27 +532,16 @@
     <!-- Footer -->
     <footer class="page-footer">
         <div class="page-footer__wrapper">
-            <div class="page-footer__social">
+            <!-- <div class="page-footer__social">
                 <a class="icon-vkontakte" href=""></a>
                 <a class="icon-instagram" href=""></a>
-            </div>
+            </div> -->
             <nav class="page-footer__menu">
                 <ul>
-                    <li>
-                        <a href="#about">Об Академии</a>
-                    </li>
-                    <li>
-                        <a href="#features">Преимущества</a>
-                    </li>
-                    <li>
-                        <a href="#courses">Наши Курсы</a>
-                    </li>
-                    <!-- <li>
-                        <a href="#team">Команда</a>
-                    </li> -->
-                    <li>
-                        <a href="#contacts">Контакты</a>
-                    </li>
+                    <li><a href="#about">Об Академии</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#courses">Наши Курсы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <div class="page-footer__copy">&copy;Академия Олдбой. 2018
@@ -554,5 +555,4 @@
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/map.js?v='<?php echo rand(); ?>"></script>
 </body>
-
 </html>
