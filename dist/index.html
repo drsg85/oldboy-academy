@@ -57,9 +57,15 @@
             </header>
             <div class="hero-form__wrapper">
               <form class="hero-form__form" action="">
-                <input class="hero-form__input" type="text" name="name" placeholder="Имя"/>
-                <input class="hero-form__input" type="text" name="phone" placeholder="Телефон"/>
-                <input class="hero-form__input" type="email" name="email" placeholder="Электронная почта"/>
+                <div class="hero-form__input-group">
+                  <input class="hero-form__input" type="text" name="name" placeholder="Имя"/>
+                </div>
+                <div class="hero-form__input-group">
+                  <input class="hero-form__input" type="text" name="phone" placeholder="Телефон"/>
+                </div>
+                <div class="hero-form__input-group">
+                  <input class="hero-form__input" type="email" name="email" placeholder="Электронная почта"/>
+                </div>
                 <input class="hero-form__button" type="submit" value="Записаться"/>
               </form>
               <div class="hero-form__warning">Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a></div>
@@ -74,8 +80,12 @@
             </header>
             <div class="hero-form__wrapper">
               <form class="hero-form__form" action="">
-                <input class="hero-form__input" type="text" name="name" placeholder="Имя"/>
-                <input class="hero-form__input" type="text" name="phone" placeholder="Телефон"/>
+                <div class="hero-form__input-group">
+                  <input class="hero-form__input" type="text" name="name" placeholder="Имя"/>
+                </div>
+                <div class="hero-form__input-group">
+                  <input class="hero-form__input" type="text" name="phone" placeholder="Телефон"/>
+                </div>
                 <input class="hero-form__button" type="submit" value="Записаться"/>
               </form>
               <div class="hero-form__warning">Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a></div>
@@ -266,7 +276,7 @@
           <h2 class="popup__title">Ваша заявка добавлена</h2>
           <div class="popup__text">Благодарим Вас за обращение в нашу Академию. На Вашу электронную почту направлено письмо с информацией. Наш менеджер свяжется с Вами в ближайшее время.</div>
           <div class="popup__respect">С уважением, <br> Команда OldBoy Академии</div>
-          <div class="popup__controls"><a href="#">Хорошо</a></div>
+          <div class="popup__controls"><a class="popup__accept" href="#">Хорошо</a></div>
         </div>
       </div>
     </section>

@@ -70,9 +70,13 @@ html(lang="ru")
                             p.hero-form__subtitle Уже 1 ноября спешите!
                         .hero-form__wrapper
                             form.hero-form__form(action="")
-                                input.hero-form__input(type="text" name="name" placeholder="Имя")
-                                input.hero-form__input(type="text" name="phone" placeholder="Телефон")
-                                input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
+                                .hero-form__input-group
+                                    input.hero-form__input(type="text" name="name" placeholder="Имя")
+                                    //- .hero-form__error Проверьте&nbsp;правильность<br>заполнения&nbsp;поля
+                                .hero-form__input-group
+                                    input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                                .hero-form__input-group
+                                    input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
                                 input.hero-form__button(type="submit" value="Записаться")
                             .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
 
@@ -83,8 +87,10 @@ html(lang="ru")
                             p.hero-form__subtitle Запись на<br>бесплатную стрижку
                         .hero-form__wrapper
                             form.hero-form__form(action="")
-                                input.hero-form__input(type="text" name="name" placeholder="Имя")
-                                input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+                                .hero-form__input-group
+                                    input.hero-form__input(type="text" name="name" placeholder="Имя")
+                                .hero-form__input-group
+                                    input.hero-form__input(type="text" name="phone" placeholder="Телефон")
                                 input.hero-form__button(type="submit" value="Записаться")
                             .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
 
@@ -331,7 +337,7 @@ html(lang="ru")
                     .popup__text Благодарим Вас за обращение в нашу Академию. На Вашу электронную почту направлено письмо с информацией. Наш менеджер свяжется с Вами в ближайшее время.
                     .popup__respect С уважением, <br> Команда OldBoy Академии
                     .popup__controls
-                        a(href="#") Хорошо
+                        a.popup__accept(href="#") Хорошо
 
         footer.page-footer
             .page-footer__wrapper

@@ -37,6 +37,13 @@ gulp.task("watch", function() {
         gulp.start("copyPHP");
     });
 
+    // order
+    watch("./src/order.php", () => {
+        console.log("order changed");
+        return gulp.src("./src/order.php")
+            .pipe(gulp.dest("C:/xampp/htdocs/OldBoyAcademy/"));
+    });
+
     // css
     watch("./dist/styles.css", () => {
         gulp.start("copyCSS");

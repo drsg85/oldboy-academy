@@ -1162,6 +1162,35 @@ body {
     @media (min-width: 700px) {
       .hero-form__form {
         text-align: right; } }
+  .hero-form__input-group {
+    position: relative;
+    font-size: 0; }
+  .hero-form__error {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(105%, -50%);
+    transform: translate(105%, -50%);
+    z-index: 3;
+    padding: 10px;
+    color: #c31f38;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 5px; }
+    .hero-form__error::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      transform: translate(-50%, -50%) rotate(45deg);
+      height: 8px;
+      width: 8px;
+      background-color: #ffffff; }
   .hero-form__input {
     position: relative;
     z-index: 2;
@@ -3341,24 +3370,24 @@ body {
     position: absolute;
     right: 30px;
     bottom: 30px; }
-    .popup__controls a {
-      display: inline-block;
-      vertical-align: top;
-      padding: 13px 30px;
-      color: #ffffff;
-      font-size: 0.875rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
-      background-color: #d5a353;
-      border: 1px solid #d5a353;
-      border-radius: 5px;
-      -webkit-transition: all 0.25s ease-out;
-      transition: all 0.25s ease-out; }
-      .popup__controls a:hover {
-        color: #d5a353;
-        background-color: #ffffff; }
+  .popup__accept {
+    display: inline-block;
+    vertical-align: top;
+    padding: 13px 30px;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #d5a353;
+    border: 1px solid #d5a353;
+    border-radius: 5px;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+    .popup__accept:hover {
+      color: #d5a353;
+      background-color: #ffffff; }
 
 .horiz-banner {
   position: relative;

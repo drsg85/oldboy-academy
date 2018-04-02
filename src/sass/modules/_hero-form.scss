@@ -230,6 +230,55 @@
         }
     }
 
+    &__input-group {
+        // positioning
+        position: relative;
+
+        // typography
+        font-size: 0;
+    }
+
+    &__error {
+        // positioning
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(105%, -50%);
+        z-index: 3;
+
+        // box model
+        padding: 10px;
+
+        // typography
+        color: $red;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+
+        // visual
+        background-color: $white;
+        border-radius: 5px;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+
+            // box model
+            height: 8px;
+            width: 8px;
+
+            // visual
+            background-color: $white;
+        }
+    }
+
     &__input {
         // positioning
         position: relative;
