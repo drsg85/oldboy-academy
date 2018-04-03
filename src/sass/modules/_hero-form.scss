@@ -37,20 +37,12 @@
     }
     
     &__header {
+        // box model
+        // padding-bottom: 1em;
+        padding-bottom: 20px;
+
         // typography
         font-size: 0;
-
-        @include atTabletsLandscape {
-            // positioning
-            position: absolute;
-            right: -60px;
-            top: 0;
-            z-index: 9;
-
-            // box model
-            padding-left: 0;
-            width: 230px;
-        }
 
         @include atDesktop {
             // box model
@@ -75,8 +67,8 @@
 
         @include atTabletsLandscape {
             // box model
-            width: 460px;
-            width: calc(100% - 180px);
+            // width: 460px;
+            // width: calc(100% - 180px);
         }
         
         @include atDesktop {
@@ -106,7 +98,6 @@
         font-variant: small-caps;
         font-weight: 400;
         line-height: 1.25;
-        // text-align: right;
         
         @include atTabletsPortrait {
             // typography
@@ -114,15 +105,8 @@
         }
 
         @include atTabletsLandscape {
-            // box model
-            display: block;
-            margin: 0;
-            width: auto;
-
             // typography
             font-size: 1.75rem;
-            text-align: left;
-            text-align: right;
         }
         
         @include atDesktop {
@@ -139,9 +123,7 @@
     
     &__subtitle {
         // box model
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding-bottom: 5px;
+        margin: 0;
 
         // typography
         color: $white;
@@ -158,17 +140,6 @@
 
             // typography
             font-size: 1rem;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            display: block;
-            margin: 0;
-            padding-left: 25px;
-            width: auto;
-
-            // typography
-            text-align: right;
         }
         
         @include atDesktopLarge {

@@ -131,11 +131,6 @@
             }
         }
 
-        @include atTabletsLandscape {
-            // positioning
-            right: 125px;
-        }
-
         @include atDesktop {
             // positioning
             right: 190px;

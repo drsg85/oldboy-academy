@@ -22,7 +22,7 @@
     
     @include atTabletsLandscape {
         // box model
-        padding-top: 100px;
+        padding-top: 90px;
         padding-bottom: 30px;
     }
     
@@ -147,24 +147,24 @@
         }
     }
 
-    &__header {
-        // box model
-        margin: 0;
-        margin-bottom: 30px;
-        padding-left: 125px;
-        padding-right: 25px;
+    // &__header {
+    //     // box model
+    //     margin: 0;
+    //     margin-bottom: 30px;
+    //     padding-left: 125px;
+    //     padding-right: 25px;
 
-        @include atTabletsPortrait {
-            // box model
-            padding: 0;
-            padding-left: 50px;
-        }
+    //     @include atTabletsPortrait {
+    //         // box model
+    //         padding: 0;
+    //         padding-left: 50px;
+    //     }
 
-        @include atTabletsLandscape {
-            // box model
-            padding-left: 30%;
-        }
-    }
+    //     @include atTabletsLandscape {
+    //         // box model
+    //         padding-left: 30%;
+    //     }
+    // }
 
     &__title {
         // box model
