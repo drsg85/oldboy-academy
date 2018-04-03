@@ -1,0 +1,71 @@
+.hero-header {
+    // box model
+    min-height: calc(100vh - 180px);
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__caption {
+
+    }
+
+    &__title {
+        // typography
+        color: $white;
+        font-family: $titleFont;
+        font-size: 1.75rem;
+        font-weight: 700;
+        font-variant: small-caps;
+    }
+
+    &__subtitle {
+        // typography
+        color: $white;
+        font-family: $mainFont;
+        // font-variant: small-caps;
+        // font-size: 1.125rem;
+        // font-weight: 100;
+        // letter-spacing: 0.5px;
+        line-height: 1.25;
+
+        // text-transform: uppercase;
+    }
+
+    &__contacts {
+
+    }
+
+    &__address {
+        // box model
+        margin: 0;
+
+        // typography
+        color: $white;
+        font-family: $mainFont;
+        // font-variant: small-caps;
+        font-size: 1.125rem;
+        // letter-spacing: 0.5px;
+        line-height: 1.25;
+    }
+
+    &__phone {
+        // box model
+        margin: 0;
+        margin-left: -0.5em;
+
+        // typography
+        color: $white;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 1.5;
+
+        a {
+            // typography
+            color: $white;
+            // font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
