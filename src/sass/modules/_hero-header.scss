@@ -1,10 +1,16 @@
 .hero-header {
     // box model
     min-height: calc(100vh - 180px);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include atTabletsPortrait {
+        // box model
+        // min-height: calc(100vh - 60px);
+        min-height: auto;
+    }
 
     &__caption {
 
@@ -15,25 +21,35 @@
         color: $white;
         font-family: $titleFont;
         font-size: 1.75rem;
-        font-weight: 700;
+        font-weight: 400;
         font-variant: small-caps;
+        letter-spacing: 1px;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-top: 0;
+
+            // typography
+            font-size: 2.125rem;
+        }
     }
 
     &__subtitle {
         // typography
         color: $white;
         font-family: $mainFont;
-        // font-variant: small-caps;
-        // font-size: 1.125rem;
-        // font-weight: 100;
-        // letter-spacing: 0.5px;
-        line-height: 1.25;
+        line-height: 1.5;
 
-        // text-transform: uppercase;
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+            line-height: 1.75;
+        }
     }
 
     &__contacts {
-
+        // typography
+        text-align: right;
     }
 
     &__address {
@@ -43,10 +59,8 @@
         // typography
         color: $white;
         font-family: $mainFont;
-        // font-variant: small-caps;
         font-size: 1.125rem;
-        // letter-spacing: 0.5px;
-        line-height: 1.25;
+        line-height: 1.5;
     }
 
     &__phone {
@@ -56,15 +70,13 @@
 
         // typography
         color: $white;
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: 0.5px;
+        font-family: $mainFont;
+        font-size: 1.125rem;
         line-height: 1.5;
 
         a {
             // typography
             color: $white;
-            // font-weight: 700;
             text-decoration: none;
         }
     }

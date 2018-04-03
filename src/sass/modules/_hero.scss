@@ -4,6 +4,7 @@
 
     // box model
     padding: 30px 25px;
+    padding-bottom: 40px;
 
     // visual
     background-color: $blue;
@@ -16,7 +17,7 @@
     
     @include atTabletsPortrait {
         // box model
-        padding: 60px 100px;
+        padding: 60px;
     }
     
     @include atTabletsLandscape {
@@ -321,24 +322,6 @@
         img {
             // box model
             width: 100%;
-        }
-    }
-
-    &__social {
-        // positioning
-        position: absolute;
-        bottom: 20px;
-        right: -20px;
-        z-index: 9;
-        // border: 1px solid red;
-
-        // box model
-        display: none;
-        width: 200px;
-
-        @include atTabletsLandscape {
-            // box model
-            display: block;
         }
     }
 }

@@ -22,9 +22,29 @@
     transition: all 0.3s ease-out;
 
     @include atTabletsPortrait {
+        // positioning
+        position: fixed;
+        left: 0;
+        top: 0;
+
         // box model
-        justify-content: flex-start;
+        display: block;
+        height: 100vh;
+        height: 100%;
+        width: 160px;
+
+        // visual
+        background-color: $black;
+        box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
+        visibility: visible;
+        opacity: 1;
+
+        .masson {
+            // visual
+            opacity: 1;
+        }
     }
+
 
     @include atDesktop {
         // positioning
@@ -57,6 +77,19 @@
         margin: 20px 0;
         margin-bottom: 0;
 
+        @include atTabletsPortrait {
+            // box model
+            width: 190px;
+            height: auto;
+            margin: auto;
+            margin-top: 0;
+            padding: 60px 0;
+            padding-bottom: 40px;
+            padding-left: 40px;
+            // border: 1px solid red;
+
+        }
+
         @include atDesktop {
             // box model
             display: none;
@@ -82,6 +115,12 @@
     &__item {
         // positioning
         position: relative;
+
+        @include atTabletsPortrait {
+            // box model
+            display: block;
+            padding: 0;
+        }
 
         @include atDesktop {
             // box model
@@ -139,6 +178,18 @@
             color: $gold;
         }
 
+        @include atTabletsPortrait {
+            // box model
+            padding: 10px 0;
+
+            // typography
+            color: $white;
+            font-size: 0.8rem;
+            font-family: $mainFont;
+            text-align: center;
+            line-height: 30px;
+        }
+
         @include atDesktop {
             // box model
             height: 100%;
@@ -161,6 +212,16 @@
     &__social {
         // box model
         display: none;
+
+        @include atTabletsPortrait {
+            // positioning
+            position: absolute;
+            bottom: 0;
+
+            // box model
+            display: block;
+            width: 100%;
+        }
     }
 
     &--shown {
@@ -179,69 +240,6 @@
         @include atDesktopLarge {
             // positioning
             left: 300px;
-        }
-    }
-
-    &--side-menu {
-        @include atTabletsPortrait {
-            // positioning
-            position: fixed;
-            left: 0;
-            top: 0;
-    
-            // box model
-            height: 100vh;
-            height: 100%;
-            width: 160px;
-    
-            // visual
-            background-color: $black;
-            box-shadow: 5px 0 20px 0 rgba(0, 0, 0, 0.5);
-            visibility: visible;
-            opacity: 1;
-    
-            .main-nav__item {
-                // box model
-                display: block;
-                padding: 0;
-            }
-    
-            .main-nav__link {
-                // box model
-                padding: 10px 0;
-    
-                // typography
-                color: $white;
-                font-size: 0.8rem;
-                font-family: $mainFont;
-                text-align: center;
-                line-height: 30px;
-
-                &:hover {
-                    // typography
-                    color: $gold;
-                }
-            }
-    
-            .main-nav__logo {
-                // box model
-                display: block;
-            }
-    
-            .main-nav__social {
-                // positioning
-                position: absolute;
-                bottom: 0;
-    
-                // box model
-                display: block;
-                width: 100%;
-            }
-    
-            .masson {
-                // visual
-                opacity: 1;
-            }
         }
     }
 }

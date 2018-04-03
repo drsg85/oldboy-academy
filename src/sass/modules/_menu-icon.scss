@@ -16,11 +16,6 @@
     cursor: pointer;
 
     @include atTabletsPortrait {
-        // positioning
-        right: 30px;
-    }
-
-    @include atDesktop {
         // box model
         display: none;
     }
