@@ -10,12 +10,15 @@
 
     // visual
     background-color: rgba($black, 0.7);
-    border: 19px solid $white;
-    border-left: none;
 
     @include atTabletsPortrait {
         // box model
         padding: 40px 60px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 20px 40px;
     }
     
     &::before {
@@ -24,16 +27,16 @@
         // positioning
         position: absolute;
         top: -9px;
-        left: 0;
+        left: -9px;
+        z-index: -1;
         
         // box model
         height: calc(100% + 19px);
-        width: calc(100% + 10px);
+        width: calc(100% + 19px);
         
         // visual
         border: 1px solid $gold;
-        border-left: none;
-        pointer-events: none;
+        // pointer-events: none;
     }
     
     &__header {
@@ -46,13 +49,8 @@
 
         @include atDesktop {
             // box model
-            margin-bottom: 60px;
-            width: 300px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            width: 26vw;
+            padding-right: 30px;
+            // width: 300px;
         }
     }
     
@@ -63,25 +61,6 @@
 
             // box model
             padding: 20px 0;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            // width: 460px;
-            // width: calc(100% - 180px);
-        }
-        
-        @include atDesktop {
-            // box model
-            padding: 40px;
-            padding-left: 145px;
-            width: calc(100% - 250px);
-        }
-
-        @include atDesktopLarge {
-            // box model
-            padding-left: 250px;
-            width: 700px;
         }
     }
     
@@ -94,30 +73,17 @@
         // typography
         color: $white;
         font-family: $titleFont;
+        font-family: $mainFont;
         font-size: 1.4rem;
+        // font-size: 1.25rem
         font-variant: small-caps;
         font-weight: 400;
         line-height: 1.25;
         
         @include atTabletsPortrait {
             // typography
-            font-size: 1.5rem;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 1.75rem;
-        }
-        
-        @include atDesktop {
-            // typography
-            font-size: 2.5rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 2.7rem;
-            font-size: calc(2vw + 1rem);
+            font-size: 1.25rem;
+            line-height: 1.5;
         }
     }
     
@@ -135,9 +101,6 @@
         text-transform: uppercase;
 
         @include atTabletsPortrait {
-            // box model
-            margin-bottom: 20px;
-
             // typography
             font-size: 1rem;
         }

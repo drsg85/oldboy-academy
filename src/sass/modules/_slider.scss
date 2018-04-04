@@ -4,7 +4,6 @@
 
     // box model
     margin-bottom: 80px;
-    margin-left: -25px;
 
     @include atTabletsPortrait {
         // box model
@@ -13,7 +12,9 @@
 
     @include atDesktop {
         // box model
-        margin-left: 0;
+        margin: 0;
+        margin-right: 40px;
+        width: 400px;
     }
 
     &__slide {
@@ -24,9 +25,13 @@
 
         // visual
         visibility: hidden;
-        // opacity: 0;
         transition: all 0.3s ease-in-out;
         transform: translateX(-110%);
+
+        @include atDesktop {
+            // visual
+            transform: translateX(130%);
+        }
 
         &--current {
             // box model
@@ -82,7 +87,7 @@
 
         @include atDesktop {
             // positioning
-            left: -75px;
+            left: -73px;
 
             // box model
             height: 80px;
@@ -133,17 +138,11 @@
 
         @include atDesktop {
             // positioning
-            right: 190px;
+            right: -73px;
 
             // box model
             height: 80px;
             width: 40px;
-        }
-
-        @include atDesktopLarge {
-            // positioning
-            left: 740px;
-            right: auto;
         }
     }
 
@@ -179,11 +178,6 @@
 
             // box model
             width: 200px;
-        }
-
-        @include atDesktopLarge {
-            // positioning
-            left: 425px;
         }
     }
 

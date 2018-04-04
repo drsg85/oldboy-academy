@@ -28,19 +28,23 @@
     
     @include atDesktop {
         // box model
-        height: calc(100vh - 100px);
-        padding: 100px 120px;
+        display: flex;
+        justify-content: space-between;
+        flex-shrink: 0;
+
         padding-bottom: 40px;
-        max-height: 700px;
-        min-height: 650px;
+        height: calc(100vh - 10px);
+        // max-height: 700px;
+        // min-height: 650px;
         
         // visual
         background-attachment: fixed;
     }
-
+    
     @include atDesktopLarge {
         // box model
         max-height: 800px;
+        min-height: 700px;
     }
 
     &::after {

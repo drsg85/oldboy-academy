@@ -45,30 +45,6 @@
         }
     }
 
-
-    @include atDesktop {
-        // positioning
-        position: absolute;
-        left: 220px;
-        // right: 220px;
-        top: 0;
-
-        // box model
-        display: block;
-        height: auto;
-        width: auto;
-        max-width: none;
-
-        // visual
-        background-color: $white;
-        background-color: transparent;
-    }
-
-    @include atDesktopLarge {
-        // positioning
-        left: 300px;
-    }
-
     &__logo {
         // box model
         height: 160px;
@@ -86,14 +62,14 @@
             padding: 60px 0;
             padding-bottom: 40px;
             padding-left: 30px;
-            // border: 1px solid red;
-
         }
 
         @include atDesktop {
             // box model
-            display: none;
-            width: 100%;
+            margin: 0 auto;
+            padding: 40px 0;
+            padding-top: 100px;
+            width: 110px;
         }
 
         img {
@@ -120,12 +96,6 @@
             // box model
             display: block;
             padding: 0;
-        }
-
-        @include atDesktop {
-            // box model
-            display: inline-block;
-            vertical-align: middle;
         }
 
         &::after {
@@ -181,31 +151,14 @@
         @include atTabletsPortrait {
             // box model
             padding: 10px 0;
+            // padding-right: 20px;
 
             // typography
             color: $white;
             font-size: 0.8rem;
             font-family: $mainFont;
-            text-align: center;
+            // text-align: right;
             line-height: 30px;
-        }
-
-        @include atDesktop {
-            // box model
-            height: 100%;
-
-            // typography
-            color: $dark;
-            font-size: 0.875rem;
-            line-height: 53px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            padding: 15px 23px;
-
-            // typography
-            font-size: 1rem;
         }
     }
 
