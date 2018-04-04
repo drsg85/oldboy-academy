@@ -109,7 +109,8 @@
         color: $white;
         font-family: $mainFont;
         font-size: 0.875rem;
-        font-weight: 500;
+        font-weight: 700;
+        letter-spacing: 0.5px;
         text-transform: uppercase;
         
         // visual
@@ -119,11 +120,9 @@
 
         &:hover {
             // typography
-            color: $gold;
             color: $white;
 
             // visual
-            background-color: $white;
             background-color: $blue;
             cursor: pointer;
             transition: all 0.3s ease-out;

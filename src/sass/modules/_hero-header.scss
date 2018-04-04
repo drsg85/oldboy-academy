@@ -52,6 +52,11 @@
             // typography
             font-size: 2.5rem;
         }
+
+        @include atDesktopLarge {
+            // typography
+            font-size: 3rem;
+        }
     }
 
     &__subtitle {
@@ -69,6 +74,11 @@
         @include atTabletsLandscape {
             // box model
             margin-bottom: 0;
+        }
+
+        @include atDesktopLarge {
+            // typography
+            font-size: 1.25rem;
         }
     }
 
