@@ -39,12 +39,13 @@
         
         // visual
         background-attachment: fixed;
+        background-position: center top;
     }
     
     @include atDesktopLarge {
         // box model
-        max-height: 800px;
-        min-height: 700px;
+        // max-height: 800px;
+        // min-height: 700px;
     }
 
     &::after {

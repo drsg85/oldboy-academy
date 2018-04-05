@@ -18,6 +18,16 @@
         // box model
         padding: 60px 120px;
     }
+
+    &--main {
+        @include atDesktop {
+            // box model
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: calc(100vh - 10px);
+        }
+    }
     
     &--yellow {
         // positioning
@@ -113,9 +123,12 @@
 
         @include atDesktop {
             // box model
-            float: left;
-            padding-top: 50px;
-            width: 45%;
+            // display: flex;
+            // justify-content: space-around;
+            width: 80%;
+            // float: left;
+            // padding-top: 50px;
+            // width: 45%;
         }
 
         img {

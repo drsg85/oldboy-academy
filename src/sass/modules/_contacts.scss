@@ -60,5 +60,10 @@
             // box model
             display: none;
         }
+
+        &::after {
+            // box model
+            display: none;
+        }
     }
 }
