@@ -26,8 +26,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo("stylesheet_directory"); ?>/img/favicon.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css">
 
     <title>Академия барберинга Oldboy</title>
@@ -38,18 +39,13 @@
 <body>
     <!-- Header -->
     <header class="page-header">
-        <div class="page-header__logo">
-            <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой логотип"/>
-            </a>
-        </div>
-
         <nav class="main-nav">
             <div class="main-nav__logo">
                 <a href="<?php echo esc_url(home_url('/')); ?>">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
                 </a>
             </div>
+
             <ul class="main-nav__list">
                 <li class="main-nav__item">
                     <a class="main-nav__link" href="#about">Об Академии</a>
@@ -84,9 +80,6 @@
             </div>
         </nav>
 
-        <div class="page-header__phone">
-            <a href="tel:+79261000266">+7 926 100-02-66</a>
-        </div>
         <div class="menu-icon">
             <div class="menu-icon__middle"></div>
         </div>
@@ -94,37 +87,24 @@
 
     <!-- Hero -->
     <section class="hero">
-        <aside class="hero-aside">
-            <div class="hero-aside__logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
-                </a>
-            </div>
-            <div class="hero-aside__wrapper">
-                <h1 class="hero-aside__title">Добро
-                    <br>пожаловать
-                    <br>в&nbsp;Академию
-                    <br>
-                    <strong>«OldBoy»</strong>
-                </h1>
-                <div class="hero-aside__footnote">
-                    <h2 class="hero-aside__subtitle">Школа барберинга</h2>
-                    <p class="hero-aside__description">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
-                </div>
-            </div>
-        </aside>
-
-        <div class="hero__social">
-            <div class="masson masson--hero">
-                <div class="masson__logo">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
-                </div>
-                <!-- <div class="masson__social">
-                    <a class="icon-vkontakte" href="#"></a>
-                    <a class="icon-instagram" href="#"></a>
-                </div> -->
-            </div>
+        <div class="hero__logo">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой логотип"/>
+            </a>
         </div>
+
+        <header class="hero-header">
+            <div class="hero-header__caption">
+                <h1 class="hero-header__title">Добро пожаловать<br>в&nbsp;Академию барберинга «Oldboy»</h1>
+                <p class="hero-header__subtitle">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
+            </div>
+            <div class="hero-header__contacts">
+                <p class="hero-header__address">Москва<br>Старокирочный переулок,&nbsp;2</p>
+                <p class="hero-header__phone">
+                    <a href="tel:+79261000266">тел.:<strong>+7 926 100-02-66</strong></a>
+                </p>
+            </div>
+        </header>
         
         <div class="slider" id="header-slider">
             <?php
