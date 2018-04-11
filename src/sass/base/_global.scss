@@ -12,7 +12,8 @@ body {
     font-family: $mainFont;
 
     // visual
-    background-color: $black;
+    background-color: $white;
+    box-shadow: 0 0 14px 0 $dark;
     overflow-x: hidden;
 
     @include atTabletsPortrait {
@@ -20,6 +21,22 @@ body {
         padding-left: 160px;
     }
 
+
+    /////////////////
+    //  Scrollbar  //
+    /////////////////
+    &::-webkit-scrollbar {
+        // box model
+        width: 8px;
+
+        // visual
+        background-color: $dark;
+
+        &-thumb {
+            // visual
+            background-color: $gold;
+        }
+    }
 }
 
 *,

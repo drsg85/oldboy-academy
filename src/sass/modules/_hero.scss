@@ -34,6 +34,7 @@
 
         padding-bottom: 80px;
         min-height: calc(100vh - 10px);
+        // min-height: 800px;
         
         // visual
         background-attachment: fixed;
@@ -43,7 +44,7 @@
     @include atDesktopLarge {
         // box model
         // max-height: 800px;
-        // min-height: 700px;
+        min-height: 840px;
     }
 
     &::after {
