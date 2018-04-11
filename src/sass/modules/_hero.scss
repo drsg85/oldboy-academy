@@ -32,10 +32,8 @@
         justify-content: space-between;
         flex-shrink: 0;
 
-        padding-bottom: 40px;
-        height: calc(100vh - 10px);
-        // max-height: 700px;
-        // min-height: 650px;
+        padding-bottom: 80px;
+        min-height: calc(100vh - 10px);
         
         // visual
         background-attachment: fixed;
@@ -149,6 +147,23 @@
         img {
             // box model
             width: 100%;
+        }
+    }
+
+    &__header {
+        // border: 1px solid red;
+        @include atDesktop {
+            // box model
+            width: 50%;
+        }
+    }
+
+    &__slider {
+        // border: 1px solid red;
+        @include atDesktop {
+            // box model
+            width: 50%;
+            padding-top: 20px;
         }
     }
 

@@ -93,18 +93,20 @@
             </a>
         </div>
 
-        <header class="hero-header">
-            <div class="hero-header__caption">
-                <h1 class="hero-header__title">Добро пожаловать<br>в&nbsp;Академию барберинга «Oldboy»</h1>
-                <p class="hero-header__subtitle">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
-            </div>
-            <div class="hero-header__contacts">
-                <p class="hero-header__address">Москва<br>Старокирочный переулок,&nbsp;2</p>
-                <p class="hero-header__phone">
-                    <a href="tel:+79261000266">тел.:<strong>+7 926 100-02-66</strong></a>
-                </p>
-            </div>
-        </header>
+        <div class="hero__header">
+            <header class="hero-header">
+                <div class="hero-header__caption">
+                    <h1 class="hero-header__title">Добро пожаловать<br>в&nbsp;Академию барберинга «Oldboy»</h1>
+                    <p class="hero-header__subtitle">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
+                </div>
+                <div class="hero-header__contacts">
+                    <p class="hero-header__address">Москва<br>Старокирочный переулок,&nbsp;2</p>
+                    <p class="hero-header__phone">
+                        <a href="tel:+79261000266">тел.:<strong>+7 926 100-02-66</strong></a>
+                    </p>
+                </div>
+            </header>
+        </div>
         
         <div class="slider" id="header-slider">
             <?php
@@ -141,8 +143,10 @@
                             <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
                             <input class="hero-form__button" type="submit" value="Подать заявку" />
                         </form>
-                        <div class="hero-form__warning">Заполняя данную форму<br>вы&nbsp;принимаете условия<br><a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
-                        </div>
+                    </div>
+                    <div class="hero-form__warning">
+                        Заполняя данную форму<br>вы&nbsp;принимаете условия<br>
+                        <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
                     </div>
                 </div>
             </div>
@@ -164,9 +168,8 @@
                             <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
                             <input class="hero-form__button" type="submit" value="Записаться" />
                         </form>
-                        <div class="hero-form__warning">Заполняя данную форму
-                            <br> вы&nbsp;принимаете условия
-                            <br>
+                        <div class="hero-form__warning">
+                            Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
                             <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
                         </div>
                     </div>

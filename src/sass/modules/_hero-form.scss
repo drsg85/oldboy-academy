@@ -5,8 +5,8 @@
     // box model
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 25px;
+    justify-content: space-between;
+    padding: 30px 25px;
 
     // visual
     background-color: rgba($black, 0.7);
@@ -103,12 +103,12 @@
 
         @include atTabletsPortrait {
             // typography
-            font-size: 1rem;
+            font-size: 0.85rem;
         }
         
         @include atDesktopLarge {
             // typography
-            font-size: 1.125rem;
+            // font-size: 1.125rem;
         }
     }
 
@@ -242,7 +242,7 @@
         // box model
         width: 100%;
         margin-bottom: 20px;
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 12px;
 
         // typography
@@ -293,7 +293,7 @@
 
         @include atDesktop {
             // box model
-            margin-top: 20px;
+            // margin-top: 20px;
 
             // typography
             font-size: 1rem;
@@ -301,7 +301,7 @@
 
         @include atDesktopLarge {
             // box model
-            margin-top: 40px;
+            // margin-top: 40px;
 
             // typography
             font-size: 1.25rem;

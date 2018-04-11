@@ -28,6 +28,9 @@ class Slider {
 
         // setting slider height
         this.slider.style.height = maxHeight + "px";
+        for (let slide of this.slides) {
+            slide.children[0].style.height = maxHeight + "px";
+        }
 
         // creating slider navigation
         this.dots = [];

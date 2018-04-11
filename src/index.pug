@@ -41,14 +41,15 @@ html(lang="ru")
                 a(href="#")
                     img(src="./img/logo.svg", alt="Академия Олдбой логотип")
 
-            header.hero-header
-                .hero-header__caption
-                    h1.hero-header__title Добро пожаловать <br>в&nbsp;Академию барберинга «Oldboy»
-                    p.hero-header__subtitle Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа
-                .hero-header__contacts
-                    p.hero-header__address Москва<br>Старокирочный переулок,&nbsp;2
-                    p.hero-header__phone
-                        a(href="tel:+79261000266") тел.: <strong>+7 926 100-02-66</strong>
+            .hero__header
+                header.hero-header
+                    .hero-header__caption
+                        h1.hero-header__title Добро пожаловать <br>в&nbsp;Академию барберинга «Oldboy»
+                        p.hero-header__subtitle Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа
+                    .hero-header__contacts
+                        p.hero-header__address Москва<br>Старокирочный переулок,&nbsp;2
+                        p.hero-header__phone
+                            a(href="tel:+79261000266") тел.: <strong>+7 926 100-02-66</strong>
 
             .hero__slider
                 .slider#header-slider
@@ -66,7 +67,7 @@ html(lang="ru")
                                     .hero-form__input-group
                                         input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
                                     input.hero-form__button(type="submit" value="Записаться")
-                                .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
+                            .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
 
                     .slider__slide
                         .hero-form
@@ -80,7 +81,7 @@ html(lang="ru")
                                     .hero-form__input-group
                                         input.hero-form__input(type="text" name="phone" placeholder="Телефон")
                                     input.hero-form__button(type="submit" value="Записаться")
-                                .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
+                            .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
 
         section.about.about--main#about
             .about__row

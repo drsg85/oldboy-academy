@@ -8,7 +8,6 @@
 
     @include atTabletsPortrait {
         // box model
-        // min-height: calc(100vh - 60px);
         min-height: auto;
     }
 
@@ -20,6 +19,8 @@
 
     @include atDesktop {
         // box model
+        height: 100%;
+        padding-bottom: 0;
         flex-direction: column;
         align-items: flex-start;
     }
