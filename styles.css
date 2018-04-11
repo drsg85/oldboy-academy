@@ -650,12 +650,6 @@ body {
     left: 0;
     visibility: visible;
     opacity: 1; }
-    @media (min-width: 1200px) {
-      .main-nav--shown {
-        left: 220px; } }
-    @media (min-width: 1400px) {
-      .main-nav--shown {
-        left: 300px; } }
 
 .masson {
   position: absolute;
