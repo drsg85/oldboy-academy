@@ -1,4 +1,7 @@
 .message-404 {
+    // box model
+    padding: 25px;
+
     // typography
     text-align: center;
     
@@ -27,13 +30,23 @@
     &__title {
         // typography
         color: $white;
-        font-size: 3vw;
+        font-size: 1.25rem;
+
+        @include atDesktop {
+            // typography
+            font-size: 3vw;
+        }
     }
 
     &__text {
         // typography
         color: $white;
-        font-size: 1.5rem;
+        font-size: 1rem;
+
+        @include atDesktop {
+            // typography
+            font-size: 1.5rem;
+        }
     }
 }
 
