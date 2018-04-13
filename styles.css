@@ -517,13 +517,25 @@ body {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100%; }
+  .four-o-four__text {
+    color: #ffffff;
+    font-size: 1rem; }
+  .four-o-four__glitch {
+    position: absolute;
+    z-index: 1; }
+
+.message-404 {
+  text-align: center; }
+  .message-404__404 {
+    margin: 0;
+    padding: 0;
     color: #ffffff;
     font-size: 20vw;
     font-weight: 400;
     letter-spacing: 0.125em;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.75;
     -webkit-animation-name: glitch-anim-text;
     animation-name: glitch-anim-text;
     -webkit-animation-duration: 4s;
@@ -532,9 +544,12 @@ body {
     animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite; }
-  .four-o-four__glitch {
-    position: absolute;
-    z-index: 1; }
+  .message-404__title {
+    color: #ffffff;
+    font-size: 3vw; }
+  .message-404__text {
+    color: #ffffff;
+    font-size: 1.5rem; }
 
 @-webkit-keyframes glitch-anim-text {
   0% {
