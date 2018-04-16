@@ -502,6 +502,19 @@ body {
   position: relative;
   width: 100%;
   height: 100vh; }
+  @media (min-width: 1200px) {
+    .four-o-four:before {
+      content: "";
+      position: absolute;
+      left: -30vh;
+      top: 15%;
+      z-index: 2;
+      height: 70%;
+      width: 100%;
+      background-image: url("./img/masson.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.125; } }
   .four-o-four__404 {
     position: absolute;
     z-index: 2;
@@ -520,6 +533,12 @@ body {
     height: 100%;
     padding-top: 40px; }
     @media (min-width: 700px) {
+      .four-o-four__404 {
+        padding-top: 100px; } }
+    @media (min-width: 1200px) {
+      .four-o-four__404 {
+        padding-top: 60px; } }
+    @media (min-width: 1400px) {
       .four-o-four__404 {
         padding-top: 100px; } }
   .four-o-four__glitch {
@@ -577,6 +596,9 @@ body {
     animation-iteration-count: infinite; }
     @media (min-width: 1200px) {
       .message-404__404 {
+        font-size: 200px; } }
+    @media (min-width: 1400px) {
+      .message-404__404 {
         font-size: 260px; } }
   .message-404__title {
     margin-top: 0;
@@ -589,6 +611,9 @@ body {
       .message-404__title {
         margin: 0;
         padding-bottom: 20px;
+        font-size: 2rem; } }
+    @media (min-width: 1400px) {
+      .message-404__title {
         font-size: 3rem; } }
   .message-404__text {
     color: #ffffff;

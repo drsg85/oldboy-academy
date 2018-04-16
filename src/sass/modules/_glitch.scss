@@ -28,11 +28,6 @@ $delayAnim: 2s;
     overflow: hidden;
     margin: 0 auto;
     
-    &--style-1 {
-        
-    }
-    
-    
     &__img {
         position: absolute;
         top: calc(-1 * #{$gapVertical});

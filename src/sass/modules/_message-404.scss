@@ -25,6 +25,11 @@
 
         @include atDesktop {
             // typography
+            font-size: 200px;
+        }
+
+        @include atDesktopLarge {
+            // typography
             font-size: 260px;
         }
     }
@@ -45,6 +50,11 @@
             margin: 0;
             padding-bottom: 20px;
 
+            // typography
+            font-size: 2rem;
+        }
+
+        @include atDesktopLarge {
             // typography
             font-size: 3rem;
         }
