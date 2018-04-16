@@ -513,17 +513,48 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     width: 100%;
-    height: 100%; }
-  .four-o-four__text {
-    color: #ffffff;
-    font-size: 1rem; }
+    height: 100%;
+    padding-top: 40px; }
+    @media (min-width: 700px) {
+      .four-o-four__404 {
+        padding-top: 100px; } }
   .four-o-four__glitch {
     position: absolute;
     z-index: 1; }
+  .four-o-four__contacts {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .four-o-four__contacts {
+        bottom: 60px;
+        padding-left: 60px;
+        text-align: left; } }
+  .four-o-four__quote {
+    display: none; }
+    @media (min-width: 1200px) {
+      .four-o-four__quote {
+        position: absolute;
+        z-index: 3;
+        bottom: 60px;
+        right: 60px;
+        display: block;
+        color: #ffffff;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        text-align: right;
+        text-transform: uppercase; } }
+    .four-o-four__quote blockquote {
+      padding: 0;
+      margin: 0;
+      font-weight: 700; }
 
 .message-404 {
   padding: 25px;
@@ -532,11 +563,10 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-size: 20vw;
     font-weight: 400;
+    font-size: 130px;
     letter-spacing: 0.125em;
     text-align: center;
-    opacity: 0.75;
     -webkit-animation-name: glitch-anim-text;
     animation-name: glitch-anim-text;
     -webkit-animation-duration: 4s;
@@ -545,18 +575,33 @@ body {
     animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite; }
+    @media (min-width: 1200px) {
+      .message-404__404 {
+        font-size: 260px; } }
   .message-404__title {
+    margin-top: 0;
     color: #ffffff;
-    font-size: 1.25rem; }
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
     @media (min-width: 1200px) {
       .message-404__title {
-        font-size: 3vw; } }
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 3rem; } }
   .message-404__text {
     color: #ffffff;
-    font-size: 1rem; }
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-transform: uppercase; }
     @media (min-width: 1200px) {
       .message-404__text {
-        font-size: 1.5rem; } }
+        margin: 0;
+        padding-bottom: 26px;
+        font-size: 1.25rem;
+        letter-spacing: 1px; } }
 
 @-webkit-keyframes glitch-anim-text {
   0% {
@@ -648,7 +693,7 @@ body {
     height: calc(100% + 5px * 2);
     background-color: transparent;
     background-blend-mode: unset;
-    background-image: url("./img/course-bg.jpg");
+    background-image: url("./img/glitch.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
