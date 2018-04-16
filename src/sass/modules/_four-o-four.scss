@@ -16,20 +16,77 @@
         // box model
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         height: 100%;
-    }
+        padding-top: 40px;
 
-    &__text {
-        // typography
-        color: $white;
-        font-size: 1rem;
+        @include atTabletsPortrait {
+            // box model
+            padding-top: 100px;
+        }
     }
 
     &__glitch {
         // positioning
         position: absolute;
         z-index: 1;
+    }
+
+    &__contacts {
+        // positioning
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        z-index: 2;
+
+        // box model
+        width: 100%;
+
+        // typography
+        text-align: center;
+
+        @include atDesktop {
+            // positioning
+            bottom: 60px;
+
+            // box model
+            padding-left: 60px;
+
+            // typography
+            text-align: left;
+        }
+    }
+
+    &__quote {
+        // box model
+        display: none;
+
+        @include atDesktop {
+            // positioning
+            position: absolute;
+            z-index: 3;
+            bottom: 60px;
+            right: 60px;
+
+            // box model
+            display: block;
+
+            // typography
+            color: $white;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        blockquote {
+            // box model
+            padding: 0;
+            margin: 0;
+            
+            // typography
+            font-weight: 700;
+        }
     }
 }
