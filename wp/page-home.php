@@ -102,7 +102,7 @@
                 <div class="hero-header__contacts">
                     <p class="hero-header__address">Москва<br>Старокирочный переулок,&nbsp;2</p>
                     <p class="hero-header__phone">
-                        <a href="tel:+79261000266">тел.:<strong>+7 926 100-02-66</strong></a>
+                        <a href="tel:+79261000266">тел.: <strong>+7 926 1000-266</strong></a>
                     </p>
                 </div>
             </header>

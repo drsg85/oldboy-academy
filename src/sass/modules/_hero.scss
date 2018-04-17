@@ -37,6 +37,7 @@
     @include atDesktopLarge {
         // box model
         min-height: 840px;
+        min-height: calc(100vh - 10px);
     }
 
     &::after {
