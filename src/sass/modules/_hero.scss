@@ -4,7 +4,7 @@
 
     // box model
     padding: 30px 25px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 
     // visual
     background-color: $blue;
@@ -20,21 +20,14 @@
         padding: 60px;
     }
     
-    @include atTabletsLandscape {
-        // box model
-        padding-top: 90px;
-        padding-bottom: 30px;
-    }
-    
     @include atDesktop {
         // box model
         display: flex;
         justify-content: space-between;
         flex-shrink: 0;
 
-        padding-bottom: 80px;
+        padding-bottom: 110px;
         min-height: calc(100vh - 10px);
-        // min-height: 800px;
         
         // visual
         background-attachment: fixed;
@@ -43,7 +36,6 @@
     
     @include atDesktopLarge {
         // box model
-        // max-height: 800px;
         min-height: 840px;
     }
 
@@ -128,6 +120,17 @@
         }
     }
 
+    &--masters {
+
+    }
+
+    &--models {
+        // visual
+        background-image: url("./img/models-bg.jpg");
+        background-position: center top;
+        background-size: cover;
+    }
+
     &__logo {
         // box model
         width: 100px;
@@ -187,67 +190,67 @@
     //     }
     // }
 
-    &__title {
-        // box model
-        margin: 0;
+    // &__title {
+    //     // box model
+    //     margin: 0;
 
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 1.75rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.25;
-        font-variant: small-caps;
-        text-align: left;
+    //     // typography
+    //     color: $white;
+    //     font-family: $titleFont;
+    //     font-size: 1.75rem;
+    //     font-weight: 400;
+    //     letter-spacing: 1px;
+    //     line-height: 1.25;
+    //     font-variant: small-caps;
+    //     text-align: left;
 
-        @include atTabletsPortrait {
-            // typography
-            font-size: 2.25rem;
-            line-height: 1.25;
-            text-align: right;
-        }
+    //     @include atTabletsPortrait {
+    //         // typography
+    //         font-size: 2.25rem;
+    //         line-height: 1.25;
+    //         text-align: right;
+    //     }
  
-        @include atTabletsLandscape {
-            // typography
-            font-size: 2.25rem;
-        }
+    //     @include atTabletsLandscape {
+    //         // typography
+    //         font-size: 2.25rem;
+    //     }
 
-        @include atDesktop {
-            // typography
-            font-size: 2.5rem;
-        }
+    //     @include atDesktop {
+    //         // typography
+    //         font-size: 2.5rem;
+    //     }
 
-        @include atDesktopLarge {
-            // typography
-            font-size: 2.75rem;
-        }
+    //     @include atDesktopLarge {
+    //         // typography
+    //         font-size: 2.75rem;
+    //     }
 
-        &--smaller {
-            // typography
-            font-size: 1.125rem;
+    //     &--smaller {
+    //         // typography
+    //         font-size: 1.125rem;
 
-            @include atTabletsPortrait {
-                // typography
-                font-size: 1.5rem;
-            }
+    //         @include atTabletsPortrait {
+    //             // typography
+    //             font-size: 1.5rem;
+    //         }
 
-            @include atTabletsLandscape {
-                // typography
-                font-size: 2rem;
-            }
+    //         @include atTabletsLandscape {
+    //             // typography
+    //             font-size: 2rem;
+    //         }
 
-            @include atDesktop {
-                // typography
-                font-size: 2.25rem;
-            }
+    //         @include atDesktop {
+    //             // typography
+    //             font-size: 2.25rem;
+    //         }
 
-            @include atDesktopLarge {
-                // typography
-                font-size: 2.5rem;
-            }
-        }
-    }
+    //         @include atDesktopLarge {
+    //             // typography
+    //             font-size: 2.5rem;
+    //         }
+    //     }
+    // }
 
     &__format {
         // box model
@@ -303,7 +306,7 @@
     &__aside {
         // box model
         padding: 15px 0;
-        margin-top: 40px;
+        // margin-top: 40px;
 
         @include atDesktop {
             // box model

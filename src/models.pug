@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        link(rel="stylesheet", href="styles.css")
+
+        title Oldboy Academy
+
+    body
+        header.page-header
+            nav.main-nav
+                .main-nav__logo
+                    img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип монохром")
+                ul.main-nav__list
+                    li.main-nav__item: a.main-nav__link(href="#about") Об Академии
+                    li.main-nav__item: a.main-nav__link(href="#features") Преимущества
+                    li.main-nav__item: a.main-nav__link(href="#courses") Наши Курсы
+                    li.main-nav__item: a.main-nav__link(href="#team") Команда
+                    li.main-nav__item: a.main-nav__link(href="#contacts") Контакты
+
+                .main-nav__social
+                    .masson
+                        .masson__logo
+                            img(src="./img/masson.png", alt="")
+                        .masson__social
+                            a(href="#").icon-vkontakte
+                            a(href="#").icon-instagram
+                        
+                        a.masson__tag(href="#") #<em>OldboyAcademy</em>
+
+            .menu-icon.menu-icon--inner: .menu-icon__middle
+
+        section.hero.hero--models
+            .hero__content
+                header.hero-header.hero-header--block
+                    .hero-header__caption
+                        p.hero-header__subtitle Записаться на стрижку
+                        h1.hero-header__title Бесплатные стрижки <br>в&nbsp;Академии «Oldboy»
+                        p.hero-header__text Друзья, нам всегда требуются модели для отработки мужских стрижек, стрижек и моделирования бороды, королевского бритья и бритья головы.
+                        p.hero-header__text У вас есть отличная возможность получить услугу, выполненную нашими стажерами под чутким руководством самых опытных барберов абсолютно бесплатно.
+
+                    .hero-header__features
+                        p.hero-header__subtitle.hero-header__subtitle--gold Преимущества стрижек в&nbsp;Академии
+                        article.selling-feature.selling-feature--light
+                            h3.selling-feature__title Все услуги<br>бесплатные
+                            p.selling-feature__text Выполняются стажерами под руководством мастеров
+                        article.selling-feature.selling-feature--light
+                            h3.selling-feature__title Гарантия<br>качественных стрижек
+                            p.selling-feature__text Тип стрижки остаётся на выбор мастера. Модель выбирает длину
+
+            aside.hero__aside
+                .course-form
+                    header.course-form__header
+                        h2.course-form__title Заполни форму<br>на бесплатную стрижку
+                        p.course-form__subtitle Стань моделью академии&nbsp;Oldboy
+                    form.course-form__form(action="")
+                        input.course-form__input(type="text" name="name" placeholder="Имя")
+                        input.course-form__input(type="text" name="phone" placeholder="Телефон")
+                        input.course-form__input(type="email" name="email" placeholder="Электронная почта")
+                        input.course-form__button(type="submit" value="Подать заявку")
+                        .course-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
+
+        //- section.about
+            .about__row
+                .about__content.about__content--left
+                    h2.about__title В основу семинара положен симбиоз между двумя фундаментальными школами мужского грумминга:
+                    .about__image
+                        img(src="img/photos/cigar.jpg", alt="")
+
+                .about__content.about__content--right
+                    ul
+                        li Английская: работа ножницами в технике точного среза.
+                        li Американская: классическая работа машинками в техниках фейдинга и тейперинга.
+
+                    p Главный акцент моего семинара: «Я не учу стрижкам, я учу техникам».
+                    p Модные стрижки приходят и уходят, мой курс структурирует и систематизирует знания, что помогает вам, в первую очередь, повысить свой уровень и больше зарабатывать.
+                    p Чтобы создать хорошую мужскую стрижку, надо понимать её структуру, создавать баланс и быть точным в её исполнении. Именно этому я обучу вас на ворк–шопе, объясню и покажу, как выполнять утончённые мужские стрижки, учитывая индивидуальные особенности клиента и костной структуры.
+
+        section.about.about--yellow.about--white-border-before.about--white-border-after
+            .about__deco-logo
+            .about__row
+                .about__content.about__content--left
+                    h2.about__title Что будет на данном курсе:
+                    ul
+                        li История стрижек (лекция)
+                        li Необходимый барберский инструмент (лекция)
+                        li Основы работы ножницами и машинками: как правильно держать инструмент, техника движения руками
+                        li Фейдинг vs тейперинг. Разница и виды
+                        li Работа с клиентом. Как не задавая прямых вопросов, понять клиента и подобрать стрижку
+                        li Сбалансированное и рациональное использование своего тела во время стрижки: за что отвечают верхняя и нижняя часть тела (лекция)
+                        li Две демонстрационные модели
+                        li Отработка на двух моделях, у каждого студента курса. Во время практической части мы будем отрабатывать технику, вам поставят руки и тело, разберем волнующие вопросы
+
+                .about__content.about__content--right
+                    .about__features
+                        article.selling-feature
+                            h3.selling-feature__title Сбалансированный<br>учебный курс
+                            p.selling-feature__text Теоретический и практический материал курса оптимально дополняют друг друга
+                            
+                        article.selling-feature
+                            h3.selling-feature__title Комфортные условия<br>и оснащение
+                            p.selling-feature__text Предоставляем нашим студентам лучшее профессинальное оборудование
+
+                        article.selling-feature
+                            h3.selling-feature__title Помощь<br>в трудоустройстве
+                            p.selling-feature__text Лучших выпускников мы трудоустроим в барбершопах наших партнёров
+
+        section.about.about--yellow.about--white-border-before
+            .about__row
+                .about__content.about__content--left
+                    article.text-promo
+                        h3.text-promo__title Узнай о преимуществах<br>обучения в Академии
+                        p.text-promo__text Вся информация о наших текущих курсах представлена в разделе «Курсы», там ты найдёшь информацию по всем интересующим тебя направлениям.
+                        .text-promo__more
+                            a(href="#").button Курсы
+                        
+                    article.text-promo
+                        h3.text-promo__title Есть вопросы?<br>Напиши нам
+                        p.text-promo__text Всё еще остались вопросы о том, как попасть в нашу Академию? Никаких проблем, мы готовы ответить на все твои вопросы, просто напиши нам или позвони.
+                        .text-promo__more
+                            a(href="#").button Контакты
+
+        section.contacts.contacts--inner
+            article.contacts-box.contacts-box--inner
+                header.contacts-box__header
+                    h2.contacts-box__title Контакты
+                    p.contacts-box__text По всем интересующим вас вопросам просим вас связаться с нашим менеджером.
+
+                .contacts-box__body
+                    .contact
+                        .contact__icon.icon-phone
+                        .contact__name Телефон
+                        .contact__value
+                            a(href="tel:+79114567890") +7 911 456-78-90
+
+                    .contact
+                        .contact__icon.icon-mail-alt
+                        .contact__name e-mail
+                        .contact__value
+                            a(href="mailto: academy@oldboy.com") academy@oldboy.com
+
+                footer.contacts-box__footer
+                    .contacts-box__logo
+                        //- img(src="./img/logo.svg", alt="Академия Олдбой логотип")
+                        img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип")
+
+        footer.page-footer.page-footer--inner
+
+            .page-footer__wrapper
+                .page-footer__social
+                    a(href="").icon-vkontakte
+                    a(href="").icon-instagram
+                nav.page-footer__menu
+                    ul
+                        li: a(href="#") Курсы
+                        li: a(href="#") Команда
+                        li: a(href="#") Отзывы
+                        li: a(href="#") Моделям
+                        li: a(href="#") Сертификаты
+                .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.

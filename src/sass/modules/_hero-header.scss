@@ -25,10 +25,20 @@
         align-items: flex-start;
     }
 
+    &--block {
+        // box model
+        display: block;
+    }
+
     &__caption {
         @include atTabletsLandscape {
             // box model
             max-width: 480px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            max-width: 540px;
         }
     }
 
@@ -63,7 +73,22 @@
     &__subtitle {
         // typography
         color: $white;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-align: left;
+        text-transform: uppercase;
+
+        &--gold {
+            // typography
+            color: $gold;
+        }
+    }
+
+    &__text {
+        // typography
+        color: $white;
         font-family: $mainFont;
+        font-size: 1.25rem;
         line-height: 1.5;
 
         @include atTabletsPortrait {
@@ -90,6 +115,23 @@
         @include atDesktop {
             // typography
             text-align: left;
+        }
+    }
+
+    &__features {
+        // box model
+        border-top: 1px solid $gold;
+        margin-left: -60px;
+        margin-top: 40px;
+        padding-left: 60px;
+        padding-top: 10px;
+        
+        // typography
+        text-align: center;
+        
+        @include atDesktop {
+            // box model
+            max-width: 760px;
         }
     }
 
