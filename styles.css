@@ -582,7 +582,7 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 130px;
     letter-spacing: 0.125em;
     text-align: center;
@@ -1416,7 +1416,8 @@ body {
       background-position: center top; } }
   @media (min-width: 1400px) {
     .hero {
-      min-height: 840px; } }
+      min-height: 840px;
+      min-height: calc(100vh - 10px); } }
   .hero::after {
     content: "";
     position: absolute;
