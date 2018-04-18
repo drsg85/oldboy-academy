@@ -287,6 +287,7 @@
             // box model
             display: block;
             width: auto;
+            padding: 0;
         }
 
         @include atDesktopLarge {
@@ -328,11 +329,16 @@
         // positioning
         position: absolute;
         left: 7px;
-        top: 15px;
+        top: 20px;
 
         // box model
         height: 30px;
         width: 30px;
+
+        @include atTabletsPortrait {
+            // positioning
+            top: 22px;
+        }
 
         @include atTabletsLandscape {
             // positioning
@@ -356,16 +362,19 @@
         padding: 8px;
 
         // typography
+        color: $white;
         font-size: 0.9rem;
-        line-height: 1.5;
+        line-height: 1.75;
         text-align: left;
 
-        // visual
-        border-bottom: 1px solid $gold;
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1rem;
+        }
 
         @include atTabletsLandscape {
             // typography
-            font-size: 1.125rem;
+            // font-size: 1.125rem;
         }
 
         &--last {
@@ -382,7 +391,16 @@
         padding-top: 30px;
 
         // typography
+        color: $white;
         text-align: center;
+
+        @include atDesktop {
+            // box model
+            padding-top: 60px;
+
+            // typography
+            text-align: left;
+        }
     }
 
     &__price-title {
@@ -391,8 +409,10 @@
         padding: 0;
 
         // typography
-        font-size: 1rem;
-        font-weight: 400;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 
     &__price-value {
@@ -403,6 +423,14 @@
         // typography
         font-weight: 700;
         font-size: 3rem;
+
+        @include atDesktop {
+            // box model
+            padding-top: 10px;
+
+            // typography
+            font-size: 3.5rem;
+        }
     }
 
     &__detailed {

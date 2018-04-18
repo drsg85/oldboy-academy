@@ -37,14 +37,14 @@ html(lang="ru")
 
         section.hero.hero--course
             .hero__content
-                article.hero-course
-                    .hero-course__main
-                        header.hero-course__header
-                            h1.hero-course__title Традиционное бритьё опасной бритвой и&nbsp;моделирование бороды
-                            .hero-course__image: img(src="./img/courses/course1.jpg", alt="Академия Олдбой курс по барберингу")
-                            .hero-course__ribbons
-                                p.hero-course__ribbon.hero-course__ribbon--blue новый<br>курс
-                                p.hero-course__ribbon.hero-course__ribbon--red специальная<br>цена
+                header.hero-header.hero-header--block
+                    .hero-header__caption
+                        p.hero-header__subtitle Курсы Академии «Oldboy»
+                        h1.hero-header__title Курс «Традиционное бритьё опасной бритвой и&nbsp;моделирование бороды»
+                        .hero-header__badges
+
+                    .hero-header__features
+                        p.hero-header__subtitle.hero-header__subtitle--gold Описание структуры курса
 
                         .hero-course__short-info
                             .hero-course__info-column
@@ -68,6 +68,9 @@ html(lang="ru")
 
             aside.hero__aside
                 .course-form
+                    header.course-form__header
+                        h2.course-form__title Заполни форму<br>для записи на курс
+                        p.course-form__subtitle Традиционное бритьё опасной бритвой и&nbsp;моделирование бороды
                     form.course-form__form(action="")
                         input.course-form__input(type="text" name="name" placeholder="Имя")
                         input.course-form__input(type="text" name="phone" placeholder="Телефон")

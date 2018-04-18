@@ -86,39 +86,10 @@
     }
 
     &--course {
-        // box model
-        padding-bottom: 55px;
-        padding-top: 160px;
-
         // visual
-        background-image: url("./img/course-bg.jpg");
-        background-position: center center;
+        background-image: url("./img/features-bg.jpg");
+        background-position: center top;
         background-size: cover;
-
-        @include atTabletsPortrait {
-            // box model
-            padding: 60px;
-            padding-bottom: 80px;
-
-            // visual
-            background-image: url("./img/course-bg.jpg");
-        }
-
-        @include atDesktop {
-            // box model
-            height: auto;
-            min-height: auto;
-            max-height: 2000px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            max-height: 2000px;
-            padding-left: 120px;
-            padding-right: 120px;
-            padding-top: 80px;
-            padding-bottom: 100px;
-        }
     }
 
     &--masters {
@@ -230,6 +201,8 @@
 
         @include atDesktop {
             // box model
+            // border: 1px solid red;
+            // display: flex;
             width: calc(50% - 60px);
             float: right;
             margin-top: 0;
