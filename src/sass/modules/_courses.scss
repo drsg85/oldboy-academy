@@ -2,74 +2,97 @@
     // positioning
     position: relative;
 
+    // box model
+    padding: 40px 25px;
+    padding-bottom: 0;
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 80px 60px;
+        padding-bottom: 0;
+    }
+    
     // visual
-    background-color: $white;
-
+    background-color: $yellow;
+    
     &::before {
         content: "";
-
+        
         // positioning
         position: absolute;
         left: 0;
         top: -1px;
         z-index: 6;
-
+        
         // box model
         height: 32px;
         width: 100%;
-
+        
         // visual
         background-image: url("./img/deco-b-r.svg");
         background-size: 80px;
         background-repeat: repeat-x;
         background-position: top -40px;
     }
-
+    
     &__header {
         // box model
-        margin-bottom: -150px;
-        padding: 65px 25px;
-        padding-bottom: 150px;
+        max-width: 400px;
 
-        // visual
-        background-color: $gold;
-        background-image: url("./img/courses-bg.jpg");
-        background-size: cover;
-        background-position: bottom center;
-        background-repeat: no-repeat;
+        @include atDesktop {
+            // box model
+            padding-bottom: 40px;
+        }
     }
-
+    
     &__title {
-        // box model
-        margin: 0;
-        
         // typography
-        color: $white;
+        // color: $white;
         font-family: $titleFont;
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: 400;
+        font-variant: small-caps;
         letter-spacing: 1px;
-        line-height: 1.125;
-        text-align: right;
-        text-transform: uppercase;
 
         @include atTabletsPortrait {
             // box model
-            margin: 35px;
+            margin-top: 0;
 
             // typography
-            font-size: 2.5rem;
-            line-height: 1.25;
+            font-size: 2.125rem;
         }
 
-        @include atDesktop {
+        @include atTabletsLandscape {
             // typography
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         @include atDesktopLarge {
             // typography
-            font-size: 4rem;
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        // typography
+        font-family: $mainFont;
+        font-size: 1.25rem;
+        line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+            line-height: 1.75;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            margin-bottom: 0;
+        }
+
+        @include atDesktopLarge {
+            // typography
+            font-size: 1.25rem;
         }
     }
 

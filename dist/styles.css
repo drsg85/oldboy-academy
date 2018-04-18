@@ -2381,7 +2381,13 @@ body {
 
 .courses {
   position: relative;
-  background-color: #ffffff; }
+  padding: 40px 25px;
+  padding-bottom: 0;
+  background-color: #f9f1e6; }
+  @media (min-width: 700px) {
+    .courses {
+      padding: 80px 60px;
+      padding-bottom: 0; } }
   .courses::before {
     content: "";
     position: absolute;
@@ -2395,35 +2401,40 @@ body {
     background-repeat: repeat-x;
     background-position: top -40px; }
   .courses__header {
-    margin-bottom: -150px;
-    padding: 65px 25px;
-    padding-bottom: 150px;
-    background-color: #d5a353;
-    background-image: url("./img/courses-bg.jpg");
-    background-size: cover;
-    background-position: bottom center;
-    background-repeat: no-repeat; }
+    max-width: 400px; }
+    @media (min-width: 1200px) {
+      .courses__header {
+        padding-bottom: 40px; } }
   .courses__title {
-    margin: 0;
-    color: #ffffff;
     font-family: "Lora", serif;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1.125;
-    text-align: right;
-    text-transform: uppercase; }
+    font-variant: small-caps;
+    letter-spacing: 1px; }
     @media (min-width: 700px) {
       .courses__title {
-        margin: 35px;
-        font-size: 2.5rem;
-        line-height: 1.25; } }
-    @media (min-width: 1200px) {
+        margin-top: 0;
+        font-size: 2.125rem; } }
+    @media (min-width: 900px) {
       .courses__title {
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media (min-width: 1400px) {
       .courses__title {
-        font-size: 4rem; } }
+        font-size: 3rem; } }
+  .courses__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5; }
+    @media (min-width: 700px) {
+      .courses__text {
+        font-size: 1.125rem;
+        line-height: 1.75; } }
+    @media (min-width: 900px) {
+      .courses__text {
+        margin-bottom: 0; } }
+    @media (min-width: 1400px) {
+      .courses__text {
+        font-size: 1.25rem; } }
   .courses__icon {
     width: 3rem;
     margin: 0 auto; }
@@ -2447,9 +2458,7 @@ body {
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding: 7px;
-  background-color: #ffffff;
-  border: 5px solid #ffffff; }
+  padding: 7px; }
   .course:before {
     content: "";
     position: absolute;
@@ -3326,7 +3335,7 @@ body {
     z-index: 6;
     height: 32px;
     width: 100%;
-    background-image: url("./img/deco-b-r.svg");
+    background-image: url("./img/deco-b-r-yellow.svg");
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: top -40px; }
