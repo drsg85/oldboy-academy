@@ -1446,28 +1446,9 @@ body {
     .hero--inner {
       max-height: auto; } }
   .hero--course {
-    padding-bottom: 55px;
-    padding-top: 160px;
-    background-image: url("./img/course-bg.jpg");
-    background-position: center center;
+    background-image: url("./img/features-bg.jpg");
+    background-position: center top;
     background-size: cover; }
-    @media (min-width: 700px) {
-      .hero--course {
-        padding: 60px;
-        padding-bottom: 80px;
-        background-image: url("./img/course-bg.jpg"); } }
-    @media (min-width: 1200px) {
-      .hero--course {
-        height: auto;
-        min-height: auto;
-        max-height: 2000px; } }
-    @media (min-width: 1400px) {
-      .hero--course {
-        max-height: 2000px;
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 80px;
-        padding-bottom: 100px; } }
   .hero--models {
     background-image: url("./img/models-bg.jpg");
     background-position: center top;
@@ -1809,7 +1790,9 @@ body {
     text-align: left;
     text-transform: uppercase; }
     .hero-header__subtitle--gold {
-      color: #d5a353; }
+      color: #d5a353;
+      font-weight: 700;
+      letter-spacing: 1.5px; }
   .hero-header__text {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -2755,7 +2738,8 @@ body {
   @media (min-width: 1200px) {
     .hero-course__info-column {
       display: block;
-      width: auto; } }
+      width: auto;
+      padding: 0; } }
   @media (min-width: 1400px) {
     .hero-course__info-column {
       display: inline-block;
@@ -2780,9 +2764,12 @@ body {
   .hero-course__info-icon {
     position: absolute;
     left: 7px;
-    top: 15px;
+    top: 20px;
     height: 30px;
     width: 30px; }
+    @media (min-width: 700px) {
+      .hero-course__info-icon {
+        top: 22px; } }
     @media (min-width: 900px) {
       .hero-course__info-icon {
         top: 20px;
@@ -2794,29 +2781,40 @@ body {
   .hero-course__info-text {
     margin: 0;
     padding: 8px;
+    color: #ffffff;
     font-size: 0.9rem;
-    line-height: 1.5;
-    text-align: left;
-    border-bottom: 1px solid #d5a353; }
-    @media (min-width: 900px) {
+    line-height: 1.75;
+    text-align: left; }
+    @media (min-width: 700px) {
       .hero-course__info-text {
-        font-size: 1.125rem; } }
+        font-size: 1rem; } }
     .hero-course__info-text--last {
       padding-bottom: 0;
       border-bottom: none; }
   .hero-course__price {
     padding-top: 30px;
+    color: #ffffff;
     text-align: center; }
+    @media (min-width: 1200px) {
+      .hero-course__price {
+        padding-top: 60px;
+        text-align: left; } }
   .hero-course__price-title {
     margin: 0;
     padding: 0;
-    font-size: 1rem;
-    font-weight: 400; }
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
   .hero-course__price-value {
     margin: 0;
     padding: 0;
     font-weight: 700;
     font-size: 3rem; }
+    @media (min-width: 1200px) {
+      .hero-course__price-value {
+        padding-top: 10px;
+        font-size: 3.5rem; } }
   .hero-course__detailed {
     padding: 20px 0;
     color: #ffffff;
