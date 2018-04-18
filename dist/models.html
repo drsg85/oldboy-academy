@@ -68,58 +68,24 @@
         </div>
       </aside>
     </section>
-    <section class="about about--yellow about--white-border-before about--white-border-after">
-      <div class="about__deco-logo"></div>
-      <div class="about__row">
-        <div class="about__content about__content--left">
-          <h2 class="about__title">Что будет на данном курсе:</h2>
-          <ul>
-            <li>История стрижек (лекция)</li>
-            <li>Необходимый барберский инструмент (лекция)</li>
-            <li>Основы работы ножницами и машинками: как правильно держать инструмент, техника движения руками</li>
-            <li>Фейдинг vs тейперинг. Разница и виды</li>
-            <li>Работа с клиентом. Как не задавая прямых вопросов, понять клиента и подобрать стрижку</li>
-            <li>Сбалансированное и рациональное использование своего тела во время стрижки: за что отвечают верхняя и нижняя часть тела (лекция)</li>
-            <li>Две демонстрационные модели</li>
-            <li>Отработка на двух моделях, у каждого студента курса. Во время практической части мы будем отрабатывать технику, вам поставят руки и тело, разберем волнующие вопросы</li>
-          </ul>
-        </div>
-        <div class="about__content about__content--right">
-          <div class="about__features">
-            <article class="selling-feature">
-              <h3 class="selling-feature__title">Сбалансированный<br>учебный курс</h3>
-              <p class="selling-feature__text">Теоретический и практический материал курса оптимально дополняют друг друга</p>
-            </article>
-            <article class="selling-feature">
-              <h3 class="selling-feature__title">Комфортные условия<br>и оснащение</h3>
-              <p class="selling-feature__text">Предоставляем нашим студентам лучшее профессинальное оборудование</p>
-            </article>
-            <article class="selling-feature">
-              <h3 class="selling-feature__title">Помощь<br>в трудоустройстве</h3>
-              <p class="selling-feature__text">Лучших выпускников мы трудоустроим в барбершопах наших партнёров</p>
-            </article>
-          </div>
+    <section class="contacts" id="contacts">
+      <div class="map" id="map"></div>
+    </section>
+    <section class="popup">
+      <div class="popup__window">
+        <header class="popup__header">
+          <div class="popup__close"></div>
+        </header>
+        <div class="popup__content">
+          <h2 class="popup__title">Ваша заявка добавлена</h2>
+          <div class="popup__text">Благодарим Вас за обращение в нашу Академию. На Вашу электронную почту направлено письмо с информацией. Наш менеджер свяжется с Вами в ближайшее время.</div>
+          <div class="popup__respect">С уважением, <br> Команда OldBoy Академии</div>
+          <div class="popup__controls"><a class="popup__accept" href="#">Хорошо</a></div>
         </div>
       </div>
     </section>
-    <section class="about about--yellow about--white-border-before">
-      <div class="about__row">
-        <div class="about__content about__content--left">
-          <article class="text-promo">
-            <h3 class="text-promo__title">Узнай о преимуществах<br>обучения в Академии</h3>
-            <p class="text-promo__text">Вся информация о наших текущих курсах представлена в разделе «Курсы», там ты найдёшь информацию по всем интересующим тебя направлениям.</p>
-            <div class="text-promo__more"><a class="button" href="#">Курсы</a></div>
-          </article>
-          <article class="text-promo">
-            <h3 class="text-promo__title">Есть вопросы?<br>Напиши нам</h3>
-            <p class="text-promo__text">Всё еще остались вопросы о том, как попасть в нашу Академию? Никаких проблем, мы готовы ответить на все твои вопросы, просто напиши нам или позвони.</p>
-            <div class="text-promo__more"><a class="button" href="#">Контакты</a></div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="contacts contacts--inner">
-      <article class="contacts-box contacts-box--inner">
+    <footer class="page-footer">
+      <article class="contacts-box">
         <header class="contacts-box__header">
           <h2 class="contacts-box__title">Контакты</h2>
           <p class="contacts-box__text">По всем интересующим вас вопросам просим вас связаться с нашим менеджером.</p>
@@ -140,21 +106,20 @@
           <div class="contacts-box__logo"><img src="./img/logo-bw.svg" alt="Академия Олдбой логотип"/></div>
         </footer>
       </article>
-    </section>
-    <footer class="page-footer page-footer--inner">
       <div class="page-footer__wrapper">
         <div class="page-footer__social"><a class="icon-vkontakte" href=""></a><a class="icon-instagram" href=""></a></div>
         <nav class="page-footer__menu">
           <ul>
-            <li><a href="#">Курсы</a></li>
-            <li><a href="#">Команда</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Моделям</a></li>
-            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#about">Об Академии</a></li>
+            <li><a href="#features">Преимущества</a></li>
+            <li><a href="#courses">Наши Курсы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <div class="page-footer__copy">&copy;Академия Олдбой. 2017<br>Все права сохранены.</div>
+        <div class="page-footer__copy">&copy;Академия Олдбой. 2018<br>Все права сохранены.</div>
       </div>
     </footer>
   </body>
+  <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
+  <script src="map.js"></script>
 </html>

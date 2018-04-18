@@ -81,7 +81,7 @@ html(lang="ru")
                     p Модные стрижки приходят и уходят, мой курс структурирует и систематизирует знания, что помогает вам, в первую очередь, повысить свой уровень и больше зарабатывать.
                     p Чтобы создать хорошую мужскую стрижку, надо понимать её структуру, создавать баланс и быть точным в её исполнении. Именно этому я обучу вас на ворк–шопе, объясню и покажу, как выполнять утончённые мужские стрижки, учитывая индивидуальные особенности клиента и костной структуры.
 
-        section.about.about--yellow.about--white-border-before.about--white-border-after
+        //- section.about.about--yellow.about--white-border-before.about--white-border-after
             .about__deco-logo
             .about__row
                 .about__content.about__content--left
@@ -110,7 +110,7 @@ html(lang="ru")
                             h3.selling-feature__title Помощь<br>в трудоустройстве
                             p.selling-feature__text Лучших выпускников мы трудоустроим в барбершопах наших партнёров
 
-        section.about.about--yellow.about--white-border-before
+        //- section.about.about--yellow.about--white-border-before
             .about__row
                 .about__content.about__content--left
                     article.text-promo
@@ -125,7 +125,7 @@ html(lang="ru")
                         .text-promo__more
                             a(href="#").button Контакты
 
-        section.contacts.contacts--inner
+        //- section.contacts.contacts--inner
             article.contacts-box.contacts-box--inner
                 header.contacts-box__header
                     h2.contacts-box__title Контакты
@@ -149,8 +149,7 @@ html(lang="ru")
                         //- img(src="./img/logo.svg", alt="Академия Олдбой логотип")
                         img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип")
 
-        footer.page-footer.page-footer--inner
-
+        //- footer.page-footer.page-footer--inner
             .page-footer__wrapper
                 .page-footer__social
                     a(href="").icon-vkontakte
@@ -163,3 +162,58 @@ html(lang="ru")
                         li: a(href="#") Моделям
                         li: a(href="#") Сертификаты
                 .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.
+
+        section.contacts#contacts
+            .map#map
+
+        section.popup
+            .popup__window
+                header.popup__header
+                    .popup__close
+                .popup__content
+                    h2.popup__title Ваша заявка добавлена
+                    .popup__text Благодарим Вас за обращение в нашу Академию. На Вашу электронную почту направлено письмо с информацией. Наш менеджер свяжется с Вами в ближайшее время.
+                    .popup__respect С уважением, <br> Команда OldBoy Академии
+                    .popup__controls
+                        a.popup__accept(href="#") Хорошо
+
+        footer.page-footer
+            article.contacts-box
+                header.contacts-box__header
+                    h2.contacts-box__title Контакты
+                    p.contacts-box__text По всем интересующим вас вопросам просим вас связаться с нашим менеджером.
+
+                .contacts-box__body
+                    .contact
+                        .contact__icon.icon-phone
+                        .contact__name Телефон
+                        .contact__value
+                            a(href="tel:+79114567890") +7 911 456-78-90
+
+                    .contact
+                        .contact__icon.icon-mail-alt
+                        .contact__name e-mail
+                        .contact__value
+                            a(href="mailto: academy@oldboy.com") academy@oldboy.com
+
+                footer.contacts-box__footer
+                    .contacts-box__logo
+                        //- img(src="./img/logo.svg", alt="Академия Олдбой логотип")
+                        img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип")
+
+            .page-footer__wrapper
+                .page-footer__social
+                    a(href="").icon-vkontakte
+                    a(href="").icon-instagram
+                nav.page-footer__menu
+                    ul
+                        li: a(href="#about") Об Академии
+                        li: a(href="#features") Преимущества
+                        li: a(href="#courses") Наши Курсы
+                        //- li: a(href="#team") Команда
+                        li: a(href="#contacts") Контакты
+                .page-footer__copy &copy;Академия Олдбой. 2018<br>Все права сохранены.
+
+
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&callback=initMap")
+    script(src="map.js")

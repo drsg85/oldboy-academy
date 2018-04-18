@@ -3373,10 +3373,11 @@ body {
   @media (min-width: 1200px) {
     .contacts-box {
       position: absolute;
-      bottom: -80px;
+      bottom: 140px;
       right: 30px;
       z-index: 3;
       width: 300px;
+      border: 1px solid #d5a353;
       border-radius: 6px; } }
   .contacts-box--inner {
     position: relative;
