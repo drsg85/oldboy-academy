@@ -3,40 +3,67 @@
     position: relative;
 
     // box model
-    padding-top: 40px;
+    padding: 80px 25px;
+    padding-bottom: 20px;
 
     // visual
-    background-color: $white;
+    background-color: $dark;
+    background-image: url("./img/features-bg.jpg");
+    background-size: cover;
+    background-position: center center;
     
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: -1px;
+        left: 0;
+        z-index: 2;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b-r.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px top;
+    }
+
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 2;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px bottom;
+    }
+
     @include atTabletsPortrait {
         // box model
-        padding-left: 60px;
-        padding-top: 0;
+        padding: 100px 60px;
+        padding-bottom: 40px;
     }
 
     @include atDesktop {
         // box model
         display: flex;
-        padding-left: 0;
-
-        &::after {
-            content: "";
-    
-            // positioning
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            z-index: 2;
-    
-            // box model
-            height: 32px;
-            width: 100%;
-    
-            // visual
-            background-image: url("./img/deco-b.svg");
-            background-size: 80px;
-            background-repeat: repeat-x;
-            background-position: -40px bottom;
-        }
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 100px 20px;
+        padding-bottom: 40px;
     }
 }
