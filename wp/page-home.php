@@ -17,13 +17,14 @@
     <!-- OG -->
     <meta property="og:title" content="<?php the_title(); ?>">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course1.jpg">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/hero-bg.jpg">
     <meta propepty="og:url" content="<?php the_permalink(); ?>">
     <meta property="og:description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
     <meta propepty="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="OldBoyAcademy">
+    <meta property="og:site_name" content="Oldboy Academy">
 
     <!-- Favicon -->
+    <!-- TODO: make a good favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo("stylesheet_directory"); ?>/img/favicon.png">
 
     <!-- Styles -->
@@ -38,52 +39,7 @@
 
 <body>
     <!-- Header -->
-    <header class="page-header">
-        <nav class="main-nav">
-            <div class="main-nav__logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
-                </a>
-            </div>
-
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#about">Об Академии</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#features">Преимущества</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#courses">Наши Курсы</a>
-                </li>
-                <!-- <li class="main-nav__item">
-                    <a class="main-nav__link" href="#team">Команда</a>
-                </li> -->
-                <li class="main-nav__item">
-                    <a class="main-nav__link" href="#contacts">Контакты</a>
-                </li>
-            </ul>
-
-            <div class="main-nav__social">
-                <div class="masson">
-                    <div class="masson__logo">
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
-                    </div>
-                    <!-- <div class="masson__social">
-                        <a class="icon-vkontakte" href="#"></a>
-                        <a class="icon-instagram" href="#"></a>
-                    </div> -->
-                    <!-- <a class="masson__tag" href="#">
-                        #<em>OldboyAcademy</em>
-                    </a> -->
-                </div>
-            </div>
-        </nav>
-
-        <div class="menu-icon">
-            <div class="menu-icon__middle"></div>
-        </div>
-    </header>
+    <?php get_template_part('nav'); ?>
 
     <!-- Hero -->
     <section class="hero">
@@ -96,6 +52,7 @@
         <div class="hero__header">
             <header class="hero-header">
                 <div class="hero-header__caption">
+                    <p class="hero-header__subtitle">Научим как надо!</p>
                     <h1 class="hero-header__title">Добро пожаловать<br>в&nbsp;Академию барберинга «Oldboy»</h1>
                     <p class="hero-header__text">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
                 </div>
@@ -108,69 +65,71 @@
             </header>
         </div>
         
-        <div class="slider" id="header-slider">
-            <?php
-                $args = array(
-                    'category_name' => 'courses'
-                );
+        <div class="hero__slider">
+            <div class="slider" id="header-slider">
+                <?php
+                    $args = array(
+                        'category_name' => 'courses'
+                    );
 
-                query_posts($args);
-                $counter = 0;
+                    query_posts($args);
+                    $counter = 0;
 
-                if (have_posts()) {
-                    while (have_posts() && ($counter < 3)) {
-                        the_post();
-                        $counter++;
-                        // vars
-                        $course_name = get_field('course_name');
-                        $course_date = get_field('course_date');
-            ?>
+                    if (have_posts()) {
+                        while (have_posts() && ($counter < 3)) {
+                            the_post();
+                            $counter++;
+                            // vars
+                            $course_name = get_field('course_name');
+                            $course_date = get_field('course_date');
+                ?>
 
-            <div class="slider__slide">
-                <div class="hero-form">
-                    <header class="hero-form__header">
-                        <h2 class="hero-form__title">
-                            <strong><?php echo $course_name; ?></strong>
-                        </h2>
-                        <p class="hero-form__subtitle">
-                            Старт группы <?php echo $course_date; ?>
-                        </p>
-                    </header>
-                    <div class="hero-form__wrapper">
-                        <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
-                            <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
-                            <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
-                            <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
-                            <input class="hero-form__button" type="submit" value="Подать заявку" />
-                        </form>
-                    </div>
-                    <div class="hero-form__warning">
-                        Заполняя данную форму<br>вы&nbsp;принимаете условия<br>
-                        <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                <div class="slider__slide">
+                    <div class="hero-form">
+                        <header class="hero-form__header">
+                            <h2 class="hero-form__title">
+                                <strong><?php echo $course_name; ?></strong>
+                            </h2>
+                            <p class="hero-form__subtitle">
+                                Старт группы <?php echo $course_date; ?>
+                            </p>
+                        </header>
+                        <div class="hero-form__wrapper">
+                            <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
+                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
+                                <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
+                                <input class="hero-form__button" type="submit" value="Подать заявку" />
+                            </form>
+                        </div>
+                        <div class="hero-form__warning">
+                            Заполняя данную форму<br>вы&nbsp;принимаете условия<br>
+                            <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <?php
+                <?php
+                        }
                     }
-                }
-            ?>
+                ?>
 
-            <div class="slider__slide">
-                <div class="hero-form">
-                    <header class="hero-form__header">
-                        <h2 class="hero-form__title">Стань моделью!</h2>
-                        <p class="hero-form__subtitle">Запись на бесплатную стрижку</p>
-                    </header>
-                    <div class="hero-form__wrapper">
-                        <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
-                            <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required/>
-                            <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
-                            <input class="hero-form__button" type="submit" value="Записаться" />
-                        </form>
-                        <div class="hero-form__warning">
-                            Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
-                            <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                <div class="slider__slide">
+                    <div class="hero-form">
+                        <header class="hero-form__header">
+                            <h2 class="hero-form__title">Стань моделью!</h2>
+                            <p class="hero-form__subtitle">Запись на бесплатную стрижку</p>
+                        </header>
+                        <div class="hero-form__wrapper">
+                            <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required/>
+                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
+                                <input class="hero-form__button" type="submit" value="Записаться" />
+                            </form>
+                            <div class="hero-form__warning">
+                                Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
+                                <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -196,90 +155,59 @@
 
     <!-- Selling features -->
     <section class="selling-features" id="features">
-        <article class="feature feature--active">
-            <header class="feature__header">
-                <h3 class="feature__title">
-                    Оптимальный баланс практики и теории
-                </h3>
-                <div class="feature__icon">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/target.svg" alt="" />
+        <article class="feature">
+            <div class="feature__content">
+                <header class="feature__header">
+                    <h3 class="feature__title">Оптимальный баланс практики и&nbsp;теории</h3>
+                    <div class="feature__icon">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/target.svg" alt="" />
+                    </div>
+                </header>
+                <div class="feature__body">
+                    <p class="feature__item">Опытные преподаватели с&nbsp;многолетним стажем</p>
+                    <p class="feature__item">Ориентированность на&nbsp;работу с&nbsp;живыми моделями</p>
+                    <p class="feature__item">Психология общения и&nbsp;работа с&nbsp;клиентом</p>
                 </div>
-            </header>
-            <div class="feature__body">
-                <p class="feature__item">
-                    Опытные преподаватели с многолетним стажем
-                </p>
-                <p class="feature__item">
-                </p>
-                <p class="feature__item">
-                    Психология общения и работа с клиентом
-                </p>
             </div>
-            <div class="feature__more feature__more--balance">
+            <div class="feature__more">
                 <!-- <a href="#">Подробнее</a> -->
-            </div>
-            <div class="feature__background feature__background--balance">
-                <div class="feature__deco">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/brain.svg" alt="" />
-                </div>
             </div>
         </article>
 
         <article class="feature">
-            <header class="feature__header">
-                <h3 class="feature__title">
-                    Комфортные условия обучения
-                </h3>
-                <div class="feature__icon">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/university.svg" alt="" />
+            <div class="feature__content">
+                <header class="feature__header">
+                    <h3 class="feature__title">Комфортные условия обучения в&nbsp;Академии</h3>
+                    <div class="feature__icon">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/university.svg" alt="" />
+                    </div>
+                </header>
+                <div class="feature__body">
+                    <p class="feature__item">Современное оборудование и&nbsp;оснащенный зал</p>
+                    <p class="feature__item">Удобное расположение хостела для&nbsp;проживания</p>
                 </div>
-            </header>
-            <div class="feature__body">
-                <p class="feature__item">
-                    Современное оборудование и оснащенный зал
-                </p>
-                <p class="feature__item">
-                    Удобное расположение хостела для проживания
-                </p>
             </div>
-            <div class="feature__more feature__more--comfort">
+            <div class="feature__more">
                 <!-- <a href="#">Подробнее</a> -->
-            </div>
-            <div class="feature__background feature__background--comfort">
-                <div class="feature__deco">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/barber-chair.svg" alt="" />
-                </div>
             </div>
         </article>
 
         <article class="feature">
-            <header class="feature__header">
-                <h3 class="feature__title">
-                    Создание рабочих и творческих связей
-                </h3>
-                <div class="feature__icon">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/razor.svg" alt="" />
+            <div class="feature__content">
+                <header class="feature__header">
+                    <h3 class="feature__title">Создание рабочих и&nbsp;творческих связей</h3>
+                    <div class="feature__icon">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/razor.svg" alt="" />
+                    </div>
+                </header>
+                <div class="feature__body">
+                    <p class="feature__item">Помощь в&nbsp;трудоустройстве, рекомендации и&nbsp;поддержка</p>
+                    <p class="feature__item">Создание команды профессионалов и&nbsp;их продвижение на&nbsp;барберинг арене</p>
+                    <p class="feature__item">Особые условия и&nbsp;выгодные предложения партнеров</p>
                 </div>
-            </header>
-            <div class="feature__body">
-                <p class="feature__item">
-                    Помощь в трудоустройстве, рекомендации и поддержка
-                </p>
-                <p class="feature__item">
-                    <?php echo get_theme_mod('feature_text_7','OldBoyAcademy'); ?>
-                    Создание команды профессионалов и их продвижение на барберинг арене
-                </p>
-                <p class="feature__item">
-                    Особые условия и выгодные предложения партнёров
-                </p>
             </div>
-            <div class="feature__more feature__more--connections">
+            <div class="feature__more">
                 <!-- <a href="#">Подробнее</a> -->
-            </div>
-            <div class="feature__background feature__background--connections">
-                <div class="feature__deco">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/features/scissors.svg" alt="" />
-                </div>
             </div>
         </article>
     </section>
@@ -297,7 +225,8 @@
     <!-- Courses -->
     <section class="courses" id="courses">
         <header class="courses__header">
-            <h2 class="courses__title">Наши<br>курсы</h2>
+            <h2 class="courses__title">Наши курсы</h2>
+            <p class="courses__text">Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время</p>
         </header>
 
         <div class="courses__content">
@@ -399,91 +328,11 @@
     </section>
 
     <!-- Team -->
-    <!-- <section class="team" id="team">
-        <header class="team__header">
-            <h2 class="team__title">Команда
-                <br>Академии</h2>
-        </header>
-        <div class="team__content">
-            <?php
-        $args = array(
-          'category_name' => 'team'
-        );
-        query_posts($args);
-
-        if(have_posts()) {
-          while(have_posts()) {
-            the_post();
-            
-            // vars
-            $member_img = get_field('member_img');
-            $member_name = get_field('member_name');
-            $member_description = get_field('member_description');
-
-      ?>
-                <article class="member member--first">
-                    <header class="member__header">
-                        <div class="member__photo">
-                            <img src="<?php echo $member_img; ?>" alt="" />
-                        </div>
-                        <h3 class="member__name">
-                            <?php echo $member_name; ?>
-                        </h3>
-                    </header>
-                    <div class="member__content">
-                        <p class="member__about">О мастере:</p>
-                        <p class="member__text">
-                            <?php echo $member_description; ?>
-                        </p>
-                    </div>
-                </article>
-                <?php
-          }
-        }
-        ?>
-        </div>
-        <div class="team__navigation"></div>
-        <div class="team__about">
-            <div class="team__about-sub">О нашей команде:</div>
-            <div class="team__text">
-                <?php echo get_theme_mod('team_text','OldBoyAcademy')?>
-            </div>
-            <div class="team__more">
-                <a class="button" href="#">Подробнее о команде</a>
-            </div>
-        </div>
-    </section> -->
+    <!-- TODO: Add Team section -->
 
     <!-- Contacts -->
     <section class="contacts" id="contacts">
         <div class="map" id="map"></div>
-        <article class="contacts-box">
-            <header class="contacts-box__header">
-                <h2 class="contacts-box__title">Контакты</h2>
-                <p class="contacts-box__text">По всем интересующим вас вопросам просим вас связаться с нашим менеджером.</p>
-            </header>
-            <div class="contacts-box__body">
-                <div class="contact">
-                    <div class="contact__icon icon-phone"></div>
-                    <div class="contact__name">Телефон</div>
-                    <div class="contact__value">
-                        <a href="tel:+79261000266">+7 926 100-02-66</a>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contact__icon icon-mail-alt"></div>
-                    <div class="contact__name">e-mail</div>
-                    <div class="contact__value">
-                        <a href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a>
-                    </div>
-                </div>
-            </div>
-            <footer class="contacts-box__footer">
-                <div class="contacts-box__logo">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип" />
-                </div>
-            </footer>
-        </article>
     </section>
 
     <!-- Popup -->
@@ -506,26 +355,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-            <!-- <div class="page-footer__social">
-                <a class="icon-vkontakte" href=""></a>
-                <a class="icon-instagram" href=""></a>
-            </div> -->
-            <nav class="page-footer__menu">
-                <ul>
-                    <li><a href="#about">Об Академии</a></li>
-                    <li><a href="#features">Преимущества</a></li>
-                    <li><a href="#courses">Наши Курсы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="page-footer__copy">&copy;Академия Олдбой. 2018
-                <br>Все права сохранены.</div>
-        </div>
-    </footer>
-
-    <?php wp_footer(); ?>
+    <?php get_footer(); ?>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js?v='<?php echo rand(); ?>"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>

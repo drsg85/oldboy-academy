@@ -26,11 +26,6 @@
         
         // visual
         transition: all 0.3s ease-out;
-
-        &:hover {
-            // box model
-            // border: 1px solid $gold;
-        }
     }
 
     &__header {
@@ -183,11 +178,6 @@
             // visual
             background-color: $gold;
             transition: all 0.3s ease-out;
-
-            @include atDesktop {
-                // box model
-                // width: 300px;
-            }
 
             &:hover {
                 // visual

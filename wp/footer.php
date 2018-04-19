@@ -1,4 +1,32 @@
-<footer class="page-footer page-footer--inner">
+<footer class="page-footer">
+    <article class="contacts-box">
+        <header class="contacts-box__header">
+            <h2 class="contacts-box__title">Контакты</h2>
+            <p class="contacts-box__text">По всем интересующим вас вопросам просим вас связаться с нашим менеджером.</p>
+        </header>
+        <div class="contacts-box__body">
+            <div class="contact">
+                <div class="contact__icon icon-phone"></div>
+                <div class="contact__name">Телефон</div>
+                <div class="contact__value">
+                    <a href="tel:+79261000266">+7 926 1000-266</a>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact__icon icon-mail-alt"></div>
+                <div class="contact__name">e-mail</div>
+                <div class="contact__value">
+                    <a href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a>
+                </div>
+            </div>
+        </div>
+        <footer class="contacts-box__footer">
+            <div class="contacts-box__logo">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип" />
+            </div>
+        </footer>
+    </article>
+
     <div class="page-footer__wrapper">
         <!-- <div class="page-footer__social">
             <a class="icon-vkontakte" href=""></a>
@@ -6,10 +34,10 @@
         </div> -->
         <nav class="page-footer__menu">
             <ul>
-                <li><a href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a></li>
-                <li><a href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a></li>
-                <li><a href="<?php echo esc_url(home_url('/#courses')); ?>">Наши курсы</a></li>
-                <li><a href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a></li>
+                <li><a href="#about">Об Академии</a></li>
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#courses">Наши Курсы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
         <div class="page-footer__copy">&copy;Академия Олдбой. 2018
@@ -18,7 +46,3 @@
 </footer>
 
 <?php wp_footer(); ?>
-
-<script src="<?php bloginfo('stylesheet_directory'); ?>/menu.js<?php echo '?v=' . rand(); ?>"></script>
-<script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/map.js<?php echo '?v=' . rand(); ?>"></script>

@@ -1,6 +1,7 @@
 .page-footer {
     // positioning
     position: relative;
+    z-index: 9;
 
     // box model
     padding: 40px 25px;
@@ -17,24 +18,9 @@
     }
 
     @include atDesktop {
-        // positioning
-        position: relative;
-        z-index: 2;
-
         // box model
         padding-left: 0;
         padding-top: 60px;
-    }
-
-    &--inner {
-        .page-footer__wrapper {
-            border: none;
-
-            @include atDesktop {
-                // box model
-                margin-right: 330px;
-            }
-        }
     }
 
     &__wrapper {

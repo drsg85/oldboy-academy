@@ -3455,6 +3455,7 @@ body {
 
 .page-footer {
   position: relative;
+  z-index: 9;
   padding: 40px 25px;
   background-color: #222222;
   background-image: url("./img/footer-bg-s.jpg");
@@ -3465,15 +3466,8 @@ body {
       background-image: url("./img/footer-bg-l.jpg"); } }
   @media (min-width: 1200px) {
     .page-footer {
-      position: relative;
-      z-index: 2;
       padding-left: 0;
       padding-top: 60px; } }
-  .page-footer--inner .page-footer__wrapper {
-    border: none; }
-    @media (min-width: 1200px) {
-      .page-footer--inner .page-footer__wrapper {
-        margin-right: 330px; } }
   @media (min-width: 1200px) {
     .page-footer__wrapper {
       margin-right: 155px;
