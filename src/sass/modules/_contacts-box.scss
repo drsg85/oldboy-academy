@@ -1,22 +1,18 @@
 .contacts-box {
     // box model
     padding: 30px;
+    margin: -40px -25px;
+    margin-bottom: 40px;
     
     // visual
     background-color: $white;
     
-    @include atTabletsPortrait {
-        // box model
-        margin: 0 auto;
-    }
-
-    
     @include atDesktop {
         // positioning
         position: absolute;
-        bottom: 140px;
+        bottom: 100px;
         right: 30px;
-        z-index: 3;
+        z-index: 7;
 
         // box model
         width: 300px;
@@ -56,7 +52,6 @@
         color: $darkGold;
         font-family: $titleFont;
         font-size: 1.75rem;
-        // font-size: 2rem;
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
@@ -92,7 +87,6 @@
 
         // visual
         opacity: 0.85;
-        // border: 3px double $black;
         border-radius: 50%;
 
         img {

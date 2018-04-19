@@ -50,9 +50,24 @@
         background-repeat: repeat-x;
         background-position: -40px bottom;
 
-        @include atTabletsLandscape {
+        @include atDesktop {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 100px;
+            left: -180px;
+            z-index: 7;
+
             // box model
-            display: none;
+            display: block;
+            height: 650px;
+            width: 100%;
+            border: 2px solid $gold;
+
+            // visual
+            background-image: none;
+            pointer-events: none;
         }
     }
     
