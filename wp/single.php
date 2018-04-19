@@ -47,6 +47,7 @@
     <!-- Header -->
     <?php get_template_part('nav'); ?>
 
+    <!-- Hero -->
     <section class="hero hero--course">
         <div class="hero__content">
             <header class="hero-header hero-header--block">
