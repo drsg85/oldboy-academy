@@ -142,9 +142,9 @@
                 </header>
 
                 <form class="course-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
-                    <input class="course-form__input" type="text" name="name" placeholder="Имя" required/>
-                    <input class="course-form__input" type="text" name="phone" placeholder="Телефон" required/>
-                    <input class="course-form__input" type="email" name="email" placeholder="Электронная почта" required/>
+                    <input class="course-form__input" type="text" name="Имя" placeholder="Имя" required/>
+                    <input class="course-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
+                    <input class="course-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required/>
                     <input class="course-form__button" type="submit" value="Записаться на курс"/>
                     <div class="course-form__warning">Заполняя данную форму<br> вы&nbsp;принимаете условия<br><a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a></div>
                 </form>
@@ -226,7 +226,26 @@
         </div>
     </section>
 
+    <!-- Popup -->
+    <section class="popup">
+        <div class="popup__window">
+            <header class="popup__header">
+                <div class="popup__close"></div>
+            </header>
+            <div class="popup__content">
+                <h2 class="popup__title">Ваша заявка добавлена</h2>
+                <div class="popup__text">Благодарим Вас за обращение в нашу Академию. Наш менеджер свяжется с Вами в ближайшее время.</div>
+                <div class="popup__respect">С уважением,<br> Команда OldBoy Академии</div>
+                <div class="popup__controls">
+                    <a class="popup__accept" href="#">Хорошо</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <?php get_footer(); ?>
+
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/course.js?v='<?php echo rand(); ?>"></script>
 </body>
 
 </html>

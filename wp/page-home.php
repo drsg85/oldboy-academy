@@ -122,8 +122,9 @@
                         </header>
                         <div class="hero-form__wrapper">
                             <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
-                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required/>
-                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
+                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
+                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
+                                <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
                                 <input class="hero-form__button" type="submit" value="Записаться" />
                             </form>
                             <div class="hero-form__warning">

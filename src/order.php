@@ -1,5 +1,5 @@
 <?php 
-    $subject            = 'New request';
+    $subject            = 'Заявка в академию';
 
     $str_json           = file_get_contents('php://input');
     $response           = json_decode($str_json, true);
