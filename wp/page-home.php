@@ -348,7 +348,7 @@
                 <div class="popup__respect">С уважением,
                     <br> Команда OldBoy Академии</div>
                 <div class="popup__controls">
-                    <a href="#">Хорошо</a>
+                    <a class="popup__accept" href="#">Хорошо</a>
                 </div>
             </div>
         </div>

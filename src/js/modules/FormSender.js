@@ -5,16 +5,15 @@ class FormSender {
         this.popup = document.querySelector(".popup");
         this.events();
     }
-
+    
     events() {
         document.addEventListener("submit", event => {
             event.preventDefault();
-
+            
             if (this.validate(event.target)) {
+                this.popup.classList.add("popup--show");
                 this.sendForm(event.target);
             }
-            
-            // this.popup.classList.add("popup--show");
         });
 
         this.popup.addEventListener("click", event => {
@@ -60,6 +59,7 @@ class FormSender {
             dataToSend.content += row;
         }
         dataToSend.content += "</table>";
+        dataToSend.email = form.querySelector("input[type='email']").value;
 
 
         let XHR = new XMLHttpRequest();
@@ -67,7 +67,7 @@ class FormSender {
         XHR.addEventListener("load", event => {
             console.log(event.target.responseText);
         });
-        XHR.open("POST", "http://localhost/OldboyAcademy/order.php", true);
+        XHR.open("POST", "http://oldboyacademy.com/order.php", true);
         XHR.send(jsonData);
 
         // $.ajax({
