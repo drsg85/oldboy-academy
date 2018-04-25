@@ -215,7 +215,17 @@ html(lang="ru")
                         li: a(href="#") Сертификаты
                 .page-footer__copy &copy;Академия Олдбой. 2017<br>Все права сохранены.
 
-    script(src="menu.js")
-    script(src="app.js")
+        section.popup
+            .popup__window
+                header.popup__header
+                    .popup__close
+                .popup__content
+                    h2.popup__title Ваша заявка добавлена
+                    .popup__text Благодарим Вас за обращение в нашу Академию. Наш менеджер свяжется с Вами в ближайшее время.
+                    .popup__respect С уважением, <br> Команда OldBoy Академии
+                    .popup__controls
+                        a.popup__accept(href="#") Хорошо
+                        
+    script(src="course.js")
     script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&callback=initMap")
     script(src="map.js")
