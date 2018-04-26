@@ -14,8 +14,8 @@ html(lang="ru")
 
     body
         header.page-header
-            .page-header__logo
-                img(src="./img/logo.svg", alt="Академия Олдбой логотип")
+            //- .page-header__logo
+            //-     img(src="./img/logo.svg", alt="Академия Олдбой логотип")
 
             nav.main-nav.main-nav--side-menu
                 .main-nav__logo
@@ -37,14 +37,16 @@ html(lang="ru")
                         
                         a.masson__tag(href="#") #<em>OldboyAcademy</em>
 
-            .page-header__phone.page-header__phone--inner
-                a(href="tel:+79114567890") +7 911 456-78-90
+            //- .page-header__phone.page-header__phone--inner
+            //-     a(href="tel:+79114567890") +7 911 456-78-90
 
             .menu-icon.menu-icon--inner: .menu-icon__middle
 
-        section.hero.hero--inner
-            header.hero__header
-                h1.hero__title <strong>Академия OldBoy</strong><br>Галерея
+        section.hero.hero--gallery
+            .hero__header
+                header.hero-header
+                    .hero-header__caption
+                        h1.hero-header__title <strong>Академия OldBoy</strong><br>Галерея
 
         section.gallery
             header.gallery__header
