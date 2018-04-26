@@ -78,6 +78,7 @@
                         <a href="#">политики конфиденциальности</a>
                     </div>
                 </form>
+                <!-- <?php echo do_shortcode('[wpforms id="128"]'); ?> -->
             </div>
         </aside>
     </section>

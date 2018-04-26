@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 class FormSender {
     constructor() {
         this.popup = document.querySelector(".popup");
@@ -11,7 +9,6 @@ class FormSender {
             event.preventDefault();
             
             if (this.validate(event.target)) {
-                this.popup.classList.add("popup--show");
                 this.sendForm(event.target);
             }
         });
@@ -66,8 +63,10 @@ class FormSender {
         let jsonData = JSON.stringify(dataToSend);
         XHR.addEventListener("load", event => {
             console.log(event.target.responseText);
+            this.popup.classList.add("popup--show");
         });
-        XHR.open("POST", "http://oldboyacademy.com/order.php", true);
+        // XHR.open("POST", `${window.location.origin}/order`, true);
+        XHR.open("POST", "http://localhost/OldboyAcademy/order", true);
         XHR.send(jsonData);
 
         // $.ajax({
