@@ -3706,6 +3706,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .popup--show {
