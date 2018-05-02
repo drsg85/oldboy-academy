@@ -10,8 +10,8 @@
     @include atDesktop {
         // positioning
         position: absolute;
-        bottom: 100px;
-        right: 30px;
+        bottom: 140px;
+        right: 60px;
         z-index: 7;
 
         // box model
@@ -20,6 +20,11 @@
 
         // visual
         border-radius: 6px;
+    }
+
+    @include atDesktopLarge{
+        // positioning
+        bottom: 110px;
     }
     
     &--inner {

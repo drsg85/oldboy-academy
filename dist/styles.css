@@ -3357,7 +3357,7 @@ body {
         left: -180px;
         z-index: 7;
         display: block;
-        height: 650px;
+        height: 695px;
         width: 100%;
         border: 2px solid #d5a353;
         background-image: none;
@@ -3382,12 +3382,15 @@ body {
   @media (min-width: 1200px) {
     .contacts-box {
       position: absolute;
-      bottom: 100px;
-      right: 30px;
+      bottom: 140px;
+      right: 60px;
       z-index: 7;
       width: 300px;
       border: 1px solid #d5a353;
       border-radius: 6px; } }
+  @media (min-width: 1400px) {
+    .contacts-box {
+      bottom: 110px; } }
   .contacts-box--inner {
     position: relative;
     bottom: auto;
