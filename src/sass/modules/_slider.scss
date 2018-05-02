@@ -7,14 +7,20 @@
 
     @include atTabletsPortrait {
         // box model
-        margin-left: -60px;
+        // margin-left: -40px;
     }
 
     @include atDesktop {
         // box model
         margin: 0 auto;
         margin-right: 40px;
+        margin-top: -15px;
         width: 400px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        width: 500px;
     }
 
     &__slide {
@@ -67,7 +73,7 @@
         @include atTabletsPortrait {
             // positioning
             top: 50%;
-            left: -65px;
+            left: -47px;
             transform: translateY(-50%);
             
             // box model
@@ -117,8 +123,7 @@
         @include atTabletsPortrait {
             // positioning
             top: 50%;
-            right: -65px;
-            right: -45px;
+            right: -47px;
             transform: translateY(-50%);
             
             // box model

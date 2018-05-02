@@ -135,19 +135,25 @@
 
 
         <aside class="hero__aside">
-            <div class="course-form">
-                <header class="course-form__header">
-                    <h2 class="course-form__title">Заполни форму<br>для записи на курс</h2>
-                    <p class="course-form__subtitle"><?php echo $course_name; ?></p>
+            <div class="hero-form">
+                <header class="hero-form__header">
+                    <h2 class="hero-form__title">Заполни форму<br>для записи на курс</h2>
+                    <p class="hero-form__subtitle"><?php echo $course_name; ?></p>
                 </header>
-
-                <form class="course-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
-                    <input class="course-form__input" type="text" name="Имя" placeholder="Имя" required/>
-                    <input class="course-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
-                    <input class="course-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required/>
-                    <input class="course-form__button" type="submit" value="Записаться на курс"/>
-                    <div class="course-form__warning">Заполняя данную форму<br> вы&nbsp;принимаете условия<br><a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a></div>
-                </form>
+                
+                <div class="hero-form__wrapper">
+                    <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                        <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required/>
+                        <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required/>
+                        <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required/>
+                        <input class="hero-form__button" type="submit" value="Записаться на курс"/>
+                    </form>
+                </div>
+                
+                <div class="hero-form__warning">
+                    Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
+                    <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                </div>
             </div>
         </aside>
     </section>

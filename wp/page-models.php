@@ -61,24 +61,26 @@
         </div>
 
         <aside class="hero__aside">
-            <div class="course-form">
-                <header class="course-form__header">
-                    <h2 class="course-form__title">Заполни форму
+            <div class="hero-form">
+                <header class="hero-form__header">
+                    <h2 class="hero-form__title">Заполни форму
                         <br>на бесплатную стрижку</h2>
-                    <p class="course-form__subtitle">Стань моделью академии&nbsp;Oldboy</p>
+                    <p class="hero-form__subtitle">Стань моделью академии&nbsp;Oldboy</p>
                 </header>
-                <form class="course-form__form" action="">
-                    <input class="course-form__input" type="text" name="Имя" placeholder="Имя" />
-                    <input class="course-form__input" type="text" name="Телефон" placeholder="Телефон" />
-                    <input class="course-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" />
-                    <input class="course-form__button" type="submit" value="Подать заявку" />
-                    <div class="course-form__warning">Заполняя данную форму
-                        <br> вы&nbsp;принимаете условия
-                        <br>
-                        <a href="#">политики конфиденциальности</a>
-                    </div>
-                </form>
-                <!-- <?php echo do_shortcode('[wpforms id="128"]'); ?> -->
+
+                <div class="hero-form__wrapper">
+                    <form class="hero-form__form" action="">
+                        <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" />
+                        <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" />
+                        <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" />
+                        <input class="hero-form__button" type="submit" value="Подать заявку" />
+                    </form>
+                </div>
+
+                <div class="hero-form__warning">
+                    Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
+                    <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                </div>
             </div>
         </aside>
     </section>

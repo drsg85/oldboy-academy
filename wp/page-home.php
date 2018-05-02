@@ -117,8 +117,8 @@
                 <div class="slider__slide">
                     <div class="hero-form">
                         <header class="hero-form__header">
-                            <h2 class="hero-form__title">Стань моделью!</h2>
-                            <p class="hero-form__subtitle">Запись на бесплатную стрижку</p>
+                            <h2 class="hero-form__title">Стань моделью Академии Oldboy!</h2>
+                            <p class="hero-form__subtitle">Заполни форму на бесплатную&nbsp;стрижку</p>
                         </header>
                         <div class="hero-form__wrapper">
                             <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
@@ -127,10 +127,10 @@
                                 <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
                                 <input class="hero-form__button" type="submit" value="Записаться" />
                             </form>
-                            <div class="hero-form__warning">
-                                Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
-                                <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
-                            </div>
+                        </div>
+                        <div class="hero-form__warning">
+                            Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
+                            <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
