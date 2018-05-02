@@ -1,18 +1,44 @@
+<?php
+    /*
+        Template Name: Gallery Page
+    */
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"/>
-    <title>Oldboy Academy</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <!-- OG -->
+    <meta property="og:title" content="<?php the_title(); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course1.jpg">
+    <meta propepty="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+    <meta propepty="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="OldBoyAcademy">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo("stylesheet_directory"); ?>/img/favicon.png">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:300,400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css"/>
+
+    <title>Oldboy Academy Галлерея</title>
+
+    <?php wp_head(); ?>
   </head>
   <body>
+
+    <!-- Header -->
     <header class="page-header">
       <nav class="main-nav main-nav--side-menu">
-        <div class="main-nav__logo"><img src="./img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/></div>
+        <div class="main-nav__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/></div>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#about">Об Академии</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#features">Преимущества</a></li>
@@ -22,7 +48,7 @@
         </ul>
         <div class="main-nav__social">
           <div class="masson">
-            <div class="masson__logo"><img src="./img/masson.png" alt=""/></div>
+            <div class="masson__logo"><img src="<?php bloginfo('styleshhet_directory'); ?>/img/masson.png" alt=""/></div>
             <div class="masson__social"><a class="icon-vkontakte" href="#"></a><a class="icon-instagram" href="#"></a></div><a class="masson__tag" href="#">#<em>OldboyAcademy</em></a>
           </div>
         </div>
@@ -31,6 +57,9 @@
         <div class="menu-icon__middle"></div>
       </div>
     </header>
+
+    <!-- Gallery -->
+    
     <section class="hero hero--gallery">
       <div class="hero__header">
         <header class="hero-header">
@@ -40,6 +69,7 @@
         </header>
       </div>
     </section>
+    
     <section class="gallery">
       <header class="gallery__header">
         <h2 class="gallery__title">Добро<br>пожаловать<br>в&nbsp;семью OldBoy</h2>
@@ -51,6 +81,7 @@
         <p class="gallery__text">Посмотри сам каких результатов добиваются наши<br>ученики за время обучения в Академии.</p>
       </header>
     </section>
+
     <section class="gallery__content">
       <div class="gallery__img"><img src="./img/gallery/barberina_header.jpg"/></div>
       <div class="gallery__img"><img src="./img/gallery/barber_tools.jpg"/></div>
@@ -61,6 +92,8 @@
       <div class="gallery__img"><img src="./img/photos/cigar.jpg"/></div>
       <div class="gallery__img"><img src="./img/gallery/barber.jpg"/></div>
     </section>
+
+    <!-- Banner -->
     <section class="horiz-banner">
       <header class="horiz-banner__header">
         <p class="horiz-banner__suptitle">Академия Oldboy</p>
@@ -69,6 +102,7 @@
       </header>
       <div class="horiz-banner__more"><a class="button" href="#">Подробнее о курсе</a></div>
     </section>
+
     <section class="gallery__content">
       <div class="gallery__img"><img src="./img/gallery/barberina_header.jpg"/></div>
       <div class="gallery__img"><img src="./img/gallery/barber_tools.jpg"/></div>
@@ -79,6 +113,8 @@
       <div class="gallery__img"><img src="./img/photos/cigar.jpg"/></div>
       <div class="gallery__img"><img src="./img/gallery/barber.jpg"/></div>
     </section>
+
+    <!-- Contacts -->
     <section class="contacts contacts--inner">
       <article class="contacts-box contacts-box--inner">
         <header class="contacts-box__header">
@@ -89,37 +125,20 @@
           <div class="contact">
             <div class="contact__icon icon-phone"></div>
             <div class="contact__name">Телефон</div>
-            <div class="contact__value"><a href="tel:+79114567890">+7 911 456-78-90</a></div>
+            <div class="contact__value"><a href="tel:+7 926 100-02-66">+7 926 100-02-66</a></div>
           </div>
           <div class="contact">
             <div class="contact__icon icon-mail-alt"></div>
             <div class="contact__name">e-mail</div>
-            <div class="contact__value"><a href="mailto: academy@oldboy.com">academy@oldboy.com</a></div>
+            <div class="contact__value"><a href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a></div>
           </div>
         </div>
         <footer class="contacts-box__footer">
-          <div class="contacts-box__logo"><img src="./img/logo-bw.svg" alt="Академия Олдбой логотип"/></div>
+          <div class="contacts-box__logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип"/></div>
         </footer>
       </article>
     </section>
-    <footer class="page-footer page-footer--inner">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social"><a class="icon-vkontakte" href=""></a><a class="icon-instagram" href=""></a></div>
-        <nav class="page-footer__menu">
-          <ul>
-            <li><a href="#">Курсы</a></li>
-            <li><a href="#">Команда</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Моделям</a></li>
-            <li><a href="#">Сертификаты</a></li>
-          </ul>
-        </nav>
-        <div class="page-footer__copy">&copy;Академия Олдбой. 2017<br>Все права сохранены.</div>
-      </div>
-    </footer>
+
+    <?php get_footer(); ?>
   </body>
-  <script src="menu.js"></script>
-  <script src="app.js"></script>
-  <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
-  <script src="map.js"></script>
 </html>
