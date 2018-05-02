@@ -224,20 +224,8 @@
     </section>
     
     <!-- Footer -->
-    <footer class="page-footer page-footer--inner">
-      <div class="page-footer__wrapper">
-        <!-- <div class="page-footer__social"><a class="icon-vkontakte" href=""></a><a class="icon-instagram" href=""></a></div> -->
-        <nav class="page-footer__menu">
-          <ul>
-            <li><a href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a></li>
-            <li><a href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a></li>
-            <li><a href="<?php echo esc_url(home_url('/#courses')); ?>">Наши Курсы</a></li>
-            <li><a href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="page-footer__copy">&copy;Академия Олдбой. 2018<br>Все права сохранены.</div>
-      </div>
-    </footer>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js?v='<?php echo rand(); ?>"></script>
+    <?php get_footer(); ?>
+
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/policy.js?v='<?php echo rand(); ?>"></script>
 </body>
 </html>

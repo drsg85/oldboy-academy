@@ -6,7 +6,10 @@ const notify = require("gulp-notify");
 const config = {
     entry: {
         main: "./src/js/main.js",
-        course: "./src/js/course.js"
+        course: "./src/js/course.js",
+        models: "./src/js/models.js",
+        "404": "./src/js/404.js",
+        policy: "./src/js/policy.js",
     },
     output: {
         filename: "[name].js"

@@ -63,6 +63,9 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <?php wp_footer(); ?>
+
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/404.js?v='<?php echo rand(); ?>"></script>
 </body>
 </html>

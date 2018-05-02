@@ -107,9 +107,10 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <?php get_footer(); ?>
 
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/course.js?v='<?php echo rand(); ?>"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/models.js?v='<?php echo rand(); ?>"></script>
     <script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClofSbCu6EYSgaWdfCK5G1i_eUXgL4RCk&amp;callback=initMap"></script>
     <script src="<?php bloginfo('stylesheet_directory'); ?>/map.js?v='<?php echo rand(); ?>"></script>
 </body>

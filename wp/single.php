@@ -249,6 +249,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <?php get_footer(); ?>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/course.js?v='<?php echo rand(); ?>"></script>
