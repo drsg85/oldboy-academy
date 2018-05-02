@@ -498,6 +498,14 @@ body {
   background-color: #336699;
   background-color: #d5a353; }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    overflow: hidden;
+    height: 100%; }
+  body {
+    overflow: auto;
+    height: 100%; } }
+
 .four-o-four {
   position: relative;
   width: 100%;
@@ -3369,6 +3377,7 @@ body {
         z-index: 7;
         display: block;
         height: 695px;
+        height: 650px;
         width: 100%;
         border: 2px solid #d5a353;
         background-image: none;
@@ -3569,7 +3578,7 @@ body {
       width: 400px; } }
   @media (min-width: 1400px) {
     .slider {
-      width: 500px; } }
+      width: 600px; } }
   .slider__slide {
     position: absolute;
     left: 0;
