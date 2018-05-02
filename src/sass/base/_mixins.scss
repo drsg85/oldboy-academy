@@ -23,3 +23,9 @@
         @content;
     }
 }
+
+@mixin scrollIE11 {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}
