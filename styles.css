@@ -1424,6 +1424,8 @@ body {
       background-position: center top; } }
   @media (min-width: 1400px) {
     .hero {
+      padding: 60px 120px;
+      padding-bottom: 100px;
       min-height: 840px;
       min-height: calc(100vh - 10px); } }
   .hero::after {
@@ -1440,8 +1442,6 @@ body {
     background-position: -40px bottom; }
   @media (min-width: 700px) {
     .hero--inner {
-      padding: 60px 40px;
-      padding-bottom: 80px;
       background-image: url("./img/hero-inner.jpg");
       background-size: cover;
       background-attachment: unset; } }
@@ -1785,6 +1785,7 @@ body {
     .hero-header__caption {
       max-width: 540px; } }
   .hero-header__title {
+    margin-left: -0.05em;
     color: #ffffff;
     font-family: "Lora", serif;
     font-size: 1.75rem;
