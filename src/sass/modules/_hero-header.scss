@@ -43,6 +43,9 @@
     }
 
     &__title {
+        // box model
+        margin-left: -0.05em;
+
         // typography
         color: $white;
         font-family: $titleFont;

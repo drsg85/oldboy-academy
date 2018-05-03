@@ -3,15 +3,16 @@
         Template Name: Policy Page
     */
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="description" content="Академия барберинга OldBoy — Политика конфиденциальности">
+    <meta name="description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo("stylesheet_directory"); ?>/apple-touch-icon.png?v=9BykMdv90b">
@@ -24,60 +25,42 @@
     <meta name="theme-color" content="#222222">
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
 
-    <title>Политика конфиденциальности</title>
+    <title>Политика конфиденциальности — Академия барберинга Oldboy</title>
+
+    <?php wp_head(); ?>
 </head>
-<body>
 
+<body>
     <!-- Header -->
-    <header class="page-header">
-        <div class="page-header__logo">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой логотип" />
-        </div>
-        <nav class="main-nav main-nav--side-menu">
-            <div class="main-nav__logo">
+    <?php get_template_part('nav'); ?>
+
+    <!-- Hero -->
+    <section class="hero hero--inner">
+        <div class="hero__logo">
             <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип монохром"/>
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой логотип"/>
             </a>
-            </div>
-            <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#courses')); ?>">Наши Курсы</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a></li>
-            </ul>
-            <div class="main-nav__social">
-                <div class="masson">
-                    <div class="masson__logo">
-                        <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
-                    </div>
-                    <!-- <div class="masson__social">
-                        <a class="icon-vkontakte" href="#"></a>
-                        <a class="icon-instagram" href="#"></a>
-                    </div> -->
-                    <!-- <a class="masson__tag" href="#">#
-                        <em>OldboyAcademy</em>
-                    </a> -->
+        </div>
+
+        <div class="hero__header">
+            <header class="hero-header">
+                <div class="hero-header__caption">
+                    <h1 class="hero-header__title">Политика конфиденциальности</h1>
                 </div>
-            </div>
-        </nav>
-        <div class="page-header__phone page-header__phone--inner">
-            <a href="tel:+79261000266">+7 926 100-02-66</a>
+                <div class="hero-header__contacts">
+                    <p class="hero-header__address">Москва<br>Старокирочный переулок,&nbsp;2</p>
+                    <p class="hero-header__phone">
+                        <a href="tel:+79261000266">тел.: <strong>+7 926 1000-266</strong></a>
+                    </p>
+                </div>
+            </header>
         </div>
-        <div class="menu-icon menu-icon--inner">
-            <div class="menu-icon__middle"></div>
-        </div>
-    </header>
-    <section class="hero hero--course">
-        <h1 class="hero__title">
-            <strong>Политика конфиденциальности</strong>
-        </h1>
-        <div class="hero__content"></div>
     </section>
 
-    <!-- About -->
+    <!-- Data collection -->
     <section class="about">
         <div class="about__row">
             <div class="about__content about__content--left">
@@ -116,7 +99,7 @@
         </div>
     </section>
 
-    <!-- About -->
+    <!-- 3rd person data share -->
     <section class="about about--yellow about--white-border-before about--white-border-after">
         <div class="about__deco-logo"></div>
         <div class="about__row">
@@ -150,7 +133,7 @@
         </div>
     </section>
 
-    <!-- About -->
+    <!-- Other info -->
     <section class="about">
         <div class="about__row">
 
@@ -183,7 +166,7 @@
         </div>
     </section>
 
-    <!-- About -->
+    <!-- How to contact -->
     <section class="about about--yellow about--white-border-before">
         <div class="about__row">
             <div class="about__content about__content--left">
@@ -193,41 +176,10 @@
                     <a class="about__link" href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a>
                 </p>
                 <div class="text-promo__more">
-                    <a class="button" href="#">Контакты</a>
+                    <a class="button" href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Contacts -->
-    <section class="contacts contacts--inner">
-        <article class="contacts-box contacts-box--inner">
-            <header class="contacts-box__header">
-                <h2 class="contacts-box__title">Контакты</h2>
-                <p class="contacts-box__text">По всем интересующим вас вопросам просим вас связаться с нашим менеджером.</p>
-            </header>
-            <div class="contacts-box__body">
-                <div class="contact">
-                    <div class="contact__icon icon-phone"></div>
-                    <div class="contact__name">Телефон</div>
-                    <div class="contact__value">
-                        <a href="tel:+79114567890">+7 911 456-78-90</a>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="contact__icon icon-mail-alt"></div>
-                    <div class="contact__name">e-mail</div>
-                    <div class="contact__value">
-                        <a href="mailto: academy@oldboy.com">academy@oldboy.com</a>
-                    </div>
-                </div>
-            </div>
-            <footer class="contacts-box__footer">
-                <div class="contacts-box__logo">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo-bw.svg" alt="Академия Олдбой логотип" />
-                </div>
-            </footer>
-        </article>
     </section>
     
     <!-- Footer -->
