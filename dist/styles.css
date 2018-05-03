@@ -1437,7 +1437,7 @@ body {
     background-image: url("./img/deco-b.svg");
     background-size: 80px;
     background-repeat: repeat-x;
-    background-position: center bottom; }
+    background-position: -40px bottom; }
   @media (min-width: 700px) {
     .hero--inner {
       padding: 60px 40px;
@@ -3383,9 +3383,7 @@ body {
         background-image: none;
         pointer-events: none; } }
   .contacts--inner::before {
-    display: none; }
-  .contacts--inner::after {
-    display: none; }
+    background-image: url("./img/deco-b-r.svg"); }
 
 .map {
   position: relative;
