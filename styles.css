@@ -1686,7 +1686,7 @@ body {
         font-size: 1rem; } }
     @media (min-width: 1400px) {
       .hero-form__input {
-        padding: 12px 25px;
+        padding: 12px 18px;
         font-size: 1.25rem; } }
   .hero-form__button {
     position: relative;
