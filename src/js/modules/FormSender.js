@@ -65,8 +65,8 @@ class FormSender {
             console.log(event.target.responseText);
             this.popup.classList.add("popup--show");
         });
-        // XHR.open("POST", `${window.location.origin}/order`, true);
-        XHR.open("POST", "http://localhost/OldboyAcademy/order", true);
+        XHR.open("POST", `${window.location.origin}/order`, true);
+        // XHR.open("POST", "http://localhost/OldboyAcademy/order", true);
         XHR.send(jsonData);
 
         // $.ajax({
