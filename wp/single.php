@@ -43,7 +43,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
 
-    <title><?php echo $course_name; ?> — Академия барберинга Oldboy</title>
+    <title><?php the_title(); ?> — Академия барберинга Oldboy</title>
 
     <?php wp_head(); ?>
 </head>
