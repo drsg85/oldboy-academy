@@ -31,7 +31,7 @@
     <title>Политика конфиденциальности — Академия барберинга Oldboy</title>
 
     <!-- Counters -->
-    <?php get_template_part('counters');
+    <?php get_template_part('counters'); ?>
 
     <?php wp_head(); ?>
 </head>

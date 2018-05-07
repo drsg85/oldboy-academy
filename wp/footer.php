@@ -34,10 +34,11 @@
         </div> -->
         <nav class="page-footer__menu">
             <ul>
-                <li><a href="#about">Об Академии</a></li>
-                <li><a href="#features">Преимущества</a></li>
-                <li><a href="#courses">Наши Курсы</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>#about">Об Академии</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>#features">Преимущества</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>#courses">Наши Курсы</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>#contacts">Контакты</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>models">Моделям</a></li>
             </ul>
         </nav>
         <div class="page-footer__copy">&copy;Академия Олдбой. 2018

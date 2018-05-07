@@ -31,7 +31,7 @@
     <title>Ищем моделей на бесплатные стрижки — Академия барберинга Oldboy</title>
 
     <!-- Counters -->
-    <?php get_template_part('counters');
+    <?php get_template_part('counters'); ?>
 
     <?php wp_head(); ?>
 </head>

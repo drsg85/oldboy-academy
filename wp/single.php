@@ -46,7 +46,7 @@
     <title><?php the_title(); ?> — Академия барберинга Oldboy</title>
 
     <!-- Counters -->
-    <?php get_template_part('counters');
+    <?php get_template_part('counters'); ?>
 
     <?php wp_head(); ?>
 </head>
