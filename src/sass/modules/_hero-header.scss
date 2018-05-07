@@ -49,27 +49,28 @@
         // typography
         color: $white;
         font-family: $titleFont;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-weight: 400;
-        font-variant: small-caps;
         letter-spacing: 1px;
+        line-height: 1.5;
+        text-transform: uppercase;
 
         @include atTabletsPortrait {
             // box model
             margin-top: 0;
 
             // typography
-            font-size: 2.125rem;
+            font-size: 1.75rem;
         }
 
         @include atTabletsLandscape {
             // typography
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         @include atDesktopLarge {
             // typography
-            font-size: 3rem;
+            font-size: 2.25rem;
         }
     }
 

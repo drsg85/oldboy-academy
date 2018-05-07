@@ -38,8 +38,8 @@
         // box model
         padding: 60px 120px;
         padding-bottom: 100px;
-        min-height: 840px;
-        min-height: calc(100vh - 10px);
+        height: calc(100vh - 10px);
+        min-height: 860px;
     }
 
     &::after {
@@ -138,32 +138,6 @@
             // box model
             width: 50%;
             padding-top: 20px;
-        }
-    }
-
-    &__format {
-        // box model
-        margin: 0;
-        padding: 0;
-        padding-bottom: 0.5em;
-
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 1.5rem;
-        font-variant: small-caps;
-        font-weight: 700;
-        text-align: left;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 2.25rem;
-            text-align: right;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 2.75rem;
         }
     }
 

@@ -13,14 +13,14 @@
     @include atDesktop {
         // box model
         margin: 0 auto;
-        margin-right: 40px;
+        margin-right: -20px;
         margin-top: -15px;
         width: 400px;
     }
 
     @include atDesktopLarge {
         // box model
-        width: 600px;
+        width: 500px;
     }
 
     &__slide {
@@ -35,8 +35,12 @@
         transform: translateX(-110%);
 
         @include atDesktop {
-            // visual
+            // positioning
             transform: translateX(130%);
+        }
+
+        @include atDesktopLarge {
+            //
         }
 
         &--current {
