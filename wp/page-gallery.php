@@ -38,6 +38,9 @@
 
     <title>Oldboy Academy Галлерея</title>
 
+    <!-- Counters -->
+    <?php get_template_part('counters');
+
     <?php wp_head(); ?>
   </head>
   <body>
