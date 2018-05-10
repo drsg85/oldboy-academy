@@ -3065,7 +3065,8 @@ body {
     @media (min-width: 1400px) {
       .member__description {
         width: auto;
-        height: 200px; } }
+        height: 200px;
+        font-size: 1.125rem; } }
   .member__exp {
     margin-bottom: 30px;
     display: block;
@@ -3096,6 +3097,9 @@ body {
     @media (min-width: 900px) {
       .member__feature {
         width: 275px; } }
+    @media (min-width: 1400px) {
+      .member__feature {
+        height: 240px; } }
   .member__achivements-list {
     width: 225px;
     margin: 0;

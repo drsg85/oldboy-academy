@@ -216,6 +216,9 @@
             // box model
             width: auto;
             height: 200px;
+
+            // typography
+            font-size: 1.125rem;
         }
     }
 
@@ -271,6 +274,11 @@
         @include atTabletsLandscape {
             // box model
             width: 275px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            height: 240px;
         }
     }
 
