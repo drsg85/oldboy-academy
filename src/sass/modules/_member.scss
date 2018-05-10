@@ -4,6 +4,7 @@
 
     // box model
     padding: 50px 20px;
+    padding-bottom: 130px;
 
     // visual
     background-color: $blue;
@@ -11,9 +12,37 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    &--left {
+        // visual
+        background-position: top center;
+    }
+
+    &--right {
+        // visual
+        background-position: bottom center;
+    }
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 50px 30px;
+        padding-bottom: 50px;
+    }
+
     @include atDesktop {
         // box model
-        width: 800px;
+        // width: 800px;
+
+        // margin-right: 60px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        margin: 30px;
+        width: 50%;
+        width: calc(50% - 60px);
+        padding: 32px 30px;
+        display: inline-block;
+        vertical-align: top;
     }
 
     &::before {
@@ -35,7 +64,7 @@
         background-repeat: repeat-x;
         background-position: -40px top;
 
-        @include atDesktop {
+        @include atDesktopLarge {
             // box model
             display: none;
         }
@@ -58,9 +87,9 @@
         background-image: url("./img/deco-b.svg");
         background-size: 80px;
         background-repeat: repeat-x;
-        background-position: center bottom;
+        background-position: left bottom;
 
-        @include atDesktop {
+        @include atDesktopLarge {
             // box model
             display: none;
         }
@@ -76,6 +105,12 @@
         // box model
         padding: 25px;
         padding-bottom: 0;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 30px;
+            padding-bottom: 0;
+        }
     }
 
     &__badge {
@@ -89,7 +124,9 @@
 
         // typography
         color: $white;
+        font-family: $mainFont;
         font-weight: 700px;
+        font-size: 1rem;
         letter-spacing: 2px;
         text-transform: uppercase;
 
@@ -171,7 +208,14 @@
         line-height: 1.75;
 
         @include atDesktop {
-            width: 400px;
+            // box model
+            width: 600px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            width: auto;
+            height: 200px;
         }
     }
 
@@ -200,31 +244,60 @@
         // box model
         padding: 25px;
         border-top: 1px solid $gold;
+        margin-bottom: -100px;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-bottom: 0;
+            padding: 30px;
+        }
     }
 
     &__feature {
         // box model
         margin-top: 10px;
-        width: 250px;
+        width: 225px;
 
         // visual
         background-size: contain;
         background-image: url("./img/laurel.png");
         background-repeat: no-repeat;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 250px;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            width: 275px;
+        }
     }
 
     &__achivements-list {
         // box model
-        width: 175px;
+        width: 225px;
         margin: 0;
         padding: 10px 0;
+        padding-bottom: 170px;
 
         // visual
         list-style: none;
 
-        @include atDesktop {
+        @include atTabletsPortrait {
             // box model
             width: 250px;
+            padding-bottom: 100px;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            width: 275px;
+        }
+
+        @include atDesktop {
+            // box model
+            padding-bottom: 40px;
 
             // typography
             text-align: center;
@@ -237,7 +310,13 @@
 
         // typography
         color: $white;
+        font-size: 1rem;
         line-height: 1.5;
+        text-align: center;
+
+        @include atTabletsPortrait {
+            // typography
+        }
     }
 
     &__more {
@@ -245,34 +324,53 @@
         position: relative;
         z-index: 2;
 
-        // box model
-        margin-top: 200px;
+        // typography
+        text-align: center;
+
+        @include atTabletsPortrait {
+            // typography
+            text-align: left;
+        }
     }
 
     &__photo {
         // positioning
         position: absolute;
-        bottom: 120px;
+        bottom: 129px;
         right: -10px;
         z-index: 1;
 
         // box model
         width: 250px;
+        width: 60%;
 
         @include atTabletsPortrait {
+            // positioning
+            bottom: 51px;
+            right: -30px;
+
             // box model
-            width: 325px;
+            width: 68%;
         }
-        
+
+        @include atTabletsLandscape {
+            // box model
+            width: 550px;
+        }
 
         @include atDesktop {
             // positioning
-            right: -90px;
-            bottom: 0;
+            right: -60px;
+            bottom: -1px;
 
             // box model
-            width: 600px;
+            width: 650px;
+        }
 
+        @include atDesktopLarge {
+            // box model
+            width: 75%;
+            max-width: 570px;
         }
 
         img {
