@@ -2867,7 +2867,16 @@ body {
     background-position: top center; }
   .team__header {
     padding: 65px 25px;
+    padding-bottom: 35px;
+    max-width: 800px;
     font-size: 0; }
+    @media (min-width: 700px) {
+      .team__header {
+        padding: 65px 60px;
+        padding-bottom: 35px; } }
+    @media (min-width: 1200px) {
+      .team__header {
+        padding-bottom: 65px; } }
   .team__title {
     color: #222222;
     font-family: "Lora", serif;
@@ -2876,24 +2885,19 @@ body {
     letter-spacing: 1px;
     line-height: 1.125;
     text-transform: uppercase; }
-    @media (min-width: 700px) {
+    @media (min-width: 900px) {
       .team__title {
-        margin: 35px;
-        margin-bottom: 70px;
-        font-size: 2.5rem;
-        line-height: 1.25; } }
-    @media (min-width: 1200px) {
-      .team__title {
-        margin: 35px;
-        font-size: 3rem; } }
+        font-size: 2rem; } }
     @media (min-width: 1400px) {
       .team__title {
-        font-size: 4rem; } }
+        font-size: 2.25rem; } }
   .team__icon {
     width: 3rem;
     margin: 0 auto; }
     .team__icon img {
       width: 100%; }
+  .team__content {
+    font-size: 0; }
   .team__about {
     padding: 25px;
     margin-top: -110px; }
@@ -2922,19 +2926,43 @@ body {
     color: #222222;
     font-size: 1rem;
     line-height: 1.5; }
+    @media (min-width: 700px) {
+      .team__text {
+        font-size: 1.125rem;
+        line-height: 1.75; } }
+    @media (min-width: 900px) {
+      .team__text {
+        margin-bottom: 0; } }
+    @media (min-width: 1400px) {
+      .team__text {
+        font-size: 1.25rem; } }
   .team__more {
     padding-top: 20px; }
 
 .member {
   position: relative;
   padding: 50px 20px;
+  padding-bottom: 130px;
   background-color: #336699;
   background-image: url("./img/gradient.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  @media (min-width: 1200px) {
+  .member--left {
+    background-position: top center; }
+  .member--right {
+    background-position: bottom center; }
+  @media (min-width: 700px) {
     .member {
-      width: 800px; } }
+      padding: 50px 30px;
+      padding-bottom: 50px; } }
+  @media (min-width: 1400px) {
+    .member {
+      margin: 30px;
+      width: 50%;
+      width: calc(50% - 60px);
+      padding: 32px 30px;
+      display: inline-block;
+      vertical-align: top; } }
   .member::before {
     content: "";
     position: absolute;
@@ -2947,7 +2975,7 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: -40px top; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
       .member::before {
         display: none; } }
   .member::after {
@@ -2961,8 +2989,8 @@ body {
     background-image: url("./img/deco-b.svg");
     background-size: 80px;
     background-repeat: repeat-x;
-    background-position: center bottom; }
-    @media (min-width: 1200px) {
+    background-position: left bottom; }
+    @media (min-width: 1400px) {
       .member::after {
         display: none; } }
   .member__info {
@@ -2971,13 +2999,19 @@ body {
   .member__header {
     padding: 25px;
     padding-bottom: 0; }
+    @media (min-width: 700px) {
+      .member__header {
+        padding: 30px;
+        padding-bottom: 0; } }
   .member__badge {
     position: absolute;
     top: 75px;
     right: 0;
     padding: 15px 20px;
     color: #ffffff;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700px;
+    font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     background-color: #d5a353; }
@@ -3027,7 +3061,11 @@ body {
     line-height: 1.75; }
     @media (min-width: 1200px) {
       .member__description {
-        width: 400px; } }
+        width: 600px; } }
+    @media (min-width: 1400px) {
+      .member__description {
+        width: auto;
+        height: 200px; } }
   .member__exp {
     margin-bottom: 30px;
     display: block;
@@ -3040,44 +3078,78 @@ body {
       font-weight: 400; }
   .member__footer {
     padding: 25px;
-    border-top: 1px solid #d5a353; }
+    border-top: 1px solid #d5a353;
+    margin-bottom: -100px; }
+    @media (min-width: 700px) {
+      .member__footer {
+        margin-bottom: 0;
+        padding: 30px; } }
   .member__feature {
     margin-top: 10px;
-    width: 250px;
+    width: 225px;
     background-size: contain;
     background-image: url("./img/laurel.png");
     background-repeat: no-repeat; }
+    @media (min-width: 700px) {
+      .member__feature {
+        width: 250px; } }
+    @media (min-width: 900px) {
+      .member__feature {
+        width: 275px; } }
   .member__achivements-list {
-    width: 175px;
+    width: 225px;
     margin: 0;
     padding: 10px 0;
+    padding-bottom: 170px;
     list-style: none; }
-    @media (min-width: 1200px) {
+    @media (min-width: 700px) {
       .member__achivements-list {
         width: 250px;
+        padding-bottom: 100px; } }
+    @media (min-width: 900px) {
+      .member__achivements-list {
+        width: 275px; } }
+    @media (min-width: 1200px) {
+      .member__achivements-list {
+        padding-bottom: 40px;
         text-align: center; } }
   .member__achivements-item {
     margin-bottom: 10px;
     color: #ffffff;
-    line-height: 1.5; }
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center; }
   .member__more {
     position: relative;
     z-index: 2;
-    margin-top: 200px; }
+    text-align: center; }
+    @media (min-width: 700px) {
+      .member__more {
+        text-align: left; } }
   .member__photo {
     position: absolute;
-    bottom: 120px;
+    bottom: 129px;
     right: -10px;
     z-index: 1;
-    width: 250px; }
+    width: 250px;
+    width: 60%; }
     @media (min-width: 700px) {
       .member__photo {
-        width: 325px; } }
+        bottom: 51px;
+        right: -30px;
+        width: 68%; } }
+    @media (min-width: 900px) {
+      .member__photo {
+        width: 550px; } }
     @media (min-width: 1200px) {
       .member__photo {
-        right: -90px;
-        bottom: 0;
-        width: 600px; } }
+        right: -60px;
+        bottom: -1px;
+        width: 650px; } }
+    @media (min-width: 1400px) {
+      .member__photo {
+        width: 75%;
+        max-width: 570px; } }
     .member__photo img {
       width: 100%; }
 
@@ -3223,7 +3295,7 @@ body {
     z-index: 6;
     height: 32px;
     width: 100%;
-    background-image: url("./img/deco-b-r-yellow.svg");
+    background-image: url("./img/deco-b-r.svg");
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: top -40px; }
