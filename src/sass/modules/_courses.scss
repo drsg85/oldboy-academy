@@ -3,7 +3,7 @@
     position: relative;
 
     // box model
-    padding: 40px 25px;
+    padding: 40px 0px;
     padding-bottom: 0;
     
     @include atTabletsPortrait {
@@ -37,7 +37,13 @@
     
     &__header {
         // box model
+        padding: 20px 25px;
         max-width: 400px;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 0;
+        }
 
         @include atDesktop {
             // box model
@@ -47,20 +53,16 @@
     
     &__title {
         // typography
-        // color: $white;
         font-family: $titleFont;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: 400;
         letter-spacing: 1px;
-        line-height: 1.5;
+        line-height: 1.125;
         text-transform: uppercase;
 
         @include atTabletsPortrait {
             // box model
             margin-top: 0;
-
-            // typography
-            font-size: 1.75rem;
         }
 
         @include atTabletsLandscape {

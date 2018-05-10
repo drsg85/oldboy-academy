@@ -3,147 +3,113 @@
     position: relative;
 
     // box model
-    margin: 0;
-    margin-right: 10px;
-    margin-bottom: 100px;
+    padding: 50px 20px;
 
-    // typography
-    font-size: 0;
-
-    @include atTabletsLandscape {
-        // box model
-        margin-bottom: 170px;
-    }
+    // visual
+    background-color: $blue;
+    background-image: url("./img/gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include atDesktop {
         // box model
-        margin-bottom: 200px;
-        margin-right: 60px;
-        margin-top: 100px;
+        width: 800px;
     }
-    
-    @include atDesktopLarge {
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: -5px;
+        left: 0;
+        z-index: 6;
+
         // box model
-        width: 900px;
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b-r.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px top;
+
+        @include atDesktop {
+            // box model
+            display: none;
+        }
     }
 
-    &--first {
-        .member__name {
-            // typography
-            color: $white;
+    &::after {
+        content: "";
 
-            @include atTabletsLandscape {
-                // typography
-                color: $dark;
-            }
+        // positioning
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        z-index: 2;
+
+        // box model
+        height: 32px;
+        width: 100%;
+
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: center bottom;
+
+        @include atDesktop {
+            // box model
+            display: none;
         }
+    }
+
+    &__info {
+        // box model
+        border: 1px solid $gold;
+        height: 100%;
     }
 
     &__header {
-        // positioning
-        position: relative;
-
         // box model
-        height: 170px;
-
-        // visual
-        border: 1px solid $gold;
-        border-left: none;
-        // border-top: none;
-
-        @include atDesktop {
-            // box model
-            height: 500px;
-        }
+        padding: 25px;
+        padding-bottom: 0;
     }
 
-    &__photo {
+    &__badge {
         // positioning
         position: absolute;
-        bottom: 0;
-        left: 0;
+        top: 75px;
+        right: 0;
 
         // box model
-        height: 300px;
-
-        // visual
-        overflow: hidden;
-
-        @include atTabletsLandscape {
-            // box model
-            height: 400px;
-        }
-
-        @include atDesktop {
-            // box model
-            height: 700px;
-        }
-
-        img {
-            // box model
-            height: 100%;
-        }
-    }
-
-    &__name {
-        // positioning
-        position: absolute;
-        right: 20px;
-        top: 20px;
-
-        // box model
-        margin: 0;
+        padding: 15px 20px;
 
         // typography
-        color: $dark;
-        font-family: $titleFont;
-        font-size: 1.5rem;
-        text-align: right;
+        color: $white;
+        font-weight: 700px;
+        letter-spacing: 2px;
         text-transform: uppercase;
 
-        @include atDesktop {
-            // positioning
-            bottom: 40px;
-            right: 40px;
-            top: auto;
-
-            // box model
-            width: 365px;
-            // border: 1px solid red;
-
-            // typography
-            font-size: 3rem;
-            text-align: left;
-        }
-    }
-
-    &__content {
-        // positioning
-        position: relative;
-        top: -40px;
-
-        // box model
-        margin: 0 15px;
-        margin-left: 25px;
-        padding: 30px;
-
         // visual
-        background-color: $white;
-        border: 1px solid rgba($dark, 0.125);
+        background-color: $gold;
 
-        @include atTabletsPortrait {
-            // box model
-            margin-left: 50px;
-            margin-right: 30px;
-        }
+        &::before {
+            content: "";
 
-        @include atDesktop {
             // positioning
             position: absolute;
-            right: 0px;
-
+            top: 0;
+            left: -20px;
+            
             // box model
-            width: 400px;
+            height: 50%;
+            width: 20px;
+            
+            // visual
+            background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
         }
 
         &::after {
@@ -151,50 +117,167 @@
 
             // positioning
             position: absolute;
-            left: 10px;
-            top: 10px;
+            bottom: 0;
+            left: -20px;
 
             // box model
-            height: calc(100% - 20px);
-            width: calc(100% - 20px);
+            height: 50%;
+            width: 20px;
 
             // visual
-            border: 1px solid $gold;
-            pointer-events: none;
+            background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
         }
     }
+    
 
-    &__about {
+    &__name {
         // box model
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding: 0;
+        padding-right: 80px;
 
         // typography
-        font-family: $mainFont;
-        font-size: 1rem;
+        color: $white;
+        font-family: $titleFont;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.125;
+        font-size: 2rem;
+    }
+
+    &__subtitle {
+        // box model
+        margin: 0;
+        margin-bottom: 30px;
+
+        // typography
+        color: $gold;
+        font-size: 1.125rem;
         font-weight: 700;
+        letter-spacing: 1px;
         text-transform: uppercase;
     }
 
-    &__text {
+    &__description {
         // box model
         margin: 0;
-        padding: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 30px;
 
         // typography
-        color: $dark;
+        color: $white;
         font-size: 1rem;
+        line-height: 1.75;
+
+        @include atDesktop {
+            width: 400px;
+        }
+    }
+
+    &__exp {
+        // box model
+        margin-bottom: 30px;
+        display: block;
+
+        // typography
+        color: $white;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        span {
+            // typography
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    &__footer {
+        // display: flex;
+        // flex-direction: column;
+
+        // box model
+        padding: 25px;
+        border-top: 1px solid $gold;
+    }
+
+    &__feature {
+        // box model
+        margin-top: 10px;
+        width: 250px;
+
+        // visual
+        background-size: contain;
+        background-image: url("./img/laurel.png");
+        background-repeat: no-repeat;
+    }
+
+    &__achivements-list {
+        // box model
+        width: 175px;
+        margin: 0;
+        padding: 10px 0;
+
+        // visual
+        list-style: none;
+
+        @include atDesktop {
+            // box model
+            width: 250px;
+
+            // typography
+            text-align: center;
+        }
+    }
+
+    &__achivements-item {
+        // box model
+        margin-bottom: 10px;
+
+        // typography
+        color: $white;
         line-height: 1.5;
     }
 
     &__more {
-        // box model
-        margin-top: -20px;
-        padding-right: 20px;
+        // positioning
+        position: relative;
+        z-index: 2;
 
-        // typography
-        text-align: right;
+        // box model
+        margin-top: 200px;
+    }
+
+    &__photo {
+        // positioning
+        position: absolute;
+        bottom: 120px;
+        right: -10px;
+        z-index: 1;
+
+        // box model
+        width: 250px;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 325px;
+        }
+        
+
+        @include atDesktop {
+            // positioning
+            right: -90px;
+            bottom: 0;
+
+            // box model
+            width: 600px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
     }
 }
