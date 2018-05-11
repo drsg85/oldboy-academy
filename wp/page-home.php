@@ -226,9 +226,11 @@
     <section class="gallery">
         <div class="gallery__preview"></div>
         <header class="gallery__header">
-            <h2 class="gallery__title">Добро
-                <br>пожаловать
-                <br>в&nbsp;семью OldBoy</h2>
+            <h2 class="gallery__title">Добро<br>пожаловать<br>в&nbsp;семью OldBoy</h2>
+            <p class="gallery__subtitle">Галерея работ наших<br>мастеров и учеников</p>
+            <div class="gallery__more">
+                <a class="button" href="<?php echo esc_url(home_url("/gallery")); ?>">Галерея Академии</a>
+            </div>
         </header>
     </section>
 
@@ -338,7 +340,115 @@
     </section>
 
     <!-- Team -->
-    <!-- TODO: Add Team section -->
+    <section class="team" id="team">
+        <header class="team__header">
+            <h2 class="team__title">Команда Академии</h2>
+            <p class="team__text">В команде академии работают профессионалы своего дела с многодетним опытомработы в идустрии барберинга, многие из
+                которых обучались своему мастерству у именитых профессионалов в России и зарубежом.</p>
+        </header>
+
+        <div class="team__content">
+
+        <?php
+            $args = array(
+                'category_name' => 'team'
+            );
+
+            query_posts($args);
+
+            if(have_posts()) {
+                $counter = 0;
+                while (have_posts()) {
+                    the_post();
+
+                    // vars
+                    $member_name            = get_field('member-name');
+                    $member_exp             = get_field('member-exp');
+                    $member_short           = get_field('member-short');
+                    $member_full_exp        = get_field('member-full-exp');
+                    $member_achievements    = get_field('member-achievements');
+                    $member_photo           = get_field('member-photo');
+                    $counter++;
+        ?>
+
+            <article class="member <?php echo ($counter % 2)?'member--right':'member--left' ?>">
+                <div class="member__info">
+                    <header class="member__header">
+                        <h2 class="member__name">
+                            <?php echo $member_name; ?>
+                        </h2>
+                        <p class="member__subtitle">
+                            Стаж <?php echo $member_exp; ?>
+                        </p>
+                        <div class="member__badge">oldboy<br>master</div>
+                        <p class="member__description">
+                            <?php echo $member_short; ?>
+                        </p>
+                        <?php echo $member_full_exp; ?>
+                    </header>
+                    <footer class="member__footer">
+                        <p class="member__subtitle">Конкурсы и Награды</p>
+                        <div class="member__feature">
+                            <?php echo $member_achievements; ?>
+                        </div>
+                        <div class="member__photo">
+                            <img src="<?php echo $member_photo; ?>" alt="<?php echo $member_name; ?>" />
+                        </div>
+                        <div class="member__more"></div>
+                    </footer>
+                </div>
+            </article>
+
+        <?php
+                }
+            }
+        ?>
+                <!-- 
+            <article class="member member--right">
+                <div class="member__info">
+                    <header class="member__header">
+                        <h2 class="member__name">Юрий Артюх</h2>
+                        <p class="member__subtitle">Стаж 10 лет</p>
+                        <div class="member__badge">oldboy
+                            <br>master</div>
+                        <p class="member__description">Ведущий барбер, брэнд менеджер сети Oldboy Barbershop, обучающий тренер. В активе есть опыт работ в колористике,
+                            мужские классические формы и барберинг. Является региональным технологом, консультантом American
+                            Crew. Юрий уверен: качество стрижки, качество обслуживания и знания профессиональной продукции —&nbsp;залог
+                            успеха мастера любого уровня.</p>
+                        <div class="member__exp">
+                            <strong>7 лет</strong>
+                            <br>
+                            <span>преподавательский стаж</span>
+                            <br>
+                        </div>
+                        <div class="member__exp">
+                            <strong>10 лет</strong>
+                            <br>
+                            <span>Стаж в качестве барбера</span>
+                        </div>
+                    </header>
+                    <footer class="member__footer">
+                        <p class="member__subtitle">Конкурсы и награды</p>
+                        <article class="member__feature">
+                            <ul class="member__achivements-list">
+                                <li class="member__achivements-item">Региональный технолог</li>
+                                <li class="member__achivements-item">Финалист
+                                    <br>Russian Hair Awards</li>
+                                <li class="member__achivements-item">Победитель
+                                    <br>Barber Connect
+                                    <br>в номинации Fast Shave</li>
+                            </ul>
+                            <div class="member__photo">
+                                <img src="./img/members/master1.png" alt="мастер" />
+                            </div>
+                        </article>
+                        <div class="member__more"></div>
+                    </footer>
+                </div>
+            </article>
+             -->
+        </div>
+    </section>
 
     <!-- Contacts -->
     <section class="contacts" id="contacts">

@@ -14,12 +14,12 @@
 
     &--left {
         // visual
-        background-position: top center;
+        background-position: bottom center;
     }
 
     &--right {
         // visual
-        background-position: bottom center;
+        background-position: top center;
     }
 
     @include atTabletsPortrait {
@@ -276,17 +276,24 @@
             width: 275px;
         }
 
+        @include atDesktop {
+            // box model
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         @include atDesktopLarge {
             // box model
             height: 240px;
         }
     }
 
-    &__achivements-list {
+    &__achivements-list, ul {
         // box model
         width: 225px;
         margin: 0;
-        padding: 10px 0;
+        padding: 20px 0;
         padding-bottom: 170px;
 
         // visual
@@ -312,9 +319,10 @@
         }
     }
 
-    &__achivements-item {
+    &__achivements-item, li {
         // box model
         margin-bottom: 10px;
+        padding: 0 40px;
 
         // typography
         color: $white;

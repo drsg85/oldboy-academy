@@ -8,16 +8,19 @@
 
         <ul class="main-nav__list">
             <li class="main-nav__item">
-                <a class="main-nav__link" href="<?php echo esc_url(home_url('/#about')); ?>">Об Академии</a>
+                <a class="main-nav__link" href="<?php echo esc_url(home_url('#about')); ?>">Об Академии</a>
             </li>
             <li class="main-nav__item">
-                <a class="main-nav__link" href="<?php echo esc_url(home_url('/#features')); ?>">Преимущества</a>
+                <a class="main-nav__link" href="<?php echo esc_url(home_url('#features')); ?>">Преимущества</a>
             </li>
             <li class="main-nav__item">
-                <a class="main-nav__link" href="<?php echo esc_url(home_url('/#courses')); ?>">Наши Курсы</a>
+                <a class="main-nav__link" href="<?php echo esc_url(home_url('#courses')); ?>">Наши Курсы</a>
             </li>
             <li class="main-nav__item">
-                <a class="main-nav__link" href="<?php echo esc_url(home_url('/#contacts')); ?>">Контакты</a>
+                <a class="main-nav__link" href="<?php echo esc_url(home_url('#team')); ?>">Команда</a>
+            </li>
+            <li class="main-nav__item">
+                <a class="main-nav__link" href="<?php echo esc_url(home_url('#contacts')); ?>">Контакты</a>
             </li>
             <li class="main-nav__item">
                 <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>models">Моделям</a>
