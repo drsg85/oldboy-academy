@@ -11,7 +11,8 @@
     overflow: hidden;
     
     // visual
-    background-image: url("./img/hero-bg.jpg");
+    background-color: $dark;
+    background-image: url("./img/gradient.jpg");
     background-size: cover;
     background-position: center center;
     
@@ -19,13 +20,18 @@
         // box model
         padding: 60px;
     }
+
+    @include atTabletsLandscape {
+        // visual
+        background-image: url("./img/hero-bg.jpg");
+    }
     
     @include atDesktop {
         // box model
         display: flex;
         justify-content: space-between;
         flex-shrink: 0;
-
+        
         padding-bottom: 110px;
         min-height: calc(100vh - 10px);
         
@@ -65,9 +71,13 @@
     &--inner {
         @include atTabletsPortrait {
             // visual
-            background-image: url("./img/hero-inner.jpg");
             background-size: cover;
             background-attachment: unset;
+        }
+        
+        @include atTabletsLandscape {
+            // visual
+            background-image: url("./img/hero-inner.jpg");
         }
 
         @include atDesktop {
@@ -85,9 +95,13 @@
 
     &--course {
         // visual
-        background-image: url("./img/features-bg.jpg");
         background-position: center top;
         background-size: cover;
+        
+        @include atTabletsLandscape {
+            // visual
+            background-image: url("./img/features-bg.jpg");
+        }
     }
 
     &--masters {

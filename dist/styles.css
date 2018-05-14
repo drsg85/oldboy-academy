@@ -546,7 +546,7 @@ body {
     @media (min-width: 1200px) {
       .four-o-four__404 {
         padding-top: 60px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .four-o-four__404 {
         padding-top: 100px; } }
   .four-o-four__glitch {
@@ -605,7 +605,7 @@ body {
     @media (min-width: 1200px) {
       .message-404__404 {
         font-size: 200px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .message-404__404 {
         font-size: 260px; } }
   .message-404__title {
@@ -620,7 +620,7 @@ body {
         margin: 0;
         padding-bottom: 20px;
         font-size: 2rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .message-404__title {
         font-size: 3rem; } }
   .message-404__text {
@@ -1402,12 +1402,16 @@ body {
   padding-bottom: 60px;
   background-color: #336699;
   overflow: hidden;
-  background-image: url("./img/hero-bg.jpg");
+  background-color: #222222;
+  background-image: url("./img/gradient.jpg");
   background-size: cover;
   background-position: center center; }
   @media (min-width: 700px) {
     .hero {
       padding: 60px; } }
+  @media (min-width: 900px) {
+    .hero {
+      background-image: url("./img/hero-bg.jpg"); } }
   @media (min-width: 1200px) {
     .hero {
       display: -webkit-box;
@@ -1422,7 +1426,7 @@ body {
       min-height: calc(100vh - 10px);
       background-attachment: fixed;
       background-position: center top; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .hero {
       padding: 60px 120px;
       padding-bottom: 100px;
@@ -1442,21 +1446,25 @@ body {
     background-position: -40px bottom; }
   @media (min-width: 700px) {
     .hero--inner {
-      background-image: url("./img/hero-inner.jpg");
       background-size: cover;
       background-attachment: unset; } }
+  @media (min-width: 900px) {
+    .hero--inner {
+      background-image: url("./img/hero-inner.jpg"); } }
   @media (min-width: 1200px) {
     .hero--inner {
       height: auto;
       min-height: auto;
       max-height: auto; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .hero--inner {
       max-height: auto; } }
   .hero--course {
-    background-image: url("./img/features-bg.jpg");
     background-position: center top;
     background-size: cover; }
+    @media (min-width: 900px) {
+      .hero--course {
+        background-image: url("./img/features-bg.jpg"); } }
   .hero--models {
     background-image: url("./img/models-bg.jpg");
     background-position: center top;
@@ -1486,7 +1494,7 @@ body {
       .hero__content {
         width: 50%;
         float: left; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .hero__content {
         width: 60%; } }
     .hero__content::after {
@@ -1501,7 +1509,7 @@ body {
         width: calc(50% - 60px);
         float: right;
         margin-top: -20px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .hero__aside {
         width: calc(40% - 60px); } }
   .hero__form {
@@ -1709,7 +1717,7 @@ body {
     @media (min-width: 1200px) {
       .hero-form__button {
         font-size: 1rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .hero-form__button {
         font-size: 1.25rem; } }
   .hero-form__warning {
@@ -1882,7 +1890,7 @@ body {
   @media (min-width: 900px) {
     .hero-header__caption {
       max-width: 480px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .hero-header__caption {
       max-width: 540px; } }
   .hero-header__title {
@@ -1901,7 +1909,7 @@ body {
     @media (min-width: 900px) {
       .hero-header__title {
         font-size: 2rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .hero-header__title {
         font-size: 2.25rem; } }
   .hero-header__subtitle {
@@ -1926,7 +1934,7 @@ body {
     @media (min-width: 900px) {
       .hero-header__text {
         margin-bottom: 0; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .hero-header__text {
         font-size: 1.25rem; } }
   .hero-header__contacts {
@@ -1970,7 +1978,7 @@ body {
   @media (min-width: 700px) {
     .about {
       padding: 60px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .about {
       padding: 60px 120px; } }
   @media (min-width: 1200px) {
@@ -1992,7 +2000,7 @@ body {
     @media (min-width: 700px) {
       .about--yellow {
         padding: 85px 60px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .about--yellow {
         padding: 80px 120px; } }
   .about--white-border-before::before {
@@ -2051,7 +2059,7 @@ body {
         float: left;
         width: 50%;
         padding-right: 30px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .about__content--left {
         padding-right: 60px; } }
     @media (min-width: 1200px) {
@@ -2059,7 +2067,7 @@ body {
         float: right;
         width: 50%;
         padding-left: 30px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .about__content--right {
         padding-left: 60px; } }
     .about__content h3 {
@@ -2264,7 +2272,7 @@ body {
     @media (min-width: 1200px) {
       .feature__header {
         height: 140px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .feature__header {
         height: 210px; } }
   .feature__title {
@@ -2287,7 +2295,7 @@ body {
       .feature__title {
         min-height: 100px;
         font-size: 1.5rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .feature__title {
         font-size: 2rem; } }
   .feature__icon {
@@ -2446,7 +2454,7 @@ body {
     @media (min-width: 900px) {
       .gallery__title {
         font-size: 2rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .gallery__title {
         font-size: 2.25rem; } }
   .gallery__subtitle {
@@ -2462,7 +2470,7 @@ body {
     @media (min-width: 900px) {
       .gallery__subtitle {
         margin-bottom: 60px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .gallery__subtitle {
         font-size: 1.25rem; } }
   .gallery__text {
@@ -2538,7 +2546,7 @@ body {
     @media (min-width: 900px) {
       .courses__title {
         font-size: 2rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .courses__title {
         font-size: 2.25rem; } }
   .courses__text {
@@ -2552,7 +2560,7 @@ body {
     @media (min-width: 900px) {
       .courses__text {
         margin-bottom: 0; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .courses__text {
         font-size: 1.25rem; } }
   .courses__icon {
@@ -2878,7 +2886,7 @@ body {
       display: block;
       width: auto;
       padding: 0; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .hero-course__info-column {
       display: inline-block;
       vertical-align: top;
@@ -2895,7 +2903,7 @@ body {
     @media (min-width: 1200px) {
       .hero-course__info-block {
         margin: 0; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .hero-course__info-block {
         margin-bottom: 10px;
         margin-top: 10px; } }
@@ -3018,7 +3026,7 @@ body {
     @media (min-width: 900px) {
       .team__title {
         font-size: 2rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .team__title {
         font-size: 2.25rem; } }
   .team__icon {
@@ -3063,7 +3071,7 @@ body {
     @media (min-width: 900px) {
       .team__text {
         margin-bottom: 0; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .team__text {
         font-size: 1.25rem; } }
   .team__more {
@@ -3085,7 +3093,7 @@ body {
     .member {
       padding: 50px 30px;
       padding-bottom: 50px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .member {
       margin: 30px;
       width: 50%;
@@ -3105,7 +3113,7 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: -40px top; }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .member::before {
         display: none; } }
   .member::after {
@@ -3120,7 +3128,7 @@ body {
     background-size: 80px;
     background-repeat: repeat-x;
     background-position: left bottom; }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .member::after {
         display: none; } }
   .member__info {
@@ -3192,7 +3200,7 @@ body {
     @media (min-width: 1200px) {
       .member__description {
         width: 600px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .member__description {
         width: auto;
         height: 200px;
@@ -3239,7 +3247,7 @@ body {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .member__feature {
         height: 240px; } }
   .member__achivements-list, .member ul {
@@ -3293,7 +3301,7 @@ body {
         right: -60px;
         bottom: -1px;
         width: 650px; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .member__photo {
         width: 75%;
         max-width: 570px; } }
@@ -3355,7 +3363,7 @@ body {
     @media (min-width: 1200px) {
       .testimonials__title {
         font-size: 3rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .testimonials__title {
         font-size: 4rem; } }
   .testimonials__subtitle {
@@ -3373,7 +3381,7 @@ body {
       .testimonials__subtitle {
         padding-left: 60%;
         font-size: 1.5rem; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1600px) {
       .testimonials__subtitle {
         padding-left: 70%; } }
 
@@ -3496,7 +3504,7 @@ body {
       width: 300px;
       border: 1px solid #d5a353;
       border-radius: 6px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .contacts-box {
       bottom: 110px; } }
   .contacts-box--inner {
@@ -3664,7 +3672,7 @@ body {
       margin-right: -20px;
       margin-top: -15px;
       width: 400px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .slider {
       width: 500px; } }
   .slider__slide {
@@ -4074,7 +4082,7 @@ body {
     .fking-wrapper {
       margin-top: 100px;
       margin-bottom: -200px; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 1600px) {
     .fking-wrapper {
       margin-left: -120px;
       margin-right: -120px;
