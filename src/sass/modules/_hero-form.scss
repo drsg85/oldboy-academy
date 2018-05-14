@@ -51,7 +51,7 @@
         z-index: 2;
 
         // box model
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
@@ -61,7 +61,7 @@
 
         @include atTabletsPortrait {
             // box model
-            padding-bottom: 50px;
+            padding-bottom: 40px;
         }
 
         @include atDesktop {
@@ -88,17 +88,24 @@
         }
     }
     
+    &__service {
+        // box model
+        padding-bottom: 20px;
+    }
+
     &__title {
         // box model
         margin: 0;
-        // margin-right: -0.125em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.25em;
 
         // typography
         color: $white;
         color: $gold;
         font-family: $titleFont;
-        font-family: $mainFont;
+        // font-family: $mainFont;
+        letter-spacing: 1px;
+        text-align: right;
+        text-transform: uppercase;
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
@@ -114,6 +121,11 @@
             letter-spacing: 0.5px;
             // text-transform: uppercase;
         }
+
+        @include atDesktop {
+            // typography
+            text-align: left;
+        }
     }
     
     &__subtitle {
@@ -128,6 +140,7 @@
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.5;
+        text-align: right;
 
         @include atTabletsPortrait {
             // typography
@@ -137,6 +150,11 @@
         @include atTabletsLandscape {
             // typography
             font-size: 1.25rem;
+        }
+
+        @include atDesktop {
+            // typography
+            text-align: left;
         }
         
         @include atDesktopLarge {
@@ -218,12 +236,11 @@
 
         // typography
         color: $white;
-        font-size: 0.875rem;
         font-size: 1rem;
 
         // visual
         border: none;
-        border: 1px solid $white;
+        border: 1px solid rgba($white, 0.5);
         border-radius: 5px;
         background-color: transparent;
         transition: all 0.3s ease-out;
@@ -245,19 +262,19 @@
 
         @include atDesktop {
             // box model
-            margin-bottom: 20px;
+            margin-bottom: 16px;
 
             // typography
             font-size: 1rem;
         }
 
-        @include atDesktopLarge {
-            // box model
-            padding: 12px 18px;
+        // @include atDesktopLarge {
+        //     // box model
+        //     padding: 12px 18px;
 
-            // typography
-            font-size: 1.25rem;
-        }
+        //     // typography
+        //     font-size: 1.25rem;
+        // }
     }
 
     &__button {

@@ -54,16 +54,41 @@ html(lang="ru")
                             p.selling-feature__text Тип стрижки остаётся на выбор мастера. Модель выбирает длину
 
             aside.hero__aside
-                .course-form
-                    header.course-form__header
-                        h2.course-form__title Заполни форму<br>на бесплатную стрижку
-                        p.course-form__subtitle Стань моделью академии&nbsp;Oldboy
-                    form.course-form__form(action="")
-                        input.course-form__input(type="text" name="Имя" placeholder="Имя")
-                        input.course-form__input(type="text" name="Телефон" placeholder="Телефон")
-                        input.course-form__input(type="email" name="Электронная почта" placeholder="Электронная почта")
-                        input.course-form__button(type="submit" value="Подать заявку")
-                        .course-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
+                .hero-form
+                    header.hero-form__header
+                        h2.hero-form__title Заполни форму<br>на бесплатную стрижку
+                        p.hero-form__subtitle Стань моделью академии&nbsp;Oldboy
+
+                    .hero-form__wrapper
+                        form.hero-form__form(action="")
+                            input.hero-form__input(type="text" name="Имя" placeholder="Имя")
+                            input.hero-form__input(type="text" name="Телефон" placeholder="Телефон")
+                            input.hero-form__input(type="email" name="Электронная почта" placeholder="Электронная почта")
+                            .hero-form__service
+                                .service-select
+                                    input.service-select__input(type="radio" id="haircut" name="service" checked)
+                                    label.service-select__label(for="haircut") Стрижка
+                                    input.service-select__input(type="radio" id="beard" name="service")
+                                    label.service-select__label(for="beard") Борода
+                                .service-options.service-options--haircuts
+                                    .service-options__group
+                                        input.service-options__input(type="radio" id="haircut-short" name="haircut-option" checked)
+                                        label.service-options__label(for="haircut-short")
+                                            img.service-options__image(src="./img/models/haircut_short.svg", alt="")
+                                            .service-options__name короткая
+                                    .service-options__group
+                                        input.service-options__input(type="radio" id="haircut-medium" name="haircut-option")
+                                        label.service-options__label(for="haircut-medium")
+                                            img.service-options__image(src="./img/models/haircut_medium.svg", alt="")
+                                            .service-options__name средняя
+                                    .service-options__group
+                                        input.service-options__input(type="radio" id="haircut-long" name="haircut-option")
+                                        label.service-options__label(for="haircut-long")
+                                            img.service-options__image(src="./img/models/haircut_long.svg", alt="")
+                                            .service-options__name длинная
+                            input.hero-form__button(type="submit" value="Подать заявку")
+
+                    .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
 
         //- section.about
             .about__row
