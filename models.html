@@ -53,18 +53,48 @@
         </header>
       </div>
       <aside class="hero__aside">
-        <div class="course-form">
-          <header class="course-form__header">
-            <h2 class="course-form__title">Заполни форму<br>на бесплатную стрижку</h2>
-            <p class="course-form__subtitle">Стань моделью академии&nbsp;Oldboy</p>
+        <div class="hero-form">
+          <header class="hero-form__header">
+            <h2 class="hero-form__title">Заполни форму<br>на бесплатную стрижку</h2>
+            <p class="hero-form__subtitle">Стань моделью академии&nbsp;Oldboy</p>
           </header>
-          <form class="course-form__form" action="">
-            <input class="course-form__input" type="text" name="Имя" placeholder="Имя"/>
-            <input class="course-form__input" type="text" name="Телефон" placeholder="Телефон"/>
-            <input class="course-form__input" type="email" name="Электронная почта" placeholder="Электронная почта"/>
-            <input class="course-form__button" type="submit" value="Подать заявку"/>
-            <div class="course-form__warning">Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a></div>
-          </form>
+          <div class="hero-form__wrapper">
+            <form class="hero-form__form" action="">
+              <input class="hero-form__input" type="text" name="Имя" placeholder="Имя"/>
+              <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон"/>
+              <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта"/>
+              <div class="hero-form__service">
+                <div class="service-select">
+                  <input class="service-select__input" type="radio" id="haircut" name="service" checked="checked"/>
+                  <label class="service-select__label" for="haircut">Стрижка</label>
+                  <input class="service-select__input" type="radio" id="beard" name="service"/>
+                  <label class="service-select__label" for="beard">Борода</label>
+                </div>
+                <div class="service-options service-options--haircuts">
+                  <div class="service-options__group">
+                    <input class="service-options__input" type="radio" id="haircut-short" name="haircut-option" checked="checked"/>
+                    <label class="service-options__label" for="haircut-short"><img class="service-options__image" src="./img/models/haircut_short.svg" alt=""/>
+                      <div class="service-options__name">короткая</div>
+                    </label>
+                  </div>
+                  <div class="service-options__group">
+                    <input class="service-options__input" type="radio" id="haircut-medium" name="haircut-option"/>
+                    <label class="service-options__label" for="haircut-medium"><img class="service-options__image" src="./img/models/haircut_medium.svg" alt=""/>
+                      <div class="service-options__name">средняя</div>
+                    </label>
+                  </div>
+                  <div class="service-options__group">
+                    <input class="service-options__input" type="radio" id="haircut-long" name="haircut-option"/>
+                    <label class="service-options__label" for="haircut-long"><img class="service-options__image" src="./img/models/haircut_long.svg" alt=""/>
+                      <div class="service-options__name">длинная</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <input class="hero-form__button" type="submit" value="Подать заявку"/>
+            </form>
+          </div>
+          <div class="hero-form__warning">Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a></div>
         </div>
       </aside>
     </section>
