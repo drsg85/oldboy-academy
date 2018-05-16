@@ -6,6 +6,7 @@
     // vars
     $course_img                         = get_field('course_img');
     $course_description_img             = get_field('course_description_img');
+    $course_back                        = get_field('course_back');
     $course_name                        = get_field('course_name');
     $course_date                        = get_field('course_date');
     $course_duration                    = get_field('course_duration');
@@ -43,7 +44,21 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
 
+    <!-- Styles -->
     <title><?php the_title(); ?> — Академия барберинга Oldboy</title>
+    <?php 
+        if ($course_back != "") {
+    ?>
+        <style>
+            @media(min-width: 900px) {
+                .hero {
+                    background-image: url("<?php echo $course_back; ?>");
+                }
+            }
+        </style>
+    <?php
+        }
+    ?>
 
     <!-- Counters -->
     <?php get_template_part('counters'); ?>
@@ -173,9 +188,11 @@
         <div class="about__row">
         <div class="about__content about__content--left">
             <h2 class="about__title">Краткое описание курса:</h2>
-            <div class="about__image"><img src="<?php echo $course_description_img; ?>" alt=""/></div>
+            <?php echo $course_short_description;?>
         </div>
-        <div class="about__content about__content--right"><?php echo $course_short_description;?></div>
+        <div class="about__content about__content--right">
+            <!-- <div class="about__image"><img src="<?php echo $course_description_img; ?>" alt=""/></div> -->
+        </div>
     </section>
 
     <!-- Main points and features -->
@@ -208,10 +225,13 @@
     <!-- What you gonna learn -->
     <section class="about">
         <div class="about__row">
-        <div class="about__content about__content--right">
-            <h2 class="about__title">Чему вы научитесь на курсе:</h2>
-            <?php echo $course_learning_result; ?>
-        </div>
+            <div class="about__content about__content--left">
+                <h2 class="about__title">Чему вы научитесь на курсе:</h2>
+                <?php echo $course_learning_result; ?>
+            </div>
+            <div class="about__content about__content--right">
+                <div class="about__image"><img src="<?php echo $course_description_img; ?>" alt=""/></div>
+            </div>
         </div>
     </section>
 
