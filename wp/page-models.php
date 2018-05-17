@@ -26,7 +26,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=8">
 
     <title>Ищем моделей на бесплатные стрижки — Академия барберинга Oldboy</title>
 
@@ -80,6 +80,7 @@
 
                 <div class="hero-form__wrapper">
                     <form class="hero-form__form" action="">
+                        <input class="hero-form__input" type="text" name="Форма" value="Запись на стрижку" hidden>
                         <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" />
                         <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" />
                         <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" />

@@ -1673,6 +1673,8 @@ body {
     background-color: transparent;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
+    .hero-form__input[hidden] {
+      display: none; }
     .hero-form__input:focus {
       border: 1px solid #d5a353;
       outline: none; }

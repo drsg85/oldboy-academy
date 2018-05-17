@@ -36,7 +36,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=7">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=8">
 
     <title>Академия барберинга Oldboy</title>
 
@@ -105,6 +105,7 @@
                         </header>
                         <div class="hero-form__wrapper">
                             <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                                <input class="hero-form__input" type="text" name="Курс" value="<?php echo $course_name; ?>" hidden>
                                 <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
                                 <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
                                 <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
@@ -131,6 +132,7 @@
                         </header>
                         <div class="hero-form__wrapper">
                             <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
+                                <input class="hero-form__input" type="text" name="Форма" value="Запись на стрижку" hidden>
                                 <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
                                 <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
                                 <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />

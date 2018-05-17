@@ -245,6 +245,11 @@
         background-color: transparent;
         transition: all 0.3s ease-out;
 
+        &[hidden] {
+            // box model
+            display: none;
+        }
+
         &:focus {
             // visual
             border: 1px solid $gold;
