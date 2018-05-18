@@ -1914,6 +1914,7 @@ body {
     .hero-header__ribbon--red {
       background-color: rgba(195, 31, 56, 0.5); }
   .hero-header__title {
+    margin: 0;
     margin-left: -0.05em;
     color: #ffffff;
     font-family: "Lora", serif;
@@ -1933,7 +1934,10 @@ body {
       .hero-header__title {
         font-size: 2.25rem; } }
   .hero-header__subtitle {
+    padding-bottom: 20px;
     color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.5;
     text-align: left;

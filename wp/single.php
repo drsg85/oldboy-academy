@@ -8,6 +8,7 @@
     $course_description_img             = get_field('course_description_img');
     $course_back                        = get_field('course_back');
     $course_name                        = get_field('course_name');
+    $course_seo_name                    = get_field('course_seo_name');
     $course_date                        = get_field('course_date');
     $course_duration                    = get_field('course_duration');
     $course_skills_level                = get_field('course_skills');
@@ -79,7 +80,8 @@
             <header class="hero-header hero-header--block">
                 <div class="hero-header__caption">
                     <p class="hero-header__subtitle">Курсы Академии «Oldboy»</p>
-                    <h1 class="hero-header__title"><?php echo $course_name; ?></h1>
+                    <p class="hero-header__title"><?php echo $course_name; ?></p>
+                    <h1 class="hero-header__subtitle"><?php echo $course_seo_name; ?></h1>
                     <div class="hero-header__badges">
                         <?php
                             if ($course_ribbon_blue != "") {

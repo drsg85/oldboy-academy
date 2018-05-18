@@ -78,6 +78,7 @@
 
     &__title {
         // box model
+        margin: 0;
         margin-left: -0.05em;
 
         // typography
@@ -109,8 +110,13 @@
     }
 
     &__subtitle {
+        // box model
+        padding-bottom: 20px;
+        
         // typography
         color: $white;
+        font-size: 1rem;
+        font-weight: 400;
         letter-spacing: 1px;
         line-height: 1.5;
         text-align: left;
