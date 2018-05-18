@@ -262,7 +262,8 @@
                         $course_duration        = get_field('course_duration');
                         $course_skills_level    = get_field('course_skills');
                         $course_format          = get_field('course_format');
-                        $course_ribbon          = get_field('course_ribbon');
+                        $course_ribbon_blue     = get_field('course_ribbon_blue');
+                        $course_ribbon_red      = get_field('course_ribbon_red');
             ?>
 
                 <article class="course">
@@ -274,25 +275,24 @@
 
                         <div class="course__ribbons">
                             <?php
-                                switch($course_ribbon) {
-                                    case 'new':
-                                ?>
-                                    <p class="course__ribbon course__ribbon--blue">новый<br>курс</p>
-                                <?php
-                                    break;
-                                    case 'special_price':
-                                ?>
-                                    <p class="course__ribbon course__ribbon--red">специальная<br>цена</p>
-                                <?php
-                                    break;
-                                    case 'all':
-                                ?>
-                                    <p class="course__ribbon course__ribbon--blue">новый<br>курс</p>
-                                    <p class="course__ribbon course__ribbon--red">специальная<br>цена</p>
-                                <?php
-                                    break;
+                                if ($course_ribbon_blue != "") {
+                            ?>
+                                    <p class="course__ribbon course__ribbon--blue">
+                                        <?php echo $course_ribbon_blue; ?>
+                                    </p>
+                            <?php
                                 }
-                                ?>
+                            ?>
+
+                            <?php
+                                if ($course_ribbon_red != "") {
+                            ?>
+                                    <p class="course__ribbon course__ribbon--red">
+                                        <?php echo $course_ribbon_red; ?>
+                                    </p>
+                            <?php
+                                }
+                            ?>
                         </div>
                     </header>
 
@@ -382,7 +382,7 @@
                         <p class="member__subtitle">
                             Стаж <?php echo $member_exp; ?>
                         </p>
-                        <div class="member__badge">oldboy<br>master</div>
+                        <div class="member__badge">тренер<br>oldboy</div>
                         <p class="member__description">
                             <?php echo $member_short; ?>
                         </p>

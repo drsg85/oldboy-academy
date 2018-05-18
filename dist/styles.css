@@ -2649,7 +2649,7 @@ body {
     font-size: 0; }
   .course__ribbon {
     position: relative;
-    width: 110px;
+    width: 120px;
     margin: 0;
     margin-bottom: 5px;
     padding: 6px;
@@ -3153,6 +3153,7 @@ body {
     font-weight: 700px;
     font-size: 1rem;
     letter-spacing: 2px;
+    text-align: center;
     text-transform: uppercase;
     background-color: #d5a353; }
     .member__badge::before {
