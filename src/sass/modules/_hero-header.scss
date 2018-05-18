@@ -42,6 +42,40 @@
         }
     }
 
+    &__badges {
+        // typography
+        font-size: 0;
+    }
+
+    &__ribbon {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        padding: 15px 25px;
+        
+        // typography
+        color: $white;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        // visual
+        border-radius: 5px;
+
+        &--blue {
+            // visual
+            background-color: rgba($blue, 0.5);
+        }
+
+        &--red {
+            // visual
+            background-color: rgba($red, 0.5);
+        }
+    }
+
     &__title {
         // box model
         margin-left: -0.05em;
@@ -128,7 +162,7 @@
         // box model
         border-top: 1px solid $gold;
         margin-left: -40px;
-        margin-top: 40px;
+        margin-top: 25px;
         padding-left: 40px;
         padding-top: 10px;
         

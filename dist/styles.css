@@ -1895,6 +1895,24 @@ body {
   @media (min-width: 1600px) {
     .hero-header__caption {
       max-width: 540px; } }
+  .hero-header__badges {
+    font-size: 0; }
+  .hero-header__ribbon {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    color: #ffffff;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px; }
+    .hero-header__ribbon--blue {
+      background-color: rgba(51, 102, 153, 0.5); }
+    .hero-header__ribbon--red {
+      background-color: rgba(195, 31, 56, 0.5); }
   .hero-header__title {
     margin-left: -0.05em;
     color: #ffffff;
@@ -1947,7 +1965,7 @@ body {
   .hero-header__features {
     border-top: 1px solid #d5a353;
     margin-left: -40px;
-    margin-top: 40px;
+    margin-top: 25px;
     padding-left: 40px;
     padding-top: 10px;
     text-align: center; }

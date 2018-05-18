@@ -12,7 +12,8 @@
     $course_duration                    = get_field('course_duration');
     $course_skills_level                = get_field('course_skills');
     $course_format                      = get_field('course_format');
-    $course_ribbon                      = get_field('course_ribbon');
+    $course_ribbon_blue                 = get_field('course_ribbon_blue');
+    $course_ribbon_red                  = get_field('course_ribbon_red');
     $course_short_description           = get_field('course_short_description');
     $course_progamm_plan                = get_field('course_progamm_plan');
     $course_learning_result             = get_field('course_learning_result');
@@ -79,7 +80,27 @@
                 <div class="hero-header__caption">
                     <p class="hero-header__subtitle">Курсы Академии «Oldboy»</p>
                     <h1 class="hero-header__title"><?php echo $course_name; ?></h1>
-                    <div class="hero-header__badges"></div>
+                    <div class="hero-header__badges">
+                        <?php
+                            if ($course_ribbon_blue != "") {
+                            ?>
+                                    <p class="hero-header__ribbon hero-header__ribbon--blue">
+                                        <?php echo $course_ribbon_blue; ?>
+                                    </p>
+                            <?php
+                                }
+                            ?>
+
+                            <?php
+                                if ($course_ribbon_red != "") {
+                            ?>
+                                    <p class="hero-header__ribbon hero-header__ribbon--red">
+                                        <?php echo $course_ribbon_red; ?>
+                                    </p>
+                            <?php
+                                }
+                            ?>
+                    </div>
                 </div>
 
                 <div class="hero-header__features">
@@ -133,31 +154,6 @@
                 </div>
             </header>
         </div>
-            
-                    <!-- <div class="hero-course__ribbons">
-                        <?php
-                        switch($course_ribbon) {
-                            case 'new':
-                        ?>
-                            <p class="course__ribbon course__ribbon--blue">новый<br>курс</p>
-                        <?php
-                            break;
-                            case 'special_price':
-                        ?>
-                            <p class="course__ribbon course__ribbon--red">специальная<br>цена</p>
-                        <?php
-                            break;
-                            case 'all':
-                        ?>
-                            <p class="course__ribbon course__ribbon--blue">новый<br>курс</p>
-                            <p class="course__ribbon course__ribbon--red">специальная<br>цена</p>
-                        <?php
-                            break;
-                        }
-                        ?>
-                    </div> -->
-
-
 
         <aside class="hero__aside">
             <div class="hero-form">
