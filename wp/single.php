@@ -44,7 +44,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=8">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css?v=9">
 
     <!-- Styles -->
     <title><?php the_title(); ?> — Академия барберинга Oldboy</title>
