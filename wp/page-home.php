@@ -106,15 +106,15 @@
                         <div class="hero-form__wrapper">
                             <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
                                 <input class="hero-form__input" type="text" name="Курс" value="<?php echo $course_name; ?>" hidden>
-                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
-                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
-                                <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
-                                <input class="hero-form__button" type="submit" value="Подать заявку" />
+                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required>
+                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required>
+                                <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required>
+                                <input class="hero-form__button" type="submit" value="Подать заявку">
                             </form>
                         </div>
                         <div class="hero-form__warning">
                             Заполняя данную форму<br>вы&nbsp;принимаете условия<br>
-                            <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                            <a href="<?php echo esc_url(home_url('/policy/')); ?>">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -133,15 +133,15 @@
                         <div class="hero-form__wrapper">
                             <form class="hero-form__form" action="https://formspree.io/info@oldboyacademy.com" method="POST">
                                 <input class="hero-form__input" type="text" name="Форма" value="Запись на стрижку" hidden>
-                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required />
-                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required />
-                                <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required />
-                                <input class="hero-form__button" type="submit" value="Записаться" />
+                                <input class="hero-form__input" type="text" name="Имя" placeholder="Имя" required>
+                                <input class="hero-form__input" type="text" name="Телефон" placeholder="Телефон" required>
+                                <input class="hero-form__input" type="email" name="Электронная почта" placeholder="Электронная почта" required>
+                                <input class="hero-form__button" type="submit" value="Записаться">
                             </form>
                         </div>
                         <div class="hero-form__warning">
                             Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
-                            <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                            <a href="<?php echo esc_url(home_url('/policy/')); ?>">политики конфиденциальности</a>
                         </div>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
             <h2 class="gallery__title">Добро<br>пожаловать<br>в&nbsp;семью OldBoy</h2>
             <p class="gallery__subtitle">Галерея работ наших<br>мастеров и учеников</p>
             <div class="gallery__more">
-                <a class="button" href="<?php echo esc_url(home_url("/gallery")); ?>">Галерея Академии</a>
+                <a class="button" href="<?php echo esc_url(home_url("/gallery/")); ?>">Галерея Академии</a>
             </div>
         </header>
     </section>

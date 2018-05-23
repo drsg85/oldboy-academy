@@ -39,7 +39,7 @@
                 <li><a href="<?php echo esc_url(home_url('/')); ?>#courses">Наши Курсы</a></li>
                 <li><a href="<?php echo esc_url(home_url('/')); ?>#team">Команда</a></li>
                 <li><a href="<?php echo esc_url(home_url('/')); ?>#contacts">Контакты</a></li>
-                <li><a href="<?php echo esc_url(home_url('/')); ?>models">Моделям</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>models/">Моделям</a></li>
             </ul>
         </nav>
         <div class="page-footer__copy">&copy;Академия Олдбой. 2018<br>Все права сохранены.</div>

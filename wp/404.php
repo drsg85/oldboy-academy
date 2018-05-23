@@ -47,7 +47,7 @@
                 <p class="message-404__404">404</p>
                 <h1 class="message-404__title">Страница не найдена</h1>
                 <p class="message-404__text">Страница устарела, была удалена или не существовала вовсе.</p>
-                <a class="button" href="<?php echo esc_url(home_url('')); ?>">Вернуться на главную</a>
+                <a class="button" href="<?php echo esc_url(home_url('/')); ?>">Вернуться на главную</a>
             </div>
         </div>
         <div class="four-o-four__glitch">

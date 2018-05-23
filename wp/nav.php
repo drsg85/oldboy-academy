@@ -23,7 +23,7 @@
                 <a class="main-nav__link" href="<?php echo esc_url(home_url('#contacts')); ?>">Контакты</a>
             </li>
             <li class="main-nav__item">
-                <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>models">Моделям</a>
+                <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>models/">Моделям</a>
             </li>
         </ul>
 
