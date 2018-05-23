@@ -258,6 +258,7 @@
                         // vars
                         $course_img             = get_field('course_img');
                         $course_name            = get_field('course_name');
+                        $course_seo_name        = get_field('course_seo_name');
                         $course_date            = get_field('course_date');
                         $course_duration        = get_field('course_duration');
                         $course_skills_level    = get_field('course_skills');
@@ -267,11 +268,12 @@
             ?>
 
                 <article class="course">
-                    <header class="course__header">
+                    <header class="course__header" style="background-image: url(<?php echo $course_img;?>);">
                         <h3 class="course__title"><?php echo $course_name; ?></h3>
-                        <div class="course__image">
+                        <p class="course__subtitle"><?php echo $course_seo_name; ?></p>
+                        <!-- <div class="course__image">
                             <img src="<?php echo $course_img; ?>" alt="Академия Олдбой курс по барберингу" />
-                        </div>
+                        </div> -->
 
                         <div class="course__ribbons">
                             <?php

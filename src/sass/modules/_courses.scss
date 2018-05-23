@@ -11,6 +11,11 @@
         padding: 80px 60px;
         padding-bottom: 0;
     }
+
+    @include atTabletsLandscape {
+        // box model
+        padding-right: 30px;
+    }
     
     // visual
     background-color: $yellow;
@@ -114,12 +119,16 @@
         // box model
         padding: 25px;
 
+        // typography
+        font-size: 0;
+
         @include atTabletsPortrait {
             // box model
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
+            justify-content: flex-start;
+            padding: 0;
+            padding-top: 40px;
         }
     }
 }
