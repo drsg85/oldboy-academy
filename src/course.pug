@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+doctype
 html(lang="ru")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic")
         link(rel="stylesheet", href="styles.css")
 
         title Oldboy Academy
@@ -150,17 +150,16 @@ html(lang="ru")
                         li Барберам — новичкам и мастерам, которые мечтают освоить технику бритья опасной бритвой и то как выполняется оформление бороды.
                         li Опытным барберам — вы увидите другой подход к бритью, основанный на возрождении традиций бритья опасной бритвой. Разберем волнующие вопросы, с которыми вы сталкиваетесь в своей практике. Так же вы сможете систематизировать подход к моделированию бороды.
 
-        section.about
-            .fking-wrapper
-                article.member
-                    header.member__header
-                        .member__photo: img(src="./img/members/barber1.png", alt="")
-                        h3.member__name Юрий<br>Артюх
-                    .member__content
-                        p.member__about О мастере:
-                        p.member__text Ведущий мастер сети Олдбой. Сертифицированный технолог бренда American Crew.
-                        p.member__text Стрижет с 16 лет, последние три года мы даже не припомним, что бы у него были выходные. Обучаля у именитыхбарберов и готов делиться заниями.
-                        p.member__text Большой любитель английской школы, сложных разделений и текстуры
+        //- section.about
+            article.member
+                header.member__header
+                    .member__photo: img(src="./img/members/barber1.png", alt="")
+                    h3.member__name Юрий<br>Артюх
+                .member__content
+                    p.member__about О мастере:
+                    p.member__text Ведущий мастер сети Олдбой. Сертифицированный технолог бренда American Crew.
+                    p.member__text Стрижет с 16 лет, последние три года мы даже не припомним, что бы у него были выходные. Обучаля у именитыхбарберов и готов делиться заниями.
+                    p.member__text Большой любитель английской школы, сложных разделений и текстуры
 
         section.about.about--yellow.about--white-border-before
             .about__row

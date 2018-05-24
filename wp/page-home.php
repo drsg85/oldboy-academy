@@ -36,7 +36,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=9">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=10">
 
     <title>Академия барберинга Oldboy</title>
 
@@ -154,7 +154,7 @@
         <div class="about__row">
             <div class="about__content about__content--left">
                 <div class="about__logo">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой цветно логотип" />
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="Академия Олдбой цветной логотип" />
                 </div>
             </div>
             <div class="about__content about__content--right">

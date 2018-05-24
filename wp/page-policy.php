@@ -24,9 +24,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#222222">
 
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=10">
 
     <title>Политика конфиденциальности — Академия барберинга Oldboy</title>
 

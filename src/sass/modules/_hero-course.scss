@@ -241,10 +241,12 @@
             background-color: $red;
 
             &::before {
+                // visual
                 background-image: linear-gradient(to right top, $red 0, $red 50%, transparent 50%, transparent 100%);
             }
 
             &::after {
+                // visual
                 background-image: linear-gradient(to right bottom, $red 0, $red 50%, transparent 50%, transparent 100%);
             }
         }
@@ -254,10 +256,12 @@
             background-color: $blue;
 
             &::before {
+                // visual
                 background-image: linear-gradient(to right top, $blue 0, $blue 50%, transparent 50%, transparent 100%);
             }
 
             &::after {
+                // visual
                 background-image: linear-gradient(to right bottom, $blue 0, $blue 50%, transparent 50%, transparent 100%);
             }
         }
