@@ -211,7 +211,7 @@
             </article>
             <article class="selling-feature">
                 <h3 class="selling-feature__title">Комфортные условия<br>и оснащение</h3>
-                <p class="selling-feature__text">Предоставляем нашим студентам лучшее профессинальное оборудование</p>
+                <p class="selling-feature__text">Предоставляем нашим студентам лучшее профессиональное оборудование</p>
             </article>
             <article class="selling-feature">
                 <h3 class="selling-feature__title">Помощь<br>в трудоустройстве</h3>
