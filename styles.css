@@ -3573,8 +3573,6 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase; }
     .contact__value a {
-      color: #222222;
-      color: #d5a353;
       color: #9d6911;
       text-decoration: none; }
       .contact__value a:hover {
@@ -4062,27 +4060,3 @@ body {
     @media (min-width: 1200px) {
       .selling-feature__text {
         font-size: 0.875rem; } }
-
-.fking-wrapper {
-  margin-left: -25px;
-  margin-right: -25px;
-  margin-top: 100px;
-  margin-bottom: -120px; }
-  @media (min-width: 700px) {
-    .fking-wrapper {
-      margin-left: -60px;
-      margin-right: -60px;
-      margin-bottom: -170px; } }
-  @media (min-width: 900px) {
-    .fking-wrapper {
-      margin-top: 200px;
-      margin-bottom: -200px; } }
-  @media (min-width: 1200px) {
-    .fking-wrapper {
-      margin-top: 100px;
-      margin-bottom: -200px; } }
-  @media (min-width: 1600px) {
-    .fking-wrapper {
-      margin-left: -120px;
-      margin-right: -120px;
-      margin-top: 200px; } }
