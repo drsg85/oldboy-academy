@@ -91,6 +91,9 @@
     }
 
     &__ribbons {
+        // box model
+        margin-top: 10px;
+
         // typography
         font-size: 0;
 
@@ -98,6 +101,10 @@
             // positioning
             position: absolute;
             bottom: 10px;
+
+            // box model
+            margin-top: 0;
+            
         }
     }
 
