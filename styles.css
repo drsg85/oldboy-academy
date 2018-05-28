@@ -2662,11 +2662,13 @@ body {
     line-height: 1.5;
     text-transform: uppercase; }
   .course__ribbons {
+    margin-top: 10px;
     font-size: 0; }
     @media (min-width: 900px) {
       .course__ribbons {
         position: absolute;
-        bottom: 10px; } }
+        bottom: 10px;
+        margin-top: 0; } }
   .course__ribbon {
     position: relative;
     display: inline-block;
