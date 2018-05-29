@@ -177,7 +177,7 @@
                 
                 <div class="hero-form__warning">
                     Заполняя данную форму<br> вы&nbsp;принимаете условия<br>
-                    <a href="<?php echo esc_url(home_url('/policy')); ?>">политики конфиденциальности</a>
+                    <a href="<?php echo esc_url(home_url('/policy/')); ?>">политики конфиденциальности</a>
                 </div>
             </div>
         </aside>
