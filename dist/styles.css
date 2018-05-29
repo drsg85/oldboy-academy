@@ -2656,6 +2656,7 @@ body {
   .course__subtitle {
     max-width: 300px;
     margin: 0;
+    margin-bottom: 10px;
     color: #ffffff;
     font-size: 0.7rem;
     letter-spacing: 0.05em;
