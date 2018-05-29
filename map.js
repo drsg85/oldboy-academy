@@ -119,6 +119,15 @@ function initMap() {
                 ]
             },
             {
+                "featureType": 'road.highway',
+                "elementType": 'labels.text.fill',
+                "stylers": [
+                    {
+                        "color": "#000"
+                    }
+                ]
+            },
+            {
                 "featureType": "road.arterial",
                 "elementType": "all",
                 "stylers": [
@@ -132,10 +141,10 @@ function initMap() {
                 "elementType": "labels.text",
                 "stylers": [
                     {
-                        "color": "#e9e9e9"
+                        "color": "#222222"
                     },
                     {
-                        "weight": "0.01"
+                        "weight": "0.03"
                     }
                 ]
             },
@@ -145,6 +154,18 @@ function initMap() {
                 "stylers": [
                     {
                         "color": "#212121"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "labels.text",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }, 
+                    {
+                        "weight": "0.01"
                     }
                 ]
             },
