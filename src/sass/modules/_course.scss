@@ -81,6 +81,7 @@
         // box model
         max-width: 300px;
         margin: 0;
+        margin-bottom: 10px;
 
         // typography
         color: $white;
@@ -91,8 +92,6 @@
     }
 
     &__ribbons {
-        // box model
-        margin-top: 10px;
 
         // typography
         font-size: 0;
@@ -101,9 +100,6 @@
             // positioning
             position: absolute;
             bottom: 10px;
-
-            // box model
-            margin-top: 0;
             
         }
     }
