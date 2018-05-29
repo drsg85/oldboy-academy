@@ -44,13 +44,12 @@
         </nav>
         <div class="page-footer__copy">&copy;Академия Олдбой.
             <?php 
-                    $currentDate = date('Y');
-                    if($currentDate == 2018) {
-                        echo $currentDate;
-                    } else {
-                        echo "2018 - ". $currentDate;
-                    }
-
+                $currentDate = date('Y');
+                if($currentDate == 2018) {
+                    echo $currentDate;
+                } else {
+                    echo "2018 - ". $currentDate;
+                }
             ?>  
         <br>Все права сохранены.</div>
     </div>
