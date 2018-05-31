@@ -2,6 +2,10 @@
     /*
         Template Name: Home Page
     */
+
+    // seo
+    $seo_title                          = get_field('seo_title');
+    $seo_description                    = get_field('seo_description');
 ?>
 
 <!doctype html>
@@ -13,14 +17,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- SEO -->
-    <meta name="description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+    <meta name="description" content="<?php echo $seo_description; ?>">
 
     <!-- OG -->
-    <meta property="og:title" content="<?php the_title(); ?>">
+    <meta property="og:title" content="<?php echo $seo_title; ?>">
     <meta property="og:type" content="website">
     <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/hero-bg.jpg">
     <meta propepty="og:url" content="<?php the_permalink(); ?>">
-    <meta property="og:description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+    <meta property="og:description" content="<?php echo $seo_description; ?>">
     <meta propepty="og:locale" content="ru_RU">
     <meta property="og:site_name" content="Oldboy Academy">
 
@@ -39,7 +43,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=11">
 
-    <title>Академия барберинга Oldboy</title>
+    <title><?php echo $seo_title; ?> </title>
 
     <!-- Counters -->
     <?php get_template_part('counters'); ?>

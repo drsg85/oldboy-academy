@@ -3,8 +3,12 @@
         Template Name: Gallery Page
     */
 
+    // seo
+    $seo_title                          = get_field('seo_title');
+    $seo_description                    = get_field('seo_description');
+
     // vars
-    $banner = get_field('banner');
+    $banner                             = get_field('banner');
 ?>
 
 <!DOCTYPE html>
@@ -15,25 +19,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- SEO -->
+    <meta name="description" content="<?php echo $seo_description; ?>">
+
     <!-- OG -->
-    <meta property="og:title" content="<?php the_title(); ?>">
+    <meta property="og:title" content="<?php echo $seo_title; ?>">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/courses/course1.jpg">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/gallery-preview.jpg">
     <meta propepty="og:url" content="<?php the_permalink(); ?>">
-    <meta property="og:description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+    <meta property="og:description" content="<?php echo $seo_description; ?>">
     <meta propepty="og:locale" content="ru_RU">
-    <meta property="og:site_name" content="OldBoyAcademy">
+    <meta property="og:site_name" content="Oldboy Academy">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo(" stylesheet_directory
-        "); ?>/apple-touch-icon.png?v=9BykMdv90b">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo(" stylesheet_directory
-        "); ?>/favicon-32x32.png?v=9BykMdv90b">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo(" stylesheet_directory
-        "); ?>/favicon-16x16.png?v=9BykMdv90b">
-    <link rel="manifest" href="<?php bloginfo(" stylesheet_directory "); ?>/site.webmanifest?v=9BykMdv90b">
-    <link rel="mask-icon" href="<?php bloginfo(" stylesheet_directory "); ?>/safari-pinned-tab.svg?v=9BykMdv90b" color="#d5a353">
-    <link rel="shortcut icon" href="<?php bloginfo(" stylesheet_directory "); ?>/favicon.ico?v=9BykMdv90b">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo("stylesheet_directory"); ?>/apple-touch-icon.png?v=9BykMdv90b">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo("stylesheet_directory"); ?>/favicon-32x32.png?v=9BykMdv90b">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo("stylesheet_directory"); ?>/favicon-16x16.png?v=9BykMdv90b">
+    <link rel="manifest" href="<?php bloginfo("stylesheet_directory"); ?>/site.webmanifest?v=9BykMdv90b">
+    <link rel="mask-icon" href="<?php bloginfo("stylesheet_directory"); ?>/safari-pinned-tab.svg?v=9BykMdv90b" color="#d5a353">
+    <link rel="shortcut icon" href="<?php bloginfo("stylesheet_directory"); ?>/favicon.ico?v=9BykMdv90b">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#222222">
 
@@ -42,7 +46,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=11">
 
-    <title><?php the_title(); ?> — Академия барберинга Oldboy</title>
+    <title><?php echo $seo_title; ?></title>
 
     <!-- Counters -->
     <?php get_template_part('counters'); ?>

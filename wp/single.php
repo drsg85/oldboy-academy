@@ -3,6 +3,10 @@
         Template Name: Course Page
     */
 
+    // seo
+    $seo_title                          = get_field('seo_title');
+    $seo_description                    = get_field('seo_description');
+
     // vars
     $course_img                         = get_field('course_img');
     $course_description_img             = get_field('course_description_img');
@@ -30,7 +34,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="description" content="Академия барберинга OldBoy — Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа.">
+    <!-- SEO -->
+    <meta name="description" content="<?php echo $seo_description; ?>">
+
+    <!-- OG -->
+    <meta property="og:title" content="<?php echo $seo_title; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php bloginfo('stylesheet_directory'); ?>/img/gallery-preview.jpg">
+    <meta propepty="og:url" content="<?php the_permalink(); ?>">
+    <meta property="og:description" content="<?php echo $seo_description; ?>">
+    <meta propepty="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Oldboy Academy">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo("stylesheet_directory"); ?>/apple-touch-icon.png?v=9BykMdv90b">
@@ -46,9 +60,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=11">
-
-    <!-- Styles -->
-    <title><?php the_title(); ?> — Академия барберинга Oldboy</title>
     <?php 
         if ($course_back != "") {
     ?>
@@ -62,6 +73,8 @@
     <?php
         }
     ?>
+
+    <title><?php echo $seo_title; ?></title>
 
     <!-- Counters -->
     <?php get_template_part('counters'); ?>
