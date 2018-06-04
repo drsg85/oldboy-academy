@@ -1994,6 +1994,62 @@ body {
     .hero-header__phone strong {
       color: #d5a353; }
 
+.section-header {
+  padding: 20px 25px;
+  max-width: 400px; }
+  @media (min-width: 700px) {
+    .section-header {
+      padding: 0; } }
+  @media (min-width: 1200px) {
+    .section-header {
+      padding-bottom: 40px; } }
+
+.section-header__title {
+  font-family: "Lora", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.125;
+  text-transform: uppercase; }
+  @media (min-width: 700px) {
+    .section-header__title {
+      margin-top: 0; } }
+  @media (min-width: 900px) {
+    .section-header__title {
+      font-size: 2rem; } }
+  @media (min-width: 1600px) {
+    .section-header__title {
+      font-size: 2.25rem; } }
+
+.section-header__subtitle {
+  padding-bottom: 20px;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase; }
+  .section-header__subtitle--gold {
+    color: #d5a353;
+    font-weight: 700;
+    letter-spacing: 1.5px; }
+
+.section-header__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+  @media (min-width: 700px) {
+    .section-header__text {
+      font-size: 1.125rem;
+      line-height: 1.75; } }
+  @media (min-width: 900px) {
+    .section-header__text {
+      margin-bottom: 0; } }
+  @media (min-width: 1600px) {
+    .section-header__text {
+      font-size: 1.25rem; } }
+
 .about {
   position: relative;
   padding: 35px 25px;
