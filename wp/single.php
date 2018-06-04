@@ -174,7 +174,7 @@
         <aside class="hero__aside">
             <div class="hero-form">
                 <header class="hero-form__header">
-                    <h2 class="hero-form__title">Заполни форму<br>для записи на курс</h2>
+                    <h2 class="hero-form__title">Заполни форму <br>для записи на курс</h2>
                     <p class="hero-form__subtitle"><?php echo $course_name; ?></p>
                 </header>
                 
@@ -219,15 +219,15 @@
         <div class="about__content about__content--right">
             <div class="about__features">
             <article class="selling-feature">
-                <h3 class="selling-feature__title">Сбалансированный<br>учебный курс</h3>
+                <h3 class="selling-feature__title">Сбалансированный <br>учебный курс</h3>
                 <p class="selling-feature__text">Теоретический и практический материал курса оптимально дополняют друг друга</p>
             </article>
             <article class="selling-feature">
-                <h3 class="selling-feature__title">Комфортные условия<br>и оснащение</h3>
+                <h3 class="selling-feature__title">Комфортные условия <br>и оснащение</h3>
                 <p class="selling-feature__text">Предоставляем нашим студентам лучшее профессиональное оборудование</p>
             </article>
             <article class="selling-feature">
-                <h3 class="selling-feature__title">Помощь<br>в трудоустройстве</h3>
+                <h3 class="selling-feature__title">Помощь <br>в трудоустройстве</h3>
                 <p class="selling-feature__text">Лучших выпускников мы трудоустроим в барбершопах наших партнёров</p>
             </article>
             </div>
@@ -267,7 +267,7 @@
         <div class="about__row">
             <div class="about__content about__content--left">
                 <article class="text-promo">
-                <h3 class="text-promo__title">Есть вопросы?<br>Напиши нам</h3>
+                <h3 class="text-promo__title">Есть вопросы? <br>Напиши нам</h3>
                 <p class="text-promo__text">Всё еще остались вопросы о том, как попасть в нашу Академию? Никаких проблем, мы готовы ответить на все твои вопросы, просто напиши нам или позвони.</p>
                 <!-- <div class="text-promo__more"><a class="button" href="#">Контакты</a></div> -->
                 </article>
