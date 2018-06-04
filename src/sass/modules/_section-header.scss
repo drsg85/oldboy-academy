@@ -1,0 +1,84 @@
+.section-header {
+    // box model
+    padding: 20px 25px;
+    max-width: 400px;
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 0;
+    }
+
+    @include atDesktop {
+        // box model
+        padding-bottom: 40px;
+    }
+}
+
+.section-header__title {
+    // typography
+    font-family: $titleFont;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.125;
+    text-transform: uppercase;
+
+    @include atTabletsPortrait {
+        // box model
+        margin-top: 0;
+    }
+
+    @include atTabletsLandscape {
+        // typography
+        font-size: 2rem;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 2.25rem;
+    }
+}
+
+.section-header__subtitle {
+    // box model
+    padding-bottom: 20px;
+    
+    // typography
+    color: $dark;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: left;
+    text-transform: uppercase;
+
+    &--gold {
+        // typography
+        color: $gold;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+}
+
+.section-header__text {
+    // typography
+    font-family: $mainFont;
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    @include atTabletsPortrait {
+        // typography
+        font-size: 1.125rem;
+        line-height: 1.75;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        margin-bottom: 0;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 1.25rem;
+    }
+}
