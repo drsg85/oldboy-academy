@@ -11,13 +11,13 @@
         min-height: auto;
     }
 
-    @include atTabletsLandscape {
-        // box model
-        flex-direction: row;
-        align-items: flex-end;
-    }
+    // @include atTabletsLandscape {
+    //     // box model
+    //     flex-direction: row;
+    //     align-items: flex-end;
+    // }
 
-    @include atDesktop {
+    @include atTabletsLandscape {
         // box model
         height: 100%;
         padding-bottom: 0;
@@ -29,189 +29,193 @@
         // box model
         display: block;
     }
+}
 
-    &__caption {
-        @include atTabletsLandscape {
-            // box model
-            max-width: 480px;
-        }
+.hero-header__caption {
+    // height: 400px;
+    // border: 1px solid red;
 
-        @include atDesktopLarge {
-            // box model
-            max-width: 540px;
-        }
-    }
-
-    &__badges {
-        // typography
-        font-size: 0;
-    }
-
-    &__ribbon {
+    @include atTabletsLandscape {
         // box model
-        display: inline-block;
-        vertical-align: top;
-        margin: 0;
-        margin-right: 15px;
-        margin-bottom: 10px;
-        padding: 15px 25px;
-        
-        // typography
-        color: $white;
-        font-size: 0.75rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-
-        // visual
-        border-radius: 5px;
-
-        &--blue {
-            // visual
-            background-color: rgba($blue, 0.5);
-        }
-
-        &--red {
-            // visual
-            background-color: rgba($red, 0.5);
-        }
+        max-width: 480px;
     }
 
-    &__title {
+    @include atDesktopLarge {
         // box model
-        margin: 0;
-        margin-left: -0.05em;
-
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 1.5rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.5;
-        text-transform: uppercase;
-
-        @include atTabletsPortrait {
-            // box model
-            margin-top: 0;
-
-            // typography
-            font-size: 1.75rem;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 2rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 2.25rem;
-        }
+        max-width: 540px;
     }
+}
 
-    &__subtitle {
+.hero-header__title {
+    // box model
+    margin: 0;
+    margin-left: -0.05em;
+
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+    // letter-spacing: 1px;
+    line-height: 1.5;
+    // text-transform: uppercase;
+
+    @include atTabletsPortrait {
         // box model
-        padding-bottom: 20px;
-        
-        // typography
-        color: $white;
-        font-size: 1rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.5;
-        text-align: left;
-        text-transform: uppercase;
+        margin-top: 0;
 
-        &--gold {
-            // typography
-            color: $gold;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-        }
+        // typography
+        font-size: 1.75rem;
     }
 
-    &__text {
+    @include atTabletsLandscape {
         // typography
-        color: $white;
-        font-family: $mainFont;
+        font-size: 2rem;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 2.25rem;
+    }
+}
+
+.hero-header__subtitle {
+    // box model
+    margin: 0;
+    padding-bottom: 15px;
+
+    // typography
+    color: $white;
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    text-align: left;
+    text-transform: uppercase;
+
+    &--gold {
+        // typography
+        color: $gold;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+}
+
+.hero-header__text {
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @include atTabletsPortrait {
+        // typography
+        font-size: 1.125rem;
+        line-height: 1.75;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        margin-bottom: 0;
+    }
+
+    @include atDesktopLarge {
+        // typography
         font-size: 1.25rem;
-        line-height: 1.5;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.125rem;
-            line-height: 1.75;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            margin-bottom: 0;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 1.25rem;
-        }
     }
+}
 
-    &__contacts {
+.hero-header__contacts {
+    // typography
+    text-align: right;
+
+    @include atTabletsLandscape {
         // typography
-        text-align: right;
-
-        @include atDesktop {
-            // typography
-            text-align: left;
-        }
+        text-align: left;
     }
+}
 
-    &__features {
-        // box model
-        border-top: 1px solid $gold;
-        margin-left: -40px;
-        margin-top: 25px;
-        padding-left: 40px;
-        padding-top: 10px;
-        
-        // typography
-        text-align: center;
-        
-        @include atDesktop {
-            // box model
-            max-width: 760px;
-        }
-    }
+.hero-header__address {
+    // box model
+    margin: 0;
 
-    &__address {
-        // box model
-        margin: 0;
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-size: 1rem;
+    line-height: 1.5;
+}
 
+.hero-header__phone {
+    // box model
+    margin: 0;
+    // margin-left: -0.5em;
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    a {
         // typography
         color: $white;
-        font-family: $mainFont;
-        font-size: 1.125rem;
-        line-height: 1.5;
+        text-decoration: none;
     }
 
-    &__phone {
-        // box model
-        margin: 0;
-        // margin-left: -0.5em;
-
+    strong {
         // typography
-        color: $white;
-        font-family: $mainFont;
-        font-size: 1.125rem;
-        line-height: 1.5;
+        color: $gold;
+    }
+}
 
-        a {
-            // typography
-            color: $white;
-            text-decoration: none;
-        }
+.hero-header__badges {
+    // typography
+    font-size: 0;
+}
 
-        strong {
-            // typography
-            color: $gold;
-        }
+.hero-header__ribbon {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    
+    // typography
+    color: $white;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    // visual
+    border-radius: 5px;
+
+    &--blue {
+        // visual
+        background-color: rgba($blue, 0.5);
+    }
+
+    &--red {
+        // visual
+        background-color: rgba($red, 0.5);
+    }
+}
+
+.hero-header__features {
+    // box model
+    border-top: 1px solid $gold;
+    margin-left: -40px;
+    margin-top: 25px;
+    padding-left: 40px;
+    padding-top: 10px;
+    
+    // typography
+    text-align: center;
+    
+    @include atDesktop {
+        // box model
+        max-width: 760px;
     }
 }

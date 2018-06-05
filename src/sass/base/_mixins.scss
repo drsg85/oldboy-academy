@@ -1,13 +1,13 @@
 // breakpoints
 
 @mixin atTabletsPortrait {
-    @media (min-width: 700px) {
+    @media (min-width: 600px) {
         @content;
     }
 }
 
 @mixin atTabletsLandscape {
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
         @content;
     }
 }

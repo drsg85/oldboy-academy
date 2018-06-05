@@ -22,11 +22,6 @@
     }
 
     @include atTabletsLandscape {
-        // visual
-        background-image: url("./img/hero-bg.jpg");
-    }
-    
-    @include atDesktop {
         // box model
         display: flex;
         justify-content: space-between;
@@ -36,6 +31,7 @@
         min-height: calc(100vh - 10px);
         
         // visual
+        background-image: url("./img/hero-bg.jpg");
         background-attachment: fixed;
         background-position: center top;
     }
@@ -114,117 +110,118 @@
         background-position: center top;
         background-size: cover;
     }
+}
 
-    &__logo {
+.hero__header {
+    // border: 1px solid red;
+    @include atTabletsLandscape {
         // box model
-        width: 100px;
-        padding: 0;
-        padding-bottom: 10px;
-
-        @include atTabletsPortrait {
-            // box model
-            display: none;
-        }
-
-        &--inner {
-            // box model
-            width: 140px;
-            margin-top: 120px;
-        }
-        
-        img {
-            // box model
-            width: 100%;
-        }
+        width: 50%;
+        padding-right: 30px;
     }
+}
 
-    &__header {
+.hero__slider {
+    // border: 1px solid red;
+    @include atTabletsLandscape {
+        // box model
+        width: 50%;
+        padding-left: 30px;
+    }
+}
+
+.hero__aside {
+    // box model
+    padding: 15px 0;
+    // margin-top: 40px;
+
+    @include atDesktop {
+        // box model
         // border: 1px solid red;
-        @include atDesktop {
-            // box model
-            width: 50%;
-        }
+        // display: flex;
+        width: calc(50% - 60px);
+        float: right;
+        margin-top: -20px;
     }
 
-    &__slider {
-        // border: 1px solid red;
-        @include atDesktop {
-            // box model
-            width: 50%;
-            padding-top: 20px;
-        }
-    }
-
-    &__content {
+    @include atDesktopLarge {
         // box model
-        padding: 0;
+        width: calc(40% - 60px);
+    }
+}
 
-        @include atDesktop {
-            // box model
-            width: 50%;
-            float: left;
-        }
+.hero__content {
+    // box model
+    padding: 0;
 
-        @include atDesktopLarge {
-            // box model
-            width: 60%;
-        }
-        
-        &::after {
-            content: "";
-
-            // box model
-            display: table;
-            width: 100%;
-            clear: both;
-        }
+    @include atDesktop {
+        // box model
+        width: 50%;
+        float: left;
     }
 
-    &__aside {
+    @include atDesktopLarge {
         // box model
-        padding: 15px 0;
-        // margin-top: 40px;
+        width: 60%;
+    }
+    
+    &::after {
+        content: "";
 
-        @include atDesktop {
-            // box model
-            // border: 1px solid red;
-            // display: flex;
-            width: calc(50% - 60px);
-            float: right;
-            margin-top: -20px;
-        }
+        // box model
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+}
 
-        @include atDesktopLarge {
-            // box model
-            width: calc(40% - 60px);
-        }
+.hero__form {
+    // box model
+    margin-bottom: 40px;
+}
+
+.hero__icon {
+    // box model
+    width: 3rem;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include atTabletsPortrait {
+        // box model
+        margin-bottom: 30px;
     }
 
-    &__form {
+    @include atDesktop {
         // box model
-        margin-bottom: 40px;
+        width: 4rem;
+        margin-bottom: 60px;
     }
 
-    &__icon {
+    img {
         // box model
-        width: 3rem;
-        margin: 0 auto;
-        margin-bottom: 20px;
+        width: 100%;
+    }
+}
 
-        @include atTabletsPortrait {
-            // box model
-            margin-bottom: 30px;
-        }
+.hero__logo {
+    // box model
+    width: 80px;
+    padding: 0;
+    padding-bottom: 25px;
 
-        @include atDesktop {
-            // box model
-            width: 4rem;
-            margin-bottom: 60px;
-        }
+    @include atTabletsPortrait {
+        // box model
+        display: none;
+    }
 
-        img {
-            // box model
-            width: 100%;
-        }
+    &--inner {
+        // box model
+        width: 140px;
+        margin-top: 120px;
+    }
+    
+    img {
+        // box model
+        width: 100%;
     }
 }
