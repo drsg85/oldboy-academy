@@ -129,7 +129,7 @@
                                     <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt="Calendar icon">
                                 </div>
                                 <div class="hero-course__info-text">
-                                    <strong>Старт:</strong><br><?php echo $course_date; ?>
+                                    <strong>Дата старта:</strong><br><?php echo $course_date; ?>
                                 </div>
                             </div>
 

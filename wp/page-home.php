@@ -106,7 +106,7 @@
                                 <strong><?php echo $course_name; ?></strong>
                             </h2>
                             <p class="hero-form__subtitle">
-                                Старт группы <?php echo $course_date; ?>
+                                Дата старта: <?php echo $course_date; ?>
                             </p>
                         </header>
                         <div class="hero-form__wrapper">
@@ -310,7 +310,7 @@
                                 <img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/calendar.svg" alt="" />
                             </div>
                             <div class="course__info-text">
-                                Старт:<br><?php echo $course_date; ?><br>
+                                Дата старта:<br><?php echo $course_date; ?><br>
                             </div>
                         </div>
                         <div class="course__info">
