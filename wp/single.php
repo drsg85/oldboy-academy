@@ -6,6 +6,7 @@
     // seo
     $seo_title                          = get_field('seo_title');
     $seo_description                    = get_field('seo_description');
+    $seo_index                          = get_field('seo_index');
 
     // vars
     $course_img                         = get_field('course_img');
@@ -35,7 +36,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- SEO -->
-    <meta name="description" content="<?php echo $seo_description; ?>">
+    <?php include(locate_template('seo.php')); ?>
 
     <!-- OG -->
     <meta property="og:title" content="<?php echo $seo_title; ?>">
