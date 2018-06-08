@@ -73,13 +73,11 @@
                 <div class="hero-header__features">
                     <p class="hero-header__subtitle hero-header__subtitle--gold">Преимущества стрижек в&nbsp;Академии</p>
                     <article class="selling-feature selling-feature--light">
-                        <h3 class="selling-feature__title">Все услуги
-                            <br>бесплатные</h3>
+                        <h2 class="selling-feature__title">Все услуги <br>бесплатные</h3>
                         <p class="selling-feature__text">Выполняются стажерами под руководством мастеров</p>
                     </article>
                     <article class="selling-feature selling-feature--light">
-                        <h3 class="selling-feature__title">Гарантия
-                            <br>качественных стрижек</h3>
+                        <h2 class="selling-feature__title">Гарантия <br>качественных стрижек</h3>
                         <p class="selling-feature__text">Тип стрижки остаётся на выбор мастера. Модель выбирает длину</p>
                     </article>
                 </div>
