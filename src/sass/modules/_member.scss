@@ -94,306 +94,287 @@
             display: none;
         }
     }
+}
 
-    &__info {
-        // box model
-        border: 1px solid $gold;
-        height: 100%;
-    }
+.member__info {
+    // box model
+    border: 1px solid $gold;
+    height: 100%;
+}
 
-    &__header {
+.member__header {
+    // box model
+    padding: 25px;
+    padding-bottom: 0;
+
+    @include atTabletsPortrait {
         // box model
-        padding: 25px;
+        padding: 30px;
         padding-bottom: 0;
-
-        @include atTabletsPortrait {
-            // box model
-            padding: 30px;
-            padding-bottom: 0;
-        }
     }
+}
 
-    &__badge {
+.member__badge {
+    // positioning
+    position: absolute;
+    top: 77px;
+    right: 0;
+
+    // box model
+    padding: 15px 20px;
+    padding: 10px 15px;
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-weight: 700px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $gold;
+
+    &::before {
+        content: "";
+
         // positioning
         position: absolute;
-        top: 75px;
-        right: 0;
+        top: 0;
+        left: -20px;
+        
+        // box model
+        height: 50%;
+        width: 20px;
+        
+        // visual
+        background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
+    }
+
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: -20px;
 
         // box model
-        padding: 15px 20px;
-
-        // typography
-        color: $white;
-        font-family: $mainFont;
-        font-weight: 700px;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        text-align: center;
-        text-transform: uppercase;
+        height: 50%;
+        width: 20px;
 
         // visual
-        background-color: $gold;
-
-        &::before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            top: 0;
-            left: -20px;
-            
-            // box model
-            height: 50%;
-            width: 20px;
-            
-            // visual
-            background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
-        }
-
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: 0;
-            left: -20px;
-
-            // box model
-            height: 50%;
-            width: 20px;
-
-            // visual
-            background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
-        }
+        background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
     }
-    
+}
 
-    &__name {
+
+.member__name {
+    // box model
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    padding-right: 100px;
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.member__subtitle {
+    // box model
+    margin: 0;
+    margin-bottom: 30px;
+
+    // typography
+    color: $gold;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.member__description {
+    // box model
+    margin: 0;
+    margin-bottom: 30px;
+
+    // typography
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.75;
+
+    @include atDesktop {
         // box model
-        margin: 0;
-        margin-bottom: 10px;
-        padding: 0;
-        padding-right: 80px;
-
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        line-height: 1.125;
-        font-size: 2rem;
+        width: 600px;
     }
 
-    &__subtitle {
+    @include atDesktopLarge {
         // box model
-        margin: 0;
-        margin-bottom: 30px;
+        width: auto;
+        height: 200px;
 
         // typography
-        color: $gold;
         font-size: 1.125rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
     }
+}
 
-    &__description {
+.member__footer {
+    // box model
+    padding: 25px;
+    border-top: 1px solid $gold;
+    margin-bottom: -100px;
+
+    @include atTabletsPortrait {
         // box model
-        margin: 0;
-        margin-bottom: 30px;
-
-        // typography
-        color: $white;
-        font-size: 1rem;
-        line-height: 1.75;
-
-        @include atDesktop {
-            // box model
-            width: 600px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            width: auto;
-            height: 200px;
-
-            // typography
-            font-size: 1.125rem;
-        }
+        margin-bottom: 0;
+        padding: 30px;
     }
+}
 
-    &__exp {
-        // box model
-        margin-bottom: 30px;
-        display: block;
+.member__feature {
+    // box model
+    margin-top: 10px;
+    width: 225px;
 
-        // typography
-        color: $white;
-        font-size: 1.5rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+    // visual
+    background-size: contain;
+    background-image: url("./img/laurel.png");
+    background-repeat: no-repeat;
 
-        span {
-            // typography
-            font-size: 1rem;
-            font-weight: 400;
-        }
-    }
-
-    &__footer {
-        // display: flex;
-        // flex-direction: column;
-
-        // box model
-        padding: 25px;
-        border-top: 1px solid $gold;
-        margin-bottom: -100px;
-
-        @include atTabletsPortrait {
-            // box model
-            margin-bottom: 0;
-            padding: 30px;
-        }
-    }
-
-    &__feature {
-        // box model
-        margin-top: 10px;
-        width: 225px;
-
-        // visual
-        background-size: contain;
-        background-image: url("./img/laurel.png");
-        background-repeat: no-repeat;
-
-        @include atTabletsPortrait {
-            // box model
-            width: 250px;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            width: 275px;
-        }
-
-        @include atDesktop {
-            // box model
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            height: 240px;
-        }
-    }
-
-    &__achivements-list, ul {
-        // box model
-        width: 225px;
-        margin: 0;
-        padding: 20px 0;
-        padding-bottom: 170px;
-
-        // visual
-        list-style: none;
-
-        @include atTabletsPortrait {
-            // box model
-            width: 250px;
-            padding-bottom: 100px;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            width: 275px;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-bottom: 40px;
-
-            // typography
-            text-align: center;
-        }
-    }
-
-    &__achivements-item, li {
-        // box model
-        margin-bottom: 10px;
-        padding: 0 40px;
-
-        // typography
-        color: $white;
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: center;
-
-        @include atTabletsPortrait {
-            // typography
-        }
-    }
-
-    &__more {
-        // positioning
-        position: relative;
-        z-index: 2;
-
-        // typography
-        text-align: center;
-
-        @include atTabletsPortrait {
-            // typography
-            text-align: left;
-        }
-    }
-
-    &__photo {
-        // positioning
-        position: absolute;
-        bottom: 129px;
-        right: -10px;
-        z-index: 1;
-
+    @include atTabletsPortrait {
         // box model
         width: 250px;
-        width: 60%;
+    }
 
-        @include atTabletsPortrait {
-            // positioning
-            bottom: 51px;
-            right: -30px;
+    @include atTabletsLandscape {
+        // box model
+        width: 275px;
+    }
 
-            // box model
-            width: 68%;
-        }
+    @include atDesktop {
+        // box model
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-        @include atTabletsLandscape {
-            // box model
-            width: 550px;
-        }
+    @include atDesktopLarge {
+        // box model
+        height: 240px;
+    }
+}
 
-        @include atDesktop {
-            // positioning
-            right: -60px;
-            bottom: -1px;
+.member__achivements-list,
+.member ul {
+    // box model
+    width: 225px;
+    margin: 0;
+    padding: 20px 0;
+    padding-bottom: 170px;
 
-            // box model
-            width: 650px;
-        }
+    // visual
+    list-style: none;
 
-        @include atDesktopLarge {
-            // box model
-            width: 75%;
-            max-width: 570px;
-        }
+    @include atTabletsPortrait {
+        // box model
+        width: 250px;
+        padding-bottom: 100px;
+    }
 
-        img {
-            // box model
-            width: 100%;
-        }
+    @include atTabletsLandscape {
+        // box model
+        width: 275px;
+    }
 
+    @include atDesktop {
+        // box model
+        padding-bottom: 40px;
+
+        // typography
+        text-align: center;
+    }
+}
+
+.member__achivements-item,
+.member li {
+    // box model
+    margin-bottom: 10px;
+    padding: 0 40px;
+
+    // typography
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+
+    @include atTabletsPortrait {
+        // typography
+    }
+}
+
+.member__more {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // typography
+    text-align: center;
+
+    @include atTabletsPortrait {
+        // typography
+        text-align: left;
+    }
+}
+
+.member__photo {
+    // positioning
+    position: absolute;
+    bottom: 129px;
+    right: -10px;
+    z-index: 1;
+
+    // box model
+    width: 250px;
+    width: 60%;
+
+    @include atTabletsPortrait {
+        // positioning
+        bottom: 51px;
+        right: -30px;
+
+        // box model
+        width: 68%;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        width: 550px;
+    }
+
+    @include atDesktop {
+        // positioning
+        right: -60px;
+        bottom: -1px;
+
+        // box model
+        width: 650px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        width: 75%;
+        max-width: 570px;
+    }
+
+    img {
+        // box model
+        width: 100%;
     }
 }

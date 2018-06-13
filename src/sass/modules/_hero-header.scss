@@ -54,11 +54,12 @@
     // typography
     color: $white;
     font-family: $titleFont;
+    font-family: $mainFont;
     font-size: 1.5rem;
     font-weight: 400;
-    // letter-spacing: 1px;
+    letter-spacing: 0.05em;
     line-height: 1.5;
-    // text-transform: uppercase;
+    text-transform: uppercase;
 
     @include atTabletsPortrait {
         // box model

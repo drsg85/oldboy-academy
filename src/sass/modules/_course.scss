@@ -39,163 +39,185 @@
         border: 1px solid $gold;
         pointer-events: none;
     }
+}
 
-    &__header {
-        // positioning
-        position: relative;
+.course__header {
+    // positioning
+    position: relative;
+    z-index: 3;
 
-        // box model
-        padding: 25px;
-        padding-bottom: 10px;
-        min-height: 220px;
+    // box model
+    padding: 25px;
+    padding-bottom: 10px;
+    // min-height: 220px;
 
-        // typography
-        font-size: 0;
+    // typography
+    font-size: 0;
 
-        // visual
-        background-color: $dark;
-        background-image: url("./img/features-bg.jpg");
-        background-size: cover;
+    // visual
+    background-color: $dark;
+    background-image: url("./img/features-bg.jpg");
+    background-size: cover;
+    overflow: hidden;
 
-        @include atTabletsLandscape {
-            // box model
-            min-height: 260px;
-        }
-    }
+    &:before {
+        content: "";
 
-    &__title {
-        // box model
-        max-width: 300px;
-        margin: 0;
-        margin-bottom: 5px;
-
-        // typography
-        color: $white;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        line-height: 1.5;
-        text-transform: uppercase;
-    }
-
-    &__subtitle {
-        // box model
-        max-width: 300px;
-        margin: 0;
-        margin-bottom: 20px;
-
-        // typography
-        color: $white;
-        font-size: 0.7rem;
-        letter-spacing: 0.05em;
-        line-height: 1.5;
-        text-transform: uppercase;
-    }
-
-    &__ribbons {
-
-        // typography
-        font-size: 0;
-
-        @include atTabletsLandscape {
-            // positioning
-            position: absolute;
-            bottom: 10px;
-            
-        }
-    }
-
-    &__ribbon {
-        // positioning
-        position: relative;
-
-        // box model
-        display: inline-block;
-        vertical-align: top;
-        margin: 0;
-        margin-right: 15px;
-        margin-bottom: 10px;
-        // padding: 15px 25px;
-        padding: 10px;
-
-        // typography
-        color: $white;
-        font-size: 0.7rem;
-        // font-weight: 700;
-        letter-spacing: 1px;
-        letter-spacing: 0.05em;
-        line-height: 1.5;
-        text-transform: uppercase;
-        
-        // visual
-        border-radius: 5px;
-
-        &--red {
-            // visual
-            background-color: rgba($red, 0.5);
-        }
-        
-        &--blue {
-            // visual
-            background-color: rgba($blue, 0.5);
-        }
-    }
-
-    &__content {
-        // box model
-        padding: 15px 25px;
-        padding-top: 10px;
-    }
-
-    &__info {
-        // positioning
-        position: relative;
-
-        // box model
-        padding-left: 35px;
-        padding-right: 5px;
-    }
-
-    &__info-icon {
         // positioning
         position: absolute;
-        left: 0;
+        left: 10px;
         top: 10px;
-
+        z-index: 2;
+        
         // box model
-        height: 30px;
-        width: 30px;
+        height: calc(100% + 0px);
+        width: calc(100% - 20px);
 
-        img {
-            // box model
-            max-height: 100%;
-            max-width: 100%;
-        }
+        // visual
+        border: 1px solid rgba($white, 0.5);
+        pointer-events: none;
     }
 
-    &__info-text {
+    @include atTabletsLandscape {
         // box model
-        margin: 0;
-        padding: 8px;
-
-        // typography
-        font-size: 0.875rem;
-        line-height: 1.25;
+        min-height: 260px;
     }
+}
 
-    &__more {
+.course__title {
+    // box model
+    max-width: 300px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    // typography
+    color: $white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.course__subtitle {
+    // box model
+    max-width: 300px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    // typography
+    color: $white;
+    font-size: 0.85rem;
+    // letter-spacing: 0.05em;
+    line-height: 1.5;
+    // text-transform: uppercase;
+}
+
+.course__ribbons {
+    // typography
+    font-size: 0;
+
+    @include atTabletsLandscape {
+        // positioning
+        position: absolute;
+        bottom: 10px;
+        
+    }
+}
+
+.course__ribbon {
+    // positioning
+    position: relative;
+
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    padding-bottom: 4px;
+
+    // typography
+    color: $white;
+    font-size: 0.7rem;
+    // font-weight: 700;
+    letter-spacing: 1px;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    
+    // visual
+    border-radius: 5px;
+    border: 1px solid $white;
+
+    &--red {
+        // visual
+        border-color: rgba($red, 0.75);
+    }
+    
+    &--blue {
+        // visual
+        border-color: rgba($blue, 0.75);
+    }
+}
+
+.course__content {
+    // box model
+    padding: 15px 25px;
+    padding-top: 10px;
+}
+
+.course__info {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-left: 35px;
+    padding-right: 5px;
+}
+
+.course__info-icon {
+    // positioning
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    // box model
+    height: 30px;
+    width: 30px;
+    height: 28px;
+    width: 28px;
+    
+    img {
         // box model
-        padding: 25px;
-        padding-top: 0;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
 
-        @include atTabletsLandscape {
-            // positioning
-            position: absolute;
-            bottom: 0;
-            left: 0;
+.course__info-text {
+    // box model
+    margin: 0;
+    padding: 8px;
 
-            // box model
-            width: 100%;
-        }
+    // typography
+    font-size: 0.875rem;
+    line-height: 1.25;
+}
+
+.course__more {
+    // box model
+    padding: 25px;
+    padding-top: 0;
+
+    @include atTabletsLandscape {
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        // box model
+        width: 100%;
     }
 }

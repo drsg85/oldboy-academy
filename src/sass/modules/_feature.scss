@@ -8,13 +8,13 @@
     justify-content: space-between;
 
     width: 100%;
-    min-height: 560px;
     margin-bottom: 60px;
     padding: 40px 25px;
     border: 1px solid $gold;
     
     @include atTabletsPortrait {
         // box model
+        min-height: 560px;
         padding: 50px 40px;
         padding-top: 40px;
     }
@@ -43,146 +43,148 @@
             height: 210px;
         }
     }
+}
+
+.feature__title {
+    // box model
+    margin: 0;
+    margin-bottom: 40px;
     
-    &__title {
+    // typography
+    color: white;
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include atTabletsPortrait {
         // box model
-        margin: 0;
+        max-width: 400px;
+        margin-bottom: 80px;
+        
+        // typography
+        font-size: 2rem;
+    }
+    
+    @include atTabletsLandscape {
+        // box model
+        margin-bottom: 60px;
+    }
+    
+    @include atDesktop {
+        // box model
+        min-height: 100px;
+
+        // typography
+        font-size: 1.5rem;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 2rem;
+    }
+}
+
+.feature__icon {
+    // positioning
+    position: absolute;
+    left: -50px;
+    top: -80px;
+
+    // box model
+    height: 200px;
+    width: 200px;
+
+    // visual
+    opacity: 0.25;
+    pointer-events: none;
+
+    @include atTabletsPortrait {
+        // positioning
+        left: -80px;
+    }
+
+    @include atDesktop {
+        // positioning
+        left: -80px;
+        top: -40px;
+
+        // box model
+        height: 150px;
+        width: 150px;
+    }
+
+    img {
+        // box model
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.feature__body {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    margin-bottom: 40px;
+}
+
+.feature__item {
+    // box model
+    margin-bottom: 30px;
+
+    // typography
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    @include atTabletsPortrait {
+        // box model
+        max-width: 300px;
+        margin-bottom: 60px;
+
+        // typography
+        font-size: 1.25rem;
+    }
+
+    @include atTabletsLandscape {
+        // box model
         margin-bottom: 40px;
         
         // typography
-        color: white;
-        font-family: $titleFont;
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 1.5;
-
-        @include atTabletsPortrait {
-            // box model
-            max-width: 400px;
-            margin-bottom: 80px;
-            
-            // typography
-            font-size: 2rem;
-        }
-        
-        @include atTabletsLandscape {
-            // box model
-            margin-bottom: 60px;
-        }
-        
-        @include atDesktop {
-            // box model
-            min-height: 100px;
-
-            // typography
-            font-size: 1.5rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 2rem;
-        }
+        font-size: 1.125rem;
     }
-    
-    &__icon {
-        // positioning
-        position: absolute;
-        left: -50px;
-        top: -80px;
+}
 
+.feature__more {
+    @include atDesktop {
         // box model
-        height: 200px;
-        width: 200px;
-
-        // visual
-        opacity: 0.25;
-        pointer-events: none;
-
-        @include atTabletsPortrait {
-            // positioning
-            left: -80px;
-        }
-
-        @include atDesktop {
-            // positioning
-            left: -80px;
-            top: -40px;
-
-            // box model
-            height: 150px;
-            width: 150px;
-        }
-
-        img {
-            // box model
-            max-height: 100%;
-            max-width: 100%;
-        }
+        margin-top: 20px;
     }
-    
-    &__body {
-        // positioning
-        position: relative;
-        z-index: 2;
 
+    a {
         // box model
-        margin-bottom: 40px;
-    }
-    
-    &__item {
-        // box model
-        margin-bottom: 30px;
+        display: inline-block;
+        padding: 12px 40px;
+        border: 1px solid $gold;
 
         // typography
         color: $white;
-        font-size: 1.125rem;
-        line-height: 1.5;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
 
-        @include atTabletsPortrait {
-            // box model
-            max-width: 300px;
-            margin-bottom: 60px;
+        // visual
+        background-color: $gold;
+        transition: all 0.3s ease-out;
+        border-radius: 5px;
 
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            margin-bottom: 40px;
-            
-            // typography
-            font-size: 1.125rem;
-        }
-    }
-    
-    &__more {
-        @include atDesktop {
-            // box model
-            margin-top: 20px;
-        }
-
-        a {
-            // box model
-            display: inline-block;
-            padding: 12px 40px;
-            border: 1px solid $gold;
-
-            // typography
-            color: $white;
-            font-weight: 700;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-
+        &:hover {
             // visual
-            background-color: $gold;
-            transition: all 0.3s ease-out;
-
-            &:hover {
-                // visual
-                background-color: transparent;
-            }
+            background-color: transparent;
         }
     }
 }

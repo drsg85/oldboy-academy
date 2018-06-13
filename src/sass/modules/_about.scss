@@ -361,16 +361,16 @@
             display: block;
         }
     }
+}
 
-    &__features {
-        // box model
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+.about__features {
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-        // typography
-        font-size: 0;
-        text-align: center;
-    }
+    // typography
+    font-size: 0;
+    text-align: center;
 }
