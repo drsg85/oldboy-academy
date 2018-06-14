@@ -22,22 +22,21 @@
 }
 
 .gallery__preview {
-    // positioning
-    position: relative;
-
     // box model
-    height: 220px;
-    margin-bottom: 40px;
-
-    // visual
-    background-color: $red;
-    background-image: url("./img/gallery-preview.jpg");
-    background-size: cover;
-    // background-repeat: repeat-x;
-
+    display: none;
+    
     @include atTabletsPortrait {
+        // positioning
+        position: relative;
+        
         // box model
         height: 470px;
+        margin-bottom: 40px;
+
+        // visual
+        background-color: $red;
+        background-image: url("./img/gallery-preview.jpg");
+        background-size: cover;
     }
 
     @include atTabletsLandscape {
