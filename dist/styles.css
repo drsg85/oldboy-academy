@@ -78,18 +78,6 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url("./fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("./fonts/RobotoCondensed-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Roboto Condensed';
-  src: url("./fonts/RobotoCondensed-Light.woff2") format("woff2"), url("./fonts/RobotoCondensed-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Open Sans';
   src: url("./fonts/OpenSans-Bold.woff2") format("woff2"), url("./fonts/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
@@ -99,6 +87,18 @@
   font-family: 'Open Sans';
   src: url("./fonts/OpenSans-Regular.woff2") format("woff2"), url("./fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("./fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("./fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("./fonts/RobotoCondensed-Light.woff2") format("woff2"), url("./fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -3299,7 +3299,7 @@ body {
   height: 100%; }
 
 .member__header {
-  padding: 15px;
+  padding: 20px;
   padding-bottom: 0; }
   @media (min-width: 600px) {
     .member__header {
@@ -3308,15 +3308,13 @@ body {
 
 .member__badge {
   position: absolute;
-  top: 77px;
+  top: 72px;
   right: 0;
-  padding: 15px 20px;
   padding: 10px 15px;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400px;
   font-size: 1rem;
-  letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
   background-color: #d5a353; }
@@ -3324,18 +3322,18 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -14px;
     height: 50%;
-    width: 20px;
+    width: 14px;
     background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #d5a353), color-stop(50%, #d5a353), color-stop(50%, transparent), to(transparent));
     background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); }
   .member__badge::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: -20px;
+    left: -14px;
     height: 50%;
-    width: 20px;
+    width: 14px;
     background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #d5a353), color-stop(50%, #d5a353), color-stop(50%, transparent), to(transparent));
     background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); }
 
@@ -3345,10 +3343,9 @@ body {
   padding: 0;
   padding-right: 100px;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0.05em;
   line-height: 1.25;
   text-transform: uppercase; }
 
@@ -3356,9 +3353,9 @@ body {
   margin: 0;
   margin-bottom: 30px;
   color: #d5a353;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
   text-transform: uppercase; }
 
 .member__description {

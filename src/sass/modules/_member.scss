@@ -104,7 +104,7 @@
 
 .member__header {
     // box model
-    padding: 15px;
+    padding: 20px;
     padding-bottom: 0;
 
     @include atTabletsPortrait {
@@ -117,19 +117,18 @@
 .member__badge {
     // positioning
     position: absolute;
-    top: 77px;
+    top: 72px;
     right: 0;
 
     // box model
-    padding: 15px 20px;
+    // padding: 15px 20px;
     padding: 10px 15px;
 
     // typography
     color: $white;
-    font-family: $mainFont;
-    font-weight: 700px;
+    font-family: $titleFont;
+    font-weight: 400px;
     font-size: 1rem;
-    letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
 
@@ -142,11 +141,11 @@
         // positioning
         position: absolute;
         top: 0;
-        left: -20px;
+        left: -14px;
         
         // box model
         height: 50%;
-        width: 20px;
+        width: 14px;
         
         // visual
         background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
@@ -158,11 +157,11 @@
         // positioning
         position: absolute;
         bottom: 0;
-        left: -20px;
+        left: -14px;
 
         // box model
         height: 50%;
-        width: 20px;
+        width: 14px;
 
         // visual
         background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
@@ -179,10 +178,9 @@
 
     // typography
     color: $white;
-    font-family: $mainFont;
+    font-family: $titleFont;
     font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.05em;
     line-height: 1.25;
     text-transform: uppercase;
 }
@@ -194,9 +192,9 @@
 
     // typography
     color: $gold;
+    font-family: $titleFont;
     font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 
