@@ -66,14 +66,38 @@
 
 /* '' */
 @font-face {
-  font-family: 'Bebas Neue';
-  src: url("./fonts/BebasNeueRegular.woff2") format("woff2"), url("./fonts/BebasNeueRegular.woff") format("woff");
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-SemiBold.woff2") format("woff2"), url("./fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Light.woff2") format("woff2"), url("./fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("./fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("./fonts/RobotoCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Bebas Neue Book';
-  src: url("./fonts/BebasNeueBook.woff2") format("woff2"), url("./fonts/BebasNeueBook.woff") format("woff");
+  font-family: 'Roboto Condensed';
+  src: url("./fonts/RobotoCondensed-Light.woff2") format("woff2"), url("./fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Bold.woff2") format("woff2"), url("./fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/OpenSans-Regular.woff2") format("woff2"), url("./fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -483,18 +507,23 @@ body {
   box-sizing: border-box;
   max-width: 1920px;
   font-family: "Open Sans", sans-serif;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 0 14px 0 #222222;
-  box-shadow: 0 0 14px 0 #222222;
+  background-color: #000000;
   overflow-x: hidden; }
   @media (min-width: 600px) {
     body {
       padding-left: 140px; } }
+  @media (min-width: 1900px) {
+    body {
+      background-color: #ffffff;
+      -webkit-box-shadow: 0 0 14px 0 #222222;
+      box-shadow: 0 0 14px 0 #222222; } }
+
+@media (min-width: 1200px) {
   body::-webkit-scrollbar {
     width: 8px;
     background-color: #222222; }
     body::-webkit-scrollbar-thumb {
-      background-color: #d5a353; }
+      background-color: #d5a353; } }
 
 *,
 *::before,
@@ -1141,7 +1170,7 @@ body {
   transition: all 0.3s ease-out; }
   .page-header__phone {
     padding-right: 70px;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 0.9rem;
     font-size: 1rem;
     font-weight: 700;
@@ -1247,11 +1276,9 @@ body {
   display: block;
   padding: 12px;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Bebas Neue Book";
-  font-size: 0.85rem;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.125rem;
-  letter-spacing: 0.1em;
+  font-weight: 300;
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
@@ -1260,7 +1287,9 @@ body {
   transition: all 0.2s ease-out; }
   @media (min-width: 600px) {
     .main-nav__link {
-      padding: 14px 0; } }
+      padding: 14px 0;
+      font-size: 1rem;
+      font-weight: 400; } }
   .main-nav__link:hover {
     color: #d5a353; }
 
@@ -1604,12 +1633,13 @@ body {
 
 .hero-form__title {
   margin: 0;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
   color: #d5a353;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     .hero-form__title {
       font-size: 1.25rem; } }
@@ -1618,12 +1648,13 @@ body {
   margin: 0;
   margin-bottom: 0.5em;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.5; }
   @media (min-width: 600px) {
     .hero-form__subtitle {
-      font-size: 1.125rem; } }
+      font-size: 1rem; } }
   @media (min-width: 1000px) {
     .hero-form__subtitle {
       font-size: 1rem; } }
@@ -1689,7 +1720,7 @@ body {
     .hero-form__input {
       margin-bottom: 20px;
       padding: 12px 16px;
-      font-size: 1.125rem; } }
+      font-size: 1rem; } }
   @media (min-width: 1000px) {
     .hero-form__input {
       margin-bottom: 15px;
@@ -1742,7 +1773,9 @@ body {
   max-width: 400px;
   margin: 0 auto;
   color: #ffffff;
-  font-size: 0.5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 300;
   line-height: 1.3;
   text-align: right;
   text-transform: uppercase; }
@@ -1879,7 +1912,7 @@ body {
   justify-content: space-between; }
   @media (min-width: 600px) {
     .hero-header {
-      min-height: auto; } }
+      min-height: 0; } }
   @media (min-width: 1000px) {
     .hero-header {
       height: 100%;
@@ -1904,18 +1937,16 @@ body {
 
 .hero-header__title {
   margin: 0;
-  margin-left: -0.05em;
   color: #ffffff;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 0.05em;
+  font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase; }
   @media (min-width: 600px) {
     .hero-header__title {
       margin-top: 0;
-      font-size: 1.75rem; } }
+      font-size: 2rem; } }
   @media (min-width: 1000px) {
     .hero-header__title {
       font-size: 2rem; } }
@@ -1943,7 +1974,7 @@ body {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5; }
   @media (min-width: 600px) {
     .hero-header__text {
@@ -1967,19 +1998,28 @@ body {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5; }
+  @media (min-width: 600px) {
+    .hero-header__address {
+      font-size: 1.125rem; } }
 
 .hero-header__phone {
   margin: 0;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.5; }
+  @media (min-width: 600px) {
+    .hero-header__phone {
+      font-size: 1.125rem; } }
   .hero-header__phone a {
     color: #ffffff;
     text-decoration: none; }
   .hero-header__phone strong {
-    color: #d5a353; }
+    color: #d5a353;
+    font-weight: 700; }
 
 .hero-header__badges {
   font-size: 0; }
@@ -2023,17 +2063,14 @@ body {
       padding-bottom: 40px; } }
 
 .section-header__title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0.05em;
   line-height: 1.5;
   text-transform: uppercase; }
   @media (min-width: 600px) {
     .section-header__title {
-      margin-top: 0; } }
-  @media (min-width: 1000px) {
-    .section-header__title {
+      margin-top: 0;
       font-size: 2rem; } }
   @media (min-width: 1600px) {
     .section-header__title {
@@ -2194,14 +2231,14 @@ body {
     content: "— "; }
 
 .about__title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     .about__title {
       font-size: 2rem;
-      font-weight: 400;
       line-height: 1.35; } }
   @media (min-width: 1200px) {
     .about__title {
@@ -2210,7 +2247,7 @@ body {
       font-size: 2.5rem; } }
 
 .about__subtitle {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5; }
@@ -2390,11 +2427,11 @@ body {
   margin: 0;
   margin-bottom: 40px;
   color: white;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0.05em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-transform: uppercase; }
   @media (min-width: 600px) {
     .feature__title {
       max-width: 400px;
@@ -2569,7 +2606,7 @@ body {
 .gallery__title {
   margin: 20px 0;
   padding: 30px 0;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 1.25;
@@ -2663,7 +2700,7 @@ body {
       .courses__header {
         padding-bottom: 40px; } }
   .courses__title {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -2762,12 +2799,10 @@ body {
 .course__title {
   max-width: 300px;
   margin: 0;
-  margin-bottom: 10px;
   color: #ffffff;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
-  letter-spacing: 0.05em;
   line-height: 1.5;
   text-transform: uppercase; }
 
@@ -2776,7 +2811,10 @@ body {
   margin: 0;
   margin-bottom: 20px;
   color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: 300;
   line-height: 1.5; }
 
 .course__ribbons {
@@ -2794,12 +2832,9 @@ body {
   margin-right: 15px;
   margin-bottom: 10px;
   padding: 5px 10px;
-  padding-bottom: 4px;
   color: #ffffff;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 0.85rem;
-  letter-spacing: 1px;
-  letter-spacing: 0.05em;
   line-height: 1.5;
   text-transform: uppercase;
   border-radius: 5px;
@@ -3110,7 +3145,7 @@ body {
   .hero-course__heading {
     margin: 0;
     padding: 20px 0;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5; }
@@ -3144,7 +3179,7 @@ body {
         padding-bottom: 65px; } }
   .team__title {
     color: #222222;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -3264,7 +3299,7 @@ body {
   height: 100%; }
 
 .member__header {
-  padding: 25px;
+  padding: 15px;
   padding-bottom: 0; }
   @media (min-width: 600px) {
     .member__header {
@@ -3483,7 +3518,7 @@ body {
     margin: 0;
     margin-bottom: 20px;
     color: #ffffff;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -3552,7 +3587,7 @@ body {
   .testimonial__name {
     margin: 0;
     padding-bottom: 10px;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5rem;
     font-weight: 400; }
   .testimonial__from {
@@ -3658,7 +3693,7 @@ body {
     margin-top: 0;
     color: #d5a353;
     color: #9d6911;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.75rem;
     font-weight: 400;
     text-align: center;
@@ -4154,7 +4189,7 @@ body {
   margin-bottom: 40px; }
   .text-promo__title {
     margin-bottom: 10px;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5; }
