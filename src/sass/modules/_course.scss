@@ -88,14 +88,13 @@
     // box model
     max-width: 300px;
     margin: 0;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     // typography
     color: $white;
     font-family: $titleFont;
     font-size: 1.25rem;
     font-weight: 400;
-    letter-spacing: 0.05em;
     line-height: 1.5;
     text-transform: uppercase;
 }
@@ -108,10 +107,11 @@
 
     // typography
     color: $white;
+    font-family: $titleFont;
     font-size: 0.85rem;
-    // letter-spacing: 0.05em;
+    font-size: 1rem;
+    font-weight: 300;
     line-height: 1.5;
-    // text-transform: uppercase;
 }
 
 .course__ribbons {
@@ -122,7 +122,6 @@
         // positioning
         position: absolute;
         bottom: 10px;
-        
     }
 }
 
@@ -137,16 +136,11 @@
     margin-right: 15px;
     margin-bottom: 10px;
     padding: 5px 10px;
-    padding-bottom: 4px;
 
     // typography
     color: $white;
     font-family: $titleFont;
-    // font-size: 0.7rem;
     font-size: 0.85rem;
-    // font-weight: 700;
-    letter-spacing: 1px;
-    letter-spacing: 0.05em;
     line-height: 1.5;
     text-transform: uppercase;
     

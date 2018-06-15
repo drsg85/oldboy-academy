@@ -8,7 +8,7 @@
 
     @include atTabletsPortrait {
         // box model
-        min-height: auto;
+        min-height: 0;
     }
 
     // @include atTabletsLandscape {
@@ -32,9 +32,6 @@
 }
 
 .hero-header__caption {
-    // height: 400px;
-    // border: 1px solid red;
-
     @include atTabletsLandscape {
         // box model
         max-width: 480px;
@@ -49,15 +46,12 @@
 .hero-header__title {
     // box model
     margin: 0;
-    margin-left: -0.05em;
 
     // typography
     color: $white;
     font-family: $titleFont;
-    // font-family: "Open Sans Condensed";
     font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: 0.05em;
+    font-weight: 400;
     line-height: 1.5;
     text-transform: uppercase;
 
@@ -66,7 +60,7 @@
         margin-top: 0;
 
         // typography
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     @include atTabletsLandscape {
@@ -110,7 +104,7 @@
     color: $white;
     font-family: $mainFont;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5;
 
     @include atTabletsPortrait {
@@ -148,29 +142,41 @@
     color: $white;
     font-family: $mainFont;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5;
+
+    @include atTabletsPortrait {
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .hero-header__phone {
     // box model
     margin: 0;
-    // margin-left: -0.5em;
 
     // typography
     color: $white;
     font-family: $mainFont;
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.5;
+
+    @include atTabletsPortrait {
+        // typography
+        font-size: 1.125rem;
+    }
 
     a {
         // typography
         color: $white;
         text-decoration: none;
     }
-
+    
     strong {
         // typography
         color: $gold;
+        font-weight: 700;
     }
 }
 

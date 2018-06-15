@@ -17,26 +17,32 @@ body {
     font-family: $mainFont;
 
     // visual
-    background-color: $white;
-    box-shadow: 0 0 14px 0 $dark;
+    background-color: $black;
     overflow-x: hidden;
-
+    
     @include atTabletsPortrait {
         // box model
         padding-left: 140px;
     }
+    
+    @include atFullHD {
+        // visual
+        background-color: $white;
+        box-shadow: 0 0 14px 0 $dark;
+    }
+}
 
-
-    /////////////////
-    //  Scrollbar  //
-    /////////////////
-    &::-webkit-scrollbar {
+/////////////////
+//  Scrollbar  //
+/////////////////
+@include atDesktop {
+    body::-webkit-scrollbar {
         // box model
         width: 8px;
-
+    
         // visual
         background-color: $dark;
-
+    
         &-thumb {
             // visual
             background-color: $gold;
@@ -69,6 +75,7 @@ body {
         overflow: hidden;
         height: 100%;
     }
+
     body{
         overflow: auto;
         height: 100%;

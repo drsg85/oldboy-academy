@@ -19,18 +19,19 @@
     font-family: $titleFont;
     font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.05em;
     line-height: 1.5;
     text-transform: uppercase;
 
     @include atTabletsPortrait {
         // box model
         margin-top: 0;
+
+        // typography
+        font-size: 2rem;
     }
 
     @include atTabletsLandscape {
         // typography
-        font-size: 2rem;
     }
 
     @include atDesktopLarge {

@@ -108,24 +108,27 @@
 
     // typography
     color: $white;
-    font-family: $mainFont;
-    font-family: "Bebas Neue Book";
-    font-size: 0.85rem;
+    font-family: $titleFont;
     font-size: 1.125rem;
-    letter-spacing: 0.1em;
+    font-weight: 300;
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
+    
     // visual
     transition: all 0.2s ease-out;
     
     @include atTabletsPortrait {
         // box model
         padding: 14px 0;
-    }
 
+        // typography
+        // font-size: 0.85rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
     &:hover {
         // typography
         color: $gold;
