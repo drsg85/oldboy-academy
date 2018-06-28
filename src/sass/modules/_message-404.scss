@@ -4,80 +4,80 @@
 
     // typography
     text-align: center;
+}
     
-    &__404 {
+.message-404__404 {
+    // box model
+    margin: 0;
+    padding: 0;
+    
+    // typography
+    color: $white;
+    font-weight: 700;
+    font-size: 130px;
+    letter-spacing: 0.125em;
+    text-align: center;
+    
+    // animation
+    animation-name: glitch-anim-text;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    @include atDesktop {
+        // typography
+        font-size: 200px;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 260px;
+    }
+}
+
+.message-404__title {
+    // box model
+    margin-top: 0;
+
+    // typography
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @include atDesktop {
         // box model
         margin: 0;
-        padding: 0;
-        
+        padding-bottom: 20px;
+
         // typography
-        color: $white;
-        font-weight: 700;
-        font-size: 130px;
-        letter-spacing: 0.125em;
-        text-align: center;
-        
-        // animation
-        animation-name: glitch-anim-text;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-
-        @include atDesktop {
-            // typography
-            font-size: 200px;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 260px;
-        }
+        font-size: 2rem;
     }
 
-    &__title {
+    @include atDesktopLarge {
+        // typography
+        font-size: 3rem;
+    }
+}
+
+.message-404__text {
+    // typography
+    color: $white;
+    font-size: 0.9rem;
+    // font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    @include atDesktop {
         // box model
-        margin-top: 0;
+        margin: 0;
+        padding-bottom: 26px;
 
         // typography
-        color: $white;
-        font-size: 1.4rem;
-        font-weight: 700;
+        font-size: 1.25rem;
         letter-spacing: 1px;
-        text-transform: uppercase;
-
-        @include atDesktop {
-            // box model
-            margin: 0;
-            padding-bottom: 20px;
-
-            // typography
-            font-size: 2rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 3rem;
-        }
-    }
-
-    &__text {
-        // typography
-        color: $white;
-        font-size: 0.9rem;
-        // font-weight: 700;
-        letter-spacing: 0.5px;
-        line-height: 1.5;
-        text-transform: uppercase;
-
-        @include atDesktop {
-            // box model
-            margin: 0;
-            padding-bottom: 26px;
-
-            // typography
-            font-size: 1.25rem;
-            letter-spacing: 1px;
-        }
     }
 }
 

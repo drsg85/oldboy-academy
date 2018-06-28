@@ -39,96 +39,37 @@
         background-repeat: repeat-x;
         background-position: top -40px;
     }
+}
     
-    &__header {
+.courses__header {
+    // box model
+    padding: 20px 25px;
+    max-width: 400px;
+
+    @include atTabletsPortrait {
         // box model
-        padding: 20px 25px;
-        max-width: 400px;
-
-        @include atTabletsPortrait {
-            // box model
-            padding: 0;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-bottom: 40px;
-        }
-    }
-    
-    &__title {
-        // typography
-        font-family: $titleFont;
-        font-size: 1.75rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.125;
-        text-transform: uppercase;
-
-        @include atTabletsPortrait {
-            // box model
-            margin-top: 0;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 2rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 2.25rem;
-        }
+        padding: 0;
     }
 
-    &__text {
-        // typography
-        font-family: $mainFont;
-        font-size: 1.25rem;
-        line-height: 1.5;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.125rem;
-            line-height: 1.75;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            margin-bottom: 0;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 1.25rem;
-        }
-    }
-
-    &__icon {
+    @include atDesktop {
         // box model
-        width: 3rem;
-        margin: 0 auto;
-
-        img {
-            // box model
-            width: 100%;
-        }
+        padding-bottom: 40px;
     }
+}
 
-    &__content {
+.courses__content {
+    // box model
+    padding: 25px;
+
+    // typography
+    font-size: 0;
+
+    @include atTabletsPortrait {
         // box model
-        padding: 25px;
-
-        // typography
-        font-size: 0;
-
-        @include atTabletsPortrait {
-            // box model
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            padding: 0;
-            padding-top: 40px;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        padding-top: 40px;
     }
 }

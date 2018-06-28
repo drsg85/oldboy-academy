@@ -42,61 +42,61 @@
             bottom: -190px;
         }
     }
+}
 
-    &__header {
+.contacts-box__header {
+    // box model
+    margin-bottom: 30px;
+}
+
+.contacts-box__title {
+    // box model
+    margin-top: 0;
+
+    // typography
+    color: $gold;
+    color: $darkGold;
+    font-family: $titleFont;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacts-box__text {
+    // box model
+    max-width: 400px;
+    margin: 0 auto;
+
+    // typography
+    color: $dark;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.contacts-box__body {
+    // box model
+    margin-bottom: 2rem;
+}
+
+.contacts-box__footer {
+    // typography
+    text-align: center;
+}
+
+.contacts-box__logo {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+
+    // visual
+    opacity: 0.85;
+    border-radius: 50%;
+
+    img {
         // box model
-        margin-bottom: 30px;
-    }
-
-    &__title {
-        // box model
-        margin-top: 0;
-
-        // typography
-        color: $gold;
-        color: $darkGold;
-        font-family: $titleFont;
-        font-size: 1.75rem;
-        font-weight: 400;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    &__text {
-        // box model
-        max-width: 400px;
-        margin: 0 auto;
-
-        // typography
-        color: $dark;
-        font-size: 0.875rem;
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    &__body {
-        // box model
-        margin-bottom: 2rem;
-    }
-
-    &__footer {
-        // typography
-        text-align: center;
-    }
-
-    &__logo {
-        // box model
-        display: inline-block;
-        vertical-align: top;
-        width: 100px;
-
-        // visual
-        opacity: 0.85;
-        border-radius: 50%;
-
-        img {
-            // box model
-            width: 100%;
-        }
+        width: 100%;
     }
 }

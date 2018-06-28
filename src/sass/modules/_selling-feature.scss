@@ -37,28 +37,28 @@
             color: $white;
         }
     }
+}
 
-    &__title {
+.selling-feature__title {
+    // typography
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include atDesktop {
         // typography
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 1.5;
-
-        @include atDesktop {
-            // typography
-            font-size: 1.25rem;
-            font-weight: 700;
-        }
+        font-size: 1.25rem;
+        font-weight: 700;
     }
+}
 
-    &__text {
+.selling-feature__text {
+    // typography
+    font-size: 1rem;
+    line-height: 1.75;
+
+    @include atDesktop {
         // typography
-        font-size: 1rem;
-        line-height: 1.75;
-
-        @include atDesktop {
-            // typography
-            font-size: 0.875rem;
-        }
+        font-size: 0.875rem;
     }
 }

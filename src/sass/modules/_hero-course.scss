@@ -20,471 +20,471 @@
         width: 100%;
         clear: both;
     }
+}
 
-    &__main {
-        // positioning
-        position: relative;
+.hero-course__main {
+    // positioning
+    position: relative;
 
-        // box model
-        margin: 0 -7px;
-        padding: 15px;
+    // box model
+    margin: 0 -7px;
+    padding: 15px;
 
-        // visual
-        background-color: $white;
+    // visual
+    background-color: $white;
 
-        &::before {
-            content: "";
-    
-            // positioning
-            position: absolute;
-            left: 7px;
-            top: 7px;
-    
-            // box model
-            height: calc(100% - 14px);
-            width: calc(100% - 14px);
-            border: 1px solid $gold;
-    
-            // visual
-            user-select: none;
-            pointer-events: none;
-        }
-    }
+    &::before {
+        content: "";
 
-    &__header {
-        // positioning
-        position: relative;
-
-        // box model
-        padding-bottom: 20px;
-
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 16px;
-        }
-    }
-
-    &__title {
-        // positioning
-        position: absolute;
-        bottom: -25px;
-        bottom: 0;
-        right: -7px;
-
-        // box model
-        width: 90%;
-        margin: 0;
-        padding: 15px 20px;
-        max-width: 270px;
-
-        // typography
-        color: $white;
-        font-size: 0.75rem;
-        font-family: $mainFont;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        line-height: 1.5;
-        text-transform: uppercase;
-
-        // visual
-        background-color: $gold;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 0.875rem;
-
-            // box model
-            max-width: 350px;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 1rem;
-
-            // box model
-            max-width: 500px;
-        }
-
-        &::before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            top: 0;
-            left: -10px;
-
-            // box model
-            height: 50%;
-            width: 10px;
-            
-            // visual
-            background-image: linear-gradient(to left top, $gold 0, $gold 50%, transparent 50%, transparent 100%);
-        }
-        
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: 0;
-            left: -10px;
-
-            // box model
-            height: 50%;
-            width: 10px;
-            
-            // visual
-            background-image: linear-gradient(to left bottom, $gold 0, $gold 50%, transparent 50%, transparent 100%);
-        }
-    }
-
-    &__image {
-        // box model
-        height: 220px;
-        margin-bottom: 20px;
-        
-        // visual
-        overflow: hidden;
-
-        // typography
-        font-size: 0;
-
-        @include atTabletsLandscape {
-            // box model
-            height: 320px;
-        }
-
-        img {
-            // box model
-            // max-height: 100%;
-            min-width: 100%;
-            max-width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: 50% 50%;
-        }
-    }
-
-    &__ribbons {
-        // positioning
-        position: absolute;
-        // top: 10px;
-        // bottom: 10px;
-        top: 10px;
-        left: 0;
-
-        // typography
-        font-size: 0;
-    }
-
-    &__ribbon {
-        // positioning
-        position: relative;
-
-        // box model
-        width: 110px;
-        margin: 0;
-        margin-bottom: 8px;
-        padding: 6px;
-        padding-left: 10px;
-
-        // typography
-        color: $white;
-        font-size: 0.7rem;
-        font-weight: 700;
-        line-height: 1.25;
-        text-transform: uppercase;
-
-        @include atTabletsLandscape {
-            // box model
-            width: 130px;
-
-            // typography
-            font-size: 0.85rem;
-
-        }
-
-        &::before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            top: 0;
-            right: -10px;
-
-            // box model
-            height: 50%;
-            width: 10px;
-            
-            // visual
-            background-image: linear-gradient(to right top, $white 0, $white 50%, transparent 50%, transparent 100%);
-        }
-        
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: 0;
-            right: -10px;
-
-            // box model
-            height: 50%;
-            width: 10px;
-            
-            // visual
-            background-image: linear-gradient(to right bottom, $white 0, $white 50%, transparent 50%, transparent 100%);
-        }
-
-        &--red {
-            // visual
-            background-color: $red;
-
-            &::before {
-                // visual
-                background-image: linear-gradient(to right top, $red 0, $red 50%, transparent 50%, transparent 100%);
-            }
-
-            &::after {
-                // visual
-                background-image: linear-gradient(to right bottom, $red 0, $red 50%, transparent 50%, transparent 100%);
-            }
-        }
-        
-        &--blue {
-            // visual
-            background-color: $blue;
-
-            &::before {
-                // visual
-                background-image: linear-gradient(to right top, $blue 0, $blue 50%, transparent 50%, transparent 100%);
-            }
-
-            &::after {
-                // visual
-                background-image: linear-gradient(to right bottom, $blue 0, $blue 50%, transparent 50%, transparent 100%);
-            }
-        }
-    }
-
-    &__short-info {
-        // box model
-        padding: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-        // typography
-        font-size: 0;
-    }
-
-    &__info-column {
-        @include atTabletsLandscape {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            width: 50%;
-            padding: 0 20px;
-        }
-        
-        @include atDesktop {
-            // box model
-            display: block;
-            width: auto;
-            padding: 0;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            width: 50%;
-            padding: 0 20px;
-            // margin-left: -30px;
-        }
-    }
-
-    &__info-block {
-        // positioning
-        position: relative;
-
-        // box model
-        padding-left: 50px;
-        padding-right: 15px;
-
-        @include atTabletsLandscape {
-            // box model
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-        
-        @include atDesktop {
-            // box model
-            margin: 0;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-    }
-
-    &__info-icon {
         // positioning
         position: absolute;
         left: 7px;
+        top: 7px;
+
+        // box model
+        height: calc(100% - 14px);
+        width: calc(100% - 14px);
+        border: 1px solid $gold;
+
+        // visual
+        user-select: none;
+        pointer-events: none;
+    }
+}
+
+.hero-course__header {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-bottom: 20px;
+
+    @include atTabletsPortrait {
+        // box model
+        padding-bottom: 16px;
+    }
+}
+
+.hero-course__title {
+    // positioning
+    position: absolute;
+    bottom: -25px;
+    bottom: 0;
+    right: -7px;
+
+    // box model
+    width: 90%;
+    margin: 0;
+    padding: 15px 20px;
+    max-width: 270px;
+
+    // typography
+    color: $white;
+    font-size: 0.75rem;
+    font-family: $mainFont;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $gold;
+
+    @include atTabletsPortrait {
+        // typography
+        font-size: 0.875rem;
+
+        // box model
+        max-width: 350px;
+    }
+
+    @include atTabletsLandscape {
+        // typography
+        font-size: 1rem;
+
+        // box model
+        max-width: 500px;
+    }
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 0;
+        left: -10px;
+
+        // box model
+        height: 50%;
+        width: 10px;
+        
+        // visual
+        background-image: linear-gradient(to left top, $gold 0, $gold 50%, transparent 50%, transparent 100%);
+    }
+    
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+
+        // box model
+        height: 50%;
+        width: 10px;
+        
+        // visual
+        background-image: linear-gradient(to left bottom, $gold 0, $gold 50%, transparent 50%, transparent 100%);
+    }
+}
+
+.hero-course__image {
+    // box model
+    height: 220px;
+    margin-bottom: 20px;
+    
+    // visual
+    overflow: hidden;
+
+    // typography
+    font-size: 0;
+
+    @include atTabletsLandscape {
+        // box model
+        height: 320px;
+    }
+
+    img {
+        // box model
+        // max-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.hero-course__ribbons {
+    // positioning
+    position: absolute;
+    // top: 10px;
+    // bottom: 10px;
+    top: 10px;
+    left: 0;
+
+    // typography
+    font-size: 0;
+}
+
+.hero-course__ribbon {
+    // positioning
+    position: relative;
+
+    // box model
+    width: 110px;
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 6px;
+    padding-left: 10px;
+
+    // typography
+    color: $white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    @include atTabletsLandscape {
+        // box model
+        width: 130px;
+
+        // typography
+        font-size: 0.85rem;
+
+    }
+
+    &::before {
+        content: "";
+
+        // positioning
+        position: absolute;
+        top: 0;
+        right: -10px;
+
+        // box model
+        height: 50%;
+        width: 10px;
+        
+        // visual
+        background-image: linear-gradient(to right top, $white 0, $white 50%, transparent 50%, transparent 100%);
+    }
+    
+    &::after {
+        content: "";
+
+        // positioning
+        position: absolute;
+        bottom: 0;
+        right: -10px;
+
+        // box model
+        height: 50%;
+        width: 10px;
+        
+        // visual
+        background-image: linear-gradient(to right bottom, $white 0, $white 50%, transparent 50%, transparent 100%);
+    }
+
+    &--red {
+        // visual
+        background-color: $red;
+
+        &::before {
+            // visual
+            background-image: linear-gradient(to right top, $red 0, $red 50%, transparent 50%, transparent 100%);
+        }
+
+        &::after {
+            // visual
+            background-image: linear-gradient(to right bottom, $red 0, $red 50%, transparent 50%, transparent 100%);
+        }
+    }
+    
+    &--blue {
+        // visual
+        background-color: $blue;
+
+        &::before {
+            // visual
+            background-image: linear-gradient(to right top, $blue 0, $blue 50%, transparent 50%, transparent 100%);
+        }
+
+        &::after {
+            // visual
+            background-image: linear-gradient(to right bottom, $blue 0, $blue 50%, transparent 50%, transparent 100%);
+        }
+    }
+}
+
+.hero-course__short-info {
+    // box model
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    // typography
+    font-size: 0;
+}
+
+.hero-course__info-column {
+    @include atTabletsLandscape {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding: 0 20px;
+    }
+    
+    @include atDesktop {
+        // box model
+        display: block;
+        width: auto;
+        padding: 0;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        padding: 0 20px;
+        // margin-left: -30px;
+    }
+}
+
+.hero-course__info-block {
+    // positioning
+    position: relative;
+
+    // box model
+    padding-left: 50px;
+    padding-right: 15px;
+
+    @include atTabletsLandscape {
+        // box model
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    @include atDesktop {
+        // box model
+        margin: 0;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+.hero-course__info-icon {
+    // positioning
+    position: absolute;
+    left: 7px;
+    top: 20px;
+
+    // box model
+    height: 30px;
+    width: 30px;
+
+    @include atTabletsPortrait {
+        // positioning
+        top: 22px;
+    }
+
+    @include atTabletsLandscape {
+        // positioning
         top: 20px;
 
         // box model
-        height: 30px;
-        width: 30px;
-
-        @include atTabletsPortrait {
-            // positioning
-            top: 22px;
-        }
-
-        @include atTabletsLandscape {
-            // positioning
-            top: 20px;
-
-            // box model
-            height: 36px;
-            width: 36px;
-        }
-
-        img {
-            // box model
-            max-height: 100%;
-            max-width: 100%;
-        }
+        height: 36px;
+        width: 36px;
     }
 
-    &__info-text {
+    img {
         // box model
-        margin: 0;
-        padding: 8px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.hero-course__info-text {
+    // box model
+    margin: 0;
+    padding: 8px;
+
+    // typography
+    color: $white;
+    font-size: 0.9rem;
+    line-height: 1.75;
+    text-align: left;
+
+    @include atTabletsPortrait {
+        // typography
+        font-size: 1rem;
+    }
+
+    @include atTabletsLandscape {
+        // typography
+        // font-size: 1.125rem;
+    }
+
+    &--last {
+        // box model
+        padding-bottom: 0;
+
+        // visual
+        border-bottom: none;
+    }
+}
+
+.hero-course__price {
+    // box model
+    padding-top: 30px;
+
+    // typography
+    color: $white;
+    text-align: center;
+
+    @include atDesktop {
+        // box model
+        padding-top: 60px;
 
         // typography
-        color: $white;
-        font-size: 0.9rem;
-        line-height: 1.75;
         text-align: left;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1rem;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            // font-size: 1.125rem;
-        }
-
-        &--last {
-            // box model
-            padding-bottom: 0;
-
-            // visual
-            border-bottom: none;
-        }
     }
+}
 
-    &__price {
+.hero-course__price-title {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // typography
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-course__price-value {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // typography
+    font-weight: 700;
+    font-size: 3rem;
+
+    @include atDesktop {
         // box model
-        padding-top: 30px;
+        padding-top: 10px;
 
         // typography
-        color: $white;
-        text-align: center;
+        font-size: 3.5rem;
+    }
+}
 
-        @include atDesktop {
-            // box model
-            padding-top: 60px;
+.hero-course__detailed {
+    // box model
+    padding: 20px 0;
 
-            // typography
-            text-align: left;
-        }
+    // typography
+    color: $white;
+    text-align: left;
+
+    @include atDesktop {
+        // box model
+        float: right;
+        width: 50%;
+        padding: 0 30px;
+        padding-top: 300px;
     }
 
-    &__price-title {
+    ol {
         // box model
         margin: 0;
         padding: 0;
 
-        // typography
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
+        // list
+        list-style-position: inside;
     }
 
-    &__price-value {
+    li {
         // box model
-        margin: 0;
-        padding: 0;
+        margin-bottom: 1em;
 
         // typography
-        font-weight: 700;
-        font-size: 3rem;
-
-        @include atDesktop {
-            // box model
-            padding-top: 10px;
-
-            // typography
-            font-size: 3.5rem;
-        }
-    }
-
-    &__detailed {
-        // box model
-        padding: 20px 0;
-
-        // typography
-        color: $white;
-        text-align: left;
-
-        @include atDesktop {
-            // box model
-            float: right;
-            width: 50%;
-            padding: 0 30px;
-            padding-top: 300px;
-        }
-
-        ol {
-            // box model
-            margin: 0;
-            padding: 0;
-
-            // list
-            list-style-position: inside;
-        }
-
-        li {
-            // box model
-            margin-bottom: 1em;
-
-            // typography
-            line-height: 1.5;
-        }
-
-        p {
-            // typography
-            line-height: 1.5;
-        }
-    }
-
-    &__heading {
-        // box model
-        margin: 0;
-        padding: 20px 0;
-
-        // typography
-        font-family: $titleFont;
-        font-size: 1.5rem;
-        font-weight: 400;
         line-height: 1.5;
     }
+
+    p {
+        // typography
+        line-height: 1.5;
+    }
+}
+
+.hero-course__heading {
+    // box model
+    margin: 0;
+    padding: 20px 0;
+
+    // typography
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
 }

@@ -12,105 +12,82 @@
     // visual
     opacity: 0;
     transition: all 0.3s ease-out;
+}
 
-    &__logo {
+.masson__logo {
+    // box model
+    margin: 0 auto;
+    width: 60px;
+
+    img {
         // box model
-        margin: 0 auto;
-        width: 60px;
-
-        img {
-            // box model
-            width: 100%;
-        }
+        width: 100%;
     }
+}
 
-    &__social {
-        // typography
-        text-align: center;
+.masson__social {
+    // typography
+    text-align: center;
 
-        a {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            padding: 10px;
-
-            // typography
-            color: $white;
-            text-decoration: none;
-
-            // visual
-            transition: all 0.2s ease-out;
-
-            &:hover {
-                // typography
-                color: $gold;
-                color: $blue;
-            }
-        }
-    }
-
-    &__tag {
-        // positioning
-        position: relative;
-
+    a {
         // box model
         display: inline-block;
         vertical-align: top;
+        padding: 10px;
 
         // typography
-        color: $gold;
-        font-size: 0.875rem;
-        font-weight: 700;
-        text-align: center;
+        color: $white;
         text-decoration: none;
 
         // visual
-        transition: 0.3s ease-in-out;
-
-        em {
-            // box model
-            padding-right: 5px;
-
-            // typography
-            color: $white;
-            font-style: normal;
-            text-decoration: underline;
-            
-            // visual
-            transition: all 0.3s ease-out;
-        }
+        transition: all 0.2s ease-out;
 
         &:hover {
             // typography
+            color: $gold;
             color: $blue;
-
-            em {
-                // typography
-                color: $blue;
-            }
         }
     }
+}
 
-    &--hero {
+.masson__tag {
+    // positioning
+    position: relative;
+
+    // box model
+    display: inline-block;
+    vertical-align: top;
+
+    // typography
+    color: $gold;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    // visual
+    transition: 0.3s ease-in-out;
+
+    em {
         // box model
-        width: 160px;
+        padding-right: 5px;
 
+        // typography
+        color: $white;
+        font-style: normal;
+        text-decoration: underline;
+        
         // visual
-        opacity: 1;
+        transition: all 0.3s ease-out;
+    }
 
-        @include atTabletsLandscape {
-            .masson__logo {
-                // box model
-                width: 80px;
+    &:hover {
+        // typography
+        color: $blue;
 
-                // visual
-                opacity: 0.75;
-            }
-
-            .masson__social a {
-                // typography
-                font-size: 1.125rem;
-            }
+        em {
+            // typography
+            color: $blue;
         }
     }
 }

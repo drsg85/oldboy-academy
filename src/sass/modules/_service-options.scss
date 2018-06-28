@@ -7,82 +7,82 @@
 
     // typography
     font-size: 0;
+}
 
-    &__group {
-        // box model
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: 33%;
-        max-width: 110px;
-    }
-    
-    &__input {
-        // box model
-        display: none;
+.service-options__group {
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 33%;
+    max-width: 110px;
+}
 
-        &:checked + .service-options__label {
-            &::after {
-                // visual
-                opacity: 1;
-            }
+.service-options__input {
+    // box model
+    display: none;
 
-            .service-options__name {
-                // typography
-                color: $gold;
-            }
-        }
-
-    }
-
-    &__label {
-        // positioning
-        position: relative;
-
-        // visual
-        cursor: pointer;
-
+    &:checked + .service-options__label {
         &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            z-index: 1;
-
-            // box model
-            width: 100%;
-            height: 90%;
-            border: 1px solid $gold;
-            border-radius: 5px;
-
             // visual
-            transition: all 0.3s ease-out;
-            opacity: 0;
+            opacity: 1;
+        }
+
+        .service-options__name {
+            // typography
+            color: $gold;
         }
     }
-    
-    &__image {
+
+}
+
+.service-options__label {
+    // positioning
+    position: relative;
+
+    // visual
+    cursor: pointer;
+
+    &::after {
+        content: "";
+
         // positioning
-        position: relative;
-        z-index: 2;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: 1;
 
         // box model
-        padding: 0 20px;
-        padding-bottom: 10px;
         width: 100%;
-    }
-
-    &__name {
-        // typography
-        color: $white;
-        font-size: 0.75rem;
-        letter-spacing: 1px;
-        text-align: center;
-        text-transform: uppercase;
+        height: 90%;
+        border: 1px solid $gold;
+        border-radius: 5px;
 
         // visual
         transition: all 0.3s ease-out;
+        opacity: 0;
     }
+}
+
+.service-options__image {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    padding: 0 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+&__name {
+    // typography
+    color: $white;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+
+    // visual
+    transition: all 0.3s ease-out;
 }

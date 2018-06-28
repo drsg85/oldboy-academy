@@ -22,88 +22,88 @@
         padding-bottom: 60px;
         padding-left: 0;
     }
+}
 
-    &__social {
+.page-footer__social {
+    // box model
+    margin-bottom: 20px;
+    
+    // typography
+    text-align: center;
+    
+    a {
         // box model
-        margin-bottom: 20px;
-        
-        // typography
-        text-align: center;
-        
-        a {
-            // box model
-            display: inline-block;
-            vertical-align: top;
-            margin: 0 5px;
-
-            // typography
-            color: $white;
-            color: $blue;
-            color: $gold;
-            font-size: 1.5rem;
-            text-decoration: none;
-
-            // visual
-            transition: all 0.3s ease-out;
-
-            &:hover {
-                // typography
-                color: $white;
-                color: $blue;
-            }
-        }
-    }
-
-    &__menu {
-        // box model
-        display: none;
-
-        @include atTabletsLandscape {
-            // box model
-            display: block;
-        }
-
-        ul {
-            // box model
-            margin: 0;
-            padding: 0;
-
-            // typography
-            text-align: center;
-
-            // visual
-            list-style: none;
-        }
-
-        li {
-            // box model
-            display: inline;
-            padding: 0 10px;
-            vertical-align: top;
-        }
-
-        a {
-            // typography
-            color: $white;
-            font-size: 0.875rem;
-            font-weight: 700;
-            text-decoration: none;
-
-            &:hover {
-                // typography
-                text-decoration: underline;
-            }
-        }
-    }
-
-    &__copy {
-        // box model
-        margin-top: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 5px;
 
         // typography
         color: $white;
-        font-size: 0.875rem;
-        line-height: 1.5;
-        text-align: center;
+        color: $blue;
+        color: $gold;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        // visual
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            // typography
+            color: $white;
+            color: $blue;
+        }
     }
 }
+
+.page-footer__menu {
+    // box model
+    display: none;
+
+    @include atTabletsLandscape {
+        // box model
+        display: block;
+    }
+
+    ul {
+        // box model
+        margin: 0;
+        padding: 0;
+
+        // typography
+        text-align: center;
+
+        // visual
+        list-style: none;
+    }
+
+    li {
+        // box model
+        display: inline;
+        padding: 0 10px;
+        vertical-align: top;
+    }
+
+    a {
+        // typography
+        color: $white;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            // typography
+            text-decoration: underline;
+        }
+    }
+}
+
+.page-footer__copy {
+    // box model
+    margin-top: 20px;
+
+    // typography
+    color: $white;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+.page-footer
