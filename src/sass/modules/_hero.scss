@@ -4,7 +4,7 @@
 
     // box model
     padding: 30px 25px;
-    padding-bottom: 60px;
+    padding-bottom: 45px;
 
     // visual
     background-color: $blue;
@@ -19,6 +19,7 @@
     @include atTabletsPortrait {
         // box model
         padding: 60px;
+        padding-bottom: 110px;
     }
 
     @include atTabletsLandscape {

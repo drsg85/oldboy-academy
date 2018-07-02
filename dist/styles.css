@@ -1406,7 +1406,7 @@ body {
 .hero {
   position: relative;
   padding: 30px 25px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
   background-color: #336699;
   overflow: hidden;
   background-color: #222222;
@@ -1415,7 +1415,8 @@ body {
   background-position: center center; }
   @media (min-width: 600px) {
     .hero {
-      padding: 60px; } }
+      padding: 60px;
+      padding-bottom: 110px; } }
   @media (min-width: 1000px) {
     .hero {
       display: -webkit-box;
@@ -1583,9 +1584,6 @@ body {
   max-width: 400px;
   margin: 0 auto;
   font-size: 0; }
-  @media (min-width: 600px) {
-    .hero-form__header {
-      padding-bottom: 40px; } }
   @media (min-width: 1200px) {
     .hero-form__header {
       padding-right: 30px; } }
@@ -1593,13 +1591,10 @@ body {
 .hero-form__wrapper {
   position: relative;
   z-index: 2;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   width: 100%;
   max-width: 400px;
   margin: 0 auto; }
-  @media (min-width: 600px) {
-    .hero-form__wrapper {
-      padding-bottom: 50px; } }
 
 .hero-form__service {
   padding-bottom: 20px; }
@@ -3869,7 +3864,7 @@ body {
   text-align: center; }
   @media (min-width: 600px) {
     .slider__navigation {
-      bottom: -85px; } }
+      bottom: -60px; } }
   @media (min-width: 1000px) {
     .slider__navigation {
       bottom: -70px; } }

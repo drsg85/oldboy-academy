@@ -162,8 +162,7 @@
 
     @include atTabletsPortrait {
         // positioning
-        bottom: -85px;
-        // left: calc(50% + 100px);
+        bottom: -60px;
     }
 
     @include atTabletsLandscape {

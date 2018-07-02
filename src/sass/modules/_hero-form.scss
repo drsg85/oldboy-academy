@@ -62,7 +62,7 @@
 
     @include atTabletsPortrait {
         // box model
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
     }
 
     @include atDesktop {
@@ -77,14 +77,15 @@
     z-index: 2;
 
     // box model
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    // border: 1px solid red;
 
     @include atTabletsPortrait {
         // box model
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
     }
 }
 
@@ -119,7 +120,6 @@
 
     // typography
     color: $white;
-    // font-family: $mainFont;
     font-family: $titleFont;
     font-size: 0.85rem;
     font-size: 1rem;
