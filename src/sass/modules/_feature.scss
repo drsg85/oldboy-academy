@@ -14,13 +14,13 @@
     
     @include atTabletsPortrait {
         // box model
-        min-height: 560px;
         padding: 50px 40px;
         padding-top: 40px;
     }
     
     @include atDesktop {
         // box model
+        min-height: 560px;
         width: 30%;
         border: 1px solid transparent;
         
@@ -61,7 +61,7 @@
     @include atTabletsPortrait {
         // box model
         max-width: 400px;
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
         
         // typography
         font-size: 2rem;
@@ -143,10 +143,10 @@
     @include atTabletsPortrait {
         // box model
         max-width: 300px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
 
         // typography
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 
     @include atTabletsLandscape {
