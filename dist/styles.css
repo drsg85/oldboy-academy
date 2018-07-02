@@ -1912,6 +1912,7 @@ body {
 
 .hero-header__title {
   margin: 0;
+  margin-bottom: 7px;
   color: #ffffff;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5rem;
@@ -1934,12 +1935,15 @@ body {
   padding-bottom: 15px;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 1.5;
   text-align: left;
   text-transform: uppercase; }
+  @media (min-width: 600px) {
+    .hero-header__subtitle {
+      font-size: 0.875rem; } }
   .hero-header__subtitle--gold {
     color: #d5a353;
     font-weight: 700;
@@ -2005,8 +2009,9 @@ body {
   margin: 0;
   margin-right: 15px;
   margin-bottom: 10px;
-  padding: 15px 25px;
+  padding: 5px 10px;
   color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 0.75rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -3008,7 +3013,7 @@ body {
 
 .hero-course__info-block {
   position: relative;
-  padding-left: 50px;
+  padding-left: 35px;
   padding-right: 15px; }
   @media (min-width: 1000px) {
     .hero-course__info-block {
@@ -3024,13 +3029,10 @@ body {
 
 .hero-course__info-icon {
   position: absolute;
-  left: 7px;
-  top: 20px;
+  left: 0;
+  top: 15px;
   height: 30px;
   width: 30px; }
-  @media (min-width: 600px) {
-    .hero-course__info-icon {
-      top: 22px; } }
   @media (min-width: 1000px) {
     .hero-course__info-icon {
       top: 20px;
@@ -3042,10 +3044,10 @@ body {
 
 .hero-course__info-text {
   margin: 0;
-  padding: 8px;
+  padding: 8px 10px;
   color: #ffffff;
-  font-size: 0.9rem;
-  line-height: 1.75;
+  font-size: 0.875rem;
+  line-height: 1.5;
   text-align: left; }
   @media (min-width: 600px) {
     .hero-course__info-text {
@@ -3057,7 +3059,7 @@ body {
 .hero-course__price {
   padding-top: 30px;
   color: #ffffff;
-  text-align: center; }
+  text-align: left; }
   @media (min-width: 1200px) {
     .hero-course__price {
       padding-top: 60px;
@@ -3066,14 +3068,18 @@ body {
 .hero-course__price-title {
   margin: 0;
   padding: 0;
-  font-size: 0.9rem;
+  padding-bottom: 15px;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
   text-transform: uppercase; }
 
 .hero-course__price-value {
   margin: 0;
   padding: 0;
+  padding-left: 45px;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   font-size: 3rem; }
   @media (min-width: 1200px) {

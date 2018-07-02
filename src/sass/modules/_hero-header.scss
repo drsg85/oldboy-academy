@@ -46,6 +46,7 @@
 .hero-header__title {
     // box model
     margin: 0;
+    margin-bottom: 7px;
 
     // typography
     color: $white;
@@ -81,16 +82,19 @@
 
     // typography
     color: $white;
-    // font-family: "Bebas Neue";
     font-family: $mainFont;
-    font-size: 0.85rem;
-    // font-size: 1.125rem;
+    font-size: 0.75rem;
     font-weight: 400;
     letter-spacing: 0.1em;
     line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
 
+    @include atTabletsPortrait {
+        // typography
+        font-size: 0.875rem;
+    }
+    
     &--gold {
         // typography
         color: $gold;
@@ -192,10 +196,11 @@
     margin: 0;
     margin-right: 15px;
     margin-bottom: 10px;
-    padding: 15px 25px;
+    padding: 5px 10px;
     
     // typography
     color: $white;
+    font-family: $titleFont;
     font-size: 0.75rem;
     letter-spacing: 1px;
     text-transform: uppercase;

@@ -309,7 +309,7 @@
     position: relative;
 
     // box model
-    padding-left: 50px;
+    padding-left: 35px;
     padding-right: 15px;
 
     @include atTabletsLandscape {
@@ -333,17 +333,13 @@
 .hero-course__info-icon {
     // positioning
     position: absolute;
-    left: 7px;
-    top: 20px;
+    // left: 7px;
+    left: 0;
+    top: 15px;
 
     // box model
     height: 30px;
     width: 30px;
-
-    @include atTabletsPortrait {
-        // positioning
-        top: 22px;
-    }
 
     @include atTabletsLandscape {
         // positioning
@@ -364,12 +360,12 @@
 .hero-course__info-text {
     // box model
     margin: 0;
-    padding: 8px;
+    padding: 8px 10px;
 
     // typography
     color: $white;
-    font-size: 0.9rem;
-    line-height: 1.75;
+    font-size: 0.875rem;
+    line-height: 1.5;
     text-align: left;
 
     @include atTabletsPortrait {
@@ -394,10 +390,15 @@
 .hero-course__price {
     // box model
     padding-top: 30px;
+    // padding-left: 43px;
 
     // typography
     color: $white;
-    text-align: center;
+    text-align: left;
+    // text-align: center;
+    
+    // visual
+    // border-top: 1px solid rgba($white, 0.75);
 
     @include atDesktop {
         // box model
@@ -412,11 +413,13 @@
     // box model
     margin: 0;
     padding: 0;
+    padding-bottom: 15px;
 
     // typography
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
     text-transform: uppercase;
 }
 
@@ -424,8 +427,10 @@
     // box model
     margin: 0;
     padding: 0;
+    padding-left: 45px;
 
     // typography
+    font-family: $titleFont;
     font-weight: 700;
     font-size: 3rem;
 
