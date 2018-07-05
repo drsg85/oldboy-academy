@@ -497,7 +497,8 @@ template {
   display: none; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
   @media (min-width: 1000px) {
     html {
       font-size: 14px; } }
@@ -1430,8 +1431,10 @@ body {
       padding-bottom: 110px;
       min-height: calc(100vh - 10px);
       background-image: url("./img/hero-bg.jpg");
-      background-attachment: fixed;
       background-position: center top; } }
+  @media (min-width: 1200px) {
+    .hero {
+      background-attachment: fixed; } }
   @media (min-width: 1600px) {
     .hero {
       padding: 60px 120px;
@@ -1536,9 +1539,6 @@ body {
   @media (min-width: 600px) {
     .hero__logo {
       display: none; } }
-  .hero__logo--inner {
-    width: 140px;
-    margin-top: 120px; }
   .hero__logo img {
     width: 100%; }
 
@@ -1896,6 +1896,9 @@ body {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start; } }
@@ -1904,7 +1907,8 @@ body {
 
 @media (min-width: 1000px) {
   .hero-header__caption {
-    max-width: 480px; } }
+    max-width: 480px;
+    padding-bottom: 200px; } }
 
 @media (min-width: 1600px) {
   .hero-header__caption {
@@ -2244,7 +2248,7 @@ body {
 
 .about__text {
   line-height: 1.75; }
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .about__text {
       font-size: 1.125rem; } }
 
@@ -2475,7 +2479,6 @@ body {
   @media (min-width: 1000px) {
     .feature__item {
       margin-bottom: 40px;
-      font-size: 0.875rem;
       font-size: 1rem; } }
 
 @media (min-width: 1200px) {

@@ -277,7 +277,7 @@
     // typography
     line-height: 1.75;
 
-    @include atDesktop {
+    @include atTabletsLandscape {
         // typography
         font-size: 1.125rem;
     }

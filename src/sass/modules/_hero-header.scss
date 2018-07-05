@@ -22,6 +22,7 @@
         height: 100%;
         padding-bottom: 0;
         flex-direction: column;
+        justify-content: space-between;
         align-items: flex-start;
     }
 
@@ -35,6 +36,7 @@
     @include atTabletsLandscape {
         // box model
         max-width: 480px;
+        padding-bottom: 200px;
     }
 
     @include atDesktopLarge {

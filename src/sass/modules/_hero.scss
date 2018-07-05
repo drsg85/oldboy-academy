@@ -33,8 +33,12 @@
         
         // visual
         background-image: url("./img/hero-bg.jpg");
-        background-attachment: fixed;
         background-position: center top;
+    }
+    
+    @include atDesktop {
+        // visual
+        background-attachment: fixed;
     }
     
     @include atDesktopLarge {
@@ -213,12 +217,6 @@
     @include atTabletsPortrait {
         // box model
         display: none;
-    }
-
-    &--inner {
-        // box model
-        width: 140px;
-        margin-top: 120px;
     }
     
     img {
