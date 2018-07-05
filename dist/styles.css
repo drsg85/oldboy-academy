@@ -2774,6 +2774,10 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-transform: uppercase; }
+  @media (min-width: 1000px) {
+    .course__title {
+      margin-bottom: 10px;
+      font-size: 1.5rem; } }
 
 .course__subtitle {
   max-width: 300px;
@@ -2781,10 +2785,12 @@ body {
   margin-bottom: 20px;
   color: #ffffff;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 0.85rem;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5; }
+  @media (min-width: 1000px) {
+    .course__subtitle {
+      font-size: 1.125rem; } }
 
 .course__ribbons {
   font-size: 0; }
@@ -2839,6 +2845,9 @@ body {
   padding: 8px;
   font-size: 0.875rem;
   line-height: 1.25; }
+  @media (min-width: 1000px) {
+    .course__info-text {
+      font-size: 1rem; } }
 
 .course__more {
   padding: 25px;
