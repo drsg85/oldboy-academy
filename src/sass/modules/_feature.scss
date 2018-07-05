@@ -17,6 +17,12 @@
         padding: 50px 40px;
         padding-top: 40px;
     }
+
+    @include atTabletsLandscape {
+        // box model
+        padding: 40px 25px;
+        width: 30%;
+    }
     
     @include atDesktop {
         // box model
@@ -27,21 +33,21 @@
         // visual
         transition: all 0.3s ease-out;
     }
+}
 
-    &__header {
-        // positioning
-        position: relative;
-        z-index: 3;
+.feature__header {
+    // positioning
+    position: relative;
+    z-index: 3;
 
-        @include atDesktop {
-            // box model
-            height: 140px;
-        }
+    @include atDesktop {
+        // box model
+        height: 140px;
+    }
 
-        @include atDesktopLarge {
-            // box model
-            height: 210px;
-        }
+    @include atDesktopLarge {
+        // box model
+        height: 210px;
     }
 }
 
@@ -68,8 +74,8 @@
     }
     
     @include atTabletsLandscape {
-        // box model
-        margin-bottom: 60px;
+        // typography
+        font-size: 1.25rem;
     }
     
     @include atDesktop {
@@ -105,11 +111,17 @@
         left: -80px;
     }
 
-    @include atDesktop {
+    @include atTabletsLandscape {
         // positioning
-        left: -80px;
-        top: -40px;
+        left: -50px;
+        top: -100px;
 
+        // box model
+        height: 120px;
+        width: 120px;
+    }
+
+    @include atDesktop {
         // box model
         height: 150px;
         width: 150px;
@@ -154,7 +166,8 @@
         margin-bottom: 40px;
         
         // typography
-        font-size: 1.125rem;
+        font-size: 0.875rem;
+        font-size: 1rem;
     }
 }
 

@@ -59,7 +59,7 @@
         padding-bottom: 40px;
     }
 
-    @include atDesktop {
+    @include atTabletsLandscape {
         // box model
         display: flex;
         flex-direction: row;

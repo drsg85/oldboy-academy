@@ -2352,7 +2352,7 @@ body {
     .selling-features {
       padding: 100px 60px;
       padding-bottom: 40px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     .selling-features {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2386,6 +2386,10 @@ body {
     .feature {
       padding: 50px 40px;
       padding-top: 40px; } }
+  @media (min-width: 1000px) {
+    .feature {
+      padding: 40px 25px;
+      width: 30%; } }
   @media (min-width: 1200px) {
     .feature {
       min-height: 560px;
@@ -2393,15 +2397,16 @@ body {
       border: 1px solid transparent;
       -webkit-transition: all 0.3s ease-out;
       transition: all 0.3s ease-out; } }
-  .feature__header {
-    position: relative;
-    z-index: 3; }
-    @media (min-width: 1200px) {
-      .feature__header {
-        height: 140px; } }
-    @media (min-width: 1600px) {
-      .feature__header {
-        height: 210px; } }
+
+.feature__header {
+  position: relative;
+  z-index: 3; }
+  @media (min-width: 1200px) {
+    .feature__header {
+      height: 140px; } }
+  @media (min-width: 1600px) {
+    .feature__header {
+      height: 210px; } }
 
 .feature__title {
   margin: 0;
@@ -2418,7 +2423,7 @@ body {
       font-size: 2rem; } }
   @media (min-width: 1000px) {
     .feature__title {
-      margin-bottom: 60px; } }
+      font-size: 1.25rem; } }
   @media (min-width: 1200px) {
     .feature__title {
       min-height: 100px;
@@ -2438,10 +2443,14 @@ body {
   @media (min-width: 600px) {
     .feature__icon {
       left: -80px; } }
+  @media (min-width: 1000px) {
+    .feature__icon {
+      left: -50px;
+      top: -100px;
+      height: 120px;
+      width: 120px; } }
   @media (min-width: 1200px) {
     .feature__icon {
-      left: -80px;
-      top: -40px;
       height: 150px;
       width: 150px; } }
   .feature__icon img {
@@ -2466,7 +2475,8 @@ body {
   @media (min-width: 1000px) {
     .feature__item {
       margin-bottom: 40px;
-      font-size: 1.125rem; } }
+      font-size: 0.875rem;
+      font-size: 1rem; } }
 
 @media (min-width: 1200px) {
   .feature__more {
