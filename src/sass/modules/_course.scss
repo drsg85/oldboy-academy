@@ -5,7 +5,6 @@
     // box model
     width: 100%;
     max-width: 400px;
-    // margin: 0 auto;
     margin-bottom: 30px;
     
     // visual
@@ -13,9 +12,10 @@
 
     @include atTabletsLandscape {
         // box model
+        display: inline-block;
         height: 570px;
         margin-right: 30px;
-        max-width: 340px;
+        width: 340px;
     }
     
     @include atDesktop {

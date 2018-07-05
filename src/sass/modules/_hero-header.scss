@@ -11,11 +11,12 @@
         min-height: 0;
     }
 
-    // @include atTabletsLandscape {
-    //     // box model
-    //     flex-direction: row;
-    //     align-items: flex-end;
-    // }
+    @include atTabletsLandscape {
+        // box model
+        min-height: calc(100vh - 180px);
+        flex-direction: row;
+        align-items: flex-end;
+    }
 
     @include atTabletsLandscape {
         // box model
@@ -36,7 +37,6 @@
     @include atTabletsLandscape {
         // box model
         max-width: 480px;
-        padding-bottom: 200px;
     }
 
     @include atDesktopLarge {
