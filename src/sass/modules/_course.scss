@@ -145,27 +145,27 @@
     margin: 0;
     margin-right: 15px;
     margin-bottom: 10px;
-    padding: 5px 10px;
+    padding: 5px 8px;
 
     // typography
     color: $white;
     font-family: $titleFont;
     font-size: 0.85rem;
-    line-height: 1.5;
+    line-height: 1.125;
     text-transform: uppercase;
     
     // visual
     border-radius: 5px;
-    border: 1px solid $white;
+    // border: 1px solid $white;
 
     &--red {
         // visual
-        border-color: rgba($red, 0.75);
+        background-color: rgba($red, 0.5);
     }
     
     &--blue {
         // visual
-        border-color: rgba($blue, 0.75);
+        background-color: rgba($blue, 0.5);
     }
 }
 
