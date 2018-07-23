@@ -71,9 +71,15 @@
         font-size: 2rem;
     }
 
+    @include atDesktop {
+        // typography
+        font-size: 2.5rem;
+        font-weight: 100;
+    }
+
     @include atDesktopLarge {
         // typography
-        font-size: 2.25rem;
+        // font-size: 2.25rem;
     }
 }
 
@@ -124,6 +130,15 @@
         margin-bottom: 0;
     }
 
+    @include atDesktop {
+        // box model
+        padding-right: 20px;
+
+        // typography
+        font-size: 1.125rem;
+        font-weight: 100;
+    }
+
     @include atDesktopLarge {
         // typography
         font-size: 1.25rem;
@@ -154,6 +169,12 @@
     @include atTabletsPortrait {
         // typography
         font-size: 1.125rem;
+    }
+
+    @include atDesktop {
+        // typography
+        font-size: 1.125rem;
+        font-weight: 100;
     }
 }
 

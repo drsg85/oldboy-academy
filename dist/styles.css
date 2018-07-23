@@ -1270,6 +1270,9 @@ body {
       padding: 14px 0;
       font-size: 1rem;
       font-weight: 400; } }
+  @media (min-width: 1200px) {
+    .main-nav__link {
+      font-weight: 300; } }
   .main-nav__link:hover {
     color: #d5a353; }
 
@@ -1939,9 +1942,10 @@ body {
   @media (min-width: 1000px) {
     .hero-header__title {
       font-size: 2rem; } }
-  @media (min-width: 1600px) {
+  @media (min-width: 1200px) {
     .hero-header__title {
-      font-size: 2.25rem; } }
+      font-size: 2.5rem;
+      font-weight: 100; } }
 
 .hero-header__subtitle {
   margin: 0;
@@ -1975,6 +1979,11 @@ body {
   @media (min-width: 1000px) {
     .hero-header__text {
       margin-bottom: 0; } }
+  @media (min-width: 1200px) {
+    .hero-header__text {
+      padding-right: 20px;
+      font-size: 1.125rem;
+      font-weight: 100; } }
   @media (min-width: 1600px) {
     .hero-header__text {
       font-size: 1.25rem; } }
@@ -1995,6 +2004,10 @@ body {
   @media (min-width: 600px) {
     .hero-header__address {
       font-size: 1.125rem; } }
+  @media (min-width: 1200px) {
+    .hero-header__address {
+      font-size: 1.125rem;
+      font-weight: 100; } }
 
 .hero-header__phone {
   margin: 0;

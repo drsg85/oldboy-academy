@@ -124,9 +124,13 @@
         padding: 14px 0;
 
         // typography
-        // font-size: 0.85rem;
         font-size: 1rem;
         font-weight: 400;
+    }
+
+    @include atDesktop {
+        // typography
+        font-weight: 300;
     }
     
     &:hover {
