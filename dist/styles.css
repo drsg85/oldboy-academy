@@ -3194,7 +3194,14 @@ body {
   background-size: cover; }
   @media (min-width: 600px) {
     .member {
+      height: 300px;
       padding-bottom: 10px; } }
+  @media (min-width: 1000px) {
+    .member {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(50% - 30px);
+      margin-right: 30px; } }
 
 .member__info {
   position: relative;
@@ -3301,11 +3308,11 @@ body {
   width: 200px; }
   @media (min-width: 600px) {
     .member__photo {
-      right: 30px;
+      right: 10px;
       width: 260px; } }
   @media (min-width: 1000px) {
     .member__photo {
-      width: 550px; } }
+      width: 200px; } }
   @media (min-width: 1200px) {
     .member__photo {
       right: -60px;
