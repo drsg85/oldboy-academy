@@ -37,7 +37,7 @@
 
     @include atTabletsPortrait {
         padding: 65px 60px;
-        padding-bottom: 35px;
+        padding-bottom: 0;
     }
 
     @include atDesktop {
@@ -49,7 +49,12 @@
 .team__content {
     // box model
     padding: 25px;
-    
+
     // typography
     font-size: 0;
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 60px;
+    }
 }

@@ -3170,7 +3170,7 @@ body {
   @media (min-width: 600px) {
     .team__header {
       padding: 65px 60px;
-      padding-bottom: 35px; } }
+      padding-bottom: 0; } }
   @media (min-width: 1200px) {
     .team__header {
       padding-bottom: 65px; } }
@@ -3178,6 +3178,9 @@ body {
 .team__content {
   padding: 25px;
   font-size: 0; }
+  @media (min-width: 600px) {
+    .team__content {
+      padding: 60px; } }
 
 .member {
   position: relative;
@@ -3189,6 +3192,9 @@ body {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (min-width: 600px) {
+    .member {
+      padding-bottom: 10px; } }
 
 .member__info {
   position: relative;
@@ -3197,6 +3203,10 @@ body {
   margin-bottom: 15px;
   padding: 15px;
   padding-bottom: 60px; }
+  @media (min-width: 600px) {
+    .member__info {
+      margin-bottom: 0;
+      padding-bottom: 80px; } }
 
 .member__header {
   position: relative;
@@ -3260,6 +3270,9 @@ body {
   color: #ffffff;
   font-size: 1rem;
   line-height: 1.75; }
+  @media (min-width: 600px) {
+    .member__description {
+      padding-right: 50%; } }
   @media (min-width: 1200px) {
     .member__description {
       width: 600px; } }
@@ -3275,6 +3288,9 @@ body {
   text-align: left; }
   @media (min-width: 600px) {
     .member__more {
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
       text-align: left; } }
 
 .member__photo {
@@ -3285,9 +3301,8 @@ body {
   width: 200px; }
   @media (min-width: 600px) {
     .member__photo {
-      bottom: 51px;
-      right: -30px;
-      width: 68%; } }
+      right: 30px;
+      width: 260px; } }
   @media (min-width: 1000px) {
     .member__photo {
       width: 550px; } }
@@ -3302,74 +3317,6 @@ body {
       max-width: 570px; } }
   .member__photo img {
     width: 100%; }
-
-.member__feature {
-  margin-top: 10px;
-  width: 225px;
-  background-size: contain;
-  background-image: url("./img/laurel.png");
-  background-repeat: no-repeat; }
-  @media (min-width: 600px) {
-    .member__feature {
-      width: 250px; } }
-  @media (min-width: 1000px) {
-    .member__feature {
-      width: 275px; } }
-  @media (min-width: 1200px) {
-    .member__feature {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; } }
-  @media (min-width: 1600px) {
-    .member__feature {
-      height: 240px; } }
-
-.member__achivements-list,
-.member ul {
-  width: 225px;
-  margin: 0;
-  padding: 20px 0;
-  padding-bottom: 170px;
-  list-style: none; }
-  @media (min-width: 600px) {
-    .member__achivements-list,
-    .member ul {
-      width: 250px;
-      padding-bottom: 100px; } }
-  @media (min-width: 1000px) {
-    .member__achivements-list,
-    .member ul {
-      width: 275px; } }
-  @media (min-width: 1200px) {
-    .member__achivements-list,
-    .member ul {
-      padding-bottom: 40px;
-      text-align: center; } }
-
-.member__achivements-item,
-.member li {
-  margin-bottom: 10px;
-  padding: 0 40px;
-  color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-align: center; }
-
-.member__footer {
-  padding: 25px;
-  border-top: 1px solid #d5a353;
-  margin-bottom: -100px; }
-  @media (min-width: 600px) {
-    .member__footer {
-      margin-bottom: 0;
-      padding: 30px; } }
 
 .testimonials {
   position: relative;

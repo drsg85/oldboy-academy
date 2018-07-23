@@ -13,6 +13,10 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include atTabletsPortrait {
+        padding-bottom: 10px;
+    }
 }
 
 .member__info {
@@ -25,6 +29,12 @@
     margin-bottom: 15px;
     padding: 15px;
     padding-bottom: 60px;
+
+    @include atTabletsPortrait {
+        // box model
+        margin-bottom: 0;
+        padding-bottom: 80px;
+    }
 }
 
 .member__header {
@@ -127,6 +137,11 @@
     font-size: 1rem;
     line-height: 1.75;
 
+    @include atTabletsPortrait {
+        // box model
+        padding-right: 50%;
+    }
+
     @include atDesktop {
         // box model
         width: 600px;
@@ -151,6 +166,11 @@
     text-align: left;
 
     @include atTabletsPortrait {
+        // positioning
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+
         // typography
         text-align: left;
     }
@@ -165,15 +185,13 @@
 
     // box model
     width: 200px;
-    // width: 70%;
 
     @include atTabletsPortrait {
         // positioning
-        bottom: 51px;
-        right: -30px;
+        right: 30px;
 
         // box model
-        width: 68%;
+        width: 260px;
     }
 
     @include atTabletsLandscape {
@@ -199,101 +217,5 @@
     img {
         // box model
         width: 100%;
-    }
-}
-
-
-// to remove
-.member__feature {
-    // box model
-    margin-top: 10px;
-    width: 225px;
-
-    // visual
-    background-size: contain;
-    background-image: url("./img/laurel.png");
-    background-repeat: no-repeat;
-
-    @include atTabletsPortrait {
-        // box model
-        width: 250px;
-    }
-
-    @include atTabletsLandscape {
-        // box model
-        width: 275px;
-    }
-
-    @include atDesktop {
-        // box model
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @include atDesktopLarge {
-        // box model
-        height: 240px;
-    }
-}
-
-.member__achivements-list,
-.member ul {
-    // box model
-    width: 225px;
-    margin: 0;
-    padding: 20px 0;
-    padding-bottom: 170px;
-
-    // visual
-    list-style: none;
-
-    @include atTabletsPortrait {
-        // box model
-        width: 250px;
-        padding-bottom: 100px;
-    }
-
-    @include atTabletsLandscape {
-        // box model
-        width: 275px;
-    }
-
-    @include atDesktop {
-        // box model
-        padding-bottom: 40px;
-
-        // typography
-        text-align: center;
-    }
-}
-
-.member__achivements-item,
-.member li {
-    // box model
-    margin-bottom: 10px;
-    padding: 0 40px;
-
-    // typography
-    color: $white;
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: center;
-
-    @include atTabletsPortrait {
-        // typography
-    }
-}
-
-.member__footer {
-    // box model
-    padding: 25px;
-    border-top: 1px solid $gold;
-    margin-bottom: -100px;
-
-    @include atTabletsPortrait {
-        // box model
-        margin-bottom: 0;
-        padding: 30px;
     }
 }

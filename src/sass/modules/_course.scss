@@ -17,10 +17,6 @@
         margin-right: 30px;
         width: 340px;
     }
-    
-    @include atDesktop {
-        // box model
-    }
 
     &:before {
         content: "";

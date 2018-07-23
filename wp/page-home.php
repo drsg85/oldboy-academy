@@ -71,7 +71,7 @@
                     <p class="hero-header__text">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
                 </div>
                 <div class="hero-header__contacts">
-                    <p class="hero-header__address">Москва<br>Старокирочный переулок,&nbsp;2</p>
+                    <p class="hero-header__address">Москва<br>метро Фонвизинская<br>ул. Добролюбова,&nbsp;20</p>
                     <p class="hero-header__phone">
                         <a href="tel:+79261000266">тел.: <strong>+7 926 1000-266</strong></a>
                     </p>
