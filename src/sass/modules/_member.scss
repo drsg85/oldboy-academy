@@ -3,8 +3,8 @@
     position: relative;
 
     // box model
-    padding: 50px 20px;
-    padding-bottom: 130px;
+    padding: 60px 20px;
+    padding-bottom: 60px;
 
     // visual
     background-color: $blue;
@@ -97,15 +97,15 @@
 }
 
 .member__info {
+    // positioning
+    position: relative;
+
     // box model
     border: 1px solid $gold;
     height: 100%;
-}
-
-.member__header {
-    // box model
     padding: 20px;
-    padding-bottom: 0;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
 
     @include atTabletsPortrait {
         // box model
@@ -114,22 +114,31 @@
     }
 }
 
+.member__header {
+    // positioning
+    position: relative;
+
+    // box model
+    margin-bottom: 40px;
+}
+
 .member__badge {
     // positioning
     position: absolute;
-    top: 72px;
-    right: 0;
+    // top: 72px;
+    top: 0;
+    right: -20px;
 
     // box model
-    // padding: 15px 20px;
-    padding: 10px 15px;
+    padding: 8px 10px;
+    padding-right: 15px;
 
     // typography
     color: $white;
     font-family: $titleFont;
     font-weight: 400px;
     font-size: 1rem;
-    text-align: center;
+    text-align: right;
     text-transform: uppercase;
 
     // visual
@@ -187,7 +196,6 @@
 .member__subtitle {
     // box model
     margin: 0;
-    margin-bottom: 30px;
 
     // typography
     color: $gold;
@@ -200,7 +208,7 @@
 .member__description {
     // box model
     margin: 0;
-    margin-bottom: 30px;
+    padding-right: 90px;
 
     // typography
     color: $white;
@@ -222,19 +230,68 @@
     }
 }
 
-.member__footer {
-    // box model
-    padding: 25px;
-    border-top: 1px solid $gold;
-    margin-bottom: -100px;
+.member__more {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // typography
+    text-align: center;
 
     @include atTabletsPortrait {
-        // box model
-        margin-bottom: 0;
-        padding: 30px;
+        // typography
+        text-align: left;
     }
 }
 
+.member__photo {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    z-index: 1;
+
+    // box model
+    width: 250px;
+    width: 70%;
+
+    @include atTabletsPortrait {
+        // positioning
+        bottom: 51px;
+        right: -30px;
+
+        // box model
+        width: 68%;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        width: 550px;
+    }
+
+    @include atDesktop {
+        // positioning
+        right: -60px;
+        bottom: -1px;
+
+        // box model
+        width: 650px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        width: 75%;
+        max-width: 570px;
+}
+
+    img {
+        // box model
+        width: 100%;
+    }
+}
+
+
+// to remove
 .member__feature {
     // box model
     margin-top: 10px;
@@ -316,62 +373,15 @@
     }
 }
 
-.member__more {
-    // positioning
-    position: relative;
-    z-index: 2;
-
-    // typography
-    text-align: center;
-
-    @include atTabletsPortrait {
-        // typography
-        text-align: left;
-    }
-}
-
-.member__photo {
-    // positioning
-    position: absolute;
-    bottom: 129px;
-    right: -10px;
-    z-index: 1;
-
+.member__footer {
     // box model
-    width: 250px;
-    width: 60%;
+    padding: 25px;
+    border-top: 1px solid $gold;
+    margin-bottom: -100px;
 
     @include atTabletsPortrait {
-        // positioning
-        bottom: 51px;
-        right: -30px;
-
         // box model
-        width: 68%;
-    }
-
-    @include atTabletsLandscape {
-        // box model
-        width: 550px;
-    }
-
-    @include atDesktop {
-        // positioning
-        right: -60px;
-        bottom: -1px;
-
-        // box model
-        width: 650px;
-    }
-
-    @include atDesktopLarge {
-        // box model
-        width: 75%;
-        max-width: 570px;
-    }
-
-    img {
-        // box model
-        width: 100%;
+        margin-bottom: 0;
+        padding: 30px;
     }
 }
