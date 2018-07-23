@@ -125,19 +125,18 @@
 .member__badge {
     // positioning
     position: absolute;
-    // top: 72px;
-    top: 0;
+    top: 5px;
     right: -20px;
 
     // box model
-    padding: 8px 10px;
+    padding: 8px;
     padding-right: 15px;
 
     // typography
     color: $white;
     font-family: $titleFont;
     font-weight: 400px;
-    font-size: 1rem;
+    font-size: 0.85rem;
     text-align: right;
     text-transform: uppercase;
 
