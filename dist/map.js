@@ -1,6 +1,6 @@
 ;
 function initMap() {
-    var coords = {lat: 55.7685612, lng: 37.6798055};
+    var coords = {lat: 55.8174248, lng: 37.5930955};
     
     // creating map
     var map = new google.maps.Map(document.getElementById("map"), {
@@ -217,22 +217,21 @@ function initMap() {
     
     
     // shifting cursor so it is positioned on footer border
-    google.maps.event.addListenerOnce(map, "projection_changed", function() {
-        var scale = Math.pow(2, map.getZoom());
+    // google.maps.event.addListenerOnce(map, "projection_changed", function() {
+    //     var scale = Math.pow(2, map.getZoom());
         
-        var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
-        var pixelOffset = new google.maps.Point((80 / scale) || 0, (100 / scale) || 0);
+    //     var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
+    //     var pixelOffset = new google.maps.Point((80 / scale) || 0, (100 / scale) || 0);
         
-        var worldCoordinateNewCenter = new google.maps.Point(
-            worldCoordinateCenter.x + pixelOffset.x,
-            worldCoordinateCenter.y - pixelOffset.y
-        );
+    //     var worldCoordinateNewCenter = new google.maps.Point(
+    //         worldCoordinateCenter.x + pixelOffset.x,
+    //         worldCoordinateCenter.y - pixelOffset.y
+    //     );
         
-        var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+    //     var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
         
-        map.setCenter(newCenter);
-    });
-    
+    //     map.setCenter(newCenter);
+    // });
 }
 
 
