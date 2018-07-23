@@ -32,4 +32,12 @@
         // visual
         background-color: $blue;
     }
+
+    &--ghost {
+        // box model
+        border: 1px solid $gold;
+        
+        // visual
+        background-color: transparent;
+    }
 }

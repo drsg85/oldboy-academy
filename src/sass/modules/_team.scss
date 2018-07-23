@@ -47,6 +47,9 @@
 }
 
 .team__content {
+    // box model
+    padding: 25px;
+    
     // typography
     font-size: 0;
 }

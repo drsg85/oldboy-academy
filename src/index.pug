@@ -231,7 +231,7 @@ html(lang="ru")
                 p.section-header__text В команде академии работают профессионалы своего дела с многолетним опытом работы в индустрии барберинга, многие из которых обучались своему мастерству у именитых профессионалов в России и зарубежом.
 
             .team__content
-                article.member.member--left
+                article.member
                     .member__info
                         header.member__header
                             h2.member__name Юрий Артюх
@@ -240,12 +240,13 @@ html(lang="ru")
 
                         p.member__description Ведущий барбер, брэнд менеджер сети Oldboy Barbershop, обучающий тренер.
 
-                        .member__photo: img(src="./img/members/master1.png" alt="мастер")
-
                     .member__more
-                        a.button(href="#") Подробнее о мастере
+                        a.button(href="#") Подробнее о тренере
 
-                article.member.member--right
+                    .member__photo: img(src="./img/members/master1.png" alt="мастер")
+
+
+                article.member
                     .member__info
                         header.member__header
                             h2.member__name Илья Мосунов
@@ -254,10 +255,10 @@ html(lang="ru")
 
                         p.member__description Бизнес-тренер и коуч. Автор продуктовых и навыковых программ.
 
-                        .member__photo: img(src="./img/members/master2.png" alt="мастер")
-
                     .member__more
-                        a.button(href="#") Подробнее о мастере
+                        a.button.button--ghost(href="#") Подробнее о тренере
+
+                    .member__photo: img(src="./img/members/master2.png" alt="мастер")
 
         section.contacts#contacts
             .map#map

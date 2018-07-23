@@ -3,97 +3,16 @@
     position: relative;
 
     // box model
-    padding: 60px 20px;
-    padding-bottom: 60px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-bottom: 15px;
 
     // visual
     background-color: $blue;
     background-image: url("./img/gradient.jpg");
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    &--left {
-        // visual
-        background-position: bottom center;
-    }
-
-    &--right {
-        // visual
-        background-position: top center;
-    }
-
-    @include atTabletsPortrait {
-        // box model
-        padding: 50px 30px;
-        padding-bottom: 50px;
-    }
-
-    @include atDesktop {
-        // box model
-        // width: 800px;
-
-        // margin-right: 60px;
-    }
-
-    @include atDesktopLarge {
-        // box model
-        margin: 30px;
-        width: 50%;
-        width: calc(50% - 60px);
-        padding: 32px 30px;
-        display: inline-block;
-        vertical-align: top;
-    }
-
-    &::before {
-        content: "";
-
-        // positioning
-        position: absolute;
-        top: -5px;
-        left: 0;
-        z-index: 6;
-
-        // box model
-        height: 32px;
-        width: 100%;
-
-        // visual
-        background-image: url("./img/deco-b-r.svg");
-        background-size: 80px;
-        background-repeat: repeat-x;
-        background-position: -40px top;
-
-        @include atDesktopLarge {
-            // box model
-            display: none;
-        }
-    }
-
-    &::after {
-        content: "";
-
-        // positioning
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        z-index: 2;
-
-        // box model
-        height: 32px;
-        width: 100%;
-
-        // visual
-        background-image: url("./img/deco-b.svg");
-        background-size: 80px;
-        background-repeat: repeat-x;
-        background-position: left bottom;
-
-        @include atDesktopLarge {
-            // box model
-            display: none;
-        }
-    }
 }
 
 .member__info {
@@ -103,15 +22,9 @@
     // box model
     border: 1px solid $gold;
     height: 100%;
-    padding: 20px;
-    padding-bottom: 40px;
-    margin-bottom: 20px;
-
-    @include atTabletsPortrait {
-        // box model
-        padding: 30px;
-        padding-bottom: 0;
-    }
+    margin-bottom: 15px;
+    padding: 15px;
+    padding-bottom: 60px;
 }
 
 .member__header {
@@ -119,14 +32,14 @@
     position: relative;
 
     // box model
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .member__badge {
     // positioning
     position: absolute;
     top: 5px;
-    right: -20px;
+    right: -26px;
 
     // box model
     padding: 8px;
@@ -136,7 +49,7 @@
     color: $white;
     font-family: $titleFont;
     font-weight: 400px;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-align: right;
     text-transform: uppercase;
 
@@ -186,7 +99,7 @@
     // typography
     color: $white;
     font-family: $titleFont;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.25;
     text-transform: uppercase;
@@ -199,7 +112,7 @@
     // typography
     color: $gold;
     font-family: $titleFont;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -207,7 +120,7 @@
 .member__description {
     // box model
     margin: 0;
-    padding-right: 90px;
+    padding-right: 80px;
 
     // typography
     color: $white;
@@ -235,7 +148,7 @@
     z-index: 2;
 
     // typography
-    text-align: center;
+    text-align: left;
 
     @include atTabletsPortrait {
         // typography
@@ -251,8 +164,8 @@
     z-index: 1;
 
     // box model
-    width: 250px;
-    width: 70%;
+    width: 200px;
+    // width: 70%;
 
     @include atTabletsPortrait {
         // positioning
