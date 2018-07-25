@@ -43,10 +43,16 @@
     
     @include atDesktopLarge {
         // box model
-        padding: 60px 120px;
+        padding: 60px 80px;
         padding-bottom: 100px;
-        height: calc(100vh - 10px);
-        min-height: 860px;
+        // height: calc(100vh - 10px);
+        min-height: 760px;
+    }
+
+    @include atFullHD {
+        // box model
+        padding: 60px 100px;
+        padding-bottom: 100px;
     }
 
     &::after {
@@ -102,6 +108,23 @@
         @include atTabletsLandscape {
             // visual
             background-image: url("./img/features-bg.jpg");
+        }
+
+        @include atDesktopLarge {
+            // box model
+            min-height: 860px;
+        }
+    }
+
+    &--gallery {
+        @include atTabletsLandscape {
+            // box model
+            // dirty hack, I still have no idea how it works
+            height: 400px;
+            min-height: 100px;
+
+            // visual
+            background-image: url("./img/hero-inner.jpg");
         }
     }
 

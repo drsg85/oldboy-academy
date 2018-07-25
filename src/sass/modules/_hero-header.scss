@@ -76,11 +76,6 @@
         font-size: 2.5rem;
         font-weight: 100;
     }
-
-    @include atDesktopLarge {
-        // typography
-        // font-size: 2.25rem;
-    }
 }
 
 .hero-header__subtitle {
@@ -136,12 +131,6 @@
 
         // typography
         font-size: 1.125rem;
-        font-weight: 100;
-    }
-
-    @include atDesktopLarge {
-        // typography
-        font-size: 1.25rem;
     }
 }
 
@@ -174,7 +163,6 @@
     @include atDesktop {
         // typography
         font-size: 1.125rem;
-        font-weight: 100;
     }
 }
 

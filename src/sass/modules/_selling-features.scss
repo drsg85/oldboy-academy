@@ -11,7 +11,33 @@
     background-image: url("./img/features-bg.jpg");
     background-size: cover;
     background-position: center center;
-    // background-attachment: fixed;
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 100px 60px;
+        padding-bottom: 40px;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 100px 20px;
+        padding-bottom: 40px;
+    }
+    
+    @include atDesktop {
+        // box model
+        padding: 100px 40px;
+        padding-bottom: 40px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        padding: 120px 60px;
+        padding-bottom: 60px;
+    }
     
     &::before {
         content: "";
@@ -51,20 +77,5 @@
         background-size: 80px;
         background-repeat: repeat-x;
         background-position: -40px bottom;
-    }
-
-    @include atTabletsPortrait {
-        // box model
-        padding: 100px 60px;
-        padding-bottom: 40px;
-    }
-
-    @include atTabletsLandscape {
-        // box model
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 100px 20px;
-        padding-bottom: 40px;
     }
 }

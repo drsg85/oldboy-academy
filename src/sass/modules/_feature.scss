@@ -43,7 +43,7 @@
 
     @include atDesktopLarge {
         // box model
-        height: 210px;
+        height: 160px;
     }
 }
 
@@ -170,7 +170,6 @@
     @include atDesktop {
         // typography
         font-size: 1.125rem;
-        font-weight: 300;
     }
 }
 

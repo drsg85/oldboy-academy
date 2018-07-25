@@ -9,6 +9,11 @@ html {
         // typography
         font-size: 14px;
     }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 16px;
+    }
 }
 
 body {
@@ -21,11 +26,16 @@ body {
 
     // visual
     background-color: $black;
-    overflow-x: hidden;
+    // overflow-x: hidden;
     
     @include atTabletsPortrait {
         // box model
         padding-left: 140px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        padding-left: 160px;
     }
     
     @include atFullHD {

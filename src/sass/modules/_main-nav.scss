@@ -45,6 +45,11 @@
         }
     }
 
+    @include atDesktopLarge {
+        // box model
+        width: 160px;
+    }
+
     
     &--shown {
         // positioning
@@ -110,7 +115,7 @@
     color: $white;
     font-family: $titleFont;
     font-size: 1.125rem;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 1.5;
     text-align: center;
     text-decoration: none;
@@ -125,12 +130,6 @@
 
         // typography
         font-size: 1rem;
-        font-weight: 400;
-    }
-
-    @include atDesktop {
-        // typography
-        font-weight: 300;
     }
     
     &:hover {

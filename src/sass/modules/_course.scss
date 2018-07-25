@@ -21,6 +21,7 @@
     @include atDesktop {
         // box model
         width: 290px;
+        width: 29%;
     }
 
     &:before {
@@ -216,6 +217,11 @@
     @include atTabletsLandscape {
         // typography
         font-size: 1rem;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 0.875rem;
     }
 }
 

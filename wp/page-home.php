@@ -41,7 +41,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=11">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=12">
 
     <title><?php echo $seo_title; ?> </title>
 
@@ -243,9 +243,9 @@
 
     <!-- Courses -->
     <section class="courses" id="courses">
-        <header class="courses__header">
-            <h2 class="courses__title">Наши курсы</h2>
-            <p class="courses__text">Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время</p>
+        <header class="courses__header section-header">
+            <h2 class="section-header__title">Наши курсы</h2>
+            <p class="section-header__text">Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время</p>
         </header>
 
         <div class="courses__content">
@@ -350,10 +350,9 @@
 
     <!-- Team -->
     <section class="team" id="team">
-        <header class="team__header">
-            <h2 class="team__title">Команда Академии</h2>
-            <p class="team__text">В команде академии работают профессионалы своего дела с многолетним опытом работы в индустрии барберинга, многие из
-                которых обучались своему мастерству у именитых профессионалов в России и за рубежом.</p>
+        <header class="team__header section-header">
+            <h2 class="section-header__title">Команда Академии</h2>
+            <p class="section-header__text">В команде академии работают профессионалы своего дела с многолетним опытом работы в индустрии барберинга, многие из которых обучались своему мастерству у именитых профессионалов в России и зарубежом.</p>
         </header>
 
         <div class="team__content">
@@ -390,21 +389,17 @@
                             Стаж <?php echo $member_exp; ?>
                         </p>
                         <div class="member__badge">тренер<br>oldboy</div>
-                        <p class="member__description">
-                            <?php echo $member_short; ?>
-                        </p>
                         <?php echo $member_full_exp; ?>
                     </header>
-                    <footer class="member__footer">
-                        <p class="member__subtitle">Конкурсы и Награды</p>
-                        <div class="member__feature">
-                            <?php echo $member_achievements; ?>
-                        </div>
-                        <div class="member__photo">
-                            <img src="<?php echo $member_photo; ?>" alt="<?php echo $member_name; ?>" />
-                        </div>
-                        <div class="member__more"></div>
-                    </footer>
+                    <p class="member__description">
+                        <?php echo $member_short; ?>
+                    </p>
+                </div>
+
+                <div class="member__more"></div>
+
+                <div class="member__photo">
+                    <img src="<?php echo $member_photo; ?>" alt="<?php echo $member_name; ?>" />
                 </div>
             </article>
 

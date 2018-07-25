@@ -125,12 +125,13 @@
 
     @include atDesktop {
         // box model
-        // display: flex;
-        // justify-content: space-around;
-        width: 80%;
-        // float: left;
-        // padding-top: 50px;
-        // width: 45%;
+        width: 60%;
+        padding-top: 100px;
+    }
+
+    @include atFullHD {
+        // box model
+        padding-top: 60px;
     }
 
     img {
