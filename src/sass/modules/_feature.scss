@@ -26,9 +26,10 @@
     
     @include atDesktop {
         // box model
+        padding: 40px;
         min-height: 560px;
         width: 30%;
-        border: 1px solid transparent;
+        // border: 1px solid transparent;
         
         // visual
         transition: all 0.3s ease-out;
@@ -39,11 +40,6 @@
     // positioning
     position: relative;
     z-index: 3;
-
-    @include atDesktop {
-        // box model
-        height: 140px;
-    }
 
     @include atDesktopLarge {
         // box model
@@ -67,7 +63,6 @@
     @include atTabletsPortrait {
         // box model
         max-width: 400px;
-        // margin-bottom: 80px;
         
         // typography
         font-size: 2rem;
@@ -122,9 +117,12 @@
     }
 
     @include atDesktop {
+        // positioning
+        left: -70px;
+
         // box model
-        height: 150px;
-        width: 150px;
+        height: 130px;
+        width: 130px;
     }
 
     img {
@@ -167,6 +165,12 @@
         
         // typography
         font-size: 1rem;
+    }
+
+    @include atDesktop {
+        // typography
+        font-size: 1.125rem;
+        font-weight: 300;
     }
 }
 

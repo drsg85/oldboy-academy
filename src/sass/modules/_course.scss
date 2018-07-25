@@ -18,6 +18,11 @@
         width: 340px;
     }
 
+    @include atDesktop {
+        // box model
+        width: 290px;
+    }
+
     &:before {
         content: "";
 
@@ -152,16 +157,16 @@
     
     // visual
     border-radius: 5px;
-    // border: 1px solid $white;
+    border: 1px solid $white;
 
     &--red {
         // visual
-        background-color: rgba($red, 0.5);
+        border-color: rgba($red, 0.75);
     }
     
     &--blue {
         // visual
-        background-color: rgba($blue, 0.5);
+        border-color: rgba($blue, 0.75);
     }
 }
 

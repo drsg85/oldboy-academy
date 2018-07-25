@@ -34,9 +34,14 @@
         // typography
     }
 
+    @include atDesktop {
+        // typography
+        font-size: 2.5rem;
+    }
+
     @include atDesktopLarge {
         // typography
-        font-size: 2.25rem;
+        // font-size: 2.25rem;
     }
 }
 

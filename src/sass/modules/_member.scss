@@ -154,7 +154,7 @@
 
     @include atDesktop {
         // box model
-        width: 600px;
+        // width: 600px;
     }
 
     @include atDesktopLarge {
@@ -210,12 +210,8 @@
     }
 
     @include atDesktop {
-        // positioning
-        right: -60px;
-        bottom: -1px;
-
         // box model
-        width: 650px;
+        width: 220px;
     }
 
     @include atDesktopLarge {
