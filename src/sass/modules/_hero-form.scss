@@ -14,7 +14,7 @@
 
     @include atTabletsPortrait {
         // box model
-        padding: 60px;
+        padding: 50px 40px;
     }
     
     // golden border
@@ -44,332 +44,323 @@
             width: calc(100% - 30px)
         }
     }
-    
-    &__header {
-        // positioning
-        position: relative;
-        z-index: 2;
+}
 
+.hero-form__header {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    // typography
+    font-size: 0;
+
+    @include atTabletsPortrait {
         // box model
-        padding-bottom: 20px;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
+        // padding-bottom: 40px;
+    }
 
+    @include atDesktop {
+        // box model
+        padding-right: 30px;
+    }
+}
+
+.hero-form__wrapper {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    // border: 1px solid red;
+
+    @include atTabletsPortrait {
+        // box model
+        // padding-bottom: 50px;
+    }
+}
+
+.hero-form__service {
+    // box model
+    padding-bottom: 20px;
+}
+
+.hero-form__title {
+    // box model
+    margin: 0;
+    margin-bottom: 0.2em;
+
+    // typography
+    color: $gold;
+    font-family: $titleFont;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    
+    @include atTabletsPortrait {
         // typography
-        font-size: 0;
-
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 40px;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-right: 30px;
-            // width: 300px;
-        }
+        font-size: 1.25rem;
     }
-    
-    &__wrapper {
-        // positioning
-        position: relative;
-        z-index: 2;
+}
 
-        // box model
-        padding-bottom: 40px;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
+.hero-form__subtitle {
+    // box model
+    margin: 0;
+    margin-bottom: 0.5em;
 
-        @include atTabletsPortrait {
-            // box model
-            padding-bottom: 50px;
-        }
-    }
-    
-    &__service {
-        // box model
-        padding-bottom: 20px;
-    }
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 0.85rem;
+    font-size: 1rem;
+    line-height: 1.5;
 
-    &__title {
-        // box model
-        margin: 0;
-        margin-bottom: 0.25em;
-
+    @include atTabletsPortrait {
         // typography
-        color: $white;
-        color: $gold;
-        font-family: $titleFont;
-        // font-family: $mainFont;
-        letter-spacing: 1px;
-        text-align: right;
-        text-transform: uppercase;
         font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 1.25rem;
-            letter-spacing: 0.5px;
-            // text-transform: uppercase;
-        }
-
-        @include atDesktop {
-            // typography
-            text-align: left;
-        }
     }
-    
-    &__subtitle {
-        // box model
-        margin: 0;
-        margin-bottom: 0.5em;
 
+    @include atTabletsLandscape {
         // typography
-        color: $white;
-        // color: $gold;
-        font-family: $mainFont;
         font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        text-align: right;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.125rem;
-        }
-
-        @include atTabletsLandscape {
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atDesktop {
-            // typography
-            text-align: left;
-        }
-        
-        @include atDesktopLarge {
-            // typography
-            // font-size: 1.125rem;
-        }
     }
 
-    &__form {
+    @include atDesktop {
         // typography
-        // text-align: center;
         text-align: left;
-
-        @include atTabletsPortrait {
-            // typography
-            // text-align: right;
-        }
     }
-
-    &__input-group {
-        // positioning
-        position: relative;
-
+    
+    @include atDesktopLarge {
         // typography
-        font-size: 0;
+        // font-size: 1.125rem;
     }
+}
 
-    &__error {
+.hero-form__form {
+    // typography
+    text-align: left;
+}
+
+.hero-form__input-group {
+    // positioning
+    position: relative;
+
+    // typography
+    font-size: 0;
+}
+
+.hero-form__error {
+    // positioning
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(105%, -50%);
+    z-index: 3;
+
+    // box model
+    padding: 10px;
+
+    // typography
+    color: $red;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $white;
+    border-radius: 5px;
+
+    &::before {
+        content: "";
+
         // positioning
         position: absolute;
         top: 50%;
-        right: 0;
-        transform: translate(105%, -50%);
-        z-index: 3;
+        left: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
 
         // box model
-        padding: 10px;
-
-        // typography
-        color: $red;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-align: center;
-        text-transform: uppercase;
+        height: 8px;
+        width: 8px;
 
         // visual
         background-color: $white;
-        border-radius: 5px;
+    }
+}
 
-        &::before {
-            content: "";
+.hero-form__input {
+    // positioning
+    position: relative;
+    z-index: 2;
 
-            // positioning
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(-50%, -50%) rotate(45deg);
+    // box model
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
 
-            // box model
-            height: 8px;
-            width: 8px;
+    // typography
+    color: $white;
+    font-size: 0.85rem;
 
-            // visual
-            background-color: $white;
-        }
+    // visual
+    border: none;
+    border: 1px solid rgba($white, 0.5);
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+
+    &[hidden] {
+        // box model
+        display: none;
     }
 
-    &__input {
-        // positioning
-        position: relative;
-        z-index: 2;
+    &:focus {
+        // visual
+        border: 1px solid $gold;
+        outline: none;
+    }
 
+    @include atTabletsPortrait {
         // box model
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 10px;
+        margin-bottom: 20px;
+        padding: 12px 16px;
 
         // typography
-        color: $white;
         font-size: 1rem;
-
-        // visual
-        border: none;
-        border: 1px solid rgba($white, 0.5);
-        border-radius: 5px;
-        background-color: transparent;
-        transition: all 0.3s ease-out;
-
-        &[hidden] {
-            // box model
-            display: none;
-        }
-
-        &:focus {
-            // visual
-            border: 1px solid $gold;
-            outline: none;
-        }
-
-        @include atTabletsPortrait {
-            // box model
-            margin-bottom: 20px;
-            padding: 12px 16px;
-
-            // typography
-            font-size: 1.125rem;
-        }
-
-        @include atDesktop {
-            // box model
-            margin-bottom: 16px;
-
-            // typography
-            font-size: 1rem;
-        }
-
-        // @include atDesktopLarge {
-        //     // box model
-        //     padding: 12px 18px;
-
-        //     // typography
-        //     font-size: 1.25rem;
-        // }
     }
 
-    &__button {
-        // positioning
-        position: relative;
-        z-index: 2;
-
+    @include atTabletsLandscape {
         // box model
-        padding: 12px;
-        width: 100%;
-        max-width: 100%;
+        margin-bottom: 15px;
 
         // typography
+        font-size: 1rem;
+    }
+
+    @include atDesktop {
+        // box model
+        margin-bottom: 16px;
+
+        // typography
+        font-size: 1rem;
+    }
+
+    // @include atDesktopLarge {
+    //     // box model
+    //     padding: 12px 18px;
+
+    //     // typography
+    //     font-size: 1.25rem;
+    // }
+}
+
+.hero-form__button {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    // visual
+    background-color: $gold;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        // typography
         color: $white;
-        font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-align: center;
-        text-transform: uppercase;
-        
+
         // visual
-        background-color: $gold;
-        border: none;
-        border-radius: 5px;
+        background-color: $blue;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    
+    @include atTabletsPortrait {
+        // box model
+        // width: auto;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+        padding: 12px 50px;
+
+        // typography
+        font-size: 1rem;
+    }
+
+    @include atDesktop {
+        // box model
+        // margin-top: 20px;
+
+        // typography
+        font-size: 1rem;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        // margin-top: 40px;
+
+        // typography
+        font-size: 1.25rem;
+    }
+}
+
+.hero-form__warning {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: right;
+    text-transform: uppercase;
+
+    @include atTabletsPortrait {
+        // typography
+        // font-size: 0.65rem;
+    }
+
+    a {
+        // typography
+        color: $white;
+        font-weight: 700;
 
         &:hover {
-            // typography
-            color: $white;
-
-            // visual
-            background-color: $blue;
-            cursor: pointer;
-            transition: all 0.3s ease-out;
-        }
-        
-        @include atTabletsPortrait {
-            // box model
-            // width: auto;
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 0;
-            padding: 12px 50px;
-
-            // typography
-            font-size: 1rem;
-        }
-
-        @include atDesktop {
-            // box model
-            // margin-top: 20px;
-
-            // typography
-            font-size: 1rem;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            // margin-top: 40px;
-
-            // typography
-            font-size: 1.25rem;
-        }
-    }
-
-    &__warning {
-        // positioning
-        position: relative;
-        z-index: 2;
-
-        // box model
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-
-        // typography
-        color: $white;
-        font-size: 0.7rem;
-        line-height: 1.3;
-        text-align: right;
-        text-transform: uppercase;
-
-        a {
-            // typography
-            color: $white;
-            font-weight: 700;
-
-            &:hover {
-                color: $gold;
-            }
+            color: $gold;
         }
     }
 }

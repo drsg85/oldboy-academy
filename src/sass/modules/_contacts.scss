@@ -74,16 +74,8 @@
     
     &--inner {
         &::before {
-            // box model
-            // display: none;
-
             // visual
             background-image: url("./img/deco-b-r.svg");
-        }
-
-        &::after {
-            // box model
-            // display: none;
         }
     }
 }

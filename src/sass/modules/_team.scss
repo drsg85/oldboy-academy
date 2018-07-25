@@ -24,129 +24,37 @@
         background-repeat: repeat-x;
         background-position: top center;
     }
+}
 
-    &__header {
+.team__header {
+    // box model
+    padding: 65px 25px;
+    padding-bottom: 35px;
+    max-width: 800px;
+
+    // typography
+    font-size: 0;
+
+    @include atTabletsPortrait {
+        padding: 65px 60px;
+        padding-bottom: 0;
+    }
+
+    @include atDesktop {
         // box model
-        padding: 65px 25px;
-        padding-bottom: 35px;
-        max-width: 800px;
-
-        // typography
-        font-size: 0;
-
-        @include atTabletsPortrait {
-            padding: 65px 60px;
-            padding-bottom: 35px;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-bottom: 65px;
-        }
+        padding-bottom: 65px;
     }
+}
 
-    &__title {
-        // typography
-        color: $dark;
-        font-family: $titleFont;
-        font-size: 1.75rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.125;
-        text-transform: uppercase;
+.team__content {
+    // box model
+    padding: 25px;
 
-        @include atTabletsLandscape {
-            // typography
-            font-size: 2rem;
-        }
+    // typography
+    font-size: 0;
 
-        @include atDesktopLarge {
-            // typography
-            font-size: 2.25rem;
-        }
-    }
-
-    &__icon {
+    @include atTabletsPortrait {
         // box model
-        width: 3rem;
-        margin: 0 auto;
-
-        img {
-            // box model
-            width: 100%;
-        }
-    }
-
-    &__content {
-        // typography
-        font-size: 0;
-    }
-
-    &__about {
-        // box model
-        padding: 25px;
-        margin-top: -110px;
-
-        @include atTabletsPortrait {
-            // box model
-            padding: 60px;
-            margin-top: -130px;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            margin-top: -190px;
-        }
-
-        @include atDesktop {
-            // box model
-            margin-top: -150px;
-            width: 700px;
-        }
-    }
-
-    &__about-sub {
-        // box model
-        margin-bottom: 20px;
-        padding: 0;
-
-        // typography
-        font-family: $mainFont;
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    &__text {
-        // box model
-        margin: 0;
-        padding: 0;
-        margin-bottom: 1rem;
-
-        // typography
-        color: $dark;
-        font-size: 1rem;
-        line-height: 1.5;
-
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.125rem;
-            line-height: 1.75;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            margin-bottom: 0;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 1.25rem;
-        }
-    }
-
-    &__more {
-        // box model
-        padding-top: 20px;
+        padding: 60px;
     }
 }

@@ -50,89 +50,82 @@
         background-repeat: repeat-x;
         background-position: -40px bottom;
     }
+}
 
-    &__header {
+.testimonials__header {
+    // box model
+    padding: 45px 0;
+    padding-bottom: 100px;
+
+    // typography
+    font-size: 0;
+}
+
+.testimonials__title {
+    // box model
+    margin: 0;
+    margin-bottom: 20px;
+    
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.125;
+    text-align: right;
+    text-transform: uppercase;
+
+    @include atTabletsPortrait {
         // box model
-        padding: 45px 0;
-        padding-bottom: 100px;
-
-        // typography
-        font-size: 0;
-    }
-
-    &__title {
-        // box model
-        margin: 0;
+        margin: 35px;
         margin-bottom: 20px;
-        
+
         // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 2rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        line-height: 1.125;
-        text-align: right;
-        text-transform: uppercase;
-
-        @include atTabletsPortrait {
-            // box model
-            margin: 35px;
-            margin-bottom: 20px;
-
-            // typography
-            font-size: 2.5rem;
-            line-height: 1.25;
-        }
-
-        @include atDesktop {
-            // typography
-            font-size: 3rem;
-        }
-
-        @include atDesktopLarge {
-            // typography
-            font-size: 4rem;
-        }
+        font-size: 2.5rem;
+        line-height: 1.25;
     }
 
-    &__subtitle {
+    @include atDesktop {
+        // typography
+        font-size: 3rem;
+    }
+
+    @include atDesktopLarge {
+        // typography
+        font-size: 4rem;
+    }
+}
+
+.testimonials__subtitle {
+    // box model
+    margin: 0;
+    padding-left: 40%;
+
+    // typography
+    color: $white;
+    font-size: 1rem;
+    font-variant: small-caps;
+    text-align: right;
+
+    @include atTabletsPortrait {
         // box model
-        margin: 0;
-        padding-left: 40%;
+        margin-right: 35px;
 
         // typography
-        color: $white;
-        font-size: 1rem;
-        font-variant: small-caps;
-        text-align: right;
-
-        @include atTabletsPortrait {
-            // box model
-            margin-right: 35px;
-
-            // typography
-            font-size: 1.25rem;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-left: 60%;
-
-            // typography
-            font-size: 1.5rem;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            padding-left: 70%;
-        }
+        font-size: 1.25rem;
     }
 
-    &__content {
-        // typography
-        // font-size: 0.875rem;
+    @include atDesktop {
+        // box model
+        padding-left: 60%;
 
-        // visual
+        // typography
+        font-size: 1.5rem;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        padding-left: 70%;
     }
 }

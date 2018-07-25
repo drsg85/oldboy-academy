@@ -17,25 +17,31 @@
 .section-header__title {
     // typography
     font-family: $titleFont;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1.125;
+    line-height: 1.5;
     text-transform: uppercase;
 
     @include atTabletsPortrait {
         // box model
         margin-top: 0;
-    }
 
-    @include atTabletsLandscape {
         // typography
         font-size: 2rem;
     }
 
+    @include atTabletsLandscape {
+        // typography
+    }
+
+    @include atDesktop {
+        // typography
+        font-size: 2.5rem;
+    }
+
     @include atDesktopLarge {
         // typography
-        font-size: 2.25rem;
+        // font-size: 2.25rem;
     }
 }
 
@@ -45,9 +51,9 @@
     
     // typography
     color: $dark;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0.1em;
     line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
@@ -63,8 +69,8 @@
 .section-header__text {
     // typography
     font-family: $mainFont;
-    font-size: 1.25rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.75;
 
     @include atTabletsPortrait {
         // typography

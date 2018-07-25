@@ -94,185 +94,123 @@
             background-position: 0px bottom;
         }
     }
+}
 
-    &__row {
-        &::after {
-            content: "";
-            
-            // box model
-            display: table;
-            width: 100%;
-            clear: both;
-        }
-    }
-
-    &__logo {
+.about__row {
+    &::after {
+        content: "";
+        
         // box model
-        padding: 0 50px;
-        padding-bottom: 30px;
-
-        // typography
-        text-align: center;
-
-        @include atTabletsPortrait {
-            // box model
-            width: 240px;
-            padding: 0;
-            margin: 0 auto;
-            margin-bottom: 40px;
-        }
-
-        @include atDesktop {
-            // box model
-            // display: flex;
-            // justify-content: space-around;
-            width: 80%;
-            // float: left;
-            // padding-top: 50px;
-            // width: 45%;
-        }
-
-        img {
-            // box model
-            display: inline-block;
-            width: 100%;
-            max-width: 450px;
-        }
+        display: table;
+        width: 100%;
+        clear: both;
     }
+}
 
-    &__content {
+.about__logo {
+    // box model
+    padding: 0 50px;
+    padding-bottom: 30px;
+
+    // typography
+    text-align: center;
+
+    @include atTabletsPortrait {
         // box model
+        width: 240px;
+        padding: 0;
+        margin: 0 auto;
         margin-bottom: 40px;
-
-        @include atDesktop {
-            // box model
-            margin-bottom: 0;
-        }
-
-        &--left {
-            @include atDesktop {
-                // box model
-                float: left;
-                width: 50%;
-                padding-right: 30px;
-            }
-
-            @include atDesktopLarge {
-                // box model
-                padding-right: 60px;
-            }
-        }
-
-        &--right {
-            @include atDesktop {
-                // box model
-                float: right;
-                width: 50%;
-                padding-left: 30px;
-            }
-
-            @include atDesktopLarge {
-                // box model
-                padding-left: 60px;
-            }
-        }
-
-        h3 {
-            // box model
-            margin: 30px 0;
-            margin-top: 40px;
-        }
-        
-        & > p {
-            // box model
-            padding-bottom: 1em;
-            
-            // typography
-            line-height: 1.75;
-            
-            @include atDesktop {
-                // typography
-                font-size: 1.125rem;
-            }
-        }
-
-        ul {
-            // box model
-            margin: 0;
-            padding: 0;
-
-            // list
-            list-style: none;
-        }
-        
-        li {
-            // box model
-            padding-bottom: 0.5em;
-            
-            // typography
-            line-height: 1.75;
-
-            @include atDesktop {
-                // typography
-                font-size: 1.125rem;
-            }
-        }
-
-        li::before {
-            content: "— ";
-        }
-
     }
 
-    &__title {
+    @include atDesktop {
+        // box model
+        width: 60%;
+        padding-top: 100px;
+    }
+
+    @include atFullHD {
+        // box model
+        padding-top: 60px;
+    }
+
+    img {
+        // box model
+        display: inline-block;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.about__content {
+    // box model
+    margin-bottom: 40px;
+
+    @include atDesktop {
+        // box model
+        margin-bottom: 0;
+    }
+
+    &--left {
+        @include atDesktop {
+            // box model
+            float: left;
+            width: 50%;
+            padding-right: 30px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            padding-right: 60px;
+        }
+    }
+
+    &--right {
+        @include atDesktop {
+            // box model
+            float: right;
+            width: 50%;
+            padding-left: 30px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            padding-left: 60px;
+        }
+    }
+
+    h3 {
+        // box model
+        margin: 30px 0;
+        margin-top: 40px;
+    }
+    
+    & > p {
+        // box model
+        padding-bottom: 1em;
+        
         // typography
-        font-family: $titleFont;
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 1.5;
-        
-        @include atTabletsPortrait {
-            // typography
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: 1.35;
-        }
+        line-height: 1.75;
         
         @include atDesktop {
-            // box model
-            margin-top: 0;
-            max-width: 800px;
-
             // typography
-            font-size: 2.5rem;
+            font-size: 1.125rem;
         }
     }
 
-    &__subtitle {
-        // typography
-        font-family: $titleFont;
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 1.5;
-        
-        @include atTabletsPortrait {
-            // typography
-            font-size: 1.5rem;
-            font-weight: 400;
-            line-height: 1.35;
-        }
-        
-        @include atDesktop {
-            // box model
-            margin-top: 0;
-            max-width: 800px;
+    ul {
+        // box model
+        margin: 0;
+        padding: 0;
 
-            // typography
-            font-size: 1.5  rem;
-        }
+        // list
+        list-style: none;
     }
-
-    &__text {
+    
+    li {
+        // box model
+        padding-bottom: 0.5em;
+        
         // typography
         line-height: 1.75;
 
@@ -282,95 +220,158 @@
         }
     }
 
-    &__link {
-            // typography
-            color: $gold;
+    li::before {
+        content: "— ";
     }
 
-    &__image {
+}
+
+.about__title {
+    // typography
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+    
+    @include atTabletsPortrait {
+        // typography
+        font-size: 2rem;
+        line-height: 1.35;
+    }
+    
+    @include atDesktop {
         // box model
-        margin: 20px 0;
-        padding: 25px 0;
-        border-left: 1px solid $gold;
+        margin-top: 0;
+        max-width: 800px;
 
         // typography
-        font-size: 0;
-
-        // visual
-        box-shadow: 40px 0 20px -40px #000;
-        
-        img {
-            // box model
-            width: 100%;
-            max-width: 100%;
-        }
+        font-size: 2.5rem;
     }
+}
 
-    &__more {
+.about__subtitle {
+    // typography
+    font-family: $titleFont;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    @include atTabletsPortrait {
+        // typography
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.35;
+    }
+    
+    @include atDesktop {
         // box model
-        padding-top: 40px;
+        margin-top: 0;
+        max-width: 800px;
 
         // typography
-        text-align: center;
-
-        @include atDesktop {
-            // typography
-            text-align: left;
-        }
+        font-size: 1.5  rem;
     }
+}
 
-    &__deco {
-        // positioning
-        position: absolute;
-        top: 50%;
-        left: -100px;
-        transform: translateY(-50%);
-        z-index: 1;
+.about__text {
+    // typography
+    line-height: 1.75;
 
-        // box model
-        height: 400px;
-        width: 400px;
-        max-height: 65%;
-
-        // visual
-        background-image: url("./img/masson-yellow.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    &__deco-logo {
-        // positioning
-        position: absolute;
-        right: 60px;
-        top: -60px;
-        z-index: 6;
-
-        // box model
-        display: none;
-        height: 160px;
-        width: 160px;
-
-        // visual
-        background-image: url("./img/logo.svg");
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        background-size: contain;
-
-        @include atDesktop {
-            // box model
-            display: block;
-        }
-    }
-
-    &__features {
-        // box model
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
+    @include atTabletsLandscape {
         // typography
-        font-size: 0;
-        text-align: center;
+        font-size: 1.125rem;
     }
+}
+
+.about__link {
+        // typography
+        color: $gold;
+}
+
+.about__image {
+    // box model
+    margin: 20px 0;
+    padding: 25px 0;
+    border-left: 1px solid $gold;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    box-shadow: 40px 0 20px -40px #000;
+    
+    img {
+        // box model
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.about__more {
+    // box model
+    padding-top: 40px;
+
+    // typography
+    text-align: center;
+
+    @include atDesktop {
+        // typography
+        text-align: left;
+    }
+}
+
+.about__deco {
+    // positioning
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    // box model
+    height: 400px;
+    width: 400px;
+    max-height: 65%;
+
+    // visual
+    background-image: url("./img/masson-yellow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about__deco-logo {
+    // positioning
+    position: absolute;
+    right: 60px;
+    top: -60px;
+    z-index: 6;
+
+    // box model
+    display: none;
+    height: 160px;
+    width: 160px;
+
+    // visual
+    background-image: url("./img/logo.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include atDesktop {
+        // box model
+        display: block;
+    }
+}
+
+.about__features {
+    // box model
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    // typography
+    font-size: 0;
+    text-align: center;
 }

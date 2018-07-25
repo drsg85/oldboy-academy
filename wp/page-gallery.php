@@ -45,7 +45,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=11">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory'); ?>/style.css?v=12">
 
     <title><?php echo $seo_title; ?></title>
 
@@ -65,7 +65,7 @@
     <?php get_template_part('nav'); ?>
 
     <!-- Hero -->
-    <section class="hero hero--gallery hero--inner">
+    <section class="hero hero--gallery">
         <div class="hero__header">
             <header class="hero-header">
                 <div class="hero-header__caption">

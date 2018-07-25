@@ -30,8 +30,8 @@
         // box model
         display: block;
         height: 100vh;
-        height: 100%;
-        width: 160px;
+        height: 200%;
+        width: 140px;
 
         // visual
         background-color: $black;
@@ -45,140 +45,12 @@
         }
     }
 
-    &__logo {
+    @include atDesktopLarge {
         // box model
-        height: 160px;
-        width: 100px;
-        padding: 30px 0;
-        margin: 20px 0;
-        margin-bottom: 0;
-
-        // @include atTabletsPortrait {
-        //     // box model
-        //     width: 190px;
-        //     height: auto;
-        //     margin: auto;
-        //     margin-top: 0;
-        //     padding: 60px 0;
-        //     padding-bottom: 40px;
-        //     padding-left: 30px;
-        // }
-
-        // @include atDesktop {
-        @include atTabletsPortrait {
-            // box model
-            width: 190px;
-            height: auto;
-            
-            margin: 0 auto;
-            padding: 40px 0;
-            padding-top: 40px;
-            width: 110px;
-        }
-
-        img {
-            // box model
-            height: 100%;
-            width: 100%;
-        }
+        width: 160px;
     }
 
-    &__list {
-        // box model
-        margin: 0;
-        padding: 0;
-
-        // visual
-        list-style: none;
-    }
-
-    &__item {
-        // positioning
-        position: relative;
-
-        @include atTabletsPortrait {
-            // box model
-            display: block;
-            padding: 0;
-        }
-
-        &::after {
-            // content: "";
-
-            // positioning
-            position: absolute;
-            bottom: -2px;
-            left: 50%;
-            transform: translateX(-50%) translateX(-2px) rotate(45deg);
-
-            // box model
-            height: 5px;
-            width: 5px;
-
-            // visual
-            background-color: #cccccc;
-            background-color: $white;
-
-        }
-
-        &:last-of-type {
-            &::after {
-                // box model
-                display: none;
-            }
-        }
-    }
-
-    &__link {
-        // box model
-        display: block;
-        padding: 15px;
-
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        line-height: 1.5;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-
-        // visual
-        transition: all 0.2s ease-out;
-
-        &:hover {
-            // typography
-            color: $gold;
-        }
-
-        @include atTabletsPortrait {
-            // box model
-            padding: 10px 0;
-
-            // typography
-            color: $white;
-            font-size: 0.8rem;
-            font-family: $mainFont;
-            line-height: 30px;
-        }
-    }
-
-    &__social {
-        // box model
-        display: none;
-
-        @include atTabletsPortrait {
-            // positioning
-            position: absolute;
-            bottom: 0;
-
-            // box model
-            display: block;
-            width: 100%;
-        }
-    }
-
+    
     &--shown {
         // positioning
         left: 0;
@@ -186,5 +58,97 @@
         // visual
         visibility: visible;
         opacity: 1;
+    }
+}
+
+.main-nav__logo {
+    // box model
+    height: 140px;
+    width: 80px;
+    padding: 30px 0;
+    margin: 20px 0;
+    margin-bottom: 0;
+
+    @include atTabletsPortrait {
+        // box model
+        width: 90px;
+        height: auto;
+        
+        margin: 0 auto;
+        padding: 30px 0;
+        padding-top: 40px;
+    }
+
+    img {
+        // box model
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.main-nav__list {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // visual
+    list-style: none;
+}
+
+.main-nav__item {
+    // positioning
+    position: relative;
+
+    @include atTabletsPortrait {
+        // box model
+        display: block;
+        padding: 0;
+    }
+}
+
+.main-nav__link {
+    // box model
+    display: block;
+    padding: 12px;
+
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 1.125rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    // visual
+    transition: all 0.2s ease-out;
+    
+    @include atTabletsPortrait {
+        // box model
+        padding: 14px 0;
+
+        // typography
+        font-size: 1rem;
+    }
+    
+    &:hover {
+        // typography
+        color: $gold;
+    }
+}
+
+.main-nav__social {
+    // box model
+    display: none;
+
+    @include atTabletsPortrait {
+        // positioning
+        position: absolute;
+        bottom: 0;
+
+        // box model
+        display: block;
+        width: 100%;
     }
 }
