@@ -2746,15 +2746,15 @@ body {
       background-color: rgba(51, 102, 153, 0.5); }
   .course__content {
     padding: 15px 25px;
-    padding-top: 10px; }
+    padding-top: 11px; }
   .course__info {
     position: relative;
     padding-left: 35px;
     padding-right: 5px; }
   .course__info-icon {
     position: absolute;
-    left: 0;
-    top: 10px;
+    left: 1;
+    top: 11px;
     height: 30px;
     width: 30px; }
     .course__info-icon img {
@@ -3209,14 +3209,22 @@ body {
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
-    background-color: #d5a353; }
+    background-color: #d5a353;
+    z-index: 1;
+   }
+
     .member__badge::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -20px;
-      height: 50%;
-      width: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -14px;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/icons/Angle.svg); 
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+      /*
       background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #d5a353), color-stop(50%, #d5a353), color-stop(50%, transparent), to(transparent));
       background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); }
     .member__badge::after {
@@ -3227,7 +3235,9 @@ body {
       height: 50%;
       width: 20px;
       background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #d5a353), color-stop(50%, #d5a353), color-stop(50%, transparent), to(transparent));
-      background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); }
+      background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%); 
+    } */
+
   .member__name {
     margin: 0;
     margin-bottom: 10px;
