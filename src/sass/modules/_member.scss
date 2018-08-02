@@ -60,6 +60,7 @@
     position: absolute;
     top: 5px;
     right: -26px;
+    z-index: 1;
 
     // box model
     padding: 8px;
@@ -87,30 +88,21 @@
         // positioning
         position: absolute;
         top: 0;
-        left: -14px;
+        // left: -14px;
+        left: -99px;
+        z-index: 2;
         
         // box model
-        height: 50%;
-        width: 14px;
+        height: 100%;
+        width: 100px;
+        // border: 1px solid red;
         
         // visual
-        background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
-    }
-
-    &::after {
-        content: "";
-
-        // positioning
-        position: absolute;
-        bottom: 0;
-        left: -14px;
-
-        // box model
-        height: 50%;
-        width: 14px;
-
-        // visual
-        background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
+        // background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
+        background-image: url('./img/member-deco.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center right;
     }
 }
 

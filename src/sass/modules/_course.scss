@@ -182,21 +182,20 @@
     position: relative;
 
     // box model
-    padding-left: 35px;
+    padding-left: 40px;
     padding-right: 5px;
 }
 
 .course__info-icon {
     // positioning
     position: absolute;
-    left: 0;
+    left: 5px;
     top: 10px;
+    // border: 1px solid red;
 
     // box model
-    height: 30px;
-    width: 30px;
-    height: 28px;
-    width: 28px;
+    height: 34px;
+    width: 34px;
     
     img {
         // box model
