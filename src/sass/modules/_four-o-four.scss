@@ -27,98 +27,98 @@
             opacity: 0.125;
         }
     }
+}
 
-    &__404 {
-        // positioning
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 0;
+.four-o-four__404 {
+    // positioning
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
 
+    // box model
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+
+    @include atTabletsPortrait {
         // box model
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-        height: 100%;
-        padding-top: 40px;
-
-        @include atTabletsPortrait {
-            // box model
-            padding-top: 100px;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-top: 60px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            padding-top: 100px;
-        }
+        padding-top: 100px;
     }
 
-    &__glitch {
-        // positioning
-        position: absolute;
-        z-index: 1;
+    @include atDesktop {
+        // box model
+        padding-top: 60px;
     }
 
-    &__contacts {
+    @include atDesktopLarge {
+        // box model
+        padding-top: 100px;
+    }
+}
+
+.four-o-four__glitch {
+    // positioning
+    position: absolute;
+    z-index: 1;
+}
+
+.four-o-four__contacts {
+    // positioning
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    z-index: 2;
+
+    // box model
+    width: 100%;
+
+    // typography
+    text-align: center;
+
+    @include atDesktop {
         // positioning
-        position: absolute;
-        bottom: 80px;
-        left: 0;
-        z-index: 2;
+        bottom: 60px;
 
         // box model
-        width: 100%;
+        padding-left: 60px;
 
         // typography
-        text-align: center;
+        text-align: left;
+    }
+}
 
-        @include atDesktop {
-            // positioning
-            bottom: 60px;
+.four-o-four__quote {
+    // box model
+    display: none;
 
-            // box model
-            padding-left: 60px;
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        z-index: 3;
+        bottom: 60px;
+        right: 60px;
 
-            // typography
-            text-align: left;
-        }
+        // box model
+        display: block;
+
+        // typography
+        color: $white;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        text-align: right;
+        text-transform: uppercase;
     }
 
-    &__quote {
+    blockquote {
         // box model
-        display: none;
-
-        @include atDesktop {
-            // positioning
-            position: absolute;
-            z-index: 3;
-            bottom: 60px;
-            right: 60px;
-
-            // box model
-            display: block;
-
-            // typography
-            color: $white;
-            font-size: 1.25rem;
-            letter-spacing: 1px;
-            text-align: right;
-            text-transform: uppercase;
-        }
-
-        blockquote {
-            // box model
-            padding: 0;
-            margin: 0;
-            
-            // typography
-            font-weight: 700;
-        }
+        padding: 0;
+        margin: 0;
+        
+        // typography
+        font-weight: 700;
     }
 }

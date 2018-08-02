@@ -3,46 +3,82 @@
     position: relative;
 
     // box model
-    padding: 50px 20px;
-    padding-bottom: 130px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-bottom: 15px;
 
     // visual
     background-color: $blue;
     background-image: url("./img/gradient.jpg");
+    background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    &--left {
-        // visual
-        background-position: bottom center;
+    @include atTabletsPortrait {
+        // box model
+        height: 300px;
+        padding-bottom: 10px;
     }
 
-    &--right {
-        // visual
-        background-position: top center;
+    @include atTabletsLandscape {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: calc(50% - 30px);
+        margin-right: 30px;
     }
+}
+
+.member__info {
+    // positioning
+    position: relative;
+
+    // box model
+    border: 1px solid $gold;
+    height: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    padding-bottom: 60px;
 
     @include atTabletsPortrait {
         // box model
-        padding: 50px 30px;
-        padding-bottom: 50px;
+        margin-bottom: 0;
+        padding-bottom: 80px;
     }
+}
+
+.member__header {
+    // positioning
+    position: relative;
+
+    // box model
+    margin-bottom: 20px;
+}
+
+.member__badge {
+    // positioning
+    position: absolute;
+    top: 5px;
+    right: -26px;
+
+    // box model
+    padding: 8px;
+    padding-right: 15px;
+
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-weight: 400px;
+    font-size: 0.75rem;
+    text-align: right;
+    text-transform: uppercase;
+
+    // visual
+    background-color: $gold;
 
     @include atDesktop {
-        // box model
-        // width: 800px;
-
-        // margin-right: 60px;
-    }
-
-    @include atDesktopLarge {
-        // box model
-        margin: 30px;
-        width: 50%;
-        width: calc(50% - 60px);
-        padding: 32px 30px;
-        display: inline-block;
-        vertical-align: top;
+        // typography
+        font-size: 0.875rem;
     }
 
     &::before {
@@ -50,24 +86,15 @@
 
         // positioning
         position: absolute;
-        top: -5px;
-        left: 0;
-        z-index: 6;
-
+        top: 0;
+        left: -14px;
+        
         // box model
-        height: 32px;
-        width: 100%;
-
+        height: 50%;
+        width: 14px;
+        
         // visual
-        background-image: url("./img/deco-b-r.svg");
-        background-size: 80px;
-        background-repeat: repeat-x;
-        background-position: -40px top;
-
-        @include atDesktopLarge {
-            // box model
-            display: none;
-        }
+        background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
     }
 
     &::after {
@@ -75,325 +102,138 @@
 
         // positioning
         position: absolute;
-        bottom: 0px;
-        left: 0;
-        z-index: 2;
+        bottom: 0;
+        left: -14px;
 
         // box model
-        height: 32px;
-        width: 100%;
+        height: 50%;
+        width: 14px;
 
         // visual
-        background-image: url("./img/deco-b.svg");
-        background-size: 80px;
-        background-repeat: repeat-x;
-        background-position: left bottom;
-
-        @include atDesktopLarge {
-            // box model
-            display: none;
-        }
+        background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
     }
+}
 
-    &__info {
-        // box model
-        border: 1px solid $gold;
-        height: 100%;
-    }
+.member__name {
+    // box model
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    padding-right: 100px;
 
-    &__header {
-        // box model
-        padding: 25px;
-        padding-bottom: 0;
+    // typography
+    color: $white;
+    font-family: $titleFont;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: uppercase;
 
-        @include atTabletsPortrait {
-            // box model
-            padding: 30px;
-            padding-bottom: 0;
-        }
-    }
-
-    &__badge {
-        // positioning
-        position: absolute;
-        top: 75px;
-        right: 0;
-
-        // box model
-        padding: 15px 20px;
-
+    @include atDesktop {
         // typography
-        color: $white;
-        font-family: $mainFont;
-        font-weight: 700px;
-        font-size: 1rem;
-        letter-spacing: 2px;
-        text-align: center;
-        text-transform: uppercase;
-
-        // visual
-        background-color: $gold;
-
-        &::before {
-            content: "";
-
-            // positioning
-            position: absolute;
-            top: 0;
-            left: -20px;
-            
-            // box model
-            height: 50%;
-            width: 20px;
-            
-            // visual
-            background-image: linear-gradient(to left top, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
-        }
-
-        &::after {
-            content: "";
-
-            // positioning
-            position: absolute;
-            bottom: 0;
-            left: -20px;
-
-            // box model
-            height: 50%;
-            width: 20px;
-
-            // visual
-            background-image: linear-gradient(to left bottom, #d5a353 0, #d5a353 50%, transparent 50%, transparent 100%);
-        }
-    }
-    
-
-    &__name {
-        // box model
-        margin: 0;
-        margin-bottom: 10px;
-        padding: 0;
-        padding-right: 80px;
-
-        // typography
-        color: $white;
-        font-family: $titleFont;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        line-height: 1.125;
-        font-size: 2rem;
-    }
-
-    &__subtitle {
-        // box model
-        margin: 0;
-        margin-bottom: 30px;
-
-        // typography
-        color: $gold;
-        font-size: 1.125rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
-
-    &__description {
-        // box model
-        margin: 0;
-        margin-bottom: 30px;
-
-        // typography
-        color: $white;
-        font-size: 1rem;
-        line-height: 1.75;
-
-        @include atDesktop {
-            // box model
-            width: 600px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            width: auto;
-            height: 200px;
-
-            // typography
-            font-size: 1.125rem;
-        }
-    }
-
-    &__exp {
-        // box model
-        margin-bottom: 30px;
-        display: block;
-
-        // typography
-        color: $white;
         font-size: 1.5rem;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+    }
+}
 
-        span {
-            // typography
-            font-size: 1rem;
-            font-weight: 400;
-        }
+.member__subtitle {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $gold;
+    font-family: $titleFont;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.member__description {
+    // box model
+    margin: 0;
+    padding-right: 80px;
+
+    // typography
+    color: $white;
+    font-size: 1rem;
+    line-height: 1.75;
+
+    @include atTabletsPortrait {
+        // box model
+        padding-right: 50%;
     }
 
-    &__footer {
-        // display: flex;
-        // flex-direction: column;
-
+    @include atDesktop {
         // box model
-        padding: 25px;
-        border-top: 1px solid $gold;
-        margin-bottom: -100px;
-
-        @include atTabletsPortrait {
-            // box model
-            margin-bottom: 0;
-            padding: 30px;
-        }
+        // width: 600px;
     }
 
-    &__feature {
+    @include atDesktopLarge {
         // box model
-        margin-top: 10px;
-        width: 225px;
-
-        // visual
-        background-size: contain;
-        background-image: url("./img/laurel.png");
-        background-repeat: no-repeat;
-
-        @include atTabletsPortrait {
-            // box model
-            width: 250px;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            width: 275px;
-        }
-
-        @include atDesktop {
-            // box model
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            height: 240px;
-        }
-    }
-
-    &__achivements-list, ul {
-        // box model
-        width: 225px;
-        margin: 0;
-        padding: 20px 0;
-        padding-bottom: 170px;
-
-        // visual
-        list-style: none;
-
-        @include atTabletsPortrait {
-            // box model
-            width: 250px;
-            padding-bottom: 100px;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            width: 275px;
-        }
-
-        @include atDesktop {
-            // box model
-            padding-bottom: 40px;
-
-            // typography
-            text-align: center;
-        }
-    }
-
-    &__achivements-item, li {
-        // box model
-        margin-bottom: 10px;
-        padding: 0 40px;
+        // width: auto;
+        // height: 200px;
 
         // typography
-        color: $white;
-        font-size: 1rem;
-        line-height: 1.5;
-        text-align: center;
-
-        @include atTabletsPortrait {
-            // typography
-        }
+        // font-size: 1.125rem;
     }
+}
 
-    &__more {
-        // positioning
-        position: relative;
-        z-index: 2;
+.member__more {
+    // positioning
+    position: relative;
+    z-index: 2;
 
-        // typography
-        text-align: center;
+    // typography
+    text-align: left;
 
-        @include atTabletsPortrait {
-            // typography
-            text-align: left;
-        }
-    }
-
-    &__photo {
+    @include atTabletsPortrait {
         // positioning
         position: absolute;
-        bottom: 129px;
-        right: -10px;
-        z-index: 1;
+        bottom: 25px;
+        left: 25px;
+
+        // typography
+        text-align: left;
+    }
+}
+
+.member__photo {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    z-index: 1;
+
+    // box model
+    width: 200px;
+
+    @include atTabletsPortrait {
+        // positioning
+        right: 10px;
+
+        // box model
+        width: 260px;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        width: 200px;
+    }
+
+    @include atDesktop {
+        // box model
+        width: 220px;
+    }
+
+    @include atDesktopLarge {
+        // positioning
+        right: 60px;
 
         // box model
         width: 250px;
-        width: 60%;
+}
 
-        @include atTabletsPortrait {
-            // positioning
-            bottom: 51px;
-            right: -30px;
-
-            // box model
-            width: 68%;
-        }
-
-        @include atTabletsLandscape {
-            // box model
-            width: 550px;
-        }
-
-        @include atDesktop {
-            // positioning
-            right: -60px;
-            bottom: -1px;
-
-            // box model
-            width: 650px;
-        }
-
-        @include atDesktopLarge {
-            // box model
-            width: 75%;
-            max-width: 570px;
-        }
-
-        img {
-            // box model
-            width: 100%;
-        }
-
+    img {
+        // box model
+        width: 100%;
     }
 }
