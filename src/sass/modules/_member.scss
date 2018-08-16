@@ -14,13 +14,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         height: 300px;
         padding-bottom: 10px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         display: inline-block;
         vertical-align: top;
@@ -40,7 +40,7 @@
     padding: 15px;
     padding-bottom: 60px;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin-bottom: 0;
         padding-bottom: 80px;
@@ -77,7 +77,7 @@
     // visual
     background-color: $gold;
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 0.875rem;
     }
@@ -121,7 +121,7 @@
     line-height: 1.25;
     text-transform: uppercase;
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 1.5rem;
     }
@@ -149,17 +149,17 @@
     font-size: 1rem;
     line-height: 1.75;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding-right: 50%;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         // width: 600px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         // width: auto;
         // height: 200px;
@@ -177,7 +177,7 @@
     // typography
     text-align: left;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         position: absolute;
         bottom: 25px;
@@ -198,7 +198,7 @@
     // box model
     width: 200px;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         right: 10px;
 
@@ -206,17 +206,17 @@
         width: 260px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         width: 200px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         width: 220px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // positioning
         right: 60px;
 

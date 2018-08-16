@@ -6,19 +6,19 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         min-height: 0;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         min-height: calc(100vh - 180px);
         flex-direction: row;
         align-items: flex-end;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         height: 100%;
         padding-bottom: 0;
@@ -34,12 +34,12 @@
 }
 
 .hero-header__caption {
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         max-width: 480px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         max-width: 540px;
     }
@@ -58,7 +58,7 @@
     line-height: 1.5;
     text-transform: uppercase;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin-top: 0;
 
@@ -66,12 +66,12 @@
         font-size: 2rem;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 2rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 2.5rem;
         font-weight: 100;
@@ -93,7 +93,7 @@
     text-align: left;
     text-transform: uppercase;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 0.875rem;
     }
@@ -114,18 +114,18 @@
     font-weight: 400;
     line-height: 1.5;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.125rem;
         line-height: 1.75;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-bottom: 0;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-right: 20px;
 
@@ -138,7 +138,7 @@
     // typography
     text-align: right;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         text-align: left;
     }
@@ -155,12 +155,12 @@
     font-weight: 400;
     line-height: 1.5;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.125rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 1.125rem;
     }
@@ -177,7 +177,7 @@
     font-weight: 400;
     line-height: 1.5;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.125rem;
     }
@@ -241,7 +241,7 @@
     // typography
     text-align: center;
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         max-width: 760px;
     }

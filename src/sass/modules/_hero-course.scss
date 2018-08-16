@@ -2,12 +2,12 @@
     // positioning
     position: relative;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         padding-top: 20px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding: 0;
     }
@@ -59,7 +59,7 @@
     // box model
     padding-bottom: 20px;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding-bottom: 16px;
     }
@@ -90,7 +90,7 @@
     // visual
     background-color: $gold;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 0.875rem;
 
@@ -98,7 +98,7 @@
         max-width: 350px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 1rem;
 
@@ -150,7 +150,7 @@
     // typography
     font-size: 0;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         height: 320px;
     }
@@ -196,7 +196,7 @@
     line-height: 1.25;
     text-transform: uppercase;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         width: 130px;
 
@@ -279,7 +279,7 @@
 }
 
 .hero-course__info-column {
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         display: inline-block;
         vertical-align: top;
@@ -287,14 +287,14 @@
         padding: 0 20px;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         display: block;
         width: auto;
         padding: 0;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         display: inline-block;
         vertical-align: top;
@@ -312,18 +312,18 @@
     padding-left: 35px;
     padding-right: 15px;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-bottom: 10px;
         margin-top: 10px;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin: 0;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         margin-bottom: 10px;
         margin-top: 10px;
@@ -341,7 +341,7 @@
     height: 30px;
     width: 30px;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // positioning
         top: 20px;
 
@@ -368,12 +368,12 @@
     line-height: 1.5;
     text-align: left;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1rem;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         // font-size: 1.125rem;
     }
@@ -400,7 +400,7 @@
     // visual
     // border-top: 1px solid rgba($white, 0.75);
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-top: 60px;
 
@@ -434,7 +434,7 @@
     font-weight: 700;
     font-size: 3rem;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-top: 10px;
 
@@ -451,7 +451,7 @@
     color: $white;
     text-align: left;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         float: right;
         width: 50%;

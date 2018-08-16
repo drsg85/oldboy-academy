@@ -21,7 +21,7 @@
     background-color: rgba($black, 0.95);
     transition: all 0.3s ease-out;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         position: fixed;
         left: 0;
@@ -45,7 +45,7 @@
         }
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         width: 160px;
     }
@@ -69,7 +69,7 @@
     margin: 20px 0;
     margin-bottom: 0;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         width: 90px;
         height: auto;
@@ -99,7 +99,7 @@
     // positioning
     position: relative;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         display: block;
         padding: 0;
@@ -124,7 +124,7 @@
     // visual
     transition: all 0.2s ease-out;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding: 14px 0;
 
@@ -142,7 +142,7 @@
     // box model
     display: none;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         position: absolute;
         bottom: 0;

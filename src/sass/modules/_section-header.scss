@@ -3,12 +3,12 @@
     padding: 20px 25px;
     max-width: 400px;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding: 0;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-bottom: 40px;
     }
@@ -22,7 +22,7 @@
     line-height: 1.5;
     text-transform: uppercase;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin-top: 0;
 
@@ -30,16 +30,16 @@
         font-size: 2rem;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 2.5rem;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         // font-size: 2.25rem;
     }
@@ -72,18 +72,18 @@
     font-size: 1rem;
     line-height: 1.75;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.125rem;
         line-height: 1.75;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-bottom: 0;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 1.25rem;
     }

@@ -76,7 +76,7 @@
     text-align: right;
     text-transform: uppercase;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin: 35px;
         margin-bottom: 20px;
@@ -86,12 +86,12 @@
         line-height: 1.25;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 3rem;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 4rem;
     }
@@ -108,7 +108,7 @@
     font-variant: small-caps;
     text-align: right;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin-right: 35px;
 
@@ -116,7 +116,7 @@
         font-size: 1.25rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-left: 60%;
 
@@ -124,7 +124,7 @@
         font-size: 1.5rem;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         padding-left: 70%;
     }

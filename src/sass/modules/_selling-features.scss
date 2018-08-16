@@ -12,13 +12,13 @@
     background-size: cover;
     background-position: center center;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding: 100px 60px;
         padding-bottom: 40px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         display: flex;
         flex-direction: row;
@@ -27,13 +27,13 @@
         padding-bottom: 40px;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding: 100px 40px;
         padding-bottom: 40px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         padding: 120px 60px;
         padding-bottom: 60px;

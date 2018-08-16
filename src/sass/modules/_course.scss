@@ -10,7 +10,7 @@
     // visual
     background-color: $white;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         display: inline-block;
         height: 570px;
@@ -18,7 +18,7 @@
         width: 340px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         width: 290px;
         width: 29%;
@@ -79,7 +79,7 @@
         pointer-events: none;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         min-height: 260px;
     }
@@ -98,7 +98,7 @@
     line-height: 1.5;
     text-transform: uppercase;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-bottom: 10px;
 
@@ -120,7 +120,7 @@
     font-weight: 300;
     line-height: 1.5;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 1.125rem;
     }
@@ -130,7 +130,7 @@
     // typography
     font-size: 0;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // positioning
         position: absolute;
         bottom: 10px;
@@ -213,12 +213,12 @@
     font-size: 0.875rem;
     line-height: 1.25;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 1rem;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 0.875rem;
     }
@@ -229,7 +229,7 @@
     padding: 25px;
     padding-top: 0;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // positioning
         position: absolute;
         bottom: 0;

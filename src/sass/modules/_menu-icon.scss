@@ -15,7 +15,7 @@
     border-radius: 50%;
     cursor: pointer;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         display: none;
     }
@@ -59,7 +59,7 @@
     }
 
     &--inner {
-        @include atTabletsPortrait {
+        @include atTablet {
             // box model
             display: none;
         }

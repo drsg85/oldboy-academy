@@ -5,12 +5,12 @@ html {
     // visual
     overflow-x: hidden;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 14px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 16px;
     }
@@ -28,12 +28,12 @@ body {
     background-color: $black;
     // overflow-x: hidden;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding-left: 140px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         padding-left: 160px;
     }
@@ -48,7 +48,7 @@ body {
 /////////////////
 //  Scrollbar  //
 /////////////////
-@include atDesktop {
+@include atDesktopM {
     body::-webkit-scrollbar {
         // box model
         width: 8px;

@@ -14,17 +14,17 @@
     background-repeat: no-repeat;
     background-position: center bottom;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding: 35px 60px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         padding: 60px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // visual
         background-image: url("./img/banner-bg-l.jpg");
         background-position: left bottom;
@@ -52,7 +52,7 @@
     // box model
     margin-bottom: 40px;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin-bottom: 0;
     }
@@ -67,7 +67,7 @@
     color: $gold;
     font-weight: 700;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.125rem;
     }
@@ -80,12 +80,12 @@
     line-height: 1.25;
     text-transform: uppercase;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 2rem;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-bottom: 10px;
         margin-top: 0;
@@ -99,24 +99,24 @@
     // typography
     line-height: 1.5;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.125rem;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-top: 0;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin-bottom: 0;
     }
 }
 
 .horiz-banner__more {
-    @include atDesktop {
+    @include atDesktopM {
         // positioning
         position: absolute;
         bottom: 60px;

@@ -12,12 +12,12 @@
     background-position: center center;
     background-size: cover;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // visual
         background-image: url("./img/footer-bg-l.jpg");
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-bottom: 60px;
         padding-left: 0;
@@ -59,7 +59,7 @@
     // box model
     display: none;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         display: block;
     }

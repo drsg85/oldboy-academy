@@ -12,19 +12,19 @@
     padding: 40px 25px;
     border: 1px solid $gold;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding: 50px 40px;
         padding-top: 40px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         padding: 40px 25px;
         width: 30%;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding: 40px;
         min-height: 560px;
@@ -41,7 +41,7 @@
     position: relative;
     z-index: 3;
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         height: 160px;
     }
@@ -60,7 +60,7 @@
     line-height: 1.5;
     text-transform: uppercase;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         max-width: 400px;
         
@@ -68,12 +68,12 @@
         font-size: 2rem;
     }
     
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 1.25rem;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         min-height: 100px;
 
@@ -81,7 +81,7 @@
         font-size: 1.5rem;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 2rem;
     }
@@ -101,12 +101,12 @@
     opacity: 0.25;
     pointer-events: none;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         left: -80px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // positioning
         left: -50px;
         top: -100px;
@@ -116,7 +116,7 @@
         width: 120px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // positioning
         left: -70px;
 
@@ -150,7 +150,7 @@
     font-size: 1rem;
     line-height: 1.5;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         max-width: 300px;
         margin-bottom: 40px;
@@ -159,7 +159,7 @@
         font-size: 1.125rem;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // box model
         margin-bottom: 40px;
         
@@ -167,14 +167,14 @@
         font-size: 1rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 1.125rem;
     }
 }
 
 .feature__more {
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin-top: 20px;
     }
