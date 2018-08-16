@@ -40,7 +40,7 @@
         padding-bottom: 0;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-bottom: 65px;
     }

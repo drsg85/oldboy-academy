@@ -39,7 +39,7 @@
         max-width: 480px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         max-width: 540px;
     }
@@ -71,7 +71,7 @@
         font-size: 2rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 2.5rem;
         font-weight: 100;
@@ -125,7 +125,7 @@
         margin-bottom: 0;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         padding-right: 20px;
 
@@ -160,7 +160,7 @@
         font-size: 1.125rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 1.125rem;
     }
@@ -241,7 +241,7 @@
     // typography
     text-align: center;
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         max-width: 760px;
     }
