@@ -7,7 +7,7 @@
     // visual
     background-color: $white;
     
-    @include atDesktop {
+    @include atDesktopM {
         // positioning
         position: absolute;
         bottom: 140px;
@@ -22,7 +22,7 @@
         border-radius: 6px;
     }
 
-    @include atDesktopLarge{
+    @include atDesktopL{
         // positioning
         bottom: 110px;
     }
@@ -35,7 +35,7 @@
         // box model
         margin: 0;
         
-        @include atDesktop {
+        @include atDesktopM {
             // positioning
             position: absolute;
             right: 40px;

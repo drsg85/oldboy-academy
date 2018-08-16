@@ -24,12 +24,12 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 200px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 260px;
     }
@@ -46,7 +46,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin: 0;
         padding-bottom: 20px;
@@ -55,7 +55,7 @@
         font-size: 2rem;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // typography
         font-size: 3rem;
     }
@@ -70,7 +70,7 @@
     line-height: 1.5;
     text-transform: uppercase;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin: 0;
         padding-bottom: 26px;

@@ -15,12 +15,12 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin: 30px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         // width: 220px;
         margin: 20px;
@@ -45,7 +45,7 @@
     font-weight: 400;
     line-height: 1.5;
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 1.25rem;
         font-weight: 700;
@@ -57,7 +57,7 @@
     font-size: 1rem;
     line-height: 1.75;
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 0.875rem;
     }

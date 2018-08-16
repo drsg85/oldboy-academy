@@ -5,13 +5,13 @@
     // box model
     margin-bottom: 80px;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin: 0 auto;
         margin-top: -15px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         width: 500px;
     }
@@ -28,7 +28,7 @@
     transition: all 0.3s ease-in-out;
     transform: translateX(-110%);
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // positioning
         transform: translateX(130%);
     }
@@ -64,7 +64,7 @@
     opacity: 0.5;
     transition: all 0.3s ease-out;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         top: 50%;
         left: -47px;
@@ -85,7 +85,7 @@
         }
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // positioning
         left: -55px;
 
@@ -114,7 +114,7 @@
     opacity: 0.5;
     transition: all 0.3s ease-out;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         top: 50%;
         right: -47px;
@@ -135,7 +135,7 @@
         }
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // positioning
         right: -55px;
 
@@ -160,17 +160,17 @@
     font-size: 0;
     text-align: center;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // positioning
         bottom: -60px;
     }
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // positioning
         bottom: -70px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // positioning
         bottom: -70px;
 
@@ -195,14 +195,14 @@
     opacity: 0.5;
     transition: all 0.3s ease-out;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         height: 12px;
         width: 12px;
         margin: 0 13px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         height: 14px;
         width: 14px;

@@ -50,7 +50,7 @@
         background-repeat: repeat-x;
         background-position: -40px bottom;
 
-        @include atDesktop {
+        @include atDesktopS {
             content: "";
 
             // positioning

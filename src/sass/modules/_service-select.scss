@@ -38,7 +38,7 @@
     cursor: pointer;
     transition: border-color 0.3s ease-out;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         margin-bottom: 20px;
         padding: 12px 16px;
@@ -48,7 +48,7 @@
         font-size: 1.125rem;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         font-size: 1rem;
     }
@@ -72,7 +72,7 @@
         transition: all 0.3s ease-out;
         opacity: 0;
 
-        @include atTabletsPortrait {
+        @include atTablet {
             // positioning
             left: 12px;
             top: 10px;

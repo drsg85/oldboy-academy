@@ -9,18 +9,18 @@
     // visual
     background-color: $white;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         padding: 60px;
     }
 
-    @include atDesktopLarge {
+    @include atDesktopL {
         // box model
         padding: 60px 120px;
     }
 
     &--main {
-        @include atDesktop {
+        @include atDesktopM {
             // box model
             display: flex;
             flex-direction: column;
@@ -40,12 +40,12 @@
         // visual
         background-color: $yellow;
 
-        @include atTabletsPortrait {
+        @include atTablet {
             // box model
             padding: 85px 60px;
         }
     
-        @include atDesktopLarge {
+        @include atDesktopL {
             // box model
             padding: 80px 120px;
         }
@@ -115,7 +115,7 @@
     // typography
     text-align: center;
 
-    @include atTabletsPortrait {
+    @include atTablet {
         // box model
         width: 240px;
         padding: 0;
@@ -123,7 +123,7 @@
         margin-bottom: 40px;
     }
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         width: 60%;
         padding-top: 100px;
@@ -146,34 +146,34 @@
     // box model
     margin-bottom: 40px;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin-bottom: 0;
     }
 
     &--left {
-        @include atDesktop {
+        @include atDesktopM {
             // box model
             float: left;
             width: 50%;
             padding-right: 30px;
         }
 
-        @include atDesktopLarge {
+        @include atDesktopL {
             // box model
             padding-right: 60px;
         }
     }
 
     &--right {
-        @include atDesktop {
+        @include atDesktopM {
             // box model
             float: right;
             width: 50%;
             padding-left: 30px;
         }
 
-        @include atDesktopLarge {
+        @include atDesktopL {
             // box model
             padding-left: 60px;
         }
@@ -192,7 +192,7 @@
         // typography
         line-height: 1.75;
         
-        @include atDesktop {
+        @include atDesktopM {
             // typography
             font-size: 1.125rem;
         }
@@ -214,7 +214,7 @@
         // typography
         line-height: 1.75;
 
-        @include atDesktop {
+        @include atDesktopM {
             // typography
             font-size: 1.125rem;
         }
@@ -234,13 +234,13 @@
     line-height: 1.5;
     text-transform: uppercase;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 2rem;
         line-height: 1.35;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin-top: 0;
         max-width: 800px;
@@ -257,14 +257,14 @@
     font-weight: 400;
     line-height: 1.5;
     
-    @include atTabletsPortrait {
+    @include atTablet {
         // typography
         font-size: 1.5rem;
         font-weight: 400;
         line-height: 1.35;
     }
     
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         margin-top: 0;
         max-width: 800px;
@@ -278,7 +278,7 @@
     // typography
     line-height: 1.75;
 
-    @include atTabletsLandscape {
+    @include atDesktopS {
         // typography
         font-size: 1.125rem;
     }
@@ -315,7 +315,7 @@
     // typography
     text-align: center;
 
-    @include atDesktop {
+    @include atDesktopM {
         // typography
         text-align: left;
     }
@@ -358,7 +358,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @include atDesktop {
+    @include atDesktopM {
         // box model
         display: block;
     }
