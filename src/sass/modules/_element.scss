@@ -1,0 +1,18 @@
+.element {
+    // box model
+    // max-width: 350px;
+    margin-right: 10px;
+
+    // visual
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.element img {
+    // box model
+    height: 100%;
+    width: 100%;
+
+    // visual
+    object-fit: cover;
+}

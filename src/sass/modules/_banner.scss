@@ -1,0 +1,45 @@
+.banner {
+    // positioning
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0; 
+
+    // box model
+    padding: 10px 15px;
+    margin: auto;
+    width: 85%;
+    min-width: 320px;
+    max-width: 1000px;
+
+    // typography
+
+    // visual
+    border: 1px solid #383838;
+    background: #fefefe;
+    z-index: 1000;
+    border-radius: 4px;
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+
+.banner__elements {
+    // box model
+    display: flex;
+    justify-content: space-between;
+}
+
+@-moz-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 } 
+}
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1 }
+}

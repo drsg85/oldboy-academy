@@ -77,9 +77,9 @@
                     <p class="hero-header__text">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
                 </div>
                 <div class="hero-header__contacts">
-                    <p class="hero-header__address">Москва<br>метро Фонвизинская<br>ул. Добролюбова,&nbsp;20</p>
+                    <p class="hero-header__address"><?php echo the_field('contacts-address', 5); ?></p>
                     <p class="hero-header__phone">
-                        <a href="tel:+79261000266">тел.: <strong>+7 926 1000-266</strong></a>
+                        <a href="tel:<?php echo the_field('contacts-phone-link', 5); ?>">тел.: <strong>+7 966 111-11-27</strong></a>
                     </p>
                 </div>
             </header>
@@ -225,7 +225,7 @@
                 </header>
                 <div class="feature__body">
                     <p class="feature__item">Помощь в&nbsp;трудоустройстве, рекомендации и&nbsp;поддержка</p>
-                    <p class="feature__item">Создание команды профессионалов и&nbsp;их продвижение на&nbsp;барберинг арене</p>
+                    <p class="feature__item">Создание команды профессионалов и&nbsp;их продвижение в&nbsp;барберинге</p>
                     <p class="feature__item">Особые условия и&nbsp;выгодные предложения партнеров</p>
                 </div>
             </div>

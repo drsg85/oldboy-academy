@@ -51,6 +51,19 @@ html(lang="ru")
                         p.hero-header__phone
                             a(href="tel:+79261000266") тел.: <strong>+7 926 1000-266</strong>
 
+            .hero__banner
+                #overlay
+                    section.banner
+                        .banner__elements
+                            .element
+                                a(href="#courses")
+                                    img(src="./img/banner/1.jpg", alt="")
+                            .element
+                                a(href="#courses")
+                                    img(src="./img/banner/2.jpg", alt="")
+
+                        button.close(title="закрыть" onclick="document.getElementById('overlay').style.display='none';")
+
             .hero__slider
                 .slider#header-slider
                     .slider__slide
@@ -131,7 +144,7 @@ html(lang="ru")
                             img(src="./img/features/razor.svg", alt="")
                     .feature__body
                         p.feature__item Помощь в&nbsp;трудоустройстве, рекомендации и&nbsp;поддержка
-                        p.feature__item Создание команды профессионалов и&nbsp;их продвижение на&nbsp;барберинг арене
+                        p.feature__item Создание команды профессионалов и&nbsp;их продвижение в&nbsp;барберинге
                         p.feature__item Особые условия и&nbsp;выгодные предложения партнеров
                 .feature__more
                     a(href="#") Подробнее
