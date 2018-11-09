@@ -1,11 +1,14 @@
 .element {
     // box model
-    // max-width: 350px;
+    max-width: 550px;
     margin-right: 10px;
 
     // visual
     border-radius: 5px;
     overflow: hidden;
+
+    flex: 1 1 20%;
+    transition: flex 0.4s ease;
 }
 
 .element img {
@@ -15,4 +18,9 @@
 
     // visual
     object-fit: cover;
+}
+
+.element:hover {
+    // visual
+    flex: 0.000000001 0.00000001 400px;
 }
