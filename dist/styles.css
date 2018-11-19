@@ -4158,16 +4158,14 @@ body {
   animation: fade .6s;
   overflow: auto; }
 
-.banner {
+.modal {
   position: absolute;
   top: 25%;
   left: 0;
   right: 0;
-  padding: 10px 15px;
+  padding: 10px 0 10px 10px;
   margin: auto;
-  width: 30%;
-  max-width: 1000px;
-  min-width: 320px;
+  max-width: 40%;
   border: 1px solid #383838;
   background: #fefefe;
   z-index: 1000;
@@ -4177,7 +4175,7 @@ body {
   -webkit-animation: fade .6s;
   animation: fade .6s; }
 
-.banner__elements {
+.modal__elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4204,10 +4202,10 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 20%;
   flex: 1 1 20%;
-  -webkit-transition: -webkit-box-flex 0.4s ease;
-  transition: -webkit-box-flex 0.4s ease;
-  transition: flex 0.4s ease;
-  transition: flex 0.4s ease, -webkit-box-flex 0.4s ease, -ms-flex 0.4s ease; }
+  -webkit-transition: -webkit-box-flex 0.8s ease;
+  transition: -webkit-box-flex 0.8s ease;
+  transition: flex 0.8s ease;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease; }
 
 .element img {
   height: 100%;
@@ -4217,8 +4215,8 @@ body {
 
 .element:hover {
   -webkit-box-flex: 0.000000001;
-  -ms-flex: 0.000000001 0.00000001 400px;
-  flex: 0.000000001 0.00000001 400px; }
+  -ms-flex: 0.000000001 0.00000001 120%;
+  flex: 0.000000001 0.00000001 120%; }
 
 .close {
   position: absolute;
@@ -4230,15 +4228,15 @@ body {
   border-radius: 50%;
   background-color: #d5a353;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .close::before {
   content: "X";
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9); }
 
 .close:hover {
   background-color: rgba(252, 20, 0, 0.8); }

@@ -14,6 +14,7 @@
     background-color: $gold;
     cursor: pointer;
     outline: none;
+    transition: all 0.5s;
 }
 
 .close::before {
@@ -23,7 +24,6 @@
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
-    transition: all 0.5s;
 }
 
 .close:hover {

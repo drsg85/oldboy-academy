@@ -8,7 +8,7 @@
     overflow: hidden;
 
     flex: 1 1 20%;
-    transition: flex 0.4s ease;
+    transition: flex 0.8s ease;
 }
 
 .element img {
@@ -22,5 +22,5 @@
 
 .element:hover {
     // visual
-    flex: 0.000000001 0.00000001 400px;
+    flex: 0.000000001 0.00000001 120%;
 }

@@ -1,4 +1,4 @@
-class Banner {
+class Modal {
     constructor() {
         this.events();
     }
@@ -8,4 +8,4 @@ class Banner {
     }
 }
 
-export default Banner;
+export default Modal;
