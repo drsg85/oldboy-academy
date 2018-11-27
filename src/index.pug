@@ -51,8 +51,8 @@ html(lang="ru")
                         p.hero-header__phone
                             a(href="tel:+79261000266") тел.: <strong>+7 926 1000-266</strong>
 
-            .hero__banner
-                #overlay
+            .hero__modal
+                .overlay#overlay
                     section.modal
                         .modal__elements
                             .element
@@ -62,9 +62,9 @@ html(lang="ru")
                                 a(href="#courses")
                                     img(src="./img/modal/day.jpg", alt="")
 
-                            .element
-                                a(href="#courses")
-                                    img(src="./img/modal/menko.jpg", alt="")
+                            //- .element
+                            //-     a(href="#courses")
+                            //-         img(src="./img/modal/menko.jpg", alt="")
 
                         button.close(title="закрыть" onclick="document.getElementById('overlay').style.display='none';")
 

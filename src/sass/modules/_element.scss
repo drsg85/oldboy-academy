@@ -1,14 +1,15 @@
 .element {
     // box model
-    max-width: 550px;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: 100%;
 
     // visual
     border-radius: 5px;
     overflow: hidden;
 
     flex: 1 1 20%;
-    transition: flex 0.8s ease;
+    transition: flex 0.3s ease;
 }
 
 .element img {
@@ -22,5 +23,5 @@
 
 .element:hover {
     // visual
-    flex: 0.000000001 0.00000001 120%;
+    flex: 0.000000001 0.00000001 60%;
 }

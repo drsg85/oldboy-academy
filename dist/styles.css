@@ -4163,9 +4163,9 @@ body {
   top: 25%;
   left: 0;
   right: 0;
-  padding: 10px 0 10px 10px;
+  padding: 10px;
   margin: auto;
-  max-width: 40%;
+  max-width: 800px;
   border: 1px solid #383838;
   background: #fefefe;
   z-index: 1000;
@@ -4195,17 +4195,18 @@ body {
     opacity: 1; } }
 
 .element {
-  max-width: 550px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  max-width: 100%;
   border-radius: 5px;
   overflow: hidden;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 20%;
   flex: 1 1 20%;
-  -webkit-transition: -webkit-box-flex 0.8s ease;
-  transition: -webkit-box-flex 0.8s ease;
-  transition: flex 0.8s ease;
-  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease; }
+  -webkit-transition: -webkit-box-flex 0.3s ease;
+  transition: -webkit-box-flex 0.3s ease;
+  transition: flex 0.3s ease;
+  transition: flex 0.3s ease, -webkit-box-flex 0.3s ease, -ms-flex 0.3s ease; }
 
 .element img {
   height: 100%;
@@ -4215,8 +4216,8 @@ body {
 
 .element:hover {
   -webkit-box-flex: 0.000000001;
-  -ms-flex: 0.000000001 0.00000001 120%;
-  flex: 0.000000001 0.00000001 120%; }
+  -ms-flex: 0.000000001 0.00000001 60%;
+  flex: 0.000000001 0.00000001 60%; }
 
 .close {
   position: absolute;
