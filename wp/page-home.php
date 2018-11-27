@@ -7,7 +7,7 @@
     $seo_title                          = get_field('seo_title');
     $seo_description                    = get_field('seo_description');
     $seo_index                          = get_field('seo_index');
-    $modal_image                        = get_field('title');
+    $modal_image                        = get_field('modal-image');
 ?>
 
 <!doctype html>
@@ -93,11 +93,11 @@
                         <div class="element"><a href="#courses"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/fund.jpg" alt=""></a></div>
                         <div class="element"><a href="#courses"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/day.jpg" alt=""></a></div>
                         <div class="element"><a href="#courses"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/menko.jpg" alt=""></a></div>
-                        <!-- <div class="element"><a href="#courses"><?php echo $modal_image; ?><img src="<?php echo $modal_image; ?>" alt=""></a></div>
+                        <!-- <div class="element"><a href="#courses"><img src="<?php echo $modal_image; ?>" alt=""></a></div>
                         <img src="<?php echo $member_photo; ?>" alt="<?php echo $member_name; ?>" /> -->
                     </div>
+                <button class="close" title="закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
                 </section>
-                <button class="close"></button>
             </div>
         </div>
         
