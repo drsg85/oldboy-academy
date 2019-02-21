@@ -91,12 +91,12 @@
             // box model
             height: auto;
             min-height: auto;
-            max-height: auto;
+            // max-height: auto;
         }
 
         @include atDesktopL {
             // box model
-            max-height: auto;
+            // max-height: auto;
         }
     }
 

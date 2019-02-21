@@ -20,7 +20,8 @@
 
     &:hover {
         // visual
-        background-color: $blue;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: $rajah;
     }
 
     &--block {

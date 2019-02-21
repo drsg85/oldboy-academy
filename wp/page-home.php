@@ -90,9 +90,11 @@
             <div class="overlay" id="overlay">
                 <section class="modal">
                     <div class="modal__elements">
-                        <div class="element"><a href="https://oldboyacademy.com/kompleks-mk-hair-tattoo-crop"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/crophair.jpg" alt="Мастер класс от Александра Мэнко в Академии Олдбой"></a></div>
-                        <div class="element"><a href="https://oldboyacademy.com/barber-s-nulya/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/hachatryan.jpg" alt="Курс от Эрика Хачатряна в Академии Олдбой"></a></div>
-                        <div class="element"><a href="https://oldboyacademy.com/mk-korolevskoe-britie"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/gorb.jpg" alt="Мастер класс от Николая Горбачёва в Академии Олдбой"></a></div>
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/kompleks-mk-hair-tattoo-crop"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/menko_nd.jpg" alt="Мастер класс от Александра Мэнко в Академии Олдбой"></a></div> -->
+                        <div class="element"><a href="https://oldboyacademy.com/mk-longhair"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/menko-long.jpg" alt="Мастер класс от Александра Мэнко в Академии Олдбой"></a></div>
+                        <div class="element"><a href="https://oldboyacademy.com/mk-boroda"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/nozhnici.jpg" alt="Мастер класс от Сэра Ножницы в Академии Олдбой"></a></div>
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/barber-s-nulya/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/hachatryan.jpg" alt="Курс от Эрика Хачатряна в Академии Олдбой"></a></div> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/mk-korolevskoe-britie"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/gorb_nd.jpg" alt="Мастер класс от Николая Горбачёва в Академии Олдбой"></a></div> -->
                         <!-- <div class="element"><a href="https://oldboyacademy.com/programma-fundamental"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/fund-nd.jpg" alt="Мастер класс от Степана Акеньтьева в Академии Олдбой"></a></div> -->
                     </div>
                 <button class="close" title="закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>

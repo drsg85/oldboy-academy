@@ -683,8 +683,8 @@ body {
 
 @-webkit-keyframes glitch-anim-text {
   0% {
-    -webkit-transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1);
-    transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1);
+    -webkit-transform: translate3d(0, 0, 0) scale3d(-1, -1, 1);
+    transform: translate3d(0, 0, 0) scale3d(-1, -1, 1);
     -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
     clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%); }
   2% {
@@ -709,8 +709,8 @@ body {
     -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
     clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); }
   9.9% {
-    -webkit-transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1);
-    transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1); }
+    -webkit-transform: translate3d(0, 0, 0) scale3d(-1, -1, 1);
+    transform: translate3d(0, 0, 0) scale3d(-1, -1, 1); }
   10%,
   100% {
     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
@@ -720,8 +720,8 @@ body {
 
 @keyframes glitch-anim-text {
   0% {
-    -webkit-transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1);
-    transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1);
+    -webkit-transform: translate3d(0, 0, 0) scale3d(-1, -1, 1);
+    transform: translate3d(0, 0, 0) scale3d(-1, -1, 1);
     -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
     clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%); }
   2% {
@@ -746,8 +746,8 @@ body {
     -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
     clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); }
   9.9% {
-    -webkit-transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1);
-    transform: translate3d(-10, 0, 0) scale3d(-1, -1, 1); }
+    -webkit-transform: translate3d(0, 0, 0) scale3d(-1, -1, 1);
+    transform: translate3d(0, 0, 0) scale3d(-1, -1, 1); }
   10%,
   100% {
     -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
@@ -1461,11 +1461,7 @@ body {
   @media (min-width: 1200px) {
     .hero--inner {
       height: auto;
-      min-height: auto;
-      max-height: auto; } }
-  @media (min-width: 1500px) {
-    .hero--inner {
-      max-height: auto; } }
+      min-height: auto; } }
   .hero--course {
     background-position: center top;
     background-size: cover; }
@@ -1719,13 +1715,13 @@ body {
   text-transform: uppercase;
   background-color: #d5a353;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
   .hero-form__button:hover {
-    color: #ffffff;
-    background-color: #336699;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out; }
+    color: #f7c676;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer; }
   @media (min-width: 600px) {
     .hero-form__button {
       display: inline-block;
@@ -2268,7 +2264,7 @@ body {
     .about__subtitle {
       margin-top: 0;
       max-width: 800px;
-      font-size: 1.5  rem; } }
+      font-size: 1.5rem; } }
 
 .about__text {
   line-height: 1.75; }
@@ -2713,8 +2709,7 @@ body {
     width: 100%;
     background-image: url("./img/deco-b-r.svg");
     background-size: 80px;
-    background-repeat: repeat-x;
-    background-position: top -40px; }
+    background-repeat: repeat-x; }
 
 .courses__header {
   padding: 20px 25px;
@@ -3258,7 +3253,7 @@ body {
   padding-right: 15px;
   color: #ffffff;
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 0.75rem;
   text-align: right;
   text-transform: uppercase;
@@ -3499,8 +3494,7 @@ body {
     width: 100%;
     background-image: url("./img/deco-b-r.svg");
     background-size: 80px;
-    background-repeat: repeat-x;
-    background-position: top -40px; }
+    background-repeat: repeat-x; }
   .contacts::after {
     content: "";
     position: absolute;
@@ -3713,7 +3707,8 @@ body {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .button:hover {
-    background-color: #336699; }
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f7c676; }
   .button--block {
     display: block; }
   .button--blue {
