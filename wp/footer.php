@@ -42,7 +42,8 @@
                 <li><a href="<?php echo esc_url(home_url('/')); ?>models/">Моделям</a></li>
             </ul>
         </nav>
-        <div class="page-footer__copy">&copy;Академия Олдбой. 2018<br>Все права сохранены.</div>
+        <div class="page-footer__copy">&copy;Академия Олдбой. 2017
+        <br>Все права сохранены.</div>
     </div>
 </footer>
 
