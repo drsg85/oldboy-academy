@@ -1,10 +1,8 @@
 'use strict';
 
-    // "browser-sync": "^2.26.3",
     // "gulp-autoprefixer": "^4.0.0",
     // "gulp-notify": "^3.0.0",
     // "gulp-rename": "^1.2.2",
-    // "webpack-stream": "^4.0.3"
 
     // "gulp-wait": "0.0.2",
     // "jquery": "^3.2.1",
@@ -13,12 +11,15 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const server = require('browser-sync').create();
+const webpack = require('webpack-stream');
+const babel = require('gulp-babel');
 
 const dirs = {
   pug: './src/*.pug',
   dist: './dist',
   scss: './src/sass/**/*.scss',
   styles: './src/sass/styles.scss',
+  js: './src/js/**/*.js',
 };
 
 const webpackConfig = {
@@ -33,16 +34,20 @@ const webpackConfig = {
   output: {
       filename: "[name].js"
   },
-  module: {
-      loaders: [{
-          loader: "babel-loader",
-          query: {
-              presets: ["es2015"]
-          },
-          test: /\.js$/,
-          exclude: /node_modules/
-      }]
-  },
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.m?js$/,
+  //       exclude: /(node_modules|bower_components)/,
+  //       use: {
+  //         loader: 'babel-loader',
+  //         options: {
+  //           presets: ['@babel/preset-env']
+  //         }
+  //       }
+  //     }
+  //   ]
+  // }
 };
 
 /**
@@ -62,6 +67,16 @@ let styles  = () => (
     .pipe(sass())
     .pipe(gulp.dest(dirs.dist))
     .pipe(server.reload({stream: true}))
+);
+
+
+let scripts = () => (
+  gulp.src(dirs.js)
+    .pipe(webpack(webpackConfig))
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest(dirs.dist))
 );
 
 /**
@@ -94,6 +109,7 @@ let serverReload = (done) => {
 let watchFiles = () => {
   gulp.watch(dirs.pug, gulp.series(pugRender, serverReload));
   gulp.watch(dirs.scss, gulp.series(styles));
+  gulp.watch(dirs.js, gulp.series(scripts, serverReload));
 };
 
 
@@ -101,4 +117,5 @@ const watch = gulp.parallel(watchFiles, serverInit);
 
 exports.pugRender = pugRender;
 exports.styles = styles;
+exports.scripts = scripts;
 exports.watch = watch;
