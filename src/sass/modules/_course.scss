@@ -8,7 +8,8 @@
     margin-bottom: 30px;
     
     // visual
-    background-color: $white;
+    // background-color: $white;
+    background-color: rgba(255, 255, 255, 0.9);
 
     @include atDesktopS {
         // box model

@@ -28,18 +28,6 @@
         </ul>
 
         <div class="main-nav__social">
-            <div class="masson">
-                <div class="masson__logo">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/masson.png" alt="" />
-                </div>
-                <!-- <div class="masson__social">
-                    <a class="icon-vkontakte" href="#"></a>
-                    <a class="icon-instagram" href="#"></a>
-                </div> -->
-                <!-- <a class="masson__tag" href="#">
-                    #<em>OldboyAcademy</em>
-                </a> -->
-            </div>
         </div>
     </nav>
 

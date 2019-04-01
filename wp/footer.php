@@ -9,14 +9,14 @@
                 <div class="contact__icon icon-phone"></div>
                 <div class="contact__name">Телефон</div>
                 <div class="contact__value">
-                    <a href="tel:+79261000266">+7 926 1000-266</a>
+                    <a href="tel:<?php echo the_field('contacts-phone-link', 5); ?>">+7 966 111-11-27</a>
                 </div>
             </div>
             <div class="contact">
                 <div class="contact__icon icon-mail-alt"></div>
                 <div class="contact__name">e-mail</div>
                 <div class="contact__value">
-                    <a href="mailto: info@oldboyacademy.com">info@oldboyacademy.com</a>
+                    <a href="mailto:<?php echo the_field('contacts-email', 5); ?>">info@oldboyacademy.com</a>
                 </div>
             </div>
         </div>

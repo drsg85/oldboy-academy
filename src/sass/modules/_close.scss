@@ -1,0 +1,32 @@
+.close {
+    // positioning
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    
+    // box model
+    width: 32px;
+    height: 32px;
+
+    // visual
+    border: none;
+    border-radius: 50%;
+    background-color: $gold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.close::before {
+    content: "X";
+
+    // visual
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+
+.close:hover {
+    // visual
+    background-color: rgba(252, 20, 0, 0.8);
+}

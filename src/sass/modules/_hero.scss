@@ -91,12 +91,12 @@
             // box model
             height: auto;
             min-height: auto;
-            max-height: auto;
+            // max-height: auto;
         }
 
         @include atDesktopL {
             // box model
-            max-height: auto;
+            // max-height: auto;
         }
     }
 
@@ -144,10 +144,19 @@
     // border: 1px solid red;
     @include atDesktopS {
         // box model
-        width: 50%;
-        padding-right: 30px;
+        width: 100%;
+        // padding-right: 30px;
     }
 }
+
+.hero__events {
+    // box model
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    // overflow: hidden;
+}
+
 
 .hero__slider {
     // border: 1px solid red;

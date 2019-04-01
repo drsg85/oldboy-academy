@@ -7,6 +7,7 @@
     $seo_title                          = get_field('seo_title');
     $seo_description                    = get_field('seo_description');
     $seo_index                          = get_field('seo_index');
+    $modal_image                        = get_field('modal-image');
 ?>
 
 <!doctype html>
@@ -77,15 +78,73 @@
                     <p class="hero-header__text">Место, где вы станете настоящим барбером, профессионалом своего дела и ведущим специалистом барбершопа</p>
                 </div>
                 <div class="hero-header__contacts">
-                    <p class="hero-header__address">Москва<br>метро Фонвизинская<br>ул. Добролюбова,&nbsp;20</p>
+                    <p class="hero-header__address"><?php echo the_field('contacts-address', 5); ?></p>
                     <p class="hero-header__phone">
-                        <a href="tel:+79261000266">тел.: <strong>+7 926 1000-266</strong></a>
+                        <a href="tel:<?php echo the_field('contacts-phone-link', 5); ?>">тел.: <strong>+7 966 111-11-27</strong></a>
                     </p>
                 </div>
             </header>
+            <div class="hero__events">
+                <a class="hero-event" href="#">
+                    <header class="hero-event__header">
+                        <h2 class="hero-event__title">Мастер-класс «Удлинённые стрижки»</h2>
+                        <p class="hero-event__subtitle">Авторский мастер-класс от Александра Менко</p>
+                        <p class="hero-event__date">25.03.2019</p>
+                        <div class="hero-event__button button">Подробнее</div>
+                    </header>
+                    <div class="hero-event__overlay"></div>
+                    <div class="hero-event__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/events/event.jpg" alt="Мастер класс в Академии Олдбой"></div>
+                </a>
+                <a class="hero-event" href="#">
+                    <header class="hero-event__header">
+                        <h2 class="hero-event__title">Курс «Барбер с нуля»</h2>
+                        <p class="hero-event__subtitle">Курс «Барбер с нуля от Эрика Хачатряна»</p>
+                        <p class="hero-event__date">15.04.2019</p>
+                        <div class="hero-event__button button">Подробнее</div>
+                    </header>
+                    <div class="hero-event__overlay"></div>
+                    <div class="hero-event__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/events/event1.jpg" alt="Мастер класс в Академии Олдбой"></div>
+                </a>
+                <a class="hero-event" href="#">
+                    <header class="hero-event__header">
+                        <h2 class="hero-event__title">Мастер-класс по моделированию бороды</h2>
+                        <p class="hero-event__subtitle">Авторский мастер-класс от Сэра Ножницы</p>
+                        <p class="hero-event__date">03.05.2019</p>
+                        <div class="hero-event__button button">Подробнее</div>
+                    </header>
+                    <div class="hero-event__overlay"></div>
+                    <div class="hero-event__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/events/event2.jpg" alt="Мастер класс в Академии Олдбой"></div>
+                </a>
+                <a class="hero-event" href="#">
+                    <header class="hero-event__header">
+                        <h2 class="hero-event__title">Мастер-класс «Королевское бритьё»</h2>
+                        <p class="hero-event__subtitle">Обучение технике «Королевское бритьё» от Николая Горбачёва</p>
+                        <p class="hero-event__date">11.06.2019</p>
+                        <div class="hero-event__button button">Подробнее</div>
+                    </header>
+                    <div class="hero-event__overlay"></div>
+                    <div class="hero-event__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/events/event3.jpg" alt="Мастер класс в Академии Олдбой"></div>
+                </a>
+            </div>
         </div>
+
+        <!-- <div class="hero__modal">
+            <div class="overlay" id="overlay">
+                <section class="modal">
+                    <div class="modal__elements"> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/kompleks-mk-hair-tattoo-crop"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/menko_nd.jpg" alt="Мастер класс от Александра Мэнко в Академии Олдбой"></a></div> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/mk-longhair"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/menko-long.jpg" alt="Мастер класс от Александра Мэнко в Академии Олдбой"></a></div> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/mk-boroda"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/nozhnici.jpg" alt="Мастер класс от Сэра Ножницы в Академии Олдбой"></a></div> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/barber-s-nulya/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/hachatryan.jpg" alt="Курс от Эрика Хачатряна в Академии Олдбой"></a></div> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/mk-korolevskoe-britie"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/gorb_nd.jpg" alt="Мастер класс от Николая Горбачёва в Академии Олдбой"></a></div> -->
+                        <!-- <div class="element"><a href="https://oldboyacademy.com/programma-fundamental"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/modal/fund-nd.jpg" alt="Мастер класс от Степана Акеньтьева в Академии Олдбой"></a></div> -->
+                    <!-- </div>
+                <button class="close" title="закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+                </section>
+            </div>
+        </div> -->
         
-        <div class="hero__slider">
+        <!-- <div class="hero__slider">
             <div class="slider" id="header-slider">
                 <?php
                     $args = array(
@@ -157,7 +216,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- About -->
@@ -225,7 +284,7 @@
                 </header>
                 <div class="feature__body">
                     <p class="feature__item">Помощь в&nbsp;трудоустройстве, рекомендации и&nbsp;поддержка</p>
-                    <p class="feature__item">Создание команды профессионалов и&nbsp;их продвижение на&nbsp;барберинг арене</p>
+                    <p class="feature__item">Создание команды профессионалов и&nbsp;их продвижение в&nbsp;барберинге</p>
                     <p class="feature__item">Особые условия и&nbsp;выгодные предложения партнеров</p>
                 </div>
             </div>
@@ -250,8 +309,8 @@
     <!-- Courses -->
     <section class="courses" id="courses">
         <header class="courses__header section-header">
-            <h2 class="section-header__title">Наши курсы</h2>
-            <p class="section-header__text">Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время</p>
+            <h2 class="section-header__title section-header__title--light">Наши курсы</h2>
+            <p class="section-header__text section-header__text--light">Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время</p>
         </header>
 
         <div class="courses__content">

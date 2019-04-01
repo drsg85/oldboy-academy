@@ -1,0 +1,27 @@
+.element {
+    // box model
+    margin-right: 3px;
+    margin-left: 3px;
+    max-width: 100%;
+
+    // visual
+    border-radius: 5px;
+    overflow: hidden;
+
+    flex: 1 1 20%;
+    transition: flex 0.3s ease;
+}
+
+.element img {
+    // box model
+    height: 100%;
+    width: 100%;
+
+    // visual
+    object-fit: cover;
+}
+
+.element:hover {
+    // visual
+    flex: 0.000000001 0.00000001 60%;
+}
