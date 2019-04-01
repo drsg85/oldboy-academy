@@ -18,7 +18,11 @@
     }
     
     // visual
-    background-color: $yellow;
+    // background-color: $yellow;
+    background-image: url('./img/star.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     
     &::before {
         content: "";
@@ -38,6 +42,26 @@
         background-size: 80px;
         background-repeat: repeat-x;
         // background-position: top -40px;
+    }
+
+    &::after {
+        content: "";
+        
+        // positioning
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 6;
+        
+        // box model
+        height: 32px;
+        width: 100%;
+        
+        // visual
+        background-image: url("./img/deco-b.svg");
+        background-size: 80px;
+        background-repeat: repeat-x;
+        background-position: -40px bottom;
     }
 }
     
@@ -60,13 +84,14 @@
 .courses__content {
     // box model
     padding: 25px;
-
+    
     // typography
     font-size: 0;
-
+    
     @include atTablet {
         // box model
         padding: 0;
+        padding-bottom: 60px;
         padding-top: 40px;
         display: flex;
         flex-wrap: wrap;

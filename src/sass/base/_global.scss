@@ -54,14 +54,24 @@ body {
         width: 8px;
     
         // visual
-        background-color: $dark;
+        transition: all 0.8s;
     
         &-thumb {
             // visual
-            background-color: $gold;
+            background: linear-gradient(transparent, $gold, transparent);
+            border-radius: 10px;
+        }
+        
+        &-track {
+            // visual
+            background: transparent;
         }
     }
 }
+
+::-webkit-scrollbar-thumb:hover {
+    background: $gold;
+  }
 
 *,
 *::before,

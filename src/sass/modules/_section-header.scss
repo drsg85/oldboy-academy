@@ -22,6 +22,11 @@
     line-height: 1.5;
     text-transform: uppercase;
 
+    &--light {
+        // typography
+        color: $white;
+    }
+
     @include atTablet {
         // box model
         margin-top: 0;
@@ -71,6 +76,11 @@
     font-family: $mainFont;
     font-size: 1rem;
     line-height: 1.75;
+
+    &--light {
+        // typography
+        color: $white;
+    }
 
     @include atTablet {
         // typography

@@ -23,16 +23,6 @@ html(lang="ru")
                     li.main-nav__item: a.main-nav__link(href="models.html") Моделям
                     li.main-nav__item: a.main-nav__link(href="#contacts") Контакты
 
-                .main-nav__social
-                    .masson
-                        .masson__logo
-                            img(src="./img/masson.png", alt="")
-                        //- .masson__social
-                        //-     a(href="#").icon-vkontakte
-                        //-     a(href="#").icon-instagram
-                        
-                        //- a.masson__tag(href="#") #<em>OldboyAcademy</em>
-
             .menu-icon: .menu-icon__middle
 
         section.hero
@@ -47,60 +37,97 @@ html(lang="ru")
                         h1.hero-header__title Добро пожаловать <br>в&nbsp;Академию барберинга «Oldboy»
                         p.hero-header__text Место, где вы станете настоящим барбером, профессионалом своего дела и&nbsp;ведущим специалистом барбершопа
                     .hero-header__contacts
-                        p.hero-header__address Москва<br>метро Фонвизинская<br>ул. Добролюбова,&nbsp;20
+                        p.hero-header__address Москва, ул. Добролюбова,&nbsp;20<br>метро Фонвизинская
                         p.hero-header__phone
                             a(href="tel:+79261000266") тел.: <strong>+7 926 1000-266</strong>
 
-            .hero__modal
-                .overlay#overlay
-                    section.modal
-                        .modal__elements
-                            .element
-                                a(href="https://oldboyacademy.com/kompleks-mk-hair-tattoo-crop")
-                                    img(src="./img/modal/menko_nd.jpg", alt="Мастер класс от Александра Мэнко в Академии Олдбой")
-                            .element
-                                a(href="https://oldboyacademy.com/barber-s-nulya/")
-                                    img(src="./img/modal/hachatryan.jpg", alt="Курс от Эрика Хачатряна в Академии Олдбой")
-                            .element
-                                a(href="https://oldboyacademy.com/mk-korolevskoe-britie")
-                                    img(src="./img/modal/gorb.jpg", alt="Мастер класс от Николая Горбачёва в Академии Олдбой")
-                            //- .element
-                            //-     a(href="https://oldboyacademy.com/programma-fundamental")
-                            //-         img(src="./img/modal/fund-nd.jpg", alt="Мастер класс от Степана Акеньтева в Академии Олдбой")
+                .hero__events
+                    a.hero-event(href="#")
+                        header.hero-event__header
+                            h2.hero-event__title Курс «Барбер с нуля»
+                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                            p.hero-event__date 18.05.2019
+                            .hero-event__button.button Подробнее
+                        .hero-event__overlay
+                        .hero-event__image: img(src="./img/events/event.jpg", alt="")
 
-                        button.close(title="закрыть" onclick="document.getElementById('overlay').style.display='none';")
+                    a.hero-event(href="#")
+                        header.hero-event__header
+                            h2.hero-event__title Курс «Барбер с нуля»
+                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                            p.hero-event__date 18.05.2019
+                            .hero-event__button.button Подробнее
+                        .hero-event__overlay
+                        .hero-event__image: img(src="./img/events/event1.jpg", alt="")
 
-            .hero__slider
-                .slider#header-slider
-                    .slider__slide
-                        .hero-form
-                            header.hero-form__header
-                                h2.hero-form__title Курс «Традиционное бритье опасной бритвой и&nbsp;моделирование бороды»
-                                p.hero-form__subtitle Дата старта: 1 ноября
-                            .hero-form__wrapper
-                                form.hero-form__form(action="")
-                                    .hero-form__input-group
-                                        input.hero-form__input(type="text" name="name" placeholder="Имя")
-                                    .hero-form__input-group
-                                        input.hero-form__input(type="text" name="phone" placeholder="Телефон")
-                                    .hero-form__input-group
-                                        input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
-                                    input.hero-form__button(type="submit" value="Записаться")
-                            .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
+                    a.hero-event(href="#")
+                        header.hero-event__header
+                            h2.hero-event__title Курс «Барбер с нуля»
+                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                            p.hero-event__date 18.05.2019
+                            .hero-event__button.button Подробнее
+                        .hero-event__overlay
+                        .hero-event__image: img(src="./img/events/event2.jpg", alt="")
 
-                    .slider__slide
-                        .hero-form
-                            header.hero-form__header
-                                h2.hero-form__title Стань моделью!
-                                p.hero-form__subtitle Запись на бесплатную стрижку
-                            .hero-form__wrapper
-                                form.hero-form__form(action="")
-                                    .hero-form__input-group
-                                        input.hero-form__input(type="text" name="name" placeholder="Имя")
-                                    .hero-form__input-group
-                                        input.hero-form__input(type="text" name="phone" placeholder="Телефон")
-                                    input.hero-form__button(type="submit" value="Записаться")
-                            .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
+                    a.hero-event(href="#")
+                        header.hero-event__header
+                            h2.hero-event__title Курс «Барбер с нуля»
+                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                            p.hero-event__date 18.05.2019
+                            .hero-event__button.button Подробнее
+                        .hero-event__overlay
+                        .hero-event__image: img(src="./img/events/event3.jpg", alt="")
+
+            //- .hero__modal
+            //-     .overlay#overlay
+            //-         section.modal
+            //-             .modal__elements
+            //-                 .element
+            //-                     a(href="https://oldboyacademy.com/kompleks-mk-hair-tattoo-crop")
+            //-                         img(src="./img/modal/menko_nd.jpg", alt="Мастер класс от Александра Мэнко в Академии Олдбой")
+            //-                 .element
+            //-                     a(href="https://oldboyacademy.com/barber-s-nulya/")
+            //-                         img(src="./img/modal/hachatryan.jpg", alt="Курс от Эрика Хачатряна в Академии Олдбой")
+            //-                 .element
+            //-                     a(href="https://oldboyacademy.com/mk-korolevskoe-britie")
+            //-                         img(src="./img/modal/gorb.jpg", alt="Мастер класс от Николая Горбачёва в Академии Олдбой")
+            //-                 //- .element
+            //-                 //-     a(href="https://oldboyacademy.com/programma-fundamental")
+            //-                 //-         img(src="./img/modal/fund-nd.jpg", alt="Мастер класс от Степана Акеньтева в Академии Олдбой")
+
+            //-             button.close(title="закрыть" onclick="document.getElementById('overlay').style.display='none';")
+
+            //- .hero__slider
+            //-     .slider#header-slider
+            //-         .slider__slide
+            //-             .hero-form
+            //-                 header.hero-form__header
+            //-                     h2.hero-form__title Курс «Традиционное бритье опасной бритвой и&nbsp;моделирование бороды»
+            //-                     p.hero-form__subtitle Дата старта: 1 ноября
+            //-                 .hero-form__wrapper
+            //-                     form.hero-form__form(action="")
+            //-                         .hero-form__input-group
+            //-                             input.hero-form__input(type="text" name="name" placeholder="Имя")
+            //-                         .hero-form__input-group
+            //-                             input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+            //-                         .hero-form__input-group
+            //-                             input.hero-form__input(type="email" name="email" placeholder="Электронная почта")
+            //-                         input.hero-form__button(type="submit" value="Записаться")
+            //-                 .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="#">политики конфиденциальности</a>
+
+            //-         .slider__slide
+            //-             .hero-form
+            //-                 header.hero-form__header
+            //-                     h2.hero-form__title Стань моделью!
+            //-                     p.hero-form__subtitle Запись на бесплатную стрижку
+            //-                 .hero-form__wrapper
+            //-                     form.hero-form__form(action="")
+            //-                         .hero-form__input-group
+            //-                             input.hero-form__input(type="text" name="name" placeholder="Имя")
+            //-                         .hero-form__input-group
+            //-                             input.hero-form__input(type="text" name="phone" placeholder="Телефон")
+            //-                         input.hero-form__button(type="submit" value="Записаться")
+            //-                 .hero-form__warning Заполняя данную форму<br> вы&nbsp;принимаете условия<br> <a href="http://">политики конфиденциальности</a>
 
         section.about.about--main#about
             .about__row
