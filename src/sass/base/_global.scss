@@ -40,7 +40,6 @@ body {
     
     @include atFullHD {
         // visual
-        background-color: $white;
         box-shadow: 0 0 14px 0 $dark;
     }
 }
@@ -52,7 +51,7 @@ body {
     body::-webkit-scrollbar {
         // box model
         width: 8px;
-    
+
         // visual
         transition: all 0.8s;
     
