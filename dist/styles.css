@@ -910,7 +910,8 @@ body {
     .hero {
       padding: 60px 80px;
       padding-bottom: 100px;
-      min-height: 760px; } }
+      min-height: 760px;
+      max-height: inherit; } }
   @media (min-width: 1900px) {
     .hero {
       padding: 60px 100px;
