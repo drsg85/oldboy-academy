@@ -30,6 +30,7 @@
         
         padding-bottom: 110px;
         min-height: calc(100vh - 10px);
+        max-height: 600px;
         
         // visual
         background-image: url("./img/hero-bg.jpg");
@@ -37,6 +38,9 @@
     }
     
     @include atDesktopM {
+        // box model
+        max-height: 720px;
+
         // visual
         background-attachment: fixed;
     }

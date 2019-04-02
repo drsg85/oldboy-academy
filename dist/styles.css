@@ -899,10 +899,12 @@ body {
       flex-shrink: 0;
       padding-bottom: 110px;
       min-height: calc(100vh - 10px);
+      max-height: 600px;
       background-image: url("./img/hero-bg.jpg");
       background-position: center top; } }
   @media (min-width: 1200px) {
     .hero {
+      max-height: 720px;
       background-attachment: fixed; } }
   @media (min-width: 1500px) {
     .hero {
