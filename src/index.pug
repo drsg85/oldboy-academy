@@ -33,7 +33,7 @@ html(lang="ru")
             .hero__header
                 header.hero-header
                     .hero-header__caption
-                        //- p.hero-header__subtitle Научим как надо!
+                        p.hero-header__subtitle Научим как надо!
                         h1.hero-header__title Добро пожаловать <br>в&nbsp;Академию барберинга «Oldboy»
                         p.hero-header__text Место, где вы станете настоящим барбером, профессионалом своего дела и&nbsp;ведущим специалистом барбершопа
                     .hero-header__contacts
@@ -42,41 +42,54 @@ html(lang="ru")
                             a(href="tel:+79261000266") тел.: <strong>+7 926 1000-266</strong>
 
                 .hero__events
-                    a.hero-event(href="#")
-                        header.hero-event__header
-                            h2.hero-event__title Курс «Барбер с нуля»
-                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
-                            p.hero-event__date 18.05.2019
-                            .hero-event__button.button Подробнее
-                        .hero-event__overlay
-                        .hero-event__image: img(src="./img/events/event.jpg", alt="")
+                    .hero-event
+                        .hero-event__nav
+                            .hero-event__prev
+                            .hero-event__next
+                        a.hero-event__item(href="#")
+                            header.hero-event__header
+                                h2.hero-event__title Курс «Барбер с нуля»
+                                p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                                p.hero-event__date 18.05.2019
+                                .hero-event__button.button Подробнее
+                            .hero-event__overlay
+                            .hero-event__image: img(src="./img/events/event.jpg", alt="")
 
-                    a.hero-event(href="#")
-                        header.hero-event__header
-                            h2.hero-event__title Курс «Барбер с нуля»
-                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
-                            p.hero-event__date 18.05.2019
-                            .hero-event__button.button Подробнее
-                        .hero-event__overlay
-                        .hero-event__image: img(src="./img/events/event1.jpg", alt="")
+                        a.hero-event__item(href="#")
+                            header.hero-event__header
+                                h2.hero-event__title Курс «Барбер с нуля»
+                                p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                                p.hero-event__date 18.05.2019
+                                .hero-event__button.button Подробнее
+                            .hero-event__overlay
+                            .hero-event__image: img(src="./img/events/event1.jpg", alt="")
 
-                    a.hero-event(href="#")
-                        header.hero-event__header
-                            h2.hero-event__title Курс «Барбер с нуля»
-                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
-                            p.hero-event__date 18.05.2019
-                            .hero-event__button.button Подробнее
-                        .hero-event__overlay
-                        .hero-event__image: img(src="./img/events/event2.jpg", alt="")
+                        a.hero-event__item(href="#")
+                            header.hero-event__header
+                                h2.hero-event__title Курс «Барбер с нуля»
+                                p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                                p.hero-event__date 18.05.2019
+                                .hero-event__button.button Подробнее
+                            .hero-event__overlay
+                            .hero-event__image: img(src="./img/events/event2.jpg", alt="")
 
-                    a.hero-event(href="#")
-                        header.hero-event__header
-                            h2.hero-event__title Курс «Барбер с нуля»
-                            p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
-                            p.hero-event__date 18.05.2019
-                            .hero-event__button.button Подробнее
-                        .hero-event__overlay
-                        .hero-event__image: img(src="./img/events/event3.jpg", alt="")
+                        a.hero-event__item(href="#")
+                            header.hero-event__header
+                                h2.hero-event__title Курс «Барбер с нуля»
+                                p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                                p.hero-event__date 18.05.2019
+                                .hero-event__button.button Подробнее
+                            .hero-event__overlay
+                            .hero-event__image: img(src="./img/events/event3.jpg", alt="")
+
+                        a.hero-event__item(href="#")
+                            header.hero-event__header
+                                h2.hero-event__title Курс «Барбер с нуля»
+                                p.hero-event__subtitle Курс «Барбер с нуля» от Эрика Хачатряна
+                                p.hero-event__date 18.05.2019
+                                .hero-event__button.button Подробнее
+                            .hero-event__overlay
+                            .hero-event__image: img(src="./img/events/event3.jpg", alt="")
 
             //- .hero__modal
             //-     .overlay#overlay
@@ -154,8 +167,8 @@ html(lang="ru")
                         p.feature__item Опытные преподаватели с&nbsp;многолетним стажем
                         p.feature__item Ориентированность на&nbsp;работу с&nbsp;живыми моделями
                         p.feature__item Психология общения и&nbsp;работа с&nbsp;клиентом
-                .feature__more
-                    a(href="#") Подробнее
+                //- .feature__more
+                //-     a(href="#") Подробнее
 
             article.feature
                 .feature__content
@@ -166,8 +179,8 @@ html(lang="ru")
                     .feature__body
                         p.feature__item Современное оборудование и&nbsp;оснащенный зал
                         p.feature__item Удобное расположение хостела для&nbsp;проживания
-                .feature__more
-                    a(href="#") Подробнее
+                //- .feature__more
+                //-     a(href="#") Подробнее
 
             article.feature
                 .feature__content
@@ -179,8 +192,8 @@ html(lang="ru")
                         p.feature__item Помощь в&nbsp;трудоустройстве, рекомендации и&nbsp;поддержка
                         p.feature__item Создание команды профессионалов и&nbsp;их продвижение в&nbsp;барберинге
                         p.feature__item Особые условия и&nbsp;выгодные предложения партнеров
-                .feature__more
-                    a(href="#") Подробнее
+                //- .feature__more
+                //-     a(href="#") Подробнее
 
         section.gallery
             .gallery__preview
@@ -191,8 +204,8 @@ html(lang="ru")
 
         section.courses#courses
             header.courses__header.section-header
-                h2.section-header__title Наши курсы
-                p.section-header__text Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время
+                h2.section-header__title.section-header__title--light Наши курсы
+                p.section-header__text.section-header__text--light Актуальные курсы, которые будут проходить в нашей Академии в&nbsp;ближайшее время
 
             .courses__content
                 article.course
@@ -209,10 +222,10 @@ html(lang="ru")
                             .course__info-icon: img(src="./img/icons/calendar.svg", alt="")
                             .course__info-text Старт: 1 ноября <br>Будние дни
                         .course__info
-                            .course__info-icon: img(src="./img/icons/sand-clock.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/time-biggest.svg", alt="")
                             .course__info-text Длительность: <br>2 месяца
                         .course__info
-                            .course__info-icon: img(src="./img/icons/scissors.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/level-noob.svg", alt="")
                             .course__info-text Уровень навыков: <br>без опыта
                         .course__info
                             .course__info-icon: img(src="./img/icons/group.svg", alt="")
@@ -234,10 +247,10 @@ html(lang="ru")
                             .course__info-icon: img(src="./img/icons/calendar.svg", alt="")
                             .course__info-text Старт: 1 ноября <br>Будние дни
                         .course__info
-                            .course__info-icon: img(src="./img/icons/time-average.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/time-biggest.svg", alt="")
                             .course__info-text Длительность: <br>1 месяц
                         .course__info
-                            .course__info-icon: img(src="./img/icons/level-beginner.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/level-noob.svg", alt="")
                             .course__info-text Уровень навыков: <br>минимум 6 месяцев
                         .course__info
                             .course__info-icon: img(src="./img/icons/group.svg", alt="")
@@ -259,13 +272,13 @@ html(lang="ru")
                             .course__info-icon: img(src="./img/icons/calendar.svg", alt="")
                             .course__info-text Старт: 1 ноября <br>Будние дни
                         .course__info
-                            .course__info-icon: img(src="./img/icons/time-small.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/time-biggest.svg", alt="")
                             .course__info-text Длительность: <br>2 недели
                         .course__info
-                            .course__info-icon: img(src="./img/icons/level-medium.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/level-noob.svg", alt="")
                             .course__info-text Уровень навыков: <br>опытный барбер
                         .course__info
-                            .course__info-icon: img(src="./img/icons/single.svg", alt="")
+                            .course__info-icon: img(src="./img/icons/group.svg", alt="")
                             .course__info-text.course__info-text--last Формат: <br>индивидуальное
 
                     .course__more
@@ -345,9 +358,9 @@ html(lang="ru")
                         img(src="./img/logo-bw.svg", alt="Академия Олдбой логотип")
 
             .page-footer__wrapper
-                .page-footer__social
-                    a(href="").icon-vkontakte
-                    a(href="").icon-instagram
+                //- .page-footer__social
+                //-     a(href="").icon-vkontakte
+                //-     a(href="").icon-instagram
                 nav.page-footer__menu
                     ul
                         li: a(href="#about") Об Академии

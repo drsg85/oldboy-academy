@@ -1,8 +1,15 @@
 .hero-header {
     // box model
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 210px;
+    margin-bottom: 100px;
+    
+    @include atDesktopS {
+        // box model
+        flex-direction: row;
+        margin-bottom: 210px;
+    }
 }
 
 .hero-header__wrapper {
@@ -202,6 +209,11 @@
         // typography
         color: $gold;
         font-weight: 700;
+
+        &:hover {
+            // typography
+            text-decoration: underline;
+        }
     }
 }
 

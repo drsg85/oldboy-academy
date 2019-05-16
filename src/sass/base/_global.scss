@@ -47,26 +47,26 @@ body {
 /////////////////
 //  Scrollbar  //
 /////////////////
-@include atDesktopM {
-    body::-webkit-scrollbar {
-        // box model
-        width: 8px;
 
+body::-webkit-scrollbar {
+    // box model
+    width: 8px;
+
+    // visual
+    transition: all 0.8s;
+
+    &-thumb {
         // visual
-        transition: all 0.8s;
+        background: linear-gradient(transparent, $gold, transparent);
+        border-radius: 10px;
+    }
     
-        &-thumb {
-            // visual
-            background: linear-gradient(transparent, $gold, transparent);
-            border-radius: 10px;
-        }
-        
-        &-track {
-            // visual
-            background: transparent;
-        }
+    &-track {
+        // visual
+        background: transparent;
     }
 }
+
 
 ::-webkit-scrollbar-thumb:hover {
     background: $gold;

@@ -30,7 +30,7 @@
         
         padding-bottom: 110px;
         min-height: calc(100vh - 10px);
-        max-height: 600px;
+        // max-height: 600px;
         
         // visual
         background-image: url("./img/hero-bg.jpg");
@@ -39,7 +39,7 @@
     
     @include atDesktopM {
         // box model
-        max-height: 720px;
+        // max-height: 720px;
 
         // visual
         background-attachment: fixed;
@@ -51,7 +51,7 @@
         padding-bottom: 100px;
         // height: calc(100vh - 10px);
         min-height: 760px;
-        max-height: inherit;
+        // max-height: inherit;
     }
 
     @include atFullHD {
@@ -154,13 +154,22 @@
     }
 }
 
-.hero__events {
-    // box model
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    // overflow: hidden;
-}
+// .hero__events {
+//     // positioning
+//     position: relative;
+
+//     // box model
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: center;
+//     margin: 0 auto;
+    
+//     @include atDesktopS {
+//     // box model
+//     flex-direction: row;
+//     }
+// }
 
 
 .hero__slider {

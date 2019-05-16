@@ -3,11 +3,29 @@
     position: relative;
 
     // box model
-    flex-basis: 400px;
-    flex-shrink: 0;
-    height: 240px;
-    margin-right: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    margin: 0 auto;
+    
+    @include atDesktopS {
+    // box model
+    flex-direction: row;
+    }
+}
 
+.hero-event__item {
+    // positioning
+    position: relative;
+
+    // box model
+    // flex-basis: 280px;
+    flex-shrink: 0;
+    max-width: 360px;
+    max-height: 200px;
+    margin-bottom: 30px;
+    
     // visual
     background-color: $black;
     box-shadow: 0 0 25px rgba($gold, 0.5);
@@ -15,9 +33,15 @@
     overflow: hidden;
     transition: ease-in-out;
     transition-duration: 0.2s;
+    
+    @include atDesktopS {
+        // box model
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
 }
 
-.hero-event:hover {
+.hero-event__item:hover {
     // visual
     box-shadow: 0 0 35px rgba($gold, 0.75);
     transform: scale(1.05);
@@ -27,6 +51,70 @@
         // visual
         background-color: rgba($black, 0.5);
     }
+}
+.hero-event__nav {
+    // positioning
+    position: absolute;
+    bottom: -50px;
+    left: 40%;
+
+    // box model
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.hero-event__prev {
+    // box model
+    display: none;
+    width: 0;
+    height: 0;
+    
+    
+    // visual
+    border-style: solid;
+    border-width: 17px 25px 17px 0;
+    border-color: transparent rgba($darkGold, 0.7) transparent transparent;
+    transition: ease-in-out 0.2s;
+    z-index: 3;
+
+    @include atDesktopS {
+        // box model
+        display: block;
+    }
+}
+
+.hero-event__prev:hover {
+    // visual
+    border-color: transparent $gold transparent transparent;
+    transform: scale(1.2);
+}
+
+.hero-event__next {
+    // box model
+    display: none;
+    width: 40px;
+    height: 40px;
+
+    // visual
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 0 17px 25px;
+    border-color: transparent transparent transparent rgba($darkGold, 0.7);
+    transition: ease-in-out 0.2s;
+    z-index: 3;
+
+    @include atDesktopS {
+        // box model
+        display: block;
+    }
+}
+
+.hero-event__next:hover {
+    // visual
+    border-color: transparent transparent transparent $gold;
+    transform: scale(1.2);
 }
 
 .hero-event__header {
@@ -49,11 +137,17 @@
 
     // typography
     color: $white;
+    font-size: 1.2rem;
     font-family: $titleFont;
-    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5;
     text-transform: uppercase;
+    
+    @include atTablet {
+    // typography
+    font-size: 1.5rem;
+
+    }
 }
 
 .hero-event__subtitle {
@@ -63,9 +157,15 @@
     // typography
     color: $white;
     font-family: $titleFont;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
+    
+    @include atTablet {
+    // typography
+    font-size: 1.125rem;
+
+    }
 }
 
 .hero-event__date {
@@ -79,9 +179,14 @@
     // typography
     color: $gold;
     font-family: $titleFont;
-    font-size: 2.25rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
+    
+    @include atDesktopS {
+    // typography
+    font-size: 2rem;
+    }
 }
 
 .hero-event__button {
@@ -107,7 +212,7 @@
 
 .hero-event__image {
     // box model
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
@@ -122,4 +227,15 @@
 
     // visual
     object-fit: cover;
+}
+
+
+.hero-event__button.button {
+    // box model
+    display: none;
+
+    @include atMobileM {
+        // box model
+        display: block;
+    }
 }
